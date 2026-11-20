@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>04_메모리_증설로드맵</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="04_메모리_증설로드맵"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="04_메모리_증설로드맵"/><meta name="twitter:description" content="메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감 한눈에 보기 결론 P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터 산업 DRAM 웨이퍼 캐파 2025년 말 1,956K → 2027년 말 2,511K(+28%), 늘어난 555K 중 245K(44%)가 HBM 그래서 범용 DRAM 웨이퍼는 +19%에 그침 → 연간 순증이 2026 +231K → 2027 +324K → 2028 +405K로 해..."/><meta property="og:description" content="메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감 한눈에 보기 결론 P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터 산업 DRAM 웨이퍼 캐파 2025년 말 1,956K → 2027년 말 2,511K(+28%), 늘어난 555K 중 245K(44%)가 HBM 그래서 범용 DRAM 웨이퍼는 +19%에 그침 → 연간 순증이 2026 +231K → 2027 +324K → 2028 +405K로 해..."/><meta property="og:image:alt" content="메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감 한눈에 보기 결론 P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터 산업 DRAM 웨이퍼 캐파 2025년 말 1,956K → 2027년 말 2,511K(+28%), 늘어난 555K 중 245K(44%)가 HBM 그래서 범용 DRAM 웨이퍼는 +19%에 그침 → 연간 순증이 2026 +231K → 2027 +324K → 2028 +405K로 해..."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/반도체/04_메모리_증설로드맵"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/반도체/04_메모리_증설로드맵"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감 한눈에 보기 결론 P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터 산업 DRAM 웨이퍼 캐파 2025년 말 1,956K → 2027년 말 2,511K(+28%), 늘어난 555K 중 245K(44%)가 HBM 그래서 범용 DRAM 웨이퍼는 +19%에 그침 → 연간 순증이 2026 +231K → 2027 +324K → 2028 +405K로 해..."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="반도체/04_메모리_증설로드맵" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-145" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-145" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../반도체/">3. 반도체</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>04_메모리_증설로드맵</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">04_메모리_증설로드맵</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>33 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="메모리-증설-로드맵--2027년은-반입-2028년이-출하-hbm이-새-웨이퍼의-절반-가까이를-가져감">메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#메모리-증설-로드맵--2027년은-반입-2028년이-출하-hbm이-새-웨이퍼의-절반-가까이를-가져감" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터</li>
+<li>산업 DRAM 웨이퍼 캐파 2025년 말 1,956K → 2027년 말 2,511K(+28%), 늘어난 555K 중 245K(44%)가 HBM</li>
+<li>그래서 범용 DRAM 웨이퍼는 +19%에 그침 → <mark class="text-highlight">연간 순증이 2026 +231K → 2027 +324K → 2028 +405K로 해마다 커짐</mark></li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th>2027E</th><th>2028E</th><th>출처</th></tr></thead><tbody><tr><td>DRAM 캐파(연말, 월)</td><td style="text-align:right;">1,956K</td><td style="text-align:right;">2,187K</td><td>2,511K(+15%)</td><td>2,985K</td><td><small>하나증권, 2026-11-11 / 2028 대신증권, 2026-07-07</small></td></tr><tr><td>HBM 배정(3사)</td><td style="text-align:right;">355K</td><td style="text-align:right;">450K</td><td>600K(2027F)</td><td>—</td><td><small>하나증권, 2026-11-11 캐파로 계산</small></td></tr><tr><td>└ 3사 DRAM 웨이퍼 중</td><td style="text-align:right;">23%</td><td style="text-align:right;">26%</td><td>31%</td><td>—</td><td><small>〃</small></td></tr><tr><td>NAND 캐파</td><td style="text-align:right;">—</td><td style="text-align:right;">1,329K</td><td>1,431K(+8%)</td><td>—</td><td><small>하나증권, 2026-11-11</small></td></tr><tr><td>CXMT DRAM(점유율 14%대 유지)</td><td style="text-align:right;">—</td><td style="text-align:right;">300K</td><td>360K</td><td>—</td><td><small>하나증권, 2026-11-11</small></td></tr><tr><td>YMTC NAND 점유율</td><td style="text-align:right;">11.7%</td><td style="text-align:right;">—</td><td>18.9%</td><td>—</td><td><small>하나증권, 2026-11-11 / 유진투자증권, 2026-07-28</small></td></tr><tr><td>산업 TAM(Base, DRAM+NAND)</td><td style="text-align:right;">2,247억$(2025A)</td><td style="text-align:right;">9,216억$</td><td><mark class="text-highlight">1조 3,415억$</mark></td><td>1조 3,920억$</td><td><small>자체 모델, ⑤ 참조</small></td></tr></tbody></table></div>
+<ul>
+<li>NAND 증설은 YMTC(200→270K)·솔리다임(+25K)뿐</li>
+</ul>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  A[\&quot;2026: 램프&lt;br/>P4 · M15X&lt;br/>K2 · 전환투자(1c·V9)\&quot;] --> B[\&quot;2027: 장비 반입&lt;br/>Y1 · P5 · ID1&lt;br/>CXMT 상하이 · 우한3 · 다롄2\&quot;]\n  B -->|\&quot;투입→출하 5~6개월\&quot;| C[\&quot;2028: 출하 기여&lt;br/>DRAM 순증 +405K&lt;br/>하반기 집중\&quot;]\n  C --> D[\&quot;2028~29: 다음 파&lt;br/>P5-2(P6) · Y2 · M17 · ID2\&quot;]\n  B -.->|\&quot;새 웨이퍼의 44%\&quot;| H[\&quot;HBM 배정&lt;br/>범용 DRAM 증가 제한\&quot;]&quot;">flowchart LR
+  A[&quot;2026: 램프&lt;br/>P4 · M15X&lt;br/>K2 · 전환투자(1c·V9)&quot;] --> B[&quot;2027: 장비 반입&lt;br/>Y1 · P5 · ID1&lt;br/>CXMT 상하이 · 우한3 · 다롄2&quot;]
+  B -->|&quot;투입→출하 5~6개월&quot;| C[&quot;2028: 출하 기여&lt;br/>DRAM 순증 +405K&lt;br/>하반기 집중&quot;]
+  C --> D[&quot;2028~29: 다음 파&lt;br/>P5-2(P6) · Y2 · M17 · ID2&quot;]
+  B -.->|&quot;새 웨이퍼의 44%&quot;| H[&quot;HBM 배정&lt;br/>범용 DRAM 증가 제한&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<hr/>
+<h2 id="-기술-기초">① 기술 기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>캐파 = 월 웨이퍼 투입(12인치 환산 K/월), 출하까지 5~6개월 시차</li>
+<li>설계 캐파(최대치)와 연말 캐파(램프)를 섞으면 공급을 과대평가함</li>
+<li>비트 공급 = 웨이퍼 × 웨이퍼당 비트 → 캐파 정체에도 비트는 늘 수 있음</li>
+</ul>
+</div></blockquote>
+<h3 id="캐파-숫자-읽는-법">캐파 숫자 읽는 법<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#캐파-숫자-읽는-법" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>M15X 실제 사례 — 착공에서 풀캐파까지</strong> <small>(신한투자증권, 2026-08-06, TrendForce 인용)</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>단계</th><th style="text-align:right;">시점</th><th>경과</th></tr></thead><tbody><tr><td>착공</td><td style="text-align:right;">2024-04</td><td>T</td></tr><tr><td>ph1 클린룸·장비 반입</td><td style="text-align:right;">2025-10</td><td>T+18개월</td></tr><tr><td>웨이퍼 투입</td><td style="text-align:right;">2026-02</td><td>—</td></tr><tr><td>첫 웨이퍼 아웃</td><td style="text-align:right;">2026-06</td><td>—</td></tr><tr><td>풀캐파(예상)</td><td style="text-align:right;">2027-06</td><td>T+38개월</td></tr></tbody></table></div>
+<ul>
+<li>하나·대신·DS 표는 모두 투입(Wafer Start/Input) 기준 <small>(하나증권, 2026-11-11 / 대신증권, 2026-07-07)</small></li>
+<li>투입→출하(Wafer Output) 5~6개월 → 클린룸·장비 반입 뉴스가 공급이 되기까지 최소 2~3분기 <small>(신한투자증권, 2026-08-06)</small></li>
+<li>설계 vs 연말: Y1 1기는 클린룸당 약 60K, 6개 다 차면 최대 300K급 <small>(하나증권, 2026-09-02 / 사용자 제공 추정모델, 2026-11-10)</small> ↔ 2027년 말 Y1은 40K <small>(하나증권, 2026-11-11)</small></li>
+</ul>
+<h3 id="웨이퍼--비트--매출">웨이퍼 → 비트 → 매출<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#웨이퍼--비트--매출" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>웨이퍼</th><th>비트</th><th>출처</th></tr></thead><tbody><tr><td>NAND 2026년</td><td>1,371K → 1,329K (감소)</td><td>+19%</td><td><small>TrendForce, 키움증권 2026-06-01 인용</small></td></tr><tr><td>HBM 2025 → 2027</td><td>웨이퍼 비중 19% → 31%</td><td>비트 비중 8% → 13%</td><td><small>DS투자증권, 2026-11-10</small></td></tr></tbody></table></div>
+<ul>
+<li>웨이퍼당 비트는 공정 전환(1b→1c, 286단→400단)으로 증가</li>
+<li>HBM은 같은 비트에 범용 대비 웨이퍼 3배(HBM3E)~4.5~5배(HBM4E) <small>(삼성증권, 2026-08-05)</small></li>
+</ul>
+<hr/>
+<h2 id="-전방-수요-증설을-정당화하는-쪽">② 전방 수요 (증설을 정당화하는 쪽)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-전방-수요-증설을-정당화하는-쪽" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>2027년 DRAM·NAND 모두 공급 부족 유지가 하나증권 기본 시각</li>
+<li>LTA(5년·선수금·가격 밴드)가 ‘과잉 → 감익 → 캐파 축소’ 경로를 막는 장치</li>
+</ul>
+</div></blockquote>
+<h3 id="하이퍼스케일러가-증설의-이유--2027년-수급-하나증권-2026-11-11">하이퍼스케일러가 증설의 이유 — 2027년 수급 <small>(하나증권, 2026-11-11)</small><a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하이퍼스케일러가-증설의-이유--2027년-수급-하나증권-2026-11-11" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">수요 B/G</th><th>공급 B/G</th><th>판정</th></tr></thead><tbody><tr><td>DRAM 전체</td><td style="text-align:right;">+27%</td><td>+25%</td><td>공급 부족 지속</td></tr><tr><td>└ 서버</td><td style="text-align:right;">+52%</td><td>+52%</td><td>서버 부족률 약 4% 유지</td></tr><tr><td>└ PC / 모바일</td><td style="text-align:right;">−2% / −4%</td><td>–</td><td>—</td></tr><tr><td>NAND</td><td style="text-align:right;">+18%</td><td>+20%</td><td>부족률 4%(2026) → 2%(2027) 완화</td></tr></tbody></table></div>
+<ul>
+<li>⚠ TrendForce는 NAND 4Q26 균형 → 2027년 연 +5% 과잉 전환 <small>(하나증권, 2026-09-02)</small> → 같은 하우스 안에서도 NAND 시각 갈림</li>
+<li>수요 상세는 <a href="../반도체/02_메모리_dram_hbm" class="internal internal-link alias" data-slug="반도체/02_메모리_dram_hbm">02_메모리_DRAM_HBM</a> · <a href="../반도체/03_메모리_nand" class="internal internal-link alias" data-slug="반도체/03_메모리_nand">03_메모리_NAND</a> 참조</li>
+</ul>
+<h3 id="lta가-증설-지속성을-받쳐줌">LTA가 증설 지속성을 받쳐줌<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#lta가-증설-지속성을-받쳐줌" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>삼성전자 장기적으로 캐파의 60~70% LTA 목표, SK하이닉스 서버 DRAM 60~70% 계약 추진 <small>(신한투자증권, 2026-08-06)</small></li>
+<li>구조 = 5년 기본 + 전체 계약의 10~30% 선수금 + 2Q26 가격 기준 밴드 <small>(대신증권, 2026-09-01)</small></li>
+</ul>
+<hr/>
+<h2 id="-기술-심화--왜-캐파-증가--범용-공급-증가인가">③ 기술 심화 — 왜 ‘캐파 증가 ≠ 범용 공급 증가’인가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-심화--왜-캐파-증가--범용-공급-증가인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>새 웨이퍼의 44~70%가 HBM으로 감 → 범용 DRAM 웨이퍼 증가는 5% 안팎</li>
+<li>범용 비트는 1b→1c 전환이 메움(B/G 약 +20%)</li>
+<li>DRAM은 그린필드, NAND는 빈 공간 채우기 → 신규 NAND 라인은 2029년 이후</li>
+</ul>
+</div></blockquote>
+<h3 id="hbm-캐파-잠식--하우스별-추정">HBM 캐파 잠식 — 하우스별 추정<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm-캐파-잠식--하우스별-추정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>웨이퍼 캐파 증가</th><th>HBM 몫</th><th>범용 DRAM 웨이퍼 증가</th></tr></thead><tbody><tr><td><small>삼성증권, 2026-06-02</small></td><td>3사 향후 3년 매년 15% 내외</td><td>증설의 70%</td><td>5% 수준</td></tr><tr><td><small>하나증권, 2026-11-11</small></td><td>3사 1,715K(2026) → 1,965K(2027), +14%</td><td>M15X·P4 상당 부분</td><td>5% 내외</td></tr><tr><td><small>이 노트 캐파 표로 계산(하나 2026-11-11 수치)</small></td><td>2025년 말 → 2027년 말 순증 555K</td><td>245K(44%)</td><td>—</td></tr></tbody></table></div>
+<p><strong>DRAM 내 1c 비중(%)</strong> — 일반 DRAM 캐파는 거의 그대로, 1b→1c 전환으로 3사 모두 일반 DRAM B/G 약 +20% <small>(BNK투자증권, 2026-08-18)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;DRAM 내 1c 공정 비중 (%)\&quot;\n  x-axis [\&quot;2025\&quot;, \&quot;2026\&quot;, \&quot;2027\&quot;]\n  y-axis \&quot;%\&quot; 0 --> 40\n  line [1.3, 14.8, 33.9]&quot;">xychart-beta
+  title &quot;DRAM 내 1c 공정 비중 (%)&quot;
+  x-axis [&quot;2025&quot;, &quot;2026&quot;, &quot;2027&quot;]
+  y-axis &quot;%&quot; 0 --> 40
+  line [1.3, 14.8, 33.9]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<details><summary>수치 표</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>2025</th><th>2026</th><th>2027</th></tr></thead><tbody><tr><td>1.3%</td><td>14.8%</td><td>33.9%</td></tr></tbody></table></div>
+</details>
+<h3 id="신규-팹은-그린필드인가-빈-공간-채우기인가">신규 팹은 ‘그린필드’인가 ‘빈 공간 채우기’인가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#신규-팹은-그린필드인가-빈-공간-채우기인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>팹</th><th>방식</th><th>출처</th></tr></thead><tbody><tr><td>DRAM</td><td>P5·Y1·ID1·상하이</td><td>그린필드(클린룸부터 신축)</td><td>—</td></tr><tr><td>NAND</td><td>다롄2·K2·우한3</td><td>기존 공간 채우기</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>NAND 다음 단계</td><td>SK하이닉스 M17(청주 NAND 전용)</td><td>2027-02 착공, 2028-12 1차 클린룸</td><td><small>하나증권, 2026-09-02, 이사회 결의</small></td></tr></tbody></table></div>
+<ul>
+<li>신규 NAND 라인은 2029년 이후 가능성 <small>(하나증권, 2026-09-02)</small></li>
+<li>M17 건설비 19.1조원 <small>(하나증권, 2026-09-02, 이사회 결의)</small></li>
+</ul>
+<hr/>
+<h2 id="-캐파증설">④ 캐파·증설<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-캐파증설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>2027년 증가분 중심 = 삼성 P4L, SK M15X·Y1, 마이크론 OMT·ID1 → <mark class="text-highlight">2027년은 장비 반입의 해, 2028년이 출하의 해</mark></li>
+<li>하우스 수정 방향은 한쪽: 일정 단축 + 2027 캐파 상향 → 공급 상방 리스크 확대</li>
+<li>2027 HBM 캐파는 하나 600K vs 키움 790K로 190K 차이 ⚠</li>
+</ul>
+</div></blockquote>
+<h3 id="증설-로드맵-20262029-연도분기-격자">증설 로드맵 2026~2029 (연도·분기 격자)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#증설-로드맵-20262029-연도분기-격자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>[확정]</code> = 이미 진행·이사회 결의·공시 확정, <code>[계획]</code> = 하우스 추정·회사 계획</li>
+<li>골격 = 사용자 제공 로드맵(하나증권 등 종합) — <strong>하나증권 2026-09-02 p.21 도표23 「메모리 증설 로드맵 2026~2029」와 원문 대조 결과 항목·수치 모두 일치</strong> (자료: 각 사, 언론 보도 종합, TrendForce, SemiAnalysis, 하나증권)</li>
+<li>다른 하우스·후속 리포트와 다른 부분은 아래 ‘로드맵 교차확인’ 표에 ⚠로 정리</li>
+</ul>
+<div class="table-container"><table style="border-collapse:collapse;width:100%;table-layout:fixed;"><colgroup><col style="width:92px;"/><col style="width:150px;"/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">업체</th><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">팹</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2026</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2027</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2028</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2029</th></tr><tr><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;background:#f59e0b;color:#111;">지금 4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th></tr><tr><td rowspan="3" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">삼성전자</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">P4 (평택)</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="Ph3 가동 · 1c">◆ Ph3 가동 · 1c</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="Ph4·Ph2 장비 반입">Ph4·Ph2 장비 반입</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="풀가동 65K(4Q26)→150~170K(4Q27)">풀가동 65K(4Q26)→150~170K(4Q27)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">P5 (평택)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="6" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="본공사 26/3Q~ · 클린룸 반입">본공사 26/3Q~ · 클린룸 반입</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="P5L-1 웨이퍼 투입">◆ P5L-1 웨이퍼 투입</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="P5-2(P6) 클린룸·완공">P5-2(P6) 클린룸·완공</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">전환투자</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="화성 P3·17라인 1c 전환">화성 P3·17라인 1c 전환</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="4" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">SK하이닉스</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">M15X (청주)</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="가동">◆ 가동</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="1b 램프(HBM4) · 40K(4Q26)">1b 램프(HBM4) · 40K(4Q26)</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="80K(4Q27)">80K(4Q27)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">Y1 (용인)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="Ph2·3 착공">Ph2·3 착공</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="클린룸 개소">◆ 클린룸 개소</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="Ph1 투입 3Q27→40K">Ph1 투입 3Q27→40K</td><td colspan="8" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="램프 → 최대 300K">램프 → 최대 300K</td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">Y2 (용인)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="착공">◆ 착공</td><td colspan="7" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="구축 → 1차 클린룸 2029-06 (DRAM·HBM)">구축 → 1차 클린룸 2029-06 (DRAM·HBM)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">전환투자</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="M14·M16 1c 전환">M14·M16 1c 전환</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="4" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">마이크론</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">Fab6 (버지니아)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="1α DDR4 양산">1α DDR4 양산</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">ID1 (아이다호)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="첫 웨이퍼">◆ 첫 웨이퍼</td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="→ 15K(4Q27)">→ 15K(4Q27)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">PSMC (퉁뤄)</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="인수 완료">◆ 인수 완료</td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="설비 전환">설비 전환</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="P1 투입 → 40K(3Q27)">P1 투입 → 40K(3Q27)</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="P2 투입 → 40K(3Q28)">P2 투입 → 40K(3Q28)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">ID2 (아이다호)</td><td colspan="11" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="착공 → 구축">착공 → 구축</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="가동(28년 말)">◆ 가동(28년 말)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="3" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">CXMT</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">허페이·베이징</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="기존 팹 풀램프(DDR5·LPDDR5X)">기존 팹 풀램프(DDR5·LPDDR5X)</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="27년 말 총 420K(회사)">27년 말 총 420K(회사)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">상하이 (신규)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="가동">◆ 가동</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="Ph1 초기 램프">Ph1 초기 램프</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">베이징 이좡</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="8" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="신규 6팹 · 전체 가동 시 600K+">신규 6팹 · 전체 가동 시 600K+</td></tr><tr><td rowspan="5" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">NAND</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">삼성 평택·시안</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="V9 전환 · V10 진입">V9 전환 · V10 진입</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="V10(400단급) 램프 확대">V10(400단급) 램프 확대</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">SK하이닉스 다롄2</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="재개(3월)">◆ 재개(3월)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="반입 2H26 → 1Q27 투입">반입 2H26 → 1Q27 투입</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="+50K/월 램프">+50K/월 램프</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">키옥시아·샌디스크 K2</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="K2 투입">◆ K2 투입</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="BiCS10(332단) 램프 40K">BiCS10(332단) 램프 40K</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">YMTC 우한3</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="건설·장비 반입">건설·장비 반입</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="1Q27 투입 → 4Q27 50~70K">1Q27 투입 → 4Q27 50~70K</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">SK하이닉스 M17 (청주)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="착공(이사회)">◆ 착공(이사회)</td><td colspan="6" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="청주 중장기 투자 → 건설">청주 중장기 투자 → 건설</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="첫 클린룸">◆ 첫 클린룸</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr></tbody></table></div>
+<p style="font-size:12px;margin-top:6px;"><span style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 8px;border-radius:4px;">진행·확정</span>   <span style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 8px;border-radius:4px;">◆ 가동 개시·핵심 마일스톤</span>   <span style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 8px;border-radius:4px;">계획 구간</span>   | 굵은 세로선 = 연도 경계</p>
+<p><small><em>출처: 하나증권, 2026-09-02, p.21 도표23 / 하나증권, 2026-11-11, p.5~9 / 대신증권, 2026-09-01, p.14 / 신한투자증권, 2026-08-06, p.17</em></small></p>
+<h3 id="로드맵-교차확인-사용자-제공-로드맵--하나증권-2026-09-02-도표23-기준">로드맵 교차확인 (사용자 제공 로드맵 = 하나증권 2026-09-02 도표23 기준)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#로드맵-교차확인-사용자-제공-로드맵--하나증권-2026-09-02-도표23-기준" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>팹</th><th>로드맵 값<small>(하나 09-02)</small></th><th>다른 원문</th><th>출처</th><th>판정</th></tr></thead><tbody><tr><td>삼성 P4</td><td>65K(4Q26) → 150K(4Q27)</td><td>P4L 65K → <strong>170K</strong>(4Q27F)</td><td><small>하나증권, 2026-11-11</small></td><td>⚠ 같은 하우스가 11월에 +20K 상향</td></tr><tr><td>〃</td><td></td><td>풀캐파 시점 2027년 상반기 말</td><td><small>대신증권, 2026-09-01</small></td><td></td></tr><tr><td>삼성 P5</td><td>본공사 26/3Q~, P5L-1 투입 1Q28</td><td>완공 2027-07, 웨이퍼 아웃 1Q28 말</td><td><small>대신증권, 2026-09-01</small></td><td>대체로 일치</td></tr><tr><td>〃</td><td></td><td>fab open 4Q27</td><td><small>삼성증권, 2026-06-02</small></td><td></td></tr><tr><td>〃</td><td></td><td>장비 반입 3Q27~</td><td><small>하나증권, 2026-11-11</small></td><td></td></tr><tr><td>삼성 P5-2(P6)</td><td>로드맵 미포함</td><td>2H28 클린룸 오픈</td><td><small>신한투자증권, 2026-08-06</small></td><td>보강</td></tr><tr><td>〃</td><td></td><td>4Q28 완공·생산 2H29</td><td><small>대신증권, 2026-09-01</small></td><td></td></tr><tr><td>〃</td><td></td><td>2029</td><td><small>삼성증권, 2026-06-02</small></td><td></td></tr><tr><td>SK M15X</td><td>40K(4Q26) → 80K(4Q27)</td><td>80K 도달 2Q27</td><td><small>하나증권, 2026-11-11</small></td><td>⚠ 80K 도달 시점 2Q27로 앞당겨짐</td></tr><tr><td>〃</td><td></td><td>풀캐파 2027-06</td><td><small>신한투자증권, 2026-08-06</small></td><td></td></tr><tr><td>〃</td><td></td><td>2026 60K</td><td><small>키움증권, 2026-08-11</small></td><td></td></tr><tr><td>SK Y1</td><td>Ph1 투입 3Q27 → 40K(4Q27) → 최대 300K</td><td>3Q27 10K → 4Q27 40K</td><td><small>하나증권, 2026-11-11</small></td><td>일치(아웃풋 기준은 더 낮음)</td></tr><tr><td>〃</td><td></td><td>디자인 1c 50K, 3~4월부터 20K 셋업</td><td><small>신한투자증권, 2026-08-06</small></td><td></td></tr><tr><td>〃</td><td></td><td>2027 생산 기여 20K 내외(아웃풋)</td><td><small>대신증권, 2026-09-01</small></td><td></td></tr><tr><td>SK Y2</td><td>착공 27/07 → 구축</td><td>35.2조원, 2027-07 착공, 2029-06 1차 클린룸</td><td><small>하나증권, 2026-09-02, 이사회</small></td><td>⚠ 신한은 1년 빠름</td></tr><tr><td>〃</td><td></td><td>fab open 2H28</td><td><small>신한투자증권, 2026-08-06</small></td><td></td></tr><tr><td>SK M17</td><td>4Q28 첫 클린룸</td><td>착공 2027-02·1차 클린룸 2028-12</td><td><small>하나증권, 2026-09-02</small></td><td>⚠ 대신은 착공 자체를 2028로 봄</td></tr><tr><td>〃</td><td></td><td>1H29 클린룸 오픈</td><td><small>신한투자증권, 2026-08-06</small></td><td></td></tr><tr><td>〃</td><td></td><td>2028년부터 건설, 생산 2030 이후</td><td><small>대신증권, 2026-09-01</small></td><td></td></tr><tr><td>마이크론 ID1</td><td>2Q27 투입 → 15K(4Q27)</td><td>3Q27 10K → 4Q27 15K</td><td><small>하나증권, 2026-11-11</small></td><td>일치</td></tr><tr><td>〃</td><td></td><td>2Q27 투입·4Q27 아웃</td><td><small>대신증권, 2026-09-01</small></td><td></td></tr><tr><td>마이크론 PSMC</td><td>P1 4Q26 → 40K(3Q27)</td><td>“P3 연말 wafer out, P5 2027 기여”</td><td><small>대신증권, 2026-09-01</small></td><td>⚠ 팹 명칭 체계가 하우스마다 다름</td></tr><tr><td>〃</td><td>P2 4Q27 → 40K(3Q28)</td><td>PSMC P3/5 3Q27 DRAM 85K</td><td><small>삼성증권, 2026-06-02</small></td><td></td></tr><tr><td>마이크론 ID2</td><td>착공 26년 → 28년 말 가동</td><td>fab open 2H29</td><td><small>삼성증권, 2026-06-02</small></td><td>⚠ 1년 차이</td></tr><tr><td>CXMT</td><td>27년 말 총 420K, 이좡 전체 600K+</td><td>300K → 360K(4Q27)</td><td><small>하나증권, 2026-11-11</small></td><td>⚠ 420K는 회사 목표, 시장 전망은 더 낮음</td></tr><tr><td>〃</td><td></td><td>400K(4Q27)·480K(4Q28)</td><td><small>대신증권, 2026-07-07</small></td><td></td></tr><tr><td>〃</td><td></td><td>4Q28E 500~600K</td><td><small>키움증권, 2026-08-11</small></td><td></td></tr><tr><td>다롄2</td><td>1Q27 투입, +50K/월 램프</td><td>15K(1Q27) → 25K(2Q27~)</td><td><small>하나증권, 2026-11-11</small></td><td>⚠ +50K는 상단, 연말 캐파 기준 +20~30K</td></tr><tr><td>〃</td><td></td><td>솔리다임 95 → 115K(4Q27)</td><td><small>대신증권, 2026-07-07</small></td><td></td></tr><tr><td>〃</td><td></td><td>2공장 월 약 30K</td><td><small>사용자 제공 추정모델, 2026-11-10</small></td><td></td></tr><tr><td>K2</td><td>2Q26 투입, BiCS10</td><td>10K → 40K(2Q27)</td><td><small>하나증권, 2026-09-02·11-11</small></td><td>일치</td></tr><tr><td>YMTC 우한3</td><td>1Q27 투입 → 4Q27 ~50K</td><td>20K(1Q27) → <strong>70K</strong>(4Q27)</td><td><small>하나증권, 2026-11-11</small></td><td>⚠ 같은 하우스가 11월에 +20K 상향</td></tr><tr><td>〃</td><td></td><td>설계 100K 중 NAND 약 50K, 나머지 DRAM 배정 가능</td><td><small>유진투자증권, 2026-07-28</small></td><td></td></tr></tbody></table></div>
+<h3 id="산업-캐파-추이">산업 캐파 추이<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#산업-캐파-추이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;메모리 웨이퍼 캐파 (연말, K/월) — 위: DRAM 전체, 중간: NAND, 아래: HBM 배정\&quot;\n  x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;K/월\&quot; 0 --> 3200\n  line [1753, 1956, 2187, 2511, 2916]\n  line [1571, 1371, 1329, 1431, 1486]\n  line [265, 355, 450, 600, 736]&quot;">xychart-beta
+  title &quot;메모리 웨이퍼 캐파 (연말, K/월) — 위: DRAM 전체, 중간: NAND, 아래: HBM 배정&quot;
+  x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;K/월&quot; 0 --> 3200
+  line [1753, 1956, 2187, 2511, 2916]
+  line [1571, 1371, 1329, 1431, 1486]
+  line [265, 355, 450, 600, 736]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small><em>출처: 하나증권, 2026-11-11(DRAM·HBM 2024~2027) · 2024 NAND는 하나증권 2026-09-02 도표24 그래프 판독(근사) · 2028E는 아래 표와 같은 방식(대신 증분·HBM 33% 가정)</em></small></p>
+<h3 id="업체별-dram-웨이퍼-캐파-연말-k월">업체별 DRAM 웨이퍼 캐파 (연말, K/월)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-dram-웨이퍼-캐파-연말-k월" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th style="text-align:right;">2027E 점유율</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">650</td><td style="text-align:right;">730</td><td style="text-align:right;">835</td><td style="text-align:right;">915</td><td style="text-align:right;">33.3%</td></tr><tr><td>SK하이닉스</td><td style="text-align:right;">535</td><td style="text-align:right;">600</td><td style="text-align:right;">690</td><td style="text-align:right;">795</td><td style="text-align:right;">27.5%</td></tr><tr><td>마이크론</td><td style="text-align:right;">340</td><td style="text-align:right;">385</td><td style="text-align:right;">440</td><td style="text-align:right;">520</td><td style="text-align:right;">17.5%</td></tr><tr><td>CXMT</td><td style="text-align:right;">280</td><td style="text-align:right;">300</td><td style="text-align:right;">360</td><td style="text-align:right;">440</td><td style="text-align:right;">14.3%</td></tr><tr><td>기타(난야·PSMC·윈본드·JHICC)</td><td style="text-align:right;">151</td><td style="text-align:right;">172</td><td style="text-align:right;">186</td><td style="text-align:right;">246</td><td style="text-align:right;">7.4%</td></tr><tr><td><strong>산업 합계</strong></td><td style="text-align:right;"><strong>1,956</strong></td><td style="text-align:right;"><strong>2,187</strong></td><td style="text-align:right;"><strong>2,511</strong></td><td style="text-align:right;"><strong>2,916</strong></td><td style="text-align:right;">100%</td></tr><tr><td>그중 HBM 배정(3사)</td><td style="text-align:right;">355</td><td style="text-align:right;">450</td><td style="text-align:right;">600</td><td style="text-align:right;">736 ⚠</td><td style="text-align:right;">23.9%</td></tr></tbody></table></div>
+<p><small><em>출처: 2025~2027E 하나증권, 2026-11-11, p.6~7(TrendForce·각사) · HBM 하나증권, 2026-11-11, p.27 · 2028E = 하나 4Q27F + 대신증권 2026-07-07 p.6의 2028 증분(4Q28E−4Q27E)으로 이은 값(대신 자체 합계는 2,985K) · 2028E HBM은 원문 없음 → 3사 DRAM × 33% 가정 ⚠</em></small></p>
+<p><strong>팹 단위 증가분(4Q26 → 4Q27)</strong> <small>(하나증권, 2026-11-11, 도표5)</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>삼성 P4L</th><th>SK M15X</th><th>SK Y1</th><th>마이크론 Fab11</th><th>마이크론 ID1</th><th>CXMT 상하이</th></tr></thead><tbody><tr><td>+105K</td><td>+40K</td><td>+40K</td><td>+30K</td><td>+15K</td><td>+60K</td></tr></tbody></table></div>
+<ul>
+<li>2027년 증가분의 중심은 삼성 P4L, SK M15X·Y1, 마이크론 OMT·ID1 <small>(하나증권, 2026-09-02)</small></li>
+</ul>
+<h3 id="업체별-hbm-웨이퍼-캐파-연말-k월">업체별 HBM 웨이퍼 캐파 (연말, K/월)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-hbm-웨이퍼-캐파-연말-k월" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">150</td><td style="text-align:right;">190</td><td style="text-align:right;">260</td><td>하나증권, 2026-11-11, p.27</td></tr><tr><td>SK하이닉스</td><td style="text-align:right;">160</td><td style="text-align:right;">200</td><td style="text-align:right;">260</td><td>하나증권, 2026-11-11, p.27</td></tr><tr><td>마이크론</td><td style="text-align:right;">45</td><td style="text-align:right;">60</td><td style="text-align:right;">80</td><td>하나증권, 2026-11-11, p.27</td></tr><tr><td><strong>3사 합계</strong></td><td style="text-align:right;"><strong>355</strong></td><td style="text-align:right;"><strong>450</strong></td><td style="text-align:right;"><strong>600</strong></td><td></td></tr><tr><td>비교: 키움</td><td style="text-align:right;">410</td><td style="text-align:right;">530</td><td style="text-align:right;">790</td><td>키움증권, 2026-08-11, p.6</td></tr><tr><td>비교: TrendForce</td><td style="text-align:right;">—</td><td style="text-align:right;">480 (180/200/100)</td><td style="text-align:right;">—</td><td>신한투자증권, 2026-08-11, p.11</td></tr><tr><td>비교: Omdia(아웃풋)</td><td style="text-align:right;">320</td><td style="text-align:right;">440 (175/184/81)</td><td style="text-align:right;">—</td><td>BNK투자증권, 2026-08-18, p.24</td></tr></tbody></table></div>
+<ul>
+<li>⚠ 하나 600K vs 키움 790K 차이 → HBM 정의(TSV 캐파 vs 웨이퍼 배정) 차이 가능성, 원문에 정의 없음</li>
+</ul>
+<p><strong>SK하이닉스 공장별 HBM 캐파(K/월)</strong> <small>(사용자 제공 추정모델, 2026-11-10)</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>공장</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>이천</td><td style="text-align:right;">140K</td><td style="text-align:right;">150K</td><td style="text-align:right;">140K</td></tr><tr><td>M15X</td><td style="text-align:right;">30K</td><td style="text-align:right;">55K</td><td style="text-align:right;">60K</td></tr><tr><td>용인</td><td style="text-align:right;">0</td><td style="text-align:right;">30K</td><td style="text-align:right;">90K</td></tr></tbody></table></div>
+<h3 id="업체별-nand-웨이퍼-캐파-연말-k월">업체별 NAND 웨이퍼 캐파 (연말, K/월)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-nand-웨이퍼-캐파-연말-k월" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th style="text-align:right;">2027E 점유율</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">400</td><td style="text-align:right;">310</td><td style="text-align:right;">320</td><td style="text-align:right;">340</td><td style="text-align:right;">22.4%</td></tr><tr><td>SK하이닉스</td><td style="text-align:right;">145</td><td style="text-align:right;">135</td><td style="text-align:right;">130</td><td style="text-align:right;">135</td><td style="text-align:right;">9.1%</td></tr><tr><td>솔리다임(다롄)</td><td style="text-align:right;">95</td><td style="text-align:right;">95</td><td style="text-align:right;">120</td><td style="text-align:right;">120</td><td style="text-align:right;">8.4%</td></tr><tr><td>키옥시아/샌디스크</td><td style="text-align:right;">400</td><td style="text-align:right;">418</td><td style="text-align:right;">420</td><td style="text-align:right;">430</td><td style="text-align:right;">29.4%</td></tr><tr><td>마이크론</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">140</td><td style="text-align:right;">9.1%</td></tr><tr><td>YMTC</td><td style="text-align:right;">160</td><td style="text-align:right;">200</td><td style="text-align:right;">270</td><td style="text-align:right;">280</td><td style="text-align:right;">18.9%</td></tr><tr><td>기타(PSMC·윈본드·MXIC·SMIC 등)</td><td style="text-align:right;">41</td><td style="text-align:right;">41</td><td style="text-align:right;">41</td><td style="text-align:right;">41</td><td style="text-align:right;">2.9%</td></tr><tr><td><strong>산업 합계</strong></td><td style="text-align:right;"><strong>1,371</strong></td><td style="text-align:right;"><strong>1,329</strong></td><td style="text-align:right;"><strong>1,431</strong></td><td style="text-align:right;"><strong>1,486</strong></td><td style="text-align:right;">100%</td></tr></tbody></table></div>
+<p><small><em>출처: 2025 유진투자증권, 2026-07-28, p.16 · 2026~2027E 하나증권, 2026-11-11, p.9 도표8 · 2028E 대신증권, 2026-07-07, p.7 증분 · 기타 41K는 대신 표 역산(가정) ⚠ · SK하이닉스 2025는 유진의 SK+솔리다임 240K에서 솔리다임 95K 차감</em></small></p>
+<ul>
+<li>2027 NAND 1,431K(+8%) = 하나 본문 수치와 일치 <small>(하나증권, 2026-11-11, p.8)</small> · 도표8 ‘글로벌’ 행(1,348K)은 업체 합과 불일치 → 기타 포함 여부 차이 추정 ⚠</li>
+<li>삼성 NAND 감소(560K → 310K) = Line12 폐쇄·전환 영향 <small>(하나증권, 2026-09-02)</small></li>
+<li>SK하이닉스+솔리다임 2027E: 하나 250K vs 사용자 제공 추정모델 300K(국내 170 + 다롄 130) ⚠ → 사용자 모델이 50K 높음</li>
+</ul>
+<h3 id="해석---신규-캐파가-몰리는-시점-2028년-하반기">해석 ① — 신규 캐파가 몰리는 시점: 2028년 하반기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#해석---신규-캐파가-몰리는-시점-2028년-하반기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>DRAM 분기 순증(K/월)</strong> — 2027년은 분기 +75~87K로 고름 <small>(하나증권, 2026-11-11, 도표5)</small>, 2028년은 하반기에 몰림 <small>(대신증권, 2026-07-07, p.6)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;2028년 DRAM 분기 순증 (K/월, 대신증권)\&quot;\n  x-axis [\&quot;1Q28\&quot;, \&quot;2Q28\&quot;, \&quot;3Q28\&quot;, \&quot;4Q28\&quot;]\n  y-axis \&quot;K/월\&quot; 0 --> 140\n  line [65, 95, 121, 124]&quot;">xychart-beta
+  title &quot;2028년 DRAM 분기 순증 (K/월, 대신증권)&quot;
+  x-axis [&quot;1Q28&quot;, &quot;2Q28&quot;, &quot;3Q28&quot;, &quot;4Q28&quot;]
+  y-axis &quot;K/월&quot; 0 --> 140
+  line [65, 95, 121, 124]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<details><summary>수치 표</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>1Q28</th><th>2Q28</th><th>3Q28</th><th>4Q28</th></tr></thead><tbody><tr><td>+65K</td><td>+95K</td><td>+121K</td><td>+124K</td></tr></tbody></table></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>연간 DRAM 순증</th><th>2026</th><th>2027</th><th>2028E</th></tr></thead><tbody><tr><td>K/월</td><td>+231K</td><td>+324K</td><td>+405K</td></tr></tbody></table></div>
+<p><small><em>출처: 하나증권 2026-11-11 / 대신증권 2026-07-07 증분</em></small></p>
+<ul>
+<li>투입→출하 5~6개월 감안 → 유의미한 웨이퍼 산출 증가는 2028년 이후 <small>(신한투자증권, 2026-08-06)</small></li>
+<li>Y1은 2027년 1분기 100K 장비 반입 시작 → 셋업 완료는 2028년 1분기 이후 <small>(하나증권, 2026-11-11)</small></li>
+</ul>
+<h3 id="해석---중국-비중-캐파로는-정체-nand에선-상승">해석 ② — 중국 비중: ‘캐파로는 정체, NAND에선 상승’<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#해석---중국-비중-캐파로는-정체-nand에선-상승" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>2025</th><th>2026</th><th style="text-align:right;">2027E</th><th>2028E</th><th>출처</th></tr></thead><tbody><tr><td>CXMT DRAM 캐파 점유율</td><td>14.3%</td><td>13.7%</td><td style="text-align:right;">14.3%</td><td>15.1%</td><td><small>위 표 계산</small></td></tr><tr><td>중국계 DRAM(CXMT+JHICC)</td><td>–</td><td>15.3%</td><td style="text-align:right;">16.1%</td><td>–</td><td><small>하나증권, 2026-11-11, 도표5로 계산</small></td></tr><tr><td>YMTC NAND 캐파 점유율</td><td>11.7%</td><td>–</td><td style="text-align:right;">18.9%</td><td>–</td><td><small>하나증권, 2026-11-11 / 유진투자증권, 2026-07-28</small></td></tr></tbody></table></div>
+<ul>
+<li>매출로는 훨씬 작음: CXMT 캐파 점유율 15% vs 매출 점유율 8%<small>(2Q26, TrendForce)</small> <small>(신한투자증권, 2026-08-06)</small> / 매출 점유율 10% <small>(교보증권, 2026-11-02)</small></li>
+<li>위험 = 회사 목표: CXMT 27년 말 420K·이좡 전체 가동 시 600K+ <small>(하나증권, 2026-09-02)</small> → 실현 시 2028E 점유율 17~20%대 ⚠</li>
+<li>YMTC = NAND에서 유일하게 의미 있는 증설 업체</li>
+<li>중국 ‘소재’ 공장(SK 우시 DRAM 200K, 삼성 시안 NAND 130K, 솔리다임 다롄 120K)은 한국·미국계 소유 → 중국계 비중에서 제외</li>
+</ul>
+<h3 id="해석---hbm-전환-비중은-계속-상승">해석 ③ — HBM 전환 비중은 계속 상승<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#해석---hbm-전환-비중은-계속-상승" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>선 순서: HBM ÷ 3사 DRAM / HBM ÷ 산업 DRAM <small>(하나증권, 2026-11-11 캐파로 계산, 2028E는 가정)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;HBM 웨이퍼 비중 (%)\&quot;\n  x-axis [\&quot;2025\&quot;, \&quot;2026\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;%\&quot; 0 --> 40\n  line [23.3, 26.2, 30.5, 33]\n  line [18.1, 20.6, 23.9, 25.2]&quot;">xychart-beta
+  title &quot;HBM 웨이퍼 비중 (%)&quot;
+  x-axis [&quot;2025&quot;, &quot;2026&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;%&quot; 0 --> 40
+  line [23.3, 26.2, 30.5, 33]
+  line [18.1, 20.6, 23.9, 25.2]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<details><summary>수치 표</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th>2028E</th></tr></thead><tbody><tr><td>HBM ÷ 3사 DRAM</td><td style="text-align:right;">23.3%</td><td style="text-align:right;">26.2%</td><td style="text-align:right;">30.5%</td><td>33%(가정)</td></tr><tr><td>HBM ÷ 산업 DRAM</td><td style="text-align:right;">18.1%</td><td style="text-align:right;">20.6%</td><td style="text-align:right;">23.9%</td><td>25.2%(가정)</td></tr></tbody></table></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>다른 하우스 추정</th><th>내용</th><th>출처</th></tr></thead><tbody><tr><td>SK증권</td><td>2027년 HBM ÷ 3사 DRAM 35%</td><td><small>SK증권, 2026-08-18</small></td></tr><tr><td>유진</td><td>업계 평균 28%·SK하이닉스 35%</td><td><small>유진투자증권, 2026-06-17</small></td></tr><tr><td>DS</td><td>양사 HBM 웨이퍼 비중 22%(2026) → 30%(2027)</td><td><small>DS투자증권, 2026-06-17</small></td></tr><tr><td>DS</td><td>Non-HBM 캐파 증가율 8%→12%→3%(2026~2028)</td><td><small>〃</small></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-가격수급--캐파를-tam으로-바꾸기-엑셀-모델">⑤ 가격·수급 — 캐파를 TAM으로 바꾸기 (엑셀 모델)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격수급--캐파를-tam으로-바꾸기-엑셀-모델" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>캐파 × 웨이퍼당 비트 × 가격 × 2025A 매출 = 산업 TAM, 업체 배분은 캐파 점유율</li>
+<li>Base 2027E 1조 3,415억$ = 대신(1조 4,301억$)보다 6% 낮음</li>
+<li>2028E는 시나리오 폭이 큼: Bear 7,692억$ ~ Bull 1조 7,773억$</li>
+</ul>
+</div></blockquote>
+<h3 id="모델-파일">모델 파일<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#모델-파일" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>경로: <code>산업의 이해/반도체/모델/메모리_산업_캐파TAM_모델.xlsx</code></li>
+<li>시트: README(목적·계산구조·주의) · Summary(TAM·시나리오·업체 배분·하우스 대조·민감도) · Capacity(업체×제품 연말 캐파, 팹별 내역, SK하이닉스 사용자 모델 대조) · Inputs(시나리오 선택, 웨이퍼당 비트 증가율, 가격 변화율 Bear/Base/Bull, 2025A 매출) · Model(수식) · Sources(리포트 21건)</li>
+<li>입력 = 파란 글씨, 핵심 가정 = 노란 배경. Inputs!B3에서 시나리오 바꾸면 전체 갱신</li>
+<li>⚠ 생성 환경에 LibreOffice가 없어 저장 시 계산값이 비어 있음 → 처음 열 때 자동 재계산(fullCalcOnLoad). 수식은 별도 엔진(pycel)으로 검산 완료(배분 합계 − TAM = 0, 팹 합계 − 업체 합계 = 0)</li>
+</ul>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  A[\&quot;업체·팹별 연말 캐파&lt;br/>(Capacity)\&quot;] --> B[\&quot;제품별 연평균 캐파&lt;br/>범용 DRAM·HBM·NAND&lt;br/>(전년 말·당해 말 평균)\&quot;]\n  B --> C[\&quot;× 웨이퍼당 비트 지수&lt;br/>(1c·고단화 전환)\&quot;]\n  C --> D[\&quot;비트 공급 지수\&quot;]\n  D --> E[\&quot;× 가격 지수&lt;br/>(Bear/Base/Bull)\&quot;]\n  E --> F[\&quot;× 2025A 매출&lt;br/>= 산업 TAM\&quot;]\n  F --> G[\&quot;업체별 캐파 점유율로 배분&lt;br/>(CXMT 상대계수 0.53)\&quot;]&quot;">flowchart LR
+  A[&quot;업체·팹별 연말 캐파&lt;br/>(Capacity)&quot;] --> B[&quot;제품별 연평균 캐파&lt;br/>범용 DRAM·HBM·NAND&lt;br/>(전년 말·당해 말 평균)&quot;]
+  B --> C[&quot;× 웨이퍼당 비트 지수&lt;br/>(1c·고단화 전환)&quot;]
+  C --> D[&quot;비트 공급 지수&quot;]
+  D --> E[&quot;× 가격 지수&lt;br/>(Bear/Base/Bull)&quot;]
+  E --> F[&quot;× 2025A 매출&lt;br/>= 산업 TAM&quot;]
+  F --> G[&quot;업체별 캐파 점유율로 배분&lt;br/>(CXMT 상대계수 0.53)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="2025a-기준값">2025A 기준값<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2025a-기준값" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>제품</th><th>2025A</th><th>출처</th></tr></thead><tbody><tr><td>DRAM</td><td>1,536억$</td><td><small>TrendForce, 키움증권 2026-06-01, p.5·7 — 대신증권 2026-09-08 p.2 그래프 판독(약 150·70)과 일치</small></td></tr><tr><td>NAND</td><td>711억$</td><td>〃</td></tr><tr><td>HBM</td><td>340억$</td><td><small>대신증권, 2026-09-08, p.3</small></td></tr><tr><td>범용 DRAM</td><td>1,196억$</td><td><small>두 하우스 값 차감, 근사</small></td></tr></tbody></table></div>
+<h3 id="모델-결과-십억달러">모델 결과 (십억달러)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#모델-결과-십억달러" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;메모리 TAM (DRAM+NAND, 십억달러) — 위: Bull, 중간: Base, 아래: Bear\&quot;\n  x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;십억달러\&quot; 0 --> 1900\n  line [224.7, 921.6, 1448.3, 1777.3]\n  line [224.7, 921.6, 1341.5, 1392.0]\n  line [224.7, 921.6, 1018.5, 769.2]&quot;">xychart-beta
+  title &quot;메모리 TAM (DRAM+NAND, 십억달러) — 위: Bull, 중간: Base, 아래: Bear&quot;
+  x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;십억달러&quot; 0 --> 1900
+  line [224.7, 921.6, 1448.3, 1777.3]
+  line [224.7, 921.6, 1341.5, 1392.0]
+  line [224.7, 921.6, 1018.5, 769.2]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small><em>출처: 자체 모델(메모리<em>산업</em>캐파TAM_모델.xlsx). 입력값 출처는 Inputs·Sources 시트</em></small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>제품 (Base)</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>범용 DRAM</td><td style="text-align:right;">119.6</td><td style="text-align:right;">564.5</td><td style="text-align:right;">780.4</td><td style="text-align:right;">803.5</td></tr><tr><td>HBM</td><td style="text-align:right;">34.0</td><td style="text-align:right;">55.9</td><td style="text-align:right;">146.8</td><td style="text-align:right;">196.3</td></tr><tr><td>DRAM 합계</td><td style="text-align:right;">153.6</td><td style="text-align:right;">620.5</td><td style="text-align:right;">927.3</td><td style="text-align:right;">999.8</td></tr><tr><td>NAND</td><td style="text-align:right;">71.1</td><td style="text-align:right;">301.1</td><td style="text-align:right;">414.2</td><td style="text-align:right;">392.2</td></tr><tr><td><strong>메모리 합계</strong></td><td style="text-align:right;"><strong>224.7</strong></td><td style="text-align:right;"><strong>921.6</strong></td><td style="text-align:right;"><strong>1,341.5</strong></td><td style="text-align:right;"><strong>1,392.0</strong></td></tr><tr><td>DRAM 중 HBM 비중</td><td style="text-align:right;">22.1%</td><td style="text-align:right;">9.0%</td><td style="text-align:right;">15.8%</td><td style="text-align:right;">19.6%</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시나리오</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>2028E 핵심 가격 가정</th></tr></thead><tbody><tr><td>Bear</td><td style="text-align:right;">921.6</td><td style="text-align:right;">1,018.5</td><td style="text-align:right;">769.2</td><td>범용 DRAM −40%·NAND −45% <small>(DS투자증권, 2026-11-10 Bear)</small></td></tr><tr><td>Base</td><td style="text-align:right;">921.6</td><td style="text-align:right;">1,341.5</td><td style="text-align:right;">1,392.0</td><td>범용 DRAM −15%·HBM +13%·NAND −20%(가정)</td></tr><tr><td>Bull</td><td style="text-align:right;">921.6</td><td style="text-align:right;">1,448.3</td><td style="text-align:right;">1,777.3</td><td>범용 DRAM 0%·HBM +20%·NAND 0%(가정)</td></tr></tbody></table></div>
+<ul>
+<li>Base 가정 근거는 Inputs 시트</li>
+</ul>
+<p><strong>하우스 대조·검산</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>모델</th><th>하우스</th><th>차이·비고</th></tr></thead><tbody><tr><td>2026E DRAM(보정값)</td><td>6,205억$</td><td>6,214억$ <small>(TrendForce·대신 2026E)</small></td><td>0.1~1% 이내</td></tr><tr><td>2026E NAND(보정값)</td><td>3,011억$</td><td>3,040억$ <small>(〃)</small></td><td>〃</td></tr><tr><td>2026E 합계(보정값)</td><td>9,216억$</td><td>9,270억$ <small>(〃)</small></td><td>2026 가격 입력을 맞춤</td></tr><tr><td>2027E 메모리 TAM</td><td>1조 3,415억$</td><td>대신 1조 4,301억$ <small>(대신증권, 2026-09-01)</small></td><td>6% 낮음(대신 HBM 가정 높음)</td></tr><tr><td>DRAM 비트 공급 2026E</td><td>+25.1%</td><td>+25%<small>(TrendForce 2026)</small></td><td>대체로 부합</td></tr><tr><td>DRAM 비트 공급 2027E</td><td>+23.5%</td><td>+25%<small>(하나 2027)</small> · 20% 초반<small>(대신 2027)</small></td><td>〃</td></tr><tr><td>DRAM 비트 공급 2028E</td><td>+20.7%</td><td>범용 +20.6%<small>(DS 2028)</small></td><td>〃</td></tr></tbody></table></div>
+<ul>
+<li>대신은 2027 HBM ASP +82%·HBM 1,600억$로 더 높게 봄</li>
+</ul>
+<p><strong>업체 배분(Base 2027E)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>매출(Base 2027E)</th><th style="text-align:right;">점유율</th></tr></thead><tbody><tr><td>삼성전자</td><td>4,182억$</td><td style="text-align:right;">31.2%</td></tr><tr><td>SK하이닉스+솔리다임</td><td>3,304억$</td><td style="text-align:right;">24.6%</td></tr><tr><td>마이크론</td><td>2,188억$</td><td style="text-align:right;">16.3%</td></tr><tr><td>키옥시아/샌디스크</td><td>1,258억$</td><td style="text-align:right;">9.4%</td></tr><tr><td>CXMT</td><td>818억$</td><td style="text-align:right;">6.1%</td></tr><tr><td>YMTC</td><td>705억$</td><td style="text-align:right;">5.3%</td></tr><tr><td>기타</td><td>960억$</td><td style="text-align:right;">7.2%</td></tr></tbody></table></div>
+<ul>
+<li>캐파 비중 배분 → HBM 단가 높은 업체<small>(삼성 HBM4 고가 — 하나증권, 2026-11-11)</small>는 과소, 범용 비중 높은 업체는 과대 반영 가능</li>
+</ul>
+<p><strong>민감도(모델 Summary, 2027E ASP 수준 ±10%)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>범용 DRAM</th><th>NAND</th><th>HBM</th></tr></thead><tbody><tr><td>TAM ±780억$(±5.8%)</td><td>±410억$</td><td>±150억$</td></tr></tbody></table></div>
+<hr/>
+<h2 id="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>2027 DRAM 캐파 +15%는 하나·대신·DS 공통, 실제 공급 기여 2028년 이후도 공통 시각</li>
+<li>CXMT·HBM 캐파는 하우스별 차이가 큼 → 정의·회사 목표 반영 여부 차이</li>
+<li>6개월 수정 방향 = 일정 단축 + 숫자 상향</li>
+</ul>
+</div></blockquote>
+<h3 id="같은-질문-하우스별-답">같은 질문, 하우스별 답<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#같은-질문-하우스별-답" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스(날짜)</th><th>입장</th></tr></thead><tbody><tr><td>2027년 DRAM 캐파 증가율</td><td>하나증권(11-11)</td><td>2,187 → 2,511K, +15%</td></tr><tr><td></td><td>대신증권(07-07)</td><td>2,251 → 2,580K, +15%</td></tr><tr><td></td><td>DS투자증권(07-20)</td><td>4사 명목 2,005 → 2,310K, +15.2%</td></tr><tr><td></td><td>신한투자증권<small>(08-06, TrendForce)</small></td><td>2026 +255K, 2027 +325K</td></tr><tr><td>2028년 DRAM 캐파</td><td>대신증권(07-07)</td><td>2,985K(+16%)</td></tr><tr><td></td><td>〃</td><td>삼성 930·SK 780·마이크론 530·CXMT 480</td></tr><tr><td></td><td>DS투자증권(07-20)</td><td>4사 2,720K(+17.7%)</td></tr><tr><td></td><td>〃</td><td>삼성 1,025·SK 800·마이크론 435·CXMT 460</td></tr><tr><td>신규 캐파의 실제 공급 기여 시점</td><td>신한·하나·대신·삼성증권<small>(08-06·11-11·09-01·06-02)</small></td><td>모두 2028년 이후 → <strong>공통 시각</strong></td></tr><tr><td>CXMT 2027~2028 캐파</td><td>하나증권(09-02)</td><td>시장 전망: 분기 90만장 부근 정체</td></tr><tr><td></td><td>〃</td><td>회사 목표 420K는 상방 변수</td></tr><tr><td></td><td>하나증권(11-11)</td><td>300 → 360K(4Q27)</td></tr><tr><td></td><td>대신증권(07-07)</td><td>400K(4Q27) → 480K(4Q28)</td></tr><tr><td></td><td>키움증권(08-11)</td><td>4Q28E 500~600K</td></tr><tr><td>2027년 HBM 캐파</td><td>하나증권(11-11)</td><td>3사 600K</td></tr><tr><td></td><td>키움증권(08-11)</td><td>790K</td></tr><tr><td>2027년 HBM 가격</td><td>대신증권(09-01)</td><td>ASP +82%(기존 +100%에서 하향)</td></tr><tr><td></td><td>키움증권(08-11)</td><td>+65%</td></tr><tr><td>2028년 가격</td><td>DS투자증권(11-10)</td><td>블렌디드 DRAM Bull −15%/Base −25%/Bear −40%</td></tr><tr><td></td><td>iM증권(11-04)</td><td>DRAM 산업 규모 +16%</td></tr><tr><td></td><td>대신증권(09-08)</td><td>HBM 시장 +33%(160 → 213), 출하 +18%</td></tr><tr><td></td><td>삼성증권(06-02)</td><td>2028년이 첫 수급 변곡점, 2029년이 두 번째</td></tr></tbody></table></div>
+<h3 id="6개월-사이-바뀐-것">6개월 사이 바뀐 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#6개월-사이-바뀐-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>하우스</th><th>항목</th><th>무엇에서 → 무엇으로</th><th>출처</th></tr></thead><tbody><tr><td>2026-08</td><td>신한투자증권</td><td>Y1 fab open</td><td>2027-05 → <strong>2027-02</strong></td><td><small>신한투자증권, 2026-08-06</small></td></tr><tr><td>2026-08</td><td>신한투자증권</td><td>P5 Fab-in</td><td>2027-12 → <strong>2027-05</strong></td><td><small>〃</small></td></tr><tr><td>2026-09</td><td>하나증권</td><td>SK하이닉스 Y1 1차 클린룸</td><td>5월 → <strong>2월</strong>(회사 2월 이사회 반영)</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>2026-09</td><td>하나증권</td><td>삼성 P5 클린룸</td><td>반년 앞당김</td><td><small>〃</small></td></tr><tr><td>2026-07 → 09</td><td>대신증권</td><td>P5L Fab1 완공</td><td>2027-10 → <strong>2027-07</strong></td><td><small>대신증권, 2026-07-07 → 2026-09-01</small></td></tr><tr><td>2026-07 → 09</td><td>대신증권</td><td>P5L 웨이퍼 아웃</td><td>2Q28 → <strong>1Q28 말</strong></td><td><small>〃</small></td></tr><tr><td>2026-07 → 09</td><td>대신증권</td><td>P5L Fab2 준공</td><td>2029 → <strong>4Q28</strong></td><td><small>〃</small></td></tr><tr><td>2026-09 → 11</td><td>하나증권</td><td>P4 4Q27</td><td>150K → <strong>170K</strong></td><td><small>하나증권, 2026-09-02 → 2026-11-11</small></td></tr><tr><td>2026-09 → 11</td><td>하나증권</td><td>YMTC 우한3 4Q27</td><td>~50K → <strong>70K</strong></td><td><small>〃</small></td></tr><tr><td>2026-09 → 11</td><td>하나증권</td><td>다롄2</td><td>+50K/월 → <strong>+25K(15→25K)</strong></td><td><small>〃</small></td></tr><tr><td>2026-09 → 11</td><td>하나증권</td><td>CXMT 2027</td><td>’정체’ → <strong>360K</strong></td><td><small>〃</small></td></tr><tr><td>2026-09</td><td>대신증권</td><td>2027 HBM ASP</td><td>+100% → <strong>+82%</strong>(제품 믹스 반영)</td><td><small>대신증권, 2026-09-01</small></td></tr></tbody></table></div>
+<ul>
+<li>
+<p>신한 수정은 1~2분기 단축</p>
+</li>
+<li>
+<p>방향은 한쪽: <strong>일정은 당겨지고(지연 아닌 단축), 2027 캐파 숫자는 상향</strong> → 공급 측 상방 리스크 확대 <small>(하나증권, 2026-09-02의 “지연이 아닌 단축” 평가와 같은 방향)</small></p>
+</li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>2027년 = Y1 개소·장비 반입 일정, 2028년 = 실제 출하 램프 속도가 관건</li>
+<li>CXMT 연말 캐파가 회사 목표(420K)에 닿는지가 최대 공급 변수</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>2027-02</td><td>용인 Y1 1차 클린룸 개소·장비 반입</td><td>일정대로 개소, 1Q27 반입 시작</td><td>개소 지연</td></tr><tr><td>1Q27</td><td>다롄2·우한3·CXMT 상하이 웨이퍼 투입</td><td>다롄2 15K·우한3 20K 수준</td><td>우한3 램프 70K 상회 페이스, NAND 가격 하락 동반</td></tr><tr><td>2Q27</td><td>M15X 80K 도달, 마이크론 ID1 투입</td><td>80K 도달 + HBM4 수율 안정</td><td>M15X 범용 전환 확대(범용 공급 증가)</td></tr><tr><td>2027-07</td><td>P5 완공, Y2 착공</td><td>일정 유지</td><td>추가 단축(2028~29 공급 부담 확대)</td></tr><tr><td>3Q~4Q27</td><td>Y1 Ph1 투입(40K), P4 150~170K</td><td>램프 속도·LTA 물량 동반 확대</td><td>LTA 밖 물량 가격 하락</td></tr><tr><td>4Q27</td><td>CXMT 연말 캐파</td><td>360~400K(하우스 전망 범위)</td><td>420K 이상(회사 목표 달성)</td></tr><tr><td>1Q28</td><td>P5L-1 웨이퍼 투입·Y1 셋업 완료</td><td>출하 기여 2H28부터 점진적</td><td>2028 상반기부터 급증</td></tr><tr><td>2Q28</td><td>CXMT 허페이 A3·베이징 C3 fab open <small>(삼성증권, 2026-06-02)</small></td><td>지연</td><td>일정대로 + 수출 확대</td></tr><tr><td>2028-12</td><td>SK M17 1차 클린룸</td><td>NAND 증설 재개(수요 확인 후)</td><td>NAND 가격 하락 중 강행</td></tr><tr><td>매 분기</td><td>TrendForce 캐파·B/G, DS·iM 2028 가격</td><td>2028 DRAM 공급 B/G 20% 안팎 유지</td><td>공급 B/G 25% 이상으로 상향</td></tr></tbody></table></div>
+<ul>
+<li>매 분기 확인: TrendForce 분기 캐파·B/G 업데이트, DS·iM 2028 가격 시나리오</li>
+</ul>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<ul>
+<li><small>하나증권, 2026-11-11, 「반도체 Overweight — 소재·부품·장비 AI 수혜」 p.5~9, 27, 30</small></li>
+<li><small>하나증권, 2026-09-02, 「증설의 시대, 후공정의 수혜도 함께 온다」 p.6, 19~22, 25 (도표23 = 사용자 제공 로드맵 원본)</small></li>
+<li><small>하나증권, 2026-08-31, 「반도체 및 소부장 Weekly」 p.9</small></li>
+<li><small>대신증권, 2026-07-07, 「끝없이 펼쳐질 실크로드」 p.6~7</small></li>
+<li><small>대신증권, 2026-09-01, 「얽힌 실타래 풀기」 p.2, 14, 16</small></li>
+<li><small>대신증권, 2026-09-08, 「손익비가 좋은 구간」 p.2~3</small></li>
+<li><small>키움증권, 2026-06-01, 「반도체 하반기 산업 전망」 p.5, 7</small></li>
+<li><small>키움증권, 2026-08-11, 「Memory Split 2027」 p.3, 6, 15~17, 33</small></li>
+<li><small>신한투자증권, 2026-08-06, 「CapEx Speed Up」 p.12, 15, 17, 19~21</small></li>
+<li><small>신한투자증권, 2026-08-11, 「반도체 중소형주 타이밍이 됐다」 p.11</small></li>
+<li><small>BNK투자증권, 2026-08-18, 「웨이퍼 수요는 어디에서 나오는가」 p.24, 34, 41~42</small></li>
+<li><small>유진투자증권, 2026-07-28, 「가속의 시간에서 증명의 시간으로」 p.15~16</small></li>
+<li><small>유진투자증권, 2026-06-17, 「All Roads Lead to Memory」 p.34</small></li>
+<li><small>삼성증권, 2026-06-02, 「하반기 메모리 전망: 듀레이션 게임」 p.21~22, 25</small></li>
+<li><small>삼성증권, 2026-08-05, 「부품주: D램으로의 확장성이 Key point」 p.20</small></li>
+<li><small>DS투자증권, 2026-07-20, 「공급 과잉이 우려되시나요」 p.3~4</small></li>
+<li><small>DS투자증권, 2026-11-10, 「머슬 메모리」 p.5~6, 18, 25</small></li>
+<li><small>DS투자증권, 2026-06-17, 「Higher, Better, More!」 p.8, 39</small></li>
+<li><small>iM증권(하이투자), 2026-11-04, 「반도체 Overweight: STRESS TEST」 p.10, 47</small></li>
+<li><small>교보증권, 2026-11-02, 「CXMT 과연 위협일까」 p.16</small></li>
+<li><small>SK증권, 2026-08-18, 「수주 잔고가 주는 시그널」 p.15</small></li>
+<li><small>사용자 제공 추정모델, 2026-11-10, 「SK하이닉스 2027~2028 추정모델」(Bloomberg·TrendForce·ETNews 등 종합) — SK하이닉스 공장별 캐파</small></li>
+</ul>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2028E 업체별 캐파: 하나증권 기준 원문 없음 → 하나 다음 연간 전망에서 2028 팹별 표 나오면 교체 ⚠</li>
+<li>2028E HBM 캐파: 원문 없음, 33% 가정 ⚠ → TrendForce·하우스 HBM 캐파 2028 수치 확보 필요</li>
+<li>HBM 캐파 정의 차이<small>(하나 600K vs 키움 790K, 2027)</small> 원인 확인 ⚠</li>
+<li>2024 NAND 업체별 캐파(삼성 제외)는 그래프 판독 근사 ⚠ → 표 수치 확보 시 교체</li>
+<li>기타 NAND 41K·기타 DRAM 상대계수 1.0 등 가정값 ⚠</li>
+<li>CXMT 회사 목표(27년 말 420K) 달성 여부, YMTC Fab4·5<small>(키움: 2028 완공)</small> 반영 여부</li>
+<li>2027 NAND 가격: 하나 09-02(TrendForce 공급 과잉 전환) vs 하나 11-11(공급 부족 2%) 시각 정리</li>
+</ul>
+<blockquote>
+<p>한 줄: P4·M15X 램프(2026) → Y1·P5·ID1·상하이·우한3 장비 반입(2027) → 실제 웨이퍼 출하 기여는 2028년부터. 산업 DRAM 웨이퍼 캐파는 2025년 말 1,956K → 2027년 말 2,511K(+28%)로 늘지만, 늘어난 555K 중 245K(44%)가 HBM으로 감 → 범용 DRAM 웨이퍼는 +19%에 그침</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-117" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#메모리-증설-로드맵--2027년은-반입-2028년이-출하-hbm이-새-웨이퍼의-절반-가까이를-가져감" data-for="메모리-증설-로드맵--2027년은-반입-2028년이-출하-hbm이-새-웨이퍼의-절반-가까이를-가져감">메모리 증설 로드맵 — 2027년은 ‘반입’, 2028년이 ‘출하’, HBM이 새 웨이퍼의 절반 가까이를 가져감</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-기술-기초" data-for="-기술-기초">① 기술 기초</a></li><li class="depth-1"><a href="#-전방-수요-증설을-정당화하는-쪽" data-for="-전방-수요-증설을-정당화하는-쪽">② 전방 수요 (증설을 정당화하는 쪽)</a></li><li class="depth-1"><a href="#-기술-심화--왜-캐파-증가--범용-공급-증가인가" data-for="-기술-심화--왜-캐파-증가--범용-공급-증가인가">③ 기술 심화 — 왜 ‘캐파 증가 ≠ 범용 공급 증가’인가</a></li><li class="depth-1"><a href="#-캐파증설" data-for="-캐파증설">④ 캐파·증설</a></li><li class="depth-1"><a href="#-가격수급--캐파를-tam으로-바꾸기-엑셀-모델" data-for="-가격수급--캐파를-tam으로-바꾸기-엑셀-모델">⑤ 가격·수급 — 캐파를 TAM으로 바꾸기 (엑셀 모델)</a></li><li class="depth-1"><a href="#-하우스별-시각과-변화" data-for="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../반도체/00_반도체_index" class="internal">00_반도체_index</a></li><li><a href="../반도체/01_반도체_용어집" class="internal">01_반도체_용어집</a></li><li><a href="../반도체/02_메모리_dram_hbm" class="internal">02_메모리_DRAM_HBM</a></li><li><a href="../반도체/03_메모리_nand" class="internal">03_메모리_NAND</a></li><li><a href="../반도체/07_반도체장비" class="internal">07_반도체장비</a></li><li><a href="../반도체/08_반도체설비" class="internal">08_반도체설비</a></li><li><a href="../반도체/09_반도체부품소재" class="internal">09_반도체부품소재</a></li><li><a href="../반도체/10_반도체후공정" class="internal">10_반도체후공정</a></li><li><a href="../반도체/12_반도체_트래킹캘린더" class="internal">12_반도체_트래킹캘린더</a></li><li><a href="../반도체/설명서/반도체_설명서" class="internal">반도체_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

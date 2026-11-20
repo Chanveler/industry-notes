@@ -1,0 +1,3204 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>02_메모리_DRAM_HBM</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="02_메모리_DRAM_HBM"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="02_메모리_DRAM_HBM"/><meta name="twitter:description" content="메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클 한눈에 보기 결론 3줄 지금 사이클 길이는 수요(AI 서버)보다 공급(HBM 웨이퍼 잠식·클린룸 공백)이 정함 HBM이 웨이퍼는 많이 쓰고 비트는 적게 냄 → 범용 DRAM 부족이 2027년까지 커짐 쟁점은 “언제 꺾이나”가 아닌 “2H27~2028 범용 조정 깊이와 LTA·HBM의 완충력” 항목값출처HBM 웨이퍼 비중(2026E→2028E)25%→35%→42%iM증권, 2026-11-04HBM 비트 비중(2026E→2028E)11%→13%→16..."/><meta property="og:description" content="메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클 한눈에 보기 결론 3줄 지금 사이클 길이는 수요(AI 서버)보다 공급(HBM 웨이퍼 잠식·클린룸 공백)이 정함 HBM이 웨이퍼는 많이 쓰고 비트는 적게 냄 → 범용 DRAM 부족이 2027년까지 커짐 쟁점은 “언제 꺾이나”가 아닌 “2H27~2028 범용 조정 깊이와 LTA·HBM의 완충력” 항목값출처HBM 웨이퍼 비중(2026E→2028E)25%→35%→42%iM증권, 2026-11-04HBM 비트 비중(2026E→2028E)11%→13%→16..."/><meta property="og:image:alt" content="메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클 한눈에 보기 결론 3줄 지금 사이클 길이는 수요(AI 서버)보다 공급(HBM 웨이퍼 잠식·클린룸 공백)이 정함 HBM이 웨이퍼는 많이 쓰고 비트는 적게 냄 → 범용 DRAM 부족이 2027년까지 커짐 쟁점은 “언제 꺾이나”가 아닌 “2H27~2028 범용 조정 깊이와 LTA·HBM의 완충력” 항목값출처HBM 웨이퍼 비중(2026E→2028E)25%→35%→42%iM증권, 2026-11-04HBM 비트 비중(2026E→2028E)11%→13%→16..."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/반도체/02_메모리_dram_hbm"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/반도체/02_메모리_dram_hbm"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클 한눈에 보기 결론 3줄 지금 사이클 길이는 수요(AI 서버)보다 공급(HBM 웨이퍼 잠식·클린룸 공백)이 정함 HBM이 웨이퍼는 많이 쓰고 비트는 적게 냄 → 범용 DRAM 부족이 2027년까지 커짐 쟁점은 “언제 꺾이나”가 아닌 “2H27~2028 범용 조정 깊이와 LTA·HBM의 완충력” 항목값출처HBM 웨이퍼 비중(2026E→2028E)25%→35%→42%iM증권, 2026-11-04HBM 비트 비중(2026E→2028E)11%→13%→16..."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="반도체/02_메모리_dram_hbm" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-143" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-143" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../반도체/">3. 반도체</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>02_메모리_DRAM_HBM</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">02_메모리_DRAM_HBM</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>63 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="메모리-dramhbm--hbm이-웨이퍼를-삼키며-범용-dram-부족을-늘리는-사이클">메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#메모리-dramhbm--hbm이-웨이퍼를-삼키며-범용-dram-부족을-늘리는-사이클" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론 3줄</p></div></div><div class="callout-content">
+<ul>
+<li>지금 사이클 길이는 수요(AI 서버)보다 공급(HBM 웨이퍼 잠식·클린룸 공백)이 정함</li>
+<li>HBM이 웨이퍼는 많이 쓰고 비트는 적게 냄 → 범용 DRAM 부족이 2027년까지 커짐</li>
+<li>쟁점은 “언제 꺾이나”가 아닌 “2H27~2028 범용 조정 깊이와 LTA·HBM의 완충력”</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>HBM 웨이퍼 비중(2026E→2028E)</td><td>25%→35%→42%</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>HBM 비트 비중(2026E→2028E)</td><td>11%→13%→16%</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>2027 DRAM 수급(2026보다 부족↑)</td><td>실질 공급 +14.7% vs 비트 수요 20%대 중반</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>3사 HBM 매출(2026E→2028E)</td><td>634억→2,094억→3,830억달러</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>3사 HBM 평균단가(2026E→2028E)</td><td>1.69→3.54→4.25달러/Gb</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>LTA 해지 검토선</td><td>DRAM 가격 4Q27 고점 대비 약 −60%</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>다운사이클 Base(Blended DRAM ASP)</td><td>2028년 −25%, 2029년 −15%</td><td><small>DS투자증권, 2026-11-10</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  A[\&quot;빅테크 AI CapEx&lt;br/>2027E 약 1조달러\&quot;] --> B[\&quot;AI 서버 출하·&lt;br/>대당 메모리↑\&quot;]\n  B --> C[\&quot;HBM 수요&lt;br/>(GPU·ASIC)\&quot;]\n  C --> D[\&quot;HBM이 DRAM 웨이퍼 잠식&lt;br/>웨이퍼 35% vs 비트 13%(2027E)\&quot;]\n  D --> E[\&quot;범용 DRAM 비트 부족\&quot;]\n  F[\&quot;신규 팹 공백&lt;br/>비트 기여 2028년~\&quot;] --> E\n  E --> G[\&quot;계약가 급등&lt;br/>LTA·선수금 확산\&quot;]\n  G --> H[\&quot;2H27~2028&lt;br/>범용 조정 깊이?\&quot;]\n  C --> I[\&quot;HBM ASP·커스텀화&lt;br/>→ 완충\&quot;]\n  I --> H&quot;">flowchart LR
+  A[&quot;빅테크 AI CapEx&lt;br/>2027E 약 1조달러&quot;] --> B[&quot;AI 서버 출하·&lt;br/>대당 메모리↑&quot;]
+  B --> C[&quot;HBM 수요&lt;br/>(GPU·ASIC)&quot;]
+  C --> D[&quot;HBM이 DRAM 웨이퍼 잠식&lt;br/>웨이퍼 35% vs 비트 13%(2027E)&quot;]
+  D --> E[&quot;범용 DRAM 비트 부족&quot;]
+  F[&quot;신규 팹 공백&lt;br/>비트 기여 2028년~&quot;] --> E
+  E --> G[&quot;계약가 급등&lt;br/>LTA·선수금 확산&quot;]
+  G --> H[&quot;2H27~2028&lt;br/>범용 조정 깊이?&quot;]
+  C --> I[&quot;HBM ASP·커스텀화&lt;br/>→ 완충&quot;]
+  I --> H
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ul>
+<li>관련 노트: <a href="../반도체/03_메모리_nand" class="internal internal-link alias" data-slug="반도체/03_메모리_nand">03_메모리_NAND</a> · <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a> · <a href="../반도체/10_반도체후공정" class="internal internal-link alias" data-slug="반도체/10_반도체후공정">10_반도체후공정</a> · <a href="../반도체/05_반도체파운드리" class="internal internal-link alias" data-slug="반도체/05_반도체파운드리">05_반도체파운드리</a> · <a href="../반도체/07_반도체장비" class="internal internal-link alias" data-slug="반도체/07_반도체장비">07_반도체장비</a> · <a href="../반도체/01_반도체_용어집" class="internal internal-link alias" data-slug="반도체/01_반도체_용어집">01_반도체_용어집</a> · <a href="../반도체/11_반도체_하우스시각_변경이력" class="internal internal-link alias" data-slug="반도체/11_반도체_하우스시각_변경이력">11_반도체_하우스시각_변경이력</a> · <a href="../반도체/12_반도체_트래킹캘린더" class="internal internal-link alias" data-slug="반도체/12_반도체_트래킹캘린더">12_반도체_트래킹캘린더</a></li>
+</ul>
+<hr/>
+<h2 id="-기술-기초">① 기술 기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>DRAM 미세화 효율이 떨어짐 → 같은 투자로 비트가 덜 늘어남</li>
+<li>HBM4부터 버스 폭 2배 → 베이스다이가 로직 공정(파운드리)으로 넘어감</li>
+<li>하이브리드 본딩은 JEDEC 높이 완화로 HBM4E~HBM5 전후로 늦춰짐</li>
+</ul>
+</div></blockquote>
+<h3 id="dram-셀과-공정-노드">DRAM 셀과 공정 노드<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#dram-셀과-공정-노드" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DRAM 셀 = 트랜지스터 1개 + 커패시터 1개</strong> → 전하 누설로 주기적 리프레시 필요
+<ul>
+<li>온도↑ → 리프레시 잦아짐 → 유효 대역폭↓ <small>(신영증권, 2026-05-26)</small></li>
+</ul>
+</li>
+<li><strong>6F² → 4F²</strong>: 현 양산은 6F²(F=최소 선폭). 4F²는 수직 채널 트랜지스터 구조
+<ul>
+<li>이론상 셀 면적 약 33% 축소, 셀 어레이 집적도 약 50% 향상 <small>(교보증권, 2026-11-02)</small></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>4F²·차세대 노선</th><th>시점</th><th>출처</th></tr></thead><tbody><tr><td>CXMT</td><td>4F² 기반 서버용 DDR5 RDIMM 공개</td><td>2026년 말 목표</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>마이크론</td><td>4F²를 “신화”라 부름 → 6F² 미세화 + 3D DRAM 병행</td><td>—</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>삼성전자</td><td>4F²(10a), 셀·주변회로를 웨이퍼 단위 하이브리드 본딩</td><td>2028년 양산 목표</td><td><small>유안타증권, 2026-11-06</small></td></tr></tbody></table></div>
+<p><img src="../반도체/그림/메모리_dram_hbm_6f2vs4f2.png" alt="메모리_DRAM_HBM_6F2vs4F2"/><br/>
+<small><em>출처: 교보증권, 2026-11-02, p.28</em></small></p>
+<ul>
+<li><strong>10나노급 세대 이름</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>세대명</th><th>순번</th><th>대표 사례</th><th>비고</th></tr></thead><tbody><tr><td>1a(1α)</td><td>10나노급 4세대</td><td>CXMT 미진입(1a 진입 지연) <small>(유진투자증권, 2026-07-28)</small></td><td>—</td></tr><tr><td>1b(1β)</td><td>5세대</td><td>현 범용 서버 DRAM 주력, CXMT G5는 1b 수준 다중패터닝 <small>(교보증권, 2026-11-02)</small></td><td>—</td></tr><tr><td>1c(1γ)</td><td>6세대</td><td>삼성·SK HBM4E 코어다이, 마이크론은 1γ로 EUV 도입 <small>(iM증권, 2026-06-18)</small></td><td>1b→1c 디자인룰 축소폭 10% 미만 <small>(대신증권, 2026-09-02)</small></td></tr><tr><td>1d</td><td>7세대</td><td>삼성전자 1d 공정 2027년 <small>(키움증권, 2026-08-11)</small></td><td>장비 수요의 다음 축</td></tr></tbody></table></div>
+<ul>
+<li><strong>미세화 효율 저하</strong> — 웨이퍼 캐파 10% 증가 시 비트 증가 <small>(삼성증권, 2026-06-02)</small></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시기</th><th>비트 증가</th></tr></thead><tbody><tr><td>과거</td><td>30~40%</td></tr><tr><td>현재</td><td>20% 이하</td></tr><tr><td>HBM 전환 후</td><td>그보다 더 낮음</td></tr></tbody></table></div>
+<h3 id="hbm-구조--tsv적층베이스다이">HBM 구조 — TSV·적층·베이스다이<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm-구조--tsv적층베이스다이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>HBM(High Bandwidth Memory, 고대역폭 메모리)</strong> = DRAM 코어다이를 TSV(Through Silicon Via, 실리콘 관통 전극)로 수직 연결한 스택</li>
+<li>맨 아래 <strong>베이스다이(로직 다이)</strong> 가 GPU와 신호를 주고받는 PHY·I/O 담당</li>
+<li>스택을 인터포저 위 GPU 옆에 얹음(2.5D, TSMC CoWoS) → 패키징이 별도 병목</li>
+</ul>
+<p><img src="../반도체/그림/메모리_dram_hbm_tsv적층구조.png" alt="메모리_DRAM_HBM_TSV적층구조"/><br/>
+<small><em>출처: KB증권, 2026-07-07, p.31</em></small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  W[\&quot;DRAM 웨이퍼&lt;br/>(코어다이, 1b/1c)\&quot;] --> T[\&quot;TSV 형성·박막화&lt;br/>범프\&quot;]\n  B[\&quot;베이스다이&lt;br/>HBM4부터 로직 공정&lt;br/>(TSMC·삼성 파운드리)\&quot;] --> S\n  T --> S[\&quot;적층·본딩&lt;br/>(MR-MUF / TC-NCF / 하이브리드)\&quot;]\n  S --> K[\&quot;스택 테스트\&quot;]\n  K --> C[\&quot;CoWoS: GPU+HBM&lt;br/>인터포저 실장\&quot;]\n  C --> G[\&quot;AI 가속기\&quot;]&quot;">flowchart LR
+  W[&quot;DRAM 웨이퍼&lt;br/>(코어다이, 1b/1c)&quot;] --> T[&quot;TSV 형성·박막화&lt;br/>범프&quot;]
+  B[&quot;베이스다이&lt;br/>HBM4부터 로직 공정&lt;br/>(TSMC·삼성 파운드리)&quot;] --> S
+  T --> S[&quot;적층·본딩&lt;br/>(MR-MUF / TC-NCF / 하이브리드)&quot;]
+  S --> K[&quot;스택 테스트&quot;]
+  K --> C[&quot;CoWoS: GPU+HBM&lt;br/>인터포저 실장&quot;]
+  C --> G[&quot;AI 가속기&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="hbm-세대별-스펙">HBM 세대별 스펙<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm-세대별-스펙" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>세대</th><th>데이터버스 폭</th><th>핀당 속도</th><th>스택당 대역폭</th><th>시점</th></tr></thead><tbody><tr><td>HBM3E</td><td>1,024bit</td><td>9.2~9.6Gbps <small>(KB증권 07-07, 유안타 11-06)</small></td><td>1.2~1.5TB/s <small>(KB증권, 2026-07-07)</small></td><td>2023~2024</td></tr><tr><td>HBM4</td><td>2,048bit</td><td>10Gbps 내외<small>(JEDEC 잠정, 유안타 11-06)</small> / 12Gbps 이상<small>(KB 07-07)</small> / 삼성 13.0Gbps <small>(ISSCC, 신영 05-26)</small></td><td>2TB/s 이상<small>(KB)</small> / 삼성 3.3TB/s <small>(신영 05-26)</small></td><td>2H25~2026</td></tr><tr><td>HBM4E</td><td>2,048bit</td><td>12Gbps 이상<small>(유안타)</small> / 최대 16Gbps<small>(삼성 샘플, iM 06-18)</small></td><td>스택당 4TB/s<small>(삼성 샘플, iM 06-18)</small></td><td>2027</td></tr><tr><td>HBM5</td><td>2,048bit 이상(Custom)</td><td>32Gbps 목표, HBM5E 42Gbps <small>(신영 05-26)</small></td><td>⚠ 원문 없음</td><td>2028 Feynman 전후 <small>(유안타 11-06)</small></td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>세대</th><th>적층</th><th>스택 용량</th><th>베이스다이</th><th>본딩</th></tr></thead><tbody><tr><td>HBM3E</td><td>최대 12단</td><td>최대 24GB <small>(KB증권, 2026-07-07)</small> ⚠ 12단 용량 원문 간 확인 필요</td><td>DRAM 공정</td><td>MR-MUF(SK)·TC-NCF(삼성)</td></tr><tr><td>HBM4</td><td>12~16단</td><td>36GB(12단), 16단은 2H26 양산 계획 <small>(iM 06-18)</small></td><td><strong>로직 공정</strong>: SK→TSMC, 삼성→자사 4nm, 마이크론 자체 <small>(유안타 11-06)</small></td><td>16단도 MR-MUF 유지(SK)</td></tr><tr><td>HBM4E</td><td>12단 주력, 16단은 CY27 말 이후</td><td>48GB(32Gb×12), 64GB(32Gb×16) <small>(iM 06-18)</small></td><td>삼성 4nm, SK TSMC 3nm 검토, 마이크론 TSMC 외주 <small>(iM 06-18)</small></td><td>삼성 16단부터 하이브리드 전망, SK는 20단 이후 <small>(iM 06-18)</small></td></tr><tr><td>HBM5</td><td>20단 이상 논의</td><td>⚠ 원문 없음</td><td>로직 + 컨트롤러 이전(NVHBM)</td><td>COP+하이브리드 본딩 <small>(신영 05-26)</small></td></tr></tbody></table></div>
+<ul>
+<li><mark class="text-highlight">세대 교체 축이 “핀 속도”에서 “버스 폭·베이스다이”로 이동</mark>
+<ul>
+<li>HBM2~HBM3E: 1,024bit 고정, 핀 속도만 2.4→9.6Gbps <small>(유안타증권, 2026-11-06)</small></li>
+<li>HBM4: 2,048bit → 같은 쇼어라인에 I/O 2배 → DRAM 공정 한계 → 로직 공정 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+</li>
+<li>단순 환산: HBM3E 1,024bit×9.6Gbps÷8 ≈ 1.2TB/s, HBM4 2,048bit×10Gbps÷8 ≈ 2.6TB/s (내 계산)</li>
+</ul>
+<h3 id="적층본딩-방식--tc-ncf--mr-muf--하이브리드">적층·본딩 방식 — TC-NCF · MR-MUF · 하이브리드<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#적층본딩-방식--tc-ncf--mr-muf--하이브리드" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>방식</th><th>원리</th><th>쓰는 곳</th><th>장점</th><th>한계</th></tr></thead><tbody><tr><td>TC-NCF</td><td>칩마다 비전도성 필름(NCF)을 붙이고 열압착</td><td>삼성전자(HBM3E까지)</td><td>칩별 공정 제어 쉬움</td><td>필름 층이 열을 가둠 <small>(KB증권, 2026-09-07)</small></td></tr><tr><td>MR-MUF</td><td>칩을 쌓은 뒤 액상 몰드(MUF)로 한꺼번에 채움</td><td>SK하이닉스, 16단 HBM4까지 유지</td><td>방열·수율 검증됨</td><td>16단에서 두께가 물리적 한계에 근접 <small>(iM증권, 2026-06-18)</small></td></tr><tr><td>하이브리드 본딩(HCB)</td><td>범프 없이 구리-구리 직접 접합</td><td>삼성 HBM4E 16단부터 전망, HBM은 HBM4E~HBM5 전후</td><td>초미세 피치, TCB 대비 열저항 20%↓ <small>(KB증권, 2026-07-07)</small></td><td>1μm 파티클 하나가 약 10mm² 불량 유발 → CMP 평탄도 결정적 <small>(신영증권, 2026-05-26)</small></td></tr></tbody></table></div>
+<p><img src="../반도체/그림/메모리_dram_hbm_mrmuf_vs_tcncf.png" alt="메모리_DRAM_HBM_MRMUF_vs_TCNCF"/><br/>
+<small><em>출처: KB증권, 2026-09-07, p.40</em></small></p>
+<p><img src="../반도체/그림/메모리_dram_hbm_마이크로범프vs하이브리드본딩.png" alt="메모리_DRAM_HBM_마이크로범프vs하이브리드본딩"/><br/>
+<small><em>출처: 유안타증권, 2026-11-06, p.41</em></small></p>
+<p><img src="../반도체/그림/메모리_dram_hbm_하이브리드본딩단계.png" alt="메모리_DRAM_HBM_하이브리드본딩단계"/><br/>
+<small><em>출처: KB증권, 2026-07-07, p.31</em></small></p>
+<ul>
+<li><strong>하이브리드 본딩 도입이 늦어진 이유</strong>
+<ul>
+<li>JEDEC 2026년 1월 HBM 높이 기준 720μm→775μm 완화 → 16단 HBM4도 마이크로범프 가능 <small>(유안타증권, 2026-11-06)</small></li>
+<li>775μm에 16단을 넣으려면 웨이퍼를 약 30μm까지 연삭 <small>(iM증권, 2026-06-18)</small></li>
+<li>HBM4 패드 간격에선 하이브리드 비용효율 낮음 → HBM4E~HBM5 전후 도입 준비 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+</li>
+</ul>
+<h3 id="신규-폼팩터--lpddrsocammmrdimmcxlpim">신규 폼팩터 — LPDDR·SOCAMM·MRDIMM·CXL·PIM<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#신규-폼팩터--lpddrsocammmrdimmcxlpim" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>서버 메모리가 RDIMM 한 규격에서 여러 갈래로 분화</strong> <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>규격</th><th>최대 속도</th><th>구조</th><th>장점</th><th>한계</th><th>주요 용도</th></tr></thead><tbody><tr><td>DDR5 RDIMM</td><td>9.2Gbps</td><td>RCD + DDR5</td><td>최대 512GB, Chipkill RAS</td><td>고속화 시 채널당 DIMM 수 감소</td><td>범용·엔터프라이즈 서버</td></tr><tr><td>DDR5 MRDIMM</td><td>12.8Gbps(Gen2)·16.0Gbps(Gen3)</td><td>버퍼칩(MRCD·MDB)으로 2랭크 동시 전송</td><td>대역폭 약 2배, RAS 유지</td><td>버퍼칩 비용</td><td>HPC·고대역폭 서버</td></tr><tr><td>LPDDR5X SOCAMM2</td><td>10.7Gbps</td><td>x32 LPDDR5X 4개</td><td>RDIMM 대비 면적·전력 약 1/3</td><td>Chipkill 미지원</td><td>AI 추론 서버</td></tr></tbody></table></div>
+<p><small><em>출처: 유안타증권, 2026-11-06 (Synopsys, JEDEC Industry Forum 2026.10 인용)</em></small></p>
+<ul>
+<li><strong>LPDDR6가 서버 진입을 넓힘</strong> <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>기존(LPDDR5X)</th><th>LPDDR6</th></tr></thead><tbody><tr><td>채널 폭</td><td>16bit</td><td>24bit</td></tr><tr><td>채널당 대역폭</td><td>21.3GB/s</td><td>43.2GB/s</td></tr><tr><td>SOCAMM2당 최대 용량</td><td>256GB</td><td>512GB</td></tr><tr><td>RAS</td><td>—</td><td>메타데이터 기반 RAS 추가</td></tr><tr><td>PIM 규격</td><td>—</td><td>LPDDR6-PIM 1.0 규격 4Q26 발표 목표</td></tr><tr><td>PIM 내부 대역폭</td><td>—</td><td>약 4배</td></tr></tbody></table></div>
+<ul>
+<li><strong>CPU 쪽 시스템 DRAM 확대 = KV 캐시 오프로딩</strong>
+<ul>
+<li>대기 세션의 KV 캐시를 CPU DRAM으로 내림 → NVIDIA Vera의 LPDDR5X 용도 <small>(DS투자증권, 2026-11-10)</small></li>
+<li>Grace 최대 480GB → Vera 768GB(초기 1.5TB 계획을 공급 제약으로 절반) <small>(DS투자증권, 2026-11-10)</small></li>
+</ul>
+</li>
+<li><strong>CXL</strong>: 수치 근거 확보 못 함 ⚠ 원문 없음 <small>(KV 캐시 계층 용어로만 거론, 삼성증권 2026-06-02)</small></li>
+</ul>
+<hr/>
+<h2 id="-전방-수요">② 전방 수요<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-전방-수요" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>미국 CSP 4사 CapEx 2027E 약 1조달러 — 증가율은 꺾여도 금액은 계속 늘어남</li>
+<li>AI 서버 대수·대당 DRAM이 함께 늘어남 → 서버+HBM이 DRAM 비트의 과반</li>
+<li>GPU의 HBM 사양 축소(De-spec)는 수요 감소보다 공급 부족의 증거라는 시각이 다수</li>
+</ul>
+</div></blockquote>
+<h3 id="빅테크-capex">빅테크 CapEx<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#빅테크-capex" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>미국 CSP 4사 CapEx (십억달러)</strong> — 키움증권, 2026-08-11, p.11 (Bloomberg 컨센서스)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>회사</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>Alphabet</td><td style="text-align:right;">52.5</td><td style="text-align:right;">91.4</td><td style="text-align:right;">201.5</td><td style="text-align:right;">301.6</td><td style="text-align:right;">340.8</td></tr><tr><td>Meta</td><td style="text-align:right;">37.3</td><td style="text-align:right;">69.7</td><td style="text-align:right;">136.0</td><td style="text-align:right;">197.3</td><td style="text-align:right;">213.7</td></tr><tr><td>Microsoft</td><td style="text-align:right;">55.7</td><td style="text-align:right;">88.2</td><td style="text-align:right;">145.3</td><td style="text-align:right;">222.6</td><td style="text-align:right;">257.8</td></tr><tr><td>Amazon</td><td style="text-align:right;">83.0</td><td style="text-align:right;">131.8</td><td style="text-align:right;">220.2</td><td style="text-align:right;">278.3</td><td style="text-align:right;">311.1</td></tr><tr><td><strong>4사 합</strong></td><td style="text-align:right;">228.5</td><td style="text-align:right;">381.1</td><td style="text-align:right;">703.0</td><td style="text-align:right;">999.8</td><td style="text-align:right;">1,123.4</td></tr><tr><td>4사 합(DS 집계) <small>(DS투자증권, 2026-11-10)</small></td><td style="text-align:right;">217.3</td><td style="text-align:right;">357.5</td><td style="text-align:right;">680.9</td><td style="text-align:right;">1,044.4</td><td style="text-align:right;">1,185.5</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>회사</th><th style="text-align:right;">2026E YoY</th><th style="text-align:right;">2027E YoY</th><th style="text-align:right;">2027E CapEx/OFCF</th></tr></thead><tbody><tr><td>Alphabet</td><td style="text-align:right;">+120%</td><td style="text-align:right;">+50%</td><td style="text-align:right;">1.1배</td></tr><tr><td>Meta</td><td style="text-align:right;">+95%</td><td style="text-align:right;">+45%</td><td style="text-align:right;">1.2배</td></tr><tr><td>Microsoft</td><td style="text-align:right;">+65%</td><td style="text-align:right;">+53%</td><td style="text-align:right;">1.0배</td></tr><tr><td>Amazon</td><td style="text-align:right;">+67%</td><td style="text-align:right;">+26%</td><td style="text-align:right;">1.1배</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;미국 CSP 4사 CapEx 합계 (십억달러)\&quot;\n  x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;십억달러\&quot; 0 --> 1300\n  line [217.3, 357.5, 680.9, 1044.4, 1185.5]\n  line [228.5, 381.1, 703.0, 999.8, 1123.4]&quot;">xychart-beta
+  title &quot;미국 CSP 4사 CapEx 합계 (십억달러)&quot;
+  x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;십억달러&quot; 0 --> 1300
+  line [217.3, 357.5, 680.9, 1044.4, 1185.5]
+  line [228.5, 381.1, 703.0, 999.8, 1123.4]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선1 = DS투자증권 집계 <small>(DS투자증권, 2026-11-10)</small>, 선2 = 키움증권(2026-08-11) 4사 합(내 계산). 방향 일치, 2027E는 DS가 4% 높음</em></p>
+<ul>
+<li><strong>CapEx 보조 지표 — 증가율 둔화·차입 의존</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>4사 CapEx 증가율 가정</td><td>2027년 53% → 2028년 14%</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>AI 서버 장비 예산</td><td>4,700억 → 5,607억달러(+19%)</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>주요 9개 CSP 2027년 CapEx</td><td>1.5조달러 이상, +60%</td><td><small>교보증권, 2026-11-02, TrendForce 인용</small></td></tr><tr><td>5대 하이퍼스케일러 2026년 누적 회사채</td><td>약 2,180억달러 = 2025년 연간(1,090억달러)의 두 배</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>2027년 자금 부족분 전액 차입 시</td><td>약 2,000억달러</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>└ 차입 후 순차입금/EBITDA</td><td>Oracle 제외 4사 1.2배 이하</td><td><small>iM증권, 2026-11-04</small></td></tr></tbody></table></div>
+<ul>
+<li><mark class="text-highlight">증가율 둔화를 수요 감소로 읽으면 안 됨</mark> → 장비 예산 금액은 증가 <small>(DS투자증권, 2026-11-10)</small></li>
+<li>외부 조달 의존 → AI 반도체가 경기 민감 섹터 성격을 띠기 시작 <small>(키움증권, 2026-08-11)</small></li>
+</ul>
+<h3 id="ai-서버-출하와-대당-메모리">AI 서버 출하와 대당 메모리<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#ai-서버-출하와-대당-메모리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th style="text-align:right;">2029E</th></tr></thead><tbody><tr><td>글로벌 AI 서버(만 대) <small>DS투자증권, 2026-11-10</small></td><td style="text-align:right;">213</td><td style="text-align:right;">287</td><td style="text-align:right;">386</td><td style="text-align:right;">503</td><td style="text-align:right;">568</td></tr><tr><td>일반 서버(백만 대) <small>DS투자증권, 2026-11-10</small></td><td style="text-align:right;">14.2</td><td style="text-align:right;">16.7</td><td style="text-align:right;">19.6</td><td style="text-align:right;">21.1</td><td style="text-align:right;">22.4</td></tr><tr><td>AI 서버 대당 시스템 DRAM(GB) <small>DS투자증권, 2026-11-10</small></td><td style="text-align:right;">1,400</td><td style="text-align:right;">2,000</td><td style="text-align:right;">2,500</td><td style="text-align:right;">3,025</td><td style="text-align:right;">3,539</td></tr><tr><td>일반 서버 대당 DRAM(GB) <small>DS투자증권, 2026-11-10</small></td><td style="text-align:right;">808</td><td style="text-align:right;">868</td><td style="text-align:right;">940</td><td style="text-align:right;">1,015</td><td style="text-align:right;">1,086</td></tr><tr><td>서버 DRAM 수요(HBM 포함, 억GB) <small>DS투자증권, 2026-11-10</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">473.3(+36%)</td><td style="text-align:right;">594.6(+26%)</td></tr><tr><td>AI 서버 출하 YoY <small>교보증권, 2026-11-02</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">+36%</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td></tr><tr><td>전체 서버 출하 YoY <small>iM증권, 2026-11-04</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">+18%</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;AI 서버 대당 시스템 DRAM vs 일반 서버 (GB, DS투자증권)\&quot;\n  x-axis [\&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;, \&quot;2029E\&quot;]\n  y-axis \&quot;GB\&quot; 0 --> 4000\n  line [1400, 2000, 2500, 3025, 3539]\n  line [808, 868, 940, 1015, 1086]&quot;">xychart-beta
+  title &quot;AI 서버 대당 시스템 DRAM vs 일반 서버 (GB, DS투자증권)&quot;
+  x-axis [&quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;, &quot;2029E&quot;]
+  y-axis &quot;GB&quot; 0 --> 4000
+  line [1400, 2000, 2500, 3025, 3539]
+  line [808, 868, 940, 1015, 1086]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선1 = AI 서버, 선2 = 일반 서버 <small>(DS투자증권, 2026-11-10)</small></em></p>
+<ul>
+<li>2026년 AI 서버 대수: 키움 261만 대(+21%) <small>(키움증권, 2026-06-01)</small> vs DS 287만 대 <small>(DS투자증권, 2026-11-10)</small>
+<ul>
+<li>기준(CapEx 역산 vs 리서치기관) 상이 → 직접 비교 주의 ⚠</li>
+</ul>
+</li>
+</ul>
+<h3 id="gpuasic-1개당-hbm-탑재량--사양-조정de-spec">GPU·ASIC 1개당 HBM 탑재량 — 사양 조정(De-spec)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#gpuasic-1개당-hbm-탑재량--사양-조정de-spec" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가속기</th><th>원안</th><th>조정안</th><th>조정 이유</th><th>출처</th></tr></thead><tbody><tr><td>Rubin(2026)</td><td>HBM4 12단 36GB×8</td><td>3Q26~ HBM4 8단 24GB×8(192GB) 병행</td><td>메모리 공급 제약</td><td><small>교보증권, 2026-11-02</small> ⚠ 원문 표기 “228GB(36GB×8)”, 계산상 288GB</td></tr><tr><td>Rubin Ultra(2027)</td><td>HBM4E 1,024GB(64GB×16큐브)</td><td>384GB(48GB×8) 또는 512GB(32GB×16)</td><td>인터포저 워피지·접합 수율, 16단 적층 수율</td><td><small>iM증권 2026-06-18, 키움증권 2026-08-11</small></td></tr><tr><td>Rubin Ultra(2027)</td><td>—</td><td>8단 HBM4 2Q27 양산 목표, 8단·12단 혼용 검토</td><td>제한된 웨이퍼로 가속기 수 극대화</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>Vera Rubin NVL72 LPDDR5X</td><td>54TB/랙</td><td>27TB/랙</td><td>LPDDR 공급 부족</td><td><small>하나증권, 2026-06-08 (SemiAnalysis 인용)</small></td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>De-spec 해석</th><th>근거</th><th>출처</th></tr></thead><tbody><tr><td>공급 부족의 증거(다수)</td><td>공급 개선 시 Re-spec 가능</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>공급 부족의 증거(다수)</td><td>Vera Rubin LPDDR를 절반으로 줄여도 GB 대비 50% 증가</td><td><small>하나증권, 2026-06-08</small></td></tr><tr><td>수요 탄력 둔화(소수)</td><td>엔비디아·CSP 신모델의 HBM·시스템 메모리 축소</td><td><small>BNK투자증권, 2026-09-14</small></td></tr></tbody></table></div>
+<ul>
+<li>NVIDIA 세대별 HBM 탑재량 H100→R300 우상향 — 그래프만 제공, 수치 ⚠ 원문 없음 <small>(키움증권, 2026-08-11)</small></li>
+</ul>
+<h3 id="범용-dram-수요--서버pc모바일">범용 DRAM 수요 — 서버·PC·모바일<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#범용-dram-수요--서버pc모바일" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>응용처별 DRAM 비트 비중(2026)</strong> — 같은 해인데 하우스마다 분류가 다름</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>출처</th><th>서버</th><th style="text-align:right;">HBM</th><th style="text-align:right;">모바일</th><th style="text-align:right;">PC</th><th style="text-align:right;">기타</th></tr></thead><tbody><tr><td>삼성증권, 2026-06-02 <small>(Counterpoint)</small></td><td>48%</td><td style="text-align:right;">9%</td><td style="text-align:right;">22%</td><td style="text-align:right;">10%</td><td style="text-align:right;">12%</td></tr><tr><td>DS투자증권, 2026-11-10</td><td>범용 29% + AI 서버 19%</td><td style="text-align:right;">9%</td><td style="text-align:right;">21%</td><td style="text-align:right;">7%</td><td style="text-align:right;">15%</td></tr><tr><td>키움증권, 2026-08-11</td><td>44%(HBM 포함 추정 ⚠)</td><td style="text-align:right;">—</td><td style="text-align:right;">22%</td><td style="text-align:right;">8%</td><td style="text-align:right;">26%</td></tr></tbody></table></div>
+<ul>
+<li>
+<p>서버+HBM 비중 2028년 64% <small>(삼성증권, 2026-06-02)</small></p>
+</li>
+<li>
+<p>서버 비중 2025년 50% → 2026년 61% <small>(BNK투자증권, 2026-08-18)</small></p>
+</li>
+<li>
+<p><strong>장기 비트 수요 증가율(연평균, 2030까지)</strong> — 삼성증권, 2026-06-02</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>응용처</th><th style="text-align:right;">연평균 비트 수요 증가율</th></tr></thead><tbody><tr><td>HBM</td><td style="text-align:right;">40%</td></tr><tr><td>서버</td><td style="text-align:right;">25%</td></tr><tr><td>PC</td><td style="text-align:right;">12%</td></tr><tr><td>모바일</td><td style="text-align:right;">9%</td></tr><tr><td>기타</td><td style="text-align:right;">5%</td></tr><tr><td>합계(HBM 포함)</td><td style="text-align:right;"><strong>22%</strong></td></tr><tr><td>합계(HBM 제외)</td><td style="text-align:right;">19%</td></tr></tbody></table></div>
+<ul>
+<li>
+<p><mark class="text-highlight">22% = “공급 과잉 판정 기준선”</mark> → 공급 비트 증가율이 22%를 안정적으로 넘는 ‘28~29년이 진짜 변곡점 <small>(삼성증권, 2026-06-02)</small></p>
+</li>
+<li>
+<p><strong>소비자 기기는 메모리 원가에 눌림</strong></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>평소</th><th>최근</th><th>출처</th></tr></thead><tbody><tr><td>스마트폰 메모리 원가율</td><td>10년 평균 11%</td><td>3Q26 46% (DRAM만 26%)</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>노트PC DRAM 원가율</td><td>20년 평균 3.7%</td><td>2Q26 25%</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>2026년 출하 전망</td><td>—</td><td>스마트폰 −16% YoY, PC −13% YoY로 하향</td><td><small>키움증권, 2026-06-01</small></td></tr></tbody></table></div>
+<ul>
+<li>
+<p>중저가 OEM 메모리 용량 축소, 고가 OEM 판가 인상 <small>(BNK투자증권, 2026-09-14)</small></p>
+</li>
+<li>
+<p><strong>2027년 응용처별 생산 증가율</strong> <small>(교보증권, 2026-11-02, TrendForce)</small></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>응용처</th><th style="text-align:right;">2027E 생산 YoY</th><th style="text-align:right;">2027E 비중</th><th style="text-align:right;">증가분 기여</th></tr></thead><tbody><tr><td>Server</td><td style="text-align:right;">+25.1%</td><td style="text-align:right;">42.0%</td><td style="text-align:right;">43.0%</td></tr><tr><td>Mobile</td><td style="text-align:right;">+26.1%</td><td style="text-align:right;">35.5%</td><td style="text-align:right;">37.4%</td></tr><tr><td>Graphics</td><td style="text-align:right;">+46.0%</td><td style="text-align:right;">13.7%</td><td style="text-align:right;">22.0%</td></tr><tr><td>PC</td><td style="text-align:right;">−8.5%</td><td style="text-align:right;">5.2%</td><td style="text-align:right;">−2.5%</td></tr><tr><td>Consumer</td><td style="text-align:right;">+0.5%</td><td style="text-align:right;">3.7%</td><td style="text-align:right;">0.1%</td></tr></tbody></table></div>
+<hr/>
+<h2 id="-기술-심화">③ 기술 심화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-심화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>HBM 웨이퍼당 비트 = 서버 범용의 약 1/4~1/3 → 웨이퍼 비중이 비트 비중의 2.3~2.7배(내 계산)</li>
+<li>베이스다이 외주는 웨이퍼 부담을 7~8%만 덜고, 공급을 파운드리 캐파에도 묶음</li>
+<li>커스텀 HBM → 유통재고가 안 생김 → 사이클 진폭 축소, 단 부가가치 일부 파운드리로 이동</li>
+</ul>
+</div></blockquote>
+<h3 id="hbm이-범용-dram-웨이퍼를-잠식하는-구조">HBM이 범용 DRAM 웨이퍼를 잠식하는 구조<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm이-범용-dram-웨이퍼를-잠식하는-구조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>웨이퍼 한 장의 값어치(2026-06 시점 가정)</strong> — 삼성증권, 2026-06-02, p.19</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>제품</th><th>넷다이(개) × 다이당 용량</th><th style="text-align:right;">수율</th><th style="text-align:right;">웨이퍼당 생산(Gb)</th><th style="text-align:right;">가격($/Gb)</th><th style="text-align:right;">웨이퍼 매출($)</th></tr></thead><tbody><tr><td>HBM3E</td><td>578 × 24Gb</td><td style="text-align:right;">60%</td><td style="text-align:right;">8,323</td><td style="text-align:right;">1.7</td><td style="text-align:right;">14,149</td></tr><tr><td>HBM4</td><td>503 × 24Gb</td><td style="text-align:right;">50%</td><td style="text-align:right;">6,034</td><td style="text-align:right;">2.3</td><td style="text-align:right;">13,879</td></tr><tr><td>D1b 서버</td><td>1,750 × 16Gb</td><td style="text-align:right;">95%</td><td style="text-align:right;">26,600</td><td style="text-align:right;">1.7</td><td style="text-align:right;">45,220</td></tr><tr><td>D1c 서버</td><td>2,100 × 16Gb</td><td style="text-align:right;">80%</td><td style="text-align:right;">26,880</td><td style="text-align:right;">1.7</td><td style="text-align:right;">45,696</td></tr></tbody></table></div>
+<ul>
+<li>
+<p><mark class="text-highlight">2026년 중반엔 서버 DRAM 웨이퍼 매출이 HBM의 3배 초과</mark> → HBM 가격을 크게 올리지 않으면 증산 유인 약함 → 이후 HBM4 가격 급등(⑤) 배경</p>
+</li>
+<li>
+<p><strong>잠식 규모 추정 — 하우스별</strong></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>HBM 웨이퍼 비중</td><td style="text-align:right;">18%</td><td style="text-align:right;">25%</td><td style="text-align:right;">35%</td><td style="text-align:right;">42%</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>HBM 비트 비중</td><td style="text-align:right;">8%</td><td style="text-align:right;">11%</td><td style="text-align:right;">13%</td><td style="text-align:right;">16%</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>범용:HBM 교환비</td><td style="text-align:right;">2.39배</td><td style="text-align:right;">2.81배</td><td style="text-align:right;">3.48배</td><td style="text-align:right;">3.80배</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>사라진 범용 비트(억Gb)</td><td style="text-align:right;">326</td><td style="text-align:right;">681</td><td style="text-align:right;">1,466</td><td style="text-align:right;">2,523</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>HBM 웨이퍼 비중</td><td style="text-align:right;">19%</td><td style="text-align:right;">—</td><td style="text-align:right;">31%</td><td style="text-align:right;">—</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>HBM 비트 비중</td><td style="text-align:right;">8%</td><td style="text-align:right;">—</td><td style="text-align:right;">13%</td><td style="text-align:right;">—</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>업계 HBM 웨이퍼 비중</td><td style="text-align:right;">약 20%(현재)</td><td style="text-align:right;">—</td><td style="text-align:right;">30% 가까이</td><td style="text-align:right;">—</td><td><small>유안타증권, 2026-11-06 (삼성전자 인용)</small></td></tr><tr><td>신규 웨이퍼 증설 중 HBM 몫</td><td style="text-align:right;">—</td><td style="text-align:right;">약 70%</td><td style="text-align:right;">80%</td><td style="text-align:right;">—</td><td><small>삼성증권, 2026-06-02</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;HBM: 웨이퍼 비중 vs 비트 비중 (%)\&quot;\n  x-axis [\&quot;2023\&quot;, \&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;%\&quot; 0 --> 50\n  line [4, 13, 18, 25, 35, 42]\n  line [2, 6, 8, 11, 13, 16]&quot;">xychart-beta
+  title &quot;HBM: 웨이퍼 비중 vs 비트 비중 (%)&quot;
+  x-axis [&quot;2023&quot;, &quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;%&quot; 0 --> 50
+  line [4, 13, 18, 25, 35, 42]
+  line [2, 6, 8, 11, 13, 16]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선1 = 웨이퍼 투입 비중, 선2 = 비트 공급 비중 <small>(iM증권, 2026-11-04)</small></em></p>
+<ul>
+<li><strong>베이스다이 외주는 웨이퍼 부담을 별로 못 덜어줌</strong> <small>(유안타증권, 2026-11-06)</small>
+<ul>
+<li>12단 = 코어다이 12장 + 베이스다이 1장 → 외주 몫은 13장 중 1장, 약 7~8% <small>(유안타증권, 2026-11-06)</small></li>
+<li>웨이퍼를 먹는 것 = TSV·보호영역으로 커진 코어다이 + 적층 수율 손실 <small>(유안타증권, 2026-11-06)</small></li>
+<li>오히려 HBM 공급을 DRAM 웨이퍼 + 파운드리 캐파 두 제약에 묶음 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+</li>
+</ul>
+<h3 id="hbm4-베이스다이의-파운드리-전환과-커스텀-hbm">HBM4 베이스다이의 파운드리 전환과 커스텀 HBM<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm4-베이스다이의-파운드리-전환과-커스텀-hbm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>왜 로직 공정인가</strong>
+<ul>
+<li>베이스다이 DRAM 공정→4nm 전환 시 HBM 스택 전력 40%↓, 절감분 전부 베이스다이 <small>(iM증권, 2026-11-04, 삼성전자 Hot Chips 2026 인용)</small></li>
+<li>H100→Rubin 대역폭 6.6배, GPU 전력 예산 3.3배 → 비트당 에너지 약 50% 감축 필요 <small>(iM증권, 2026-11-04)</small></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>HBM4 베이스다이</th><th>HBM4E 베이스다이</th><th>코어다이</th></tr></thead><tbody><tr><td>SK하이닉스</td><td>TSMC</td><td>TSMC 3nm 검토</td><td>1c</td></tr><tr><td>삼성전자</td><td>자사 파운드리(4nm)</td><td>자사 4nm</td><td>1c</td></tr><tr><td>마이크론</td><td>자체 공정</td><td>TSMC 외주</td><td>1γ</td></tr></tbody></table></div>
+<p><small><em>출처: 유안타증권 2026-11-06, iM증권 2026-06-18</em></small></p>
+<ul>
+<li><strong>커스텀 HBM 로드맵</strong> — 단계가 올라갈수록 컨트롤러·연산이 HBM으로 내려옴</li>
+</ul>
+<p><img src="../반도체/그림/메모리_dram_hbm_chbm로드맵.png" alt="메모리_DRAM_HBM_cHBM로드맵"/><br/>
+<small><em>출처: iM증권, 2026-11-04, p.46</em></small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>NVHBM</th><th>내용</th><th>출처</th></tr></thead><tbody><tr><td>성능</td><td>HBM4E 대비 대역폭 +30%, 전력 −15%</td><td><small>DS투자증권 2026-11-10, 유안타증권 2026-11-06</small></td></tr><tr><td>면적</td><td>XPU 연산면적 최대 25% 확보</td><td><small>DS투자증권 2026-11-10, 유안타증권 2026-11-06</small></td></tr><tr><td>확산</td><td>AWS Trainium4 등 커스텀 ASIC으로 적용 확대 예정</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>한계</td><td>컨트롤러 IP·표준화는 NVIDIA 보유</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>└ 결과</td><td>메모리사 마진 = 베이스다이 원가·가격 프리미엄</td><td><small>DS투자증권, 2026-11-10</small></td></tr></tbody></table></div>
+<p><small>NVHBM = GPU 메모리 컨트롤러를 베이스다이로 이전</small></p>
+<ul>
+<li><strong>커스텀화가 사업모델을 바꿈</strong>
+<ul>
+<li>베이스다이에 쌓은 뒤엔 그 고객 외 판매처 없음 → 현물·유통재고 없음 → <mark class="text-highlight">사이클 진폭 축소</mark> <small>(iM증권, 2026-11-04)</small></li>
+<li>반대 측면: 부가가치 일부가 파운드리·ASIC 디자인하우스로 이동 <small>(유안타증권, 2026-11-06)</small></li>
+<li>중국엔 7nm 이하·로직 IP 접근 제한 → HBM4는 “공정과 생태계의 복합 장벽” <small>(유안타증권, 2026-11-06)</small></li>
+<li>JEDEC 역할: 완성 규격 정의 → 컨트롤러·RAS·BIST·인터페이스 모듈 단위 표준화 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+</li>
+</ul>
+<h3 id="hbm5--cop-구조침니bl16">HBM5 — COP 구조·침니·BL16<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm5--cop-구조침니bl16" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  A[\&quot;베이스다이 발열\&quot;] --> B[\&quot;DRAM 셀 전하 누설\&quot;]\n  B --> C[\&quot;리프레시 증가·쓰로틀링\&quot;]\n  C --> D[\&quot;열을 수직으로 빼는&lt;br/>'침니(굴뚝)' 필요\&quot;]\n  D --> E[\&quot;코어다이 면적 축소 필요&lt;br/>→ 1c 이하 미세화 막힘\&quot;]\n  E --> F[\&quot;COP(Cell on Periphery)&lt;br/>셀·주변회로 다이 분리 + 하이브리드 본딩\&quot;]&quot;">flowchart LR
+  A[&quot;베이스다이 발열&quot;] --> B[&quot;DRAM 셀 전하 누설&quot;]
+  B --> C[&quot;리프레시 증가·쓰로틀링&quot;]
+  C --> D[&quot;열을 수직으로 빼는&lt;br/>'침니(굴뚝)' 필요&quot;]
+  D --> E[&quot;코어다이 면적 축소 필요&lt;br/>→ 1c 이하 미세화 막힘&quot;]
+  E --> F[&quot;COP(Cell on Periphery)&lt;br/>셀·주변회로 다이 분리 + 하이브리드 본딩&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small><em>출처: 신영증권, 2026-05-26</em></small></p>
+<ul>
+<li>COP 극박막화: 셀 다이 약 14μm, 주변회로 다이 1μm 미만 <small>(신영증권, 2026-05-26)</small></li>
+<li>버스트 길이 8→16(BL16) → 명령당 데이터 2배 → GPU SRAM 캐시 2배 이상 → SRAM 3D 적층 <small>(신영증권, 2026-05-26)</small></li>
+</ul>
+<p><img src="../반도체/그림/메모리_dram_hbm_hbm5_cop코어다이.png" alt="메모리_DRAM_HBM_HBM5_COP코어다이"/><br/>
+<small><em>출처: 신영증권, 2026-05-26, p.19</em></small></p>
+<h3 id="수율-이슈">수율 이슈<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#수율-이슈" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>수율</th><th>출처</th></tr></thead><tbody><tr><td>HBM3E(삼성증권 웨이퍼 모델 가정)</td><td>60%</td><td><small>삼성증권, 2026-06-02</small></td></tr><tr><td>HBM4(같은 모델 가정)</td><td>50%</td><td><small>삼성증권, 2026-06-02</small></td></tr><tr><td>SK하이닉스 HBM</td><td>약 70%</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>CXMT HBM3E</td><td>20~30%</td><td><small>교보증권, 2026-11-02</small></td></tr><tr><td>CXMT HBM3(8단)</td><td>약 25%</td><td><small>교보증권 2026-11-02, 유안타증권 2026-11-06</small></td></tr><tr><td>삼성전자 DRAM 1c</td><td>약 80%까지 개선</td><td><small>대신증권, 2026-09-08</small></td></tr><tr><td>CXMT DDR5(17nm급 추정)</td><td>90% 이상(보도, 미확인)</td><td><small>교보증권, 2026-11-02</small></td></tr></tbody></table></div>
+<ul>
+<li>삼성 1c 수율 개선 → 1c를 HBM4 전량에서 범용에도 배분 가능 → 원가 절감 본격 기여 <small>(대신증권, 2026-09-08)</small></li>
+<li><strong>16단 HBM4E 인증 경쟁</strong> <small>(iM증권, 2026-06-18)</small></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>삼성전자</th><th>SK하이닉스</th></tr></thead><tbody><tr><td>노선</td><td>하이브리드 신공정</td><td>검증된 MR-MUF 연장</td></tr><tr><td>유리한 구간</td><td>중장기(20단+) 선행 투자</td><td>단기(16단) 안정성</td></tr><tr><td>샘플</td><td>5/29 세계 최초 12단 48GB HBM4E 샘플 출하</td><td>2H26 계획을 6~7월로 당김</td></tr></tbody></table></div>
+<h3 id="1c-전환-속도-비교">1c 전환 속도 비교<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#1c-전환-속도-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">2024말</th><th>2025말</th><th style="text-align:right;">2026말</th><th>2027</th><th>출처</th></tr></thead><tbody><tr><td>삼성전자 D1c 캐파(K/월)</td><td style="text-align:right;">20</td><td>50</td><td style="text-align:right;">200</td><td>—</td><td><small>삼성증권, 2026-08-17</small></td></tr><tr><td>SK하이닉스 D1c 캐파(K/월)</td><td style="text-align:right;">20</td><td>30</td><td style="text-align:right;">120</td><td>—</td><td><small>삼성증권, 2026-08-17</small></td></tr><tr><td>DRAM 내 1c 비중(업계)</td><td style="text-align:right;">—</td><td>1.3%</td><td style="text-align:right;">14.8%</td><td>33.9%</td><td><small>BNK투자증권, 2026-08-18</small></td></tr><tr><td>글로벌 1c 출하 비중</td><td style="text-align:right;">—</td><td>한 자릿수 초반</td><td style="text-align:right;">약 20%</td><td>—</td><td><small>BNK투자증권, 2026-08-18</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;D1c 캐파 (K/월, 연말, 삼성증권)\&quot;\n  x-axis [\&quot;2024말\&quot;, \&quot;2025말\&quot;, \&quot;2026말\&quot;]\n  y-axis \&quot;K/월\&quot; 0 --> 220\n  line [20, 50, 200]\n  line [20, 30, 120]&quot;">xychart-beta
+  title &quot;D1c 캐파 (K/월, 연말, 삼성증권)&quot;
+  x-axis [&quot;2024말&quot;, &quot;2025말&quot;, &quot;2026말&quot;]
+  y-axis &quot;K/월&quot; 0 --> 220
+  line [20, 50, 200]
+  line [20, 30, 120]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선1 = 삼성전자, 선2 = SK하이닉스 <small>(삼성증권, 2026-08-17)</small></em></p>
+<ul>
+<li>삼성 = P4 전환투자로 범용 D1c / SK = M15X 증설 + D1c 전환 <small>(삼성증권, 2026-08-17)</small></li>
+<li>신규 증설은 HBM용 위주, 범용만을 위한 증설은 제한적 <small>(삼성증권, 2026-08-17)</small></li>
+<li>SK M15X 1c 전환·HBM4 증산 → 4Q26 DRAM 출하 가이던스 QoQ 20% 중반 <small>(DS투자증권, 2026-11-10)</small></li>
+<li>CXMT G5(1b 수준) = EUV 없이 SAQP → 공정 단계·시간 증가, 비트당 원가 확인 필요 <small>(교보증권, 2026-11-02)</small></li>
+</ul>
+<hr/>
+<h2 id="-캐파증설">④ 캐파·증설<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-캐파증설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>4사 웨이퍼 캐파 2026→2028 약 +30~39%(내 계산) 늘지만, HBM 조정 후 실질 공급 증가율은 2027년 14.7%</li>
+<li>SK하이닉스 2028 캐파는 하우스 간 100K 넘게 갈림(BNK 865K vs DS 760K)</li>
+<li>신규 팹의 의미 있는 비트 기여는 빨라야 2028년, 집중은 2029년 이후</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<p>공장별 분기 일정·장비 반입 시점은 <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a>에서 다룸. 여기선 산업 합산과 하우스 간 차이만 정리</p>
+</blockquote>
+<h3 id="3사--cxmt-웨이퍼-캐파-비교-k월-연말-기준">3사 + CXMT 웨이퍼 캐파 비교 (K/월, 연말 기준)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#3사--cxmt-웨이퍼-캐파-비교-k월-연말-기준" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>2026 (DS / BNK / iM)</th><th>2027 (DS / BNK / iM)</th><th>2028 (DS / BNK / iM)</th></tr></thead><tbody><tr><td>삼성전자</td><td>740 / 695 / 683</td><td>875 / 730 / 808</td><td>1,025 / 840 / 904</td></tr><tr><td>SK하이닉스</td><td>660 / 590 / 580</td><td>720 / 715 / 639</td><td>760 / 865 / 741</td></tr><tr><td>마이크론</td><td>365 / 300 / ⚠ 원문 없음</td><td>385 / 353 / —</td><td>435 / 468 / —</td></tr><tr><td>CXMT</td><td>290 / 300 / ⚠ 원문 없음</td><td>340 / 400 / —</td><td>460 / 440 / —</td></tr><tr><td>4사 합</td><td>2,055 / 1,885 / —</td><td>2,320 / 2,198 / —</td><td>2,680 / 2,613 / —</td></tr></tbody></table></div>
+<p><small>DS = 2026F~2028F, BNK·iM = 2026E~2028E 표기</small></p>
+<p><small><em>출처: DS투자증권 2026-11-10 p.26~27 / BNK투자증권 2026-09-14 p.11 / iM증권 2026-11-04 p.39(연간 웨이퍼 K장을 12로 나눈 값, 내 계산). DS 4사 합은 내 계산. 요약 증가율(2026→2028: DS +30%, BNK +39%)도 내 계산</em></small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;DRAM 웨이퍼 캐파 전망 (K/월, 연말, DS투자증권)\&quot;\n  x-axis [\&quot;2026F\&quot;, \&quot;2027F\&quot;, \&quot;2028F\&quot;, \&quot;2029F\&quot;, \&quot;2030F\&quot;]\n  y-axis \&quot;K/월\&quot; 0 --> 1400\n  line [740, 875, 1025, 1175, 1295]\n  line [660, 720, 760, 840, 960]\n  line [365, 385, 435, 510, 595]\n  line [290, 340, 460, 580, 630]&quot;">xychart-beta
+  title &quot;DRAM 웨이퍼 캐파 전망 (K/월, 연말, DS투자증권)&quot;
+  x-axis [&quot;2026F&quot;, &quot;2027F&quot;, &quot;2028F&quot;, &quot;2029F&quot;, &quot;2030F&quot;]
+  y-axis &quot;K/월&quot; 0 --> 1400
+  line [740, 875, 1025, 1175, 1295]
+  line [660, 720, 760, 840, 960]
+  line [365, 385, 435, 510, 595]
+  line [290, 340, 460, 580, 630]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선 순서: 삼성전자, SK하이닉스, 마이크론, CXMT <small>(DS투자증권, 2026-11-10)</small></em></p>
+<ul>
+<li><strong>다른 하우스 점검값</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>SK하이닉스 4Q26</td><td>620K/월</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>CXMT 4Q26 → 4Q28E</td><td>300K/월 → 500~600K/월</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>CXMT 2Q26</td><td>300K/월 = 마이크론과 동일, 2024년의 2배</td><td><small>IBK투자증권, 2026-08-20, OMDIA</small></td></tr><tr><td>전 세계 DRAM 웨이퍼 증가 2027년</td><td>+114K/월</td><td><small>IBK투자증권, 2026-08-20, OMDIA</small></td></tr><tr><td>〃 2028년</td><td>+49K/월</td><td><small>IBK투자증권, 2026-08-20, OMDIA</small></td></tr><tr><td>〃 2029년</td><td>+353K/월</td><td><small>IBK투자증권, 2026-08-20, OMDIA</small></td></tr><tr><td>글로벌 DRAM 캐파</td><td>2025말 대비 2028말 약 +50%, 2030말 약 2배</td><td><small>BNK투자증권, 2026-09-14</small></td></tr></tbody></table></div>
+<ul>
+<li>
+<p><mark class="text-highlight">SK하이닉스 2028년 캐파 BNK 865K vs DS 760K</mark> → Y1 램프 속도·Y2 착공 가정 차이 <small>(DS는 Y2 2028년 40K→0K로 수정, 2026-11-10)</small></p>
+</li>
+<li>
+<p>캐파≠비트: CXMT 웨이퍼당 5,746Gb = 마이크론 20,612Gb의 약 1/4 <small>(IBK투자증권, 2026-08-20, OMDIA 2025)</small></p>
+<ul>
+<li>DS의 CXMT 상대 bits/wafer 가정: 2027년 0.60, 2030년 0.70, 2035년 0.80 <small>(DS투자증권, 2026-07-20)</small></li>
+</ul>
+</li>
+<li>
+<p><strong>HBM 조정 후 “실질” 캐파</strong> (HBM 교환비·bits/wafer 반영, K/월 환산) — DS투자증권, 2026-11-10</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th></th><th style="text-align:right;">2026F</th><th style="text-align:right;">2027F</th><th style="text-align:right;">2028F</th><th style="text-align:right;">2029F</th><th style="text-align:right;">2030F</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">627</td><td style="text-align:right;">722</td><td style="text-align:right;">894</td><td style="text-align:right;">1,033</td><td style="text-align:right;">1,148</td></tr><tr><td>SK하이닉스</td><td style="text-align:right;">500</td><td style="text-align:right;">585</td><td style="text-align:right;">642</td><td style="text-align:right;">716</td><td style="text-align:right;">826</td></tr><tr><td>마이크론</td><td style="text-align:right;">315</td><td style="text-align:right;">339</td><td style="text-align:right;">392</td><td style="text-align:right;">463</td><td style="text-align:right;">544</td></tr><tr><td>CXMT</td><td style="text-align:right;">167</td><td style="text-align:right;">200</td><td style="text-align:right;">297</td><td style="text-align:right;">403</td><td style="text-align:right;">469</td></tr><tr><td>4사 합</td><td style="text-align:right;">1,609</td><td style="text-align:right;">1,846</td><td style="text-align:right;">2,226</td><td style="text-align:right;">2,615</td><td style="text-align:right;">2,987</td></tr><tr><td>공급 증가율</td><td style="text-align:right;">—</td><td style="text-align:right;">14.7%</td><td style="text-align:right;">20.6%</td><td style="text-align:right;">17.4%</td><td style="text-align:right;">14.2%</td></tr></tbody></table></div>
+<h3 id="hbm-캐파">HBM 캐파<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm-캐파" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>HBM 캐파(천장/월)</td><td style="text-align:right;">265</td><td style="text-align:right;">410</td><td style="text-align:right;">530</td><td style="text-align:right;">790</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>3사 HBM TSV 캐파(K/월, 연말)</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">470</td><td style="text-align:right;">610</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>삼성 HBM 웨이퍼 투입(만장/월, 평균)</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">약 17</td><td style="text-align:right;">약 27</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>CoWoS 캐파(천장/월)</td><td style="text-align:right;">40</td><td style="text-align:right;">75</td><td style="text-align:right;">120</td><td style="text-align:right;">150</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>HBM 비트 출하 YoY</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">+50~60%</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>HBM 생산 비트 YoY</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">+50%</td><td><small>키움증권, 2026-08-11</small></td></tr></tbody></table></div>
+<ul>
+<li>키움 790K vs DS 610K = 측정 기준 차이로 보임(웨이퍼 인풋 vs TSV 캐파) ⚠ 직접 비교 금지</li>
+<li>SK하이닉스는 HBM 수요의 60~70%만 채우도록 증설 조절 가능성 <small>(유안타증권, 2026-11-06, 채널체크)</small></li>
+<li>후공정 제약: 삼성은 천안·온양에 HBM 패키징 집중, 베트남은 2027년 11월 범용 최종 테스트 라인 → 국내 후공정을 HBM에 더 배정 <small>(DS투자증권, 2026-11-10)</small> → <a href="../반도체/10_반도체후공정" class="internal internal-link alias" data-slug="반도체/10_반도체후공정">10_반도체후공정</a></li>
+</ul>
+<h3 id="bit-growth--하우스별">Bit growth — 하우스별<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#bit-growth--하우스별" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>2026 공급 / 수요</th><th>2027 공급 / 수요</th><th>2028 공급 / 수요</th><th>비고</th></tr></thead><tbody><tr><td>삼성증권, 2026-06-02</td><td>20% 초반이 최선 / —</td><td>약 17% / —</td><td>— / —</td><td>장기 수요 수렴선 22%</td></tr><tr><td>DS투자증권, 2026-07-20</td><td>— / —</td><td>21% / 17%</td><td>20% / 17%</td><td>실질 bit 기준</td></tr><tr><td>DS투자증권, 2026-11-10</td><td>— / —</td><td>14.7%(출하 10% 중반) / 20%대 중반</td><td>20.6% / —</td><td>7월 대비 2027 공급↓·수요↑</td></tr><tr><td>iM증권, 2026-11-04</td><td>26% / 25%</td><td>25% / 31%</td><td>29% / 29%</td><td>25~28 CAGR 수요 28%, 공급 26%</td></tr><tr><td>교보증권, 2026-11-02 <small>(TrendForce)</small></td><td>— / —</td><td>생산 +24.4% / —</td><td>— / —</td><td>웨이퍼 +14.6%, CapEx +54.5%</td></tr><tr><td>마이크론 전망<small>(교보 인용, 2026-11-02)</small></td><td>— / —</td><td>출하 20% 초반 / —</td><td>— / —</td><td>산업 기준</td></tr><tr><td>BNK투자증권, 2026-09-14</td><td>— / —</td><td>생산 20% 초중반 / —</td><td>생산 20% 초중반 / —</td><td>2028까지</td></tr></tbody></table></div>
+<ul>
+<li><strong>업체별 2026년 비트 성장</strong> <small>(키움증권, 2026-08-11)</small></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>증설·전환</th><th style="text-align:right;">생산 bit growth</th><th style="text-align:right;">출하 bit growth</th></tr></thead><tbody><tr><td>삼성전자</td><td>평택4 70K + 기존 30K, 1c 전환</td><td style="text-align:right;">+24%</td><td style="text-align:right;">+27%</td></tr><tr><td>SK하이닉스</td><td>M15X 60K, 1c 전환</td><td style="text-align:right;">+30%</td><td style="text-align:right;">+22%</td></tr><tr><td>마이크론</td><td>1b·1γ 전환</td><td style="text-align:right;">+27%</td><td style="text-align:right;">+25%</td></tr><tr><td>CXMT</td><td>Fab2 30K, DDR5 수율 개선</td><td style="text-align:right;">+48%</td><td style="text-align:right;">+50%</td></tr></tbody></table></div>
+<ul>
+<li>키움 6월판: 업체별 생산 bit growth “+22~50%”, 삼성 +22%·출하 +23% → 8월판 +24%·+27%로 상향 <small>(키움증권 2026-06-01 → 2026-08-11)</small></li>
+<li>범용 DRAM만 보면 3사 캐파 증분 2026년 +10K, 2027년 +100K 수준 <small>(다올투자증권, 2026-05-19)</small></li>
+</ul>
+<h3 id="신규-팹-일정-요약">신규 팹 일정 (요약)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#신규-팹-일정-요약" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p style="font-weight:700;margin:4px 0;">주요 DRAM 신규 팹 첫 클린룸·가동 시점(하우스 인용)</p>
+<div class="table-container"><table style="border-collapse:collapse;width:100%;table-layout:fixed;"><colgroup><col style="width:92px;"/><col style="width:190px;"/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">구분</th><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">항목</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2026</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2027</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2028</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2029</th></tr><tr><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;background:#f59e0b;color:#111;">지금 4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th></tr><tr><td rowspan="5" style="padding:4px 6px;font-size:12px;white-space:normal;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">한국</td><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;vertical-align:middle;line-height:1.25;">SK M15X 최대 캐파 램프업</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="SK M15X 최대 캐파 램프업 26.01~26.12">26.01~26.12</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">SK 용인 Y1 첫 클린룸</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="SK 용인 Y1 첫 클린룸 27.02">◆ 27.02</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">삼성 평택 P5 오픈(BNK 5월·삼성증권 4Q27)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="삼성 평택 P5 오픈(BNK 5월·삼성증권 4Q27) 27.05~27.12">27.05~27.12</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">SK 청주 M17 첫 클린룸</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="SK 청주 M17 첫 클린룸 28.12">◆ 28.12</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">SK 용인 Y2 첫 클린룸</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="SK 용인 Y2 첫 클린룸 29.06">◆ 29.06</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">해외</td><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;vertical-align:middle;line-height:1.25;">마이크론 아이다호 ID1</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="마이크론 아이다호 ID1 27.01~27.06">27.01~27.06</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">CXMT 상하이 F1</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="CXMT 상하이 F1 27.04">◆ 27.04</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">CXMT A3(허페이)·C3(베이징)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="CXMT A3(허페이)·C3(베이징) 28.04">◆ 28.04</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;line-height:1.25;">마이크론 ID2</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="마이크론 ID2 29.07~29.12">29.07~29.12</td></tr></tbody></table></div>
+<p style="font-size:12px;margin-top:6px;"><span style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 8px;border-radius:4px;">진행·확정</span>   <span style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 8px;border-radius:4px;">◆ 가동 개시·핵심 마일스톤</span>   <span style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 8px;border-radius:4px;">계획 구간</span>   | 굵은 세로선 = 연도 경계 · 막대 안 = 원문 기간(연.월)</p>
+<small>*출처: 삼성증권 2026-06-02 p.21, DS투자증권 2026-11-10 p.21·33, BNK투자증권 2026-09-14 p.11*</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>리드타임·기여 시점</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>팹 착공 → 웨이퍼 생산</td><td>약 3년 반</td><td><small>DS투자증권, 2026-11-10</small></td></tr><tr><td>장비 반입 → 완제품</td><td>반입 3개월 + 테스트 2개월 + 웨이퍼 투입~완제품 4개월</td><td><small>IBK투자증권, 2026-08-20</small></td></tr><tr><td>신공정 풀캐파까지</td><td>최대 15개월</td><td><small>IBK투자증권, 2026-08-20</small></td></tr><tr><td>의미 있는 비트 기여</td><td>빨라야 2028년부터</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>의미 있는 비트 기여</td><td>2029년 이후 집중</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>호남(광주 군공항) 팹</td><td>빨라야 2034~2035년 첫 양산 → 2035년 이전 기여 없음</td><td><small>DS투자증권, 2026-07-20</small></td></tr><tr><td>호남 팹 정부 계획</td><td>2028년 착공·2030년 첫 양산</td><td><small>교보증권, 2026-11-02</small></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-가격수급">⑤ 가격·수급<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격수급" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>범용 계약가는 상반기 내내 “하반기 둔화” 전망을 깨고 3Q26에도 두 자릿수 상승</li>
+<li>HBM ASP는 2027E 두 배 이상 → 범용이 2H27 꺾여도 Blended ASP는 상승 유지(DS)</li>
+<li>LTA는 해지선 약 −60%로 단단하다는 쪽과, 불황기 재협상된다는 회의론이 맞섬</li>
+</ul>
+</div></blockquote>
+<h3 id="범용-dram-계약가현물가-추이">범용 DRAM 계약가·현물가 추이<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#범용-dram-계약가현물가-추이" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;DDR5 16Gb 현물가 vs 고정가 ($, 그래프 판독, 근사)\&quot;\n  x-axis [\&quot;25.7\&quot;, \&quot;25.10\&quot;, \&quot;26.1\&quot;, \&quot;26.3\&quot;, \&quot;26.5\&quot;, \&quot;26.7\&quot;, \&quot;26.9\&quot;]\n  y-axis \&quot;$\&quot; 0 --> 60\n  line [6, 8, 27, 38, 38, 47, 54]\n  line [5, 6, 19, 29, 33, 40, 46]&quot;">xychart-beta
+  title &quot;DDR5 16Gb 현물가 vs 고정가 ($, 그래프 판독, 근사)&quot;
+  x-axis [&quot;25.7&quot;, &quot;25.10&quot;, &quot;26.1&quot;, &quot;26.3&quot;, &quot;26.5&quot;, &quot;26.7&quot;, &quot;26.9&quot;]
+  y-axis &quot;$&quot; 0 --> 60
+  line [6, 8, 27, 38, 38, 47, 54]
+  line [5, 6, 19, 29, 33, 40, 46]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선1 = 현물가, 선2 = 고정가. 하나증권 2026-09-14 p.7 도표2(DRAMeXchange) 그래프 판독, 근사</em></p>
+<ul>
+<li><strong>현물가 점검값(원문 수치, $)</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>날짜</th><th>DDR5 16Gb</th><th style="text-align:right;">DDR4 16Gb</th><th>DDR5 RDIMM 32GB</th><th>출처</th></tr></thead><tbody><tr><td>6/12</td><td>44.8</td><td style="text-align:right;">67.0</td><td>—</td><td><small>교보증권 Weekly, 2026-06-15</small></td></tr><tr><td>6/18</td><td>46.0</td><td style="text-align:right;">69.1</td><td>—</td><td><small>교보증권 Weekly, 2026-06-22</small></td></tr><tr><td>7/17</td><td>49.7(신고가)</td><td style="text-align:right;">80.0</td><td>—</td><td><small>교보증권 Weekly, 2026-07-21</small></td></tr><tr><td>8/14</td><td>52.73</td><td style="text-align:right;">—</td><td>1,565</td><td><small>대신증권, 2026-08-18</small></td></tr><tr><td>최근(11월)</td><td>—</td><td style="text-align:right;">—</td><td>1,950까지 “하락” — 중간 고점 수치 ⚠ 원문 없음</td><td><small>대신증권, 2026-11-10</small></td></tr></tbody></table></div>
+<ul>
+<li>
+<p>대신: 현물 조정 ≠ 다운턴 신호 → 고정가와 괴리 극심, 32GB 소용량 현물은 대표성 약함 <small>(대신증권, 2026-11-10)</small></p>
+</li>
+<li>
+<p>관행상 현물이 먼저 꺾이고 계약가가 따라감 → 트렌드포스 일간 현물가가 선행지표 <small>(대신증권, 2026-08-18)</small></p>
+</li>
+<li>
+<p><strong>분기 가격 상승률 — 하우스별 시점 차이</strong> (QoQ)</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>분기</th><th>키움 06-01 (DRAM)</th><th style="text-align:right;">IBK 05-20 (서버 64GB DDR5 계약, OMDIA)</th><th>한화 07-02 (DRAM)</th><th style="text-align:right;">DS 11-10 범용 (삼성 / SK)</th><th>교보 11-02 (범용)</th></tr></thead><tbody><tr><td>1Q26</td><td>—</td><td style="text-align:right;">+69.8%(실적)</td><td>—</td><td style="text-align:right;">+105.0% / +98.2%</td><td>+93~98%(계약가)</td></tr><tr><td>2Q26</td><td>+58%</td><td style="text-align:right;">+35.1%</td><td>—</td><td style="text-align:right;">+47.6% / +37.9%</td><td>—</td></tr><tr><td>3Q26</td><td>상승률 제한</td><td style="text-align:right;">+4.9%</td><td>+15~25%</td><td style="text-align:right;">+17.6%(P) / +31.7%(P)</td><td>—</td></tr><tr><td>4Q26</td><td>—</td><td style="text-align:right;">+3.0%</td><td>—</td><td style="text-align:right;">+8.0% / +5.5%</td><td>—</td></tr><tr><td>1Q27</td><td>—</td><td style="text-align:right;">+1.0%</td><td>—</td><td style="text-align:right;">+1.5% / +1.0%</td><td>+5~10%</td></tr><tr><td>2Q27</td><td>—</td><td style="text-align:right;">0.0%</td><td>—</td><td style="text-align:right;">0.0% / 0.0%</td><td>—</td></tr><tr><td>3Q27</td><td>—</td><td style="text-align:right;">—</td><td>—</td><td style="text-align:right;">−1.0% / −1.0%</td><td>—</td></tr><tr><td>4Q27</td><td>—</td><td style="text-align:right;">—</td><td>—</td><td style="text-align:right;">−2.0% / −2.0%</td><td>—</td></tr></tbody></table></div>
+<ul>
+<li>
+<p><mark class="text-highlight">5월 OMDIA 기반 3Q26 +4.9% 전망 vs 실제 DS 3Q26P +17.6~31.7%</mark> → “하반기 둔화” 전망이 반복해서 틀림 <small>(IBK 2026-05-20 vs DS 2026-11-10, 지표 정의 차이 ⚠)</small></p>
+</li>
+<li>
+<p>1Q27 서버 협상 결과 따라 2027년 범용 ASP +40% 중후반 YoY 가능(기존 +30% 후반) <small>(대신증권, 2026-11-10)</small></p>
+</li>
+<li>
+<p>LPDDR 계약가 1Q27 약 +20% 이상 → SOCAMM2로 서버가 모바일·PC와 물량 경쟁 <small>(유안타증권, 2026-11-06)</small></p>
+</li>
+<li>
+<p><strong>모듈 계약가 수준(달러)</strong> — IBK투자증권, 2026-05-20, p.10 (OMDIA)</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>분기</th><th style="text-align:right;">서버 RDIMM 64GB DDR5</th><th style="text-align:right;">서버 RDIMM 128GB DDR5</th><th style="text-align:right;">PC 16GB DDR5</th><th style="text-align:right;">모바일 8GB LPDDR5</th><th style="text-align:right;">부품 8Gb DDR4</th></tr></thead><tbody><tr><td>1Q26</td><td style="text-align:right;">766</td><td style="text-align:right;">2,146</td><td style="text-align:right;">122.8</td><td style="text-align:right;">54.7</td><td style="text-align:right;">7.65</td></tr><tr><td>2Q26F</td><td style="text-align:right;">1,035</td><td style="text-align:right;">2,897</td><td style="text-align:right;">159.7</td><td style="text-align:right;">76.6</td><td style="text-align:right;">11.48</td></tr><tr><td>3Q26F</td><td style="text-align:right;">1,086</td><td style="text-align:right;">3,042</td><td style="text-align:right;">170.8</td><td style="text-align:right;">82.0</td><td style="text-align:right;">12.28</td></tr><tr><td>4Q26F</td><td style="text-align:right;">1,119</td><td style="text-align:right;">3,133</td><td style="text-align:right;">176.0</td><td style="text-align:right;">84.4</td><td style="text-align:right;">12.65</td></tr><tr><td>1Q27F</td><td style="text-align:right;">1,130</td><td style="text-align:right;">3,165</td><td style="text-align:right;">177.7</td><td style="text-align:right;">85.3</td><td style="text-align:right;">12.77</td></tr><tr><td>2Q27F</td><td style="text-align:right;">1,130</td><td style="text-align:right;">3,165</td><td style="text-align:right;">177.7</td><td style="text-align:right;">85.3</td><td style="text-align:right;">12.77</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;서버 RDIMM 64GB DDR5 계약가 전망 ($, 2026-05 시점)\&quot;\n  x-axis [\&quot;1Q26\&quot;, \&quot;2Q26F\&quot;, \&quot;3Q26F\&quot;, \&quot;4Q26F\&quot;, \&quot;1Q27F\&quot;, \&quot;2Q27F\&quot;]\n  y-axis \&quot;$\&quot; 600 --> 1200\n  line [766, 1035, 1086, 1119, 1130, 1130]&quot;">xychart-beta
+  title &quot;서버 RDIMM 64GB DDR5 계약가 전망 ($, 2026-05 시점)&quot;
+  x-axis [&quot;1Q26&quot;, &quot;2Q26F&quot;, &quot;3Q26F&quot;, &quot;4Q26F&quot;, &quot;1Q27F&quot;, &quot;2Q27F&quot;]
+  y-axis &quot;$&quot; 600 --> 1200
+  line [766, 1035, 1086, 1119, 1130, 1130]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small><em>출처: IBK투자증권, 2026-05-20 (OMDIA). 이후 실제 3Q26 상승률이 전망을 크게 웃돈 점 유의</em></small></p>
+<ul>
+<li><strong>2028~2029 다운사이클 가정</strong> — DS투자증권, 2026-11-10</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시나리오</th><th style="text-align:right;">DRAM ASP 2028E</th><th style="text-align:right;">DRAM ASP 2029E</th><th style="text-align:right;">2년 누적</th><th>비고</th></tr></thead><tbody><tr><td>Bull</td><td style="text-align:right;">−15%</td><td style="text-align:right;">−10%</td><td style="text-align:right;">—</td><td>Blended(HBM 포함)</td></tr><tr><td>Base</td><td style="text-align:right;">−25%</td><td style="text-align:right;">−15%</td><td style="text-align:right;">−36%</td><td>범용 −30%여도 HBM 완충으로 Blended −25%</td></tr><tr><td>Bear</td><td style="text-align:right;">−40%</td><td style="text-align:right;">−25%</td><td style="text-align:right;">−55%</td><td>—</td></tr><tr><td>과거 2년 하락</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">−49~−56%</td><td>2018→20, 2021→23</td></tr></tbody></table></div>
+<ul>
+<li>2H27 범용 하락 전환을 전망해도 HBM4 확대·HBM4E 양산 → Blended ASP 상승 지속 <small>(DS투자증권, 2026-11-10)</small></li>
+<li>“일각” 2027년 말 고점 후 2028년 −53% 제시 → 그래도 2028년 가격은 2025년의 두 배 이상 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+<h3 id="hbm-asp">HBM ASP<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hbm-asp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>3사 HBM 평균단가($/Gb) <small>iM증권, 2026-11-04</small></td><td style="text-align:right;">1.29</td><td style="text-align:right;">1.62</td><td style="text-align:right;">1.69</td><td style="text-align:right;">3.54</td><td style="text-align:right;">4.25</td></tr><tr><td>3사 HBM 매출(십억$) <small>iM증권, 2026-11-04</small></td><td style="text-align:right;">18.8</td><td style="text-align:right;">38.0</td><td style="text-align:right;">63.4</td><td style="text-align:right;">209.4</td><td style="text-align:right;">383.0</td></tr><tr><td>HBM 시장(조원) <small>키움증권, 2026-08-11</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">104</td><td style="text-align:right;">260</td><td style="text-align:right;">400</td></tr><tr><td>HBM4 평균가 YoY <small>키움증권, 2026-08-11</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">+65%</td><td style="text-align:right;">—</td></tr><tr><td>HBM4 단가 가정($/Gb) <small>삼성증권, 2026-06-02</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">2.3</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td></tr><tr><td>HBM 영업이익률 <small>iM증권, 2026-11-04</small></td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">60%</td><td style="text-align:right;">70%</td><td style="text-align:right;">73%</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;3사 HBM 매출 (십억달러, iM증권)\&quot;\n  x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;십억달러\&quot; 0 --> 400\n  line [18.8, 38.0, 63.4, 209.4, 383.0]&quot;">xychart-beta
+  title &quot;3사 HBM 매출 (십억달러, iM증권)&quot;
+  x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;십억달러&quot; 0 --> 400
+  line [18.8, 38.0, 63.4, 209.4, 383.0]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em><small>(iM증권, 2026-11-04)</small></em></p>
+<ul>
+<li>
+<p>세대별 단가(그래프 판독, 근사): HBM3E(Blackwell) 약 1.7, HBM4 2026E 약 2.0 → 2027E 약 3.4, HBM4E 2027E 약 4.2달러/Gb <small>(키움증권, 2026-08-11)</small></p>
+</li>
+<li>
+<p>HBM 분기 ASP(QoQ): SK 4Q26 +29.7%, 1Q27 +33.2% / 삼성 3Q26 +52.2%, 1Q27 +22.9% <small>(DS투자증권, 2026-11-10)</small></p>
+</li>
+<li>
+<p>HBM 계약가는 범용 가격을 시차 두고 반영 → 늦게 오르고 늦게 내림 → 2H27부터 완충 확인 가능 <small>(DS투자증권, 2026-11-10)</small></p>
+</li>
+<li>
+<p><strong>업체별 HBM 점유율(비트 출하)</strong> — iM증권, 2026-11-04</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">34%</td><td style="text-align:right;">20%</td><td style="text-align:right;">33%</td><td style="text-align:right;">40%</td><td style="text-align:right;">41%</td></tr><tr><td>SK하이닉스</td><td style="text-align:right;">51%</td><td style="text-align:right;">53%</td><td style="text-align:right;">47%</td><td style="text-align:right;">41%</td><td style="text-align:right;">40%</td></tr><tr><td>마이크론</td><td style="text-align:right;">15%</td><td style="text-align:right;">28%</td><td style="text-align:right;">20%</td><td style="text-align:right;">19%</td><td style="text-align:right;">19%</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;HBM 비트 출하 점유율 (%, iM증권)\&quot;\n  x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n  y-axis \&quot;%\&quot; 0 --> 60\n  line [34, 20, 33, 40, 41]\n  line [51, 53, 47, 41, 40]\n  line [15, 28, 20, 19, 19]&quot;">xychart-beta
+  title &quot;HBM 비트 출하 점유율 (%, iM증권)&quot;
+  x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+  y-axis &quot;%&quot; 0 --> 60
+  line [34, 20, 33, 40, 41]
+  line [51, 53, 47, 41, 40]
+  line [15, 28, 20, 19, 19]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><em>선 순서: 삼성전자, SK하이닉스, 마이크론 <small>(iM증권, 2026-11-04)</small></em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>2027년 HBM 출하</th><th>삼성전자</th><th>SK하이닉스</th><th>해석</th><th>출처</th></tr></thead><tbody><tr><td>키움</td><td>233억Gb(+109%)</td><td>271억Gb(+46%)</td><td>출하량 SK 우위, 증가율·ASP 삼성 우위</td><td><small>키움증권, 2026-08-11</small></td></tr><tr><td>iM</td><td>약 238억Gb</td><td>약 240억Gb</td><td>거의 같음</td><td><small>iM증권, 2026-11-04</small></td></tr></tbody></table></div>
+<h3 id="수급공급과잉률--하우스별">수급(공급과잉률) — 하우스별<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#수급공급과잉률--하우스별" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>대상 (하우스·날짜)</th><th>2026</th><th>2027</th><th style="text-align:right;">2028</th><th>2029</th><th>이후·비고</th></tr></thead><tbody><tr><td>DRAM Sufficiency <small>(DS투자증권, 2026-07-20)</small></td><td>−5.0%</td><td>−1.9%</td><td style="text-align:right;">+0.5%</td><td>+1.4%</td><td>2030 +1.4%, 2031 −0.4%, 2035 −14.3%</td></tr><tr><td>HBM Sufficiency <small>(iM증권, 2026-11-04)</small></td><td>0%</td><td>−6%</td><td style="text-align:right;">−12%</td><td>—</td><td>—</td></tr><tr><td>HBM 공급과잉률(그래프 판독) <small>(키움증권, 2026-08-11)</small></td><td>약 −1%</td><td>약 −5%</td><td style="text-align:right;">—</td><td>—</td><td>—</td></tr><tr><td>HBM 수요 vs 공급 증가율 <small>(키움증권, 2026-08-11)</small></td><td>—</td><td>+56% vs +50%</td><td style="text-align:right;">—</td><td>—</td><td>—</td></tr><tr><td>DRAM 부족 강도 <small>(대신증권, 2026-11-10)</small></td><td>—</td><td>2026보다 확대</td><td style="text-align:right;">—</td><td>—</td><td>—</td></tr><tr><td>DRAM 충족률 <small>(BNK투자증권, 2026-09-14)</small></td><td>작년말 50% 수준 부족</td><td>—</td><td style="text-align:right;">—</td><td>—</td><td>수요 예측 빗나감이 변수</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;DRAM Sufficiency Ratio 장기 전망 (%, DS투자증권 2026-07-20)\&quot;\n  x-axis [\&quot;2026\&quot;, \&quot;2027\&quot;, \&quot;2028\&quot;, \&quot;2029\&quot;, \&quot;2030\&quot;, \&quot;2031\&quot;, \&quot;2032\&quot;, \&quot;2033\&quot;, \&quot;2034\&quot;, \&quot;2035\&quot;]\n  y-axis \&quot;%\&quot; -16 --> 4\n  line [-5.0, -1.9, 0.5, 1.4, 1.4, -0.4, -3.5, -6.9, -10.6, -14.3]&quot;">xychart-beta
+  title &quot;DRAM Sufficiency Ratio 장기 전망 (%, DS투자증권 2026-07-20)&quot;
+  x-axis [&quot;2026&quot;, &quot;2027&quot;, &quot;2028&quot;, &quot;2029&quot;, &quot;2030&quot;, &quot;2031&quot;, &quot;2032&quot;, &quot;2033&quot;, &quot;2034&quot;, &quot;2035&quot;]
+  y-axis &quot;%&quot; -16 --> 4
+  line [-5.0, -1.9, 0.5, 1.4, 1.4, -0.4, -3.5, -6.9, -10.6, -14.3]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ul>
+<li><mark class="text-highlight">DS 7월: 2028~30년 “일시적 과잉(+0.5~1.4%)” → 11월: 2027 공급 증가율 21%→14.7%로 하향</mark> → 부족이 더 길어지는 방향 <small>(DS투자증권 2026-07-20 → 2026-11-10)</small></li>
+<li>과잉 시나리오 조건: AI 가속기 성장률 2030년 이후 10%대 초반 급락, HBM 탑재량 정체, bits/wafer 연 7~8% 이상 개선 <small>(DS투자증권, 2026-07-20)</small></li>
+<li>iM 스트레스 테스트: 2022년 수준 과잉(+7.5%)엔 2027년 서버 출하가 +18%(전망)→−7% 역성장 필요 <small>(iM증권, 2026-11-04)</small></li>
+</ul>
+<h3 id="lta장기공급계약-구조와-의미">LTA(장기공급계약) 구조와 의미<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#lta장기공급계약-구조와-의미" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  C[\&quot;고객(하이퍼스케일러)\&quot;] -- \&quot;선급금·예치금&lt;br/>최소 약정물량\&quot; --> M[\&quot;메모리사\&quot;]\n  M -- \&quot;5년 내외 물량 배정&lt;br/>공급 우선권\&quot; --> C\n  P[\&quot;가격 구조&lt;br/>하단(Floor)+상단 열림/Cap&lt;br/>분기별 재협상\&quot;] --- C\n  P --- M\n  M --> E[\&quot;다운사이클 이익 하단 상승\&quot;]\n  C --> D[\&quot;부족기 물량 확보\&quot;]&quot;">flowchart LR
+  C[&quot;고객(하이퍼스케일러)&quot;] -- &quot;선급금·예치금&lt;br/>최소 약정물량&quot; --> M[&quot;메모리사&quot;]
+  M -- &quot;5년 내외 물량 배정&lt;br/>공급 우선권&quot; --> C
+  P[&quot;가격 구조&lt;br/>하단(Floor)+상단 열림/Cap&lt;br/>분기별 재협상&quot;] --- C
+  P --- M
+  M --> E[&quot;다운사이클 이익 하단 상승&quot;]
+  C --> D[&quot;부족기 물량 확보&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ul>
+<li><strong>계약 조건 비교</strong> — iM증권, 2026-11-04, p.50</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체 (계약명)</th><th>기간</th><th>구속력</th><th>가격</th><th>금융보강</th><th>커버리지</th></tr></thead><tbody><tr><td>삼성전자 (LTA)</td><td>5년 롤링</td><td>중장기 확정 물량</td><td>제품별 하단</td><td>상당한 선수금</td><td>2030년 캐파의 60~70%(10개 체결, 10개 협상)</td></tr><tr><td>SK하이닉스 (LTA)</td><td>통상 5년</td><td>장기 물량 확약</td><td>고객·제품별 복수 구조</td><td>예치금 등, 금액 비공개</td><td>14개 고객, 2027~28 캐파 50% 이상</td></tr><tr><td>마이크론 (SCA)</td><td>통상 5년(차량 3년)</td><td>Take-or-pay</td><td>예상매출 75% 가격체계 확정, 대부분 Floor/Cap</td><td>고객 금융약정 320억$</td><td>26건, 2030년까지 매출 35% 초과, 장기 50%</td></tr><tr><td>SanDisk (NBM)</td><td>최대 5년, 평균 4년+</td><td>연·분기 확정물량</td><td>고정+변동, Floor/Cap</td><td>165억$</td><td>FY27 bit 50%+</td></tr><tr><td>Kioxia (LTA)</td><td>복수년(CY29~30 협의)</td><td>DC·기업용 중심</td><td>비공개</td><td>비공개</td><td>CY28 출하 50% 이상</td></tr></tbody></table></div>
+<ul>
+<li><strong>하우스가 짚은 핵심 조항</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>짚은 내용</th></tr></thead><tbody><tr><td><small>IBK투자증권, 2026-05-20</small></td><td>현재 가격 연동 분기 협상</td></tr><tr><td><small>IBK투자증권, 2026-05-20</small></td><td>+ 명시적 Bottom Price Floor + 선급금·사전 확약</td></tr><tr><td><small>키움증권, 2026-06-01</small></td><td>가격 floors · 선수금 · 투자금 지원</td></tr><tr><td><small>삼성증권, 2026-06-02</small></td><td>하방은 막고 상방은 여는 “옵션형” 가격 구조로 진화</td></tr><tr><td><small>교보증권, 2026-11-02</small></td><td>마이크론: 기존 LTA 가시성 1년 이하 → SCA 약 5년</td></tr><tr><td><small>교보증권, 2026-11-02</small></td><td>마이크론 RPO: 16건 1,000억$ → 26건 1,500억$ <small>(FY3Q26 → FY4Q26)</small></td></tr><tr><td><small>유진투자증권, 2026-07-28</small></td><td>삼성·SK–빅테크 5년 총 9,500억달러 반도체·AI 협력안</td></tr><tr><td><small>유안타증권, 2026-11-06</small></td><td>DRAM 출하 중 LTA 비중 40% → 60%</td></tr><tr><td><small>유안타증권, 2026-11-06</small></td><td>LTA 가격 기존보다 20~30% 이상 높게 협상 중</td></tr></tbody></table></div>
+<ul>
+<li><strong>LTA가 이익에 주는 효과 — 하우스 추정</strong>
+<ul>
+<li>LTA 매출 OPM 최소 50%, 1~2년 내 매출의 약 50% → 감익기 전사 OPM 하단 약 30%(과거 다운사이클 7~10%) <small>(한화투자증권, 2026-07-30 / 2026-07-02 동일 시각)</small></li>
+<li><mark class="text-highlight">해지 검토선 = 4Q27 고점 대비 삼성 −57~58%, SK −62~63%, 약 −60%</mark> <small>(iM증권, 2026-11-04)</small></li>
+</ul>
+</li>
+</ul>
+<details><summary>세부 근거 — iM증권 LTA 해지선 계산 (2026-11-04)</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>단계</th><th style="text-align:right;">삼성전자</th><th style="text-align:right;">SK하이닉스</th></tr></thead><tbody><tr><td>2018년 정점 OPM</td><td style="text-align:right;">약 72%</td><td style="text-align:right;">약 66%</td></tr><tr><td>그 OPM이 나오는 가격 = 4Q27 ASP 대비</td><td style="text-align:right;">$2.47/Gb 대비 −47%</td><td style="text-align:right;">$2.37/Gb 대비 −53%</td></tr><tr><td>+ 금융보강 몰취 비용</td><td style="text-align:right;">18~21%</td><td style="text-align:right;">18~21%</td></tr><tr><td>= 해지 검토선</td><td style="text-align:right;">−57~58%</td><td style="text-align:right;">−62~63%</td></tr><tr><td>해지선 부근 DRAM OPM</td><td style="text-align:right;">65%</td><td style="text-align:right;">57%</td></tr><tr><td>현금원가 도달</td><td style="text-align:right;">−91%</td><td style="text-align:right;">−88%</td></tr></tbody></table></div>
+<p><small>몰취 비용 = 마이크론·SanDisk 공개 조건 대입</small></p>
+</details>
+<ul>
+<li><strong>LTA 회의론</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>회의 근거</th></tr></thead><tbody><tr><td><small>삼성증권, 2026-06-02</small></td><td>표준품·멀티소싱 → 불황기 재협상</td></tr><tr><td><small>삼성증권, 2026-06-02</small></td><td>차량용 LTA도 2023~24년 push-out·취소</td></tr><tr><td><small>삼성증권, 2026-06-02</small></td><td>LTA = 단기 가시성 도구, 진짜 lock-in은 HBM 맞춤 설계</td></tr><tr><td><small>삼성증권, 2026-06-02</small></td><td>LTA로 유통 물량 얇아짐 → 비LTA 가격 변동성↑</td></tr><tr><td><small>삼성증권, 2026-06-02</small></td><td>시장 이원화 → 모바일/PC 후순위</td></tr><tr><td><small>키움증권, 2026-08-11</small></td><td>LTA가 대규모 증설 유발 → 2027년 공급 증가가 범용 업황 부담</td></tr><tr><td><small>iM증권, 2026-11-04</small></td><td>범용 LTA = 사업모델 변화 아닌 충격 전달 속도 완충장치</td></tr></tbody></table></div>
+<p><small>차량용 LTA 취소 사례 = Microchip, Onsemi</small></p>
+<h3 id="업황-지표와의-대조-2026-09">업황 지표와의 대조 (2026-09)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업황-지표와의-대조-2026-09" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">값</th><th style="text-align:right;">YoY</th><th>판정</th><th>성격·귀속</th></tr></thead><tbody><tr><td>반도체 출하지수</td><td style="text-align:right;">198.6</td><td style="text-align:right;">+3.1%</td><td>개선</td><td>동행 · 종합반도체</td></tr><tr><td>반도체 가동률지수</td><td style="text-align:right;">104.9</td><td style="text-align:right;">+0.5%</td><td>중립</td><td>선행 6개월 · 반도체장비</td></tr><tr><td>반도체 생산지수</td><td style="text-align:right;">229.9</td><td style="text-align:right;">+8.6%</td><td>개선</td><td>동행 · 반도체후공정</td></tr><tr><td>반도체 재고지수</td><td style="text-align:right;">107.9</td><td style="text-align:right;">+19.8%</td><td>악화</td><td>동행 · 종합반도체</td></tr></tbody></table></div>
+<ul>
+<li><mark class="text-highlight">재고지수만 악화(+19.8%)</mark> → “재고를 구경조차 할 수 없다” <small>(DS투자증권, 2026-11-10)</small>와 충돌
+<ul>
+<li>설명 1: DRAM 3사가 비축 재고를 4Q26 판매 극대화에 사용 → 쌓였다 풀리는 과정 <small>(대신증권, 2026-11-10)</small> (해석은 내 추정)</li>
+<li>설명 2: NAND·레거시 품목 재고 ⚠ 미확인</li>
+</ul>
+</li>
+<li>DS: 다운사이클 선행신호는 고객 재고 → 2019년 CSP 서버 메모리 재고 5~6주(정상의 2배)가 가격 50% 급락 촉발 <small>(DS투자증권, 2026-11-10)</small></li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>공통 시각: HBM 잠식으로 부족 장기화, 신규 비트는 2028년 이후</li>
+<li>갈림: 2027 범용 가격(키움 하락 vs DS 보합 vs 대신 +40% 중후반), LTA 실효성</li>
+<li>경계 쪽은 키움(피크아웃)·BNK(중립) 두 곳뿐, BNK는 6개월 중 유일한 비중확대 이탈</li>
+</ul>
+</div></blockquote>
+<h3 id="질문별-입장">질문별 입장<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#질문별-입장" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스·날짜</th><th>입장</th></tr></thead><tbody><tr><td><strong>범용 DRAM 피크아웃 시점</strong></td><td>삼성증권, 2026-06-02</td><td>변곡점①: 2Q26 가격 상승률 둔화(일시 조정)</td></tr><tr><td></td><td>삼성증권, 2026-06-02</td><td>변곡점②: 2Q27 신규 팹 → 주가 모멘텀 소멸 시작</td></tr><tr><td></td><td>삼성증권, 2026-06-02</td><td>진짜 수급 변곡은 2028~29년</td></tr><tr><td></td><td>키움증권, 2026-08-11</td><td><strong>2027년 범용 blended ASP 하락 전환 = 피크아웃</strong></td></tr><tr><td></td><td>키움증권, 2026-08-11</td><td>근거: LTA 반영·스마트폰/PC 부진·중국 점유율 경쟁</td></tr><tr><td></td><td>유진투자증권, 2026-07-28</td><td>가격 상승률 정점: QoQ 1Q26, YoY 3Q26</td></tr><tr><td></td><td>유진투자증권, 2026-07-28</td><td>정점→실제 하락 평균 4분기(2016~18엔 6분기)</td></tr><tr><td></td><td>유진투자증권, 2026-07-28</td><td>→ 수익성 개선 4Q27까지</td></tr><tr><td></td><td>DS투자증권, 2026-11-10</td><td>2H27 범용 하락 전환, 2028 −25%·2029 −15%(Base)</td></tr><tr><td></td><td>DS투자증권, 2026-11-10</td><td>2029년에도 양사 이익은 2027년의 70%</td></tr><tr><td></td><td>iM증권, 2026-11-04</td><td>스트레스 테스트상 4Q27을 가격 고점으로 가정</td></tr><tr><td></td><td>유안타증권, 2026-11-06</td><td>2027년은 피크아웃 아님. 의미 있는 공급 증가는 2029년 이후</td></tr><tr><td></td><td>다올투자증권, 2026-05-19</td><td>2H27 전까지 “변수 없는 호황”, 2H27부터 따질 것 많아짐</td></tr><tr><td></td><td>BNK투자증권, 2026-09-14</td><td><strong>수요 모멘텀은 이미 정점 통과</strong>, 하반기 둔화 지속. 투자의견 중립</td></tr><tr><td><strong>HBM 공급과잉 여부</strong></td><td>키움증권, 2026-08-11</td><td>2027년 부족 확대(수요 +56% > 공급 +50%)</td></tr><tr><td></td><td>iM증권, 2026-11-04</td><td>부족 심화: Sufficiency 2027 −6%, 2028 −12%</td></tr><tr><td></td><td>삼성증권, 2026-06-02</td><td>HBM은 ‘27~28년에도 40% 내외 성장, 공급이 못 따라가는 영역</td></tr><tr><td></td><td>DS투자증권, 2026-11-10</td><td>HBM 증산 → 병목 장기화, 2027 HBM 비트 +50~60%</td></tr><tr><td></td><td>유안타증권, 2026-11-06</td><td>SK, 수요 60~70%만 채우게 증설 조절 가능 → 과잉 가능성 낮음</td></tr><tr><td></td><td>BNK투자증권, 2026-09-14</td><td>엔비디아·CSP 신모델 HBM 용량↓ = 수요 탄력 둔화(유일한 경계)</td></tr><tr><td><strong>2027 범용 가격 방향</strong></td><td>IBK투자증권, 2026-05-20</td><td>3Q부터 한 자릿수 상승, 1Q27까지 상승 후 2Q27 보합</td></tr><tr><td></td><td>한화투자증권, 2026-07-02</td><td>하반기 시장 예상(3Q26 +3~8%)보다 훨씬 강함(+15~25%)</td></tr><tr><td></td><td>교보증권, 2026-11-02</td><td>1Q27 범용 +5~10% QoQ, 공급자 우위 지속</td></tr><tr><td></td><td>유안타증권, 2026-11-06</td><td>분기마다 한 자릿수 상승, LPDDR 1Q27 +20% 이상</td></tr><tr><td></td><td>대신증권, 2026-11-10</td><td>2027 범용 ASP +40% 중후반 YoY</td></tr><tr><td></td><td>키움증권, 2026-08-11</td><td>2027 blended ASP 하락 전환</td></tr><tr><td></td><td>DS투자증권, 2026-11-10</td><td>1Q27 +1~1.5%, 2Q27 보합, 2H27 소폭 하락</td></tr><tr><td><strong>LTA 실효성</strong></td><td>한화투자증권, 2026-07-30</td><td>산업 체질 변화, 감익기 OPM 하단 30%</td></tr><tr><td></td><td>하나증권, 2026-08-03</td><td>강제 이행 장치 有, 상방 열림·하한 확정 → 재평가 필요</td></tr><tr><td></td><td>iM증권, 2026-11-04</td><td>해지선 −60%, 생각보다 단단함</td></tr><tr><td></td><td>삼성증권, 2026-06-02</td><td>과대평가 금지, 불황 땐 재협상. 진짜 lock-in은 HBM</td></tr><tr><td></td><td>키움증권, 2026-08-11</td><td>실적엔 오히려 blended ASP 하락 요인 + 증설 유발</td></tr><tr><td><strong>CXMT 위협</strong></td><td>삼성증권, 2026-06-02</td><td>26~27 부족 완화 영향 제한, 28~29 범용 가격 하방 압력 변수</td></tr><tr><td></td><td>유진투자증권, 2026-07-28</td><td>1a 진입 지연·HBM 캐파 제한 → 1~2년 영향 제한</td></tr><tr><td></td><td>IBK투자증권, 2026-08-20</td><td>웨이퍼는 마이크론급이나 비트는 1/4 → 중국발 과잉 오지 않음</td></tr><tr><td></td><td>교보증권, 2026-11-02</td><td>점유율 4%→10%, 중장기 위협</td></tr><tr><td></td><td>교보증권, 2026-11-02</td><td>OPM 83%는 보조금·회계 차이 반영 필요</td></tr><tr><td></td><td>키움증권, 2026-08-11</td><td>보조금 하 국산화율 급증 가능, 점유율 경쟁 심화</td></tr></tbody></table></div>
+<h3 id="6개월간-의견-변화">6개월간 의견 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#6개월간-의견-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>하우스</th><th>무엇에서</th><th>무엇으로</th></tr></thead><tbody><tr><td>2026-06-01 → 2026-08-11</td><td>키움증권</td><td>”가격 floors LTA가 늘면 밸류 재평가” (관찰)</td><td><strong>“범용 메모리 피크아웃, 2027 blended ASP 하락”</strong></td></tr><tr><td>〃</td><td>키움증권</td><td></td><td>+ “삼성·HBM 서플라이체인 집중”</td></tr><tr><td>2026-07-20 → 2026-11-10</td><td>DS투자증권</td><td>2027 DRAM 공급 +21% / 수요 +17%</td><td>2027 실질 공급 +14.7% / 수요 20%대 중반(부족 확대)</td></tr><tr><td>〃</td><td>DS투자증권</td><td>2028~30 일시 과잉(+0.5~1.4%), 가격 하락 명시 안 함</td><td>2028~29 Blended ASP −25%·−15%를 Base로 명시</td></tr><tr><td>2026-07-20 → 2026-11-10</td><td>DS투자증권</td><td>SK 용인 Y2 2028년 말 40K</td><td>2028년 0K (2027-07 착공·2029-06 첫 클린룸 반영)</td></tr><tr><td>2026-05-18 → 2026-07-28</td><td>유진투자증권</td><td>”Paradigm Shift”: 현물가·주가 디커플링</td><td>”증명의 시간”: LTA 기대만으론 재평가 지속 어렵다 인정</td></tr><tr><td>〃</td><td>유진투자증권</td><td>사이클 자산 → 전략 자산</td><td>수익성 개선은 4Q27까지</td></tr><tr><td>2026-05-20 → 2026-08-20</td><td>IBK투자증권</td><td>2Q27 보합 전망</td><td>방향 유지·확신 강화: 주가 하락은 오해</td></tr><tr><td>〃</td><td>IBK투자증권</td><td></td><td>공급 과잉·중국 과잉 모두 기우</td></tr><tr><td>직전 전망(날짜 ⚠ 원문 없음) → 2026-11-10</td><td>대신증권</td><td>2027 범용 DRAM ASP +30% 후반 YoY</td><td>+40% 중후반 YoY로 상향</td></tr><tr><td>GTC 2026 → 2026-06-18 → 2026-11-02·11-06</td><td>시장 전반 <small>(iM·키움·교보·유안타)</small></td><td>Rubin Ultra HBM4E 1TB/GPU</td><td>384~512GB 축소안 → 8단 HBM4 혼용·2Q27 양산 목표</td></tr><tr><td>2026-06-18 → 2026-11-06</td><td>iM → 유안타</td><td>삼성 16단 HBM4E부터 하이브리드 본딩</td><td>JEDEC 775μm 완화 → 하이브리드는 HBM4E~HBM5 전후로</td></tr><tr><td>2026-06 → 2026-09-14</td><td>BNK투자증권</td><td>⚠ 이전 리포트 미확보</td><td>반도체 “중립”, 삼성 보유 TP 27만원·SK 보유 TP 148만원</td></tr><tr><td>〃</td><td>BNK투자증권</td><td></td><td>→ 6개월 중 유일한 비중확대 이탈</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>내용</th><th>하우스</th></tr></thead><tbody><tr><td>공통 시각</td><td>HBM이 범용 DRAM 공급을 잠식해 부족을 길게 만듦</td><td>삼성증권·DS·iM·유안타·다올</td></tr><tr><td>공통 시각</td><td>의미 있는 신규 비트는 2028년 이후</td><td>삼성증권·DS·iM·유안타·교보·IBK</td></tr><tr><td>공통 시각</td><td>CXMT는 26~27년엔 제한적, 28년 이후 범용 하방 변수</td><td>삼성증권·유진·IBK</td></tr><tr><td>공통 시각</td><td>De-spec은 수요 감소가 아니라 공급 부족의 증거</td><td>교보·유안타·하나</td></tr><tr><td>갈림</td><td>2027년 범용 가격: 하락 vs 보합~소폭 하락 vs +40% 중후반</td><td><small>키움</small> vs <small>DS</small> vs <small>대신</small></td></tr><tr><td>갈림</td><td>LTA: 체질 변화 vs 과대평가 금지 vs 오히려 부담</td><td><small>한화·하나·iM</small> vs 삼성증권 vs <small>키움</small></td></tr></tbody></table></div>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>가장 빠른 신호 = 주간 현물가와 1Q27 서버 계약가 타결치</li>
+<li>중기 신호 = 고객(CSP) 메모리 재고 일수와 재고지수</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>매주</td><td>DDR5 16Gb·RDIMM 현물가(트렌드포스 일간)</td><td>현물>고정가 프리미엄 유지</td><td>현물이 고정가 아래로 내려감 → 계약가 하락 선행</td></tr><tr><td>2026-12 ~ 2027-01</td><td>1Q27 서버 DRAM 계약가 협상 결과</td><td>+10~15%대(교보 전망) 또는 대신 +40% 중후반 연간 경로</td><td>보합 이하(IBK 5월판 경로)</td></tr><tr><td>2027-01</td><td>삼성전자 차기 주주환원·LTA 공개 범위</td><td>LTA 커버리지·선수금 수치 공개</td><td>계약 조건 불투명 지속</td></tr><tr><td>2027-02</td><td>SK 용인 Y1 첫 클린룸 오픈·장비 반입 속도</td><td>일정 준수, 장비 반입 단계적</td><td>조기 풀램프 발표 → 2028 공급 부담</td></tr><tr><td>2Q27</td><td>Rubin Ultra 8단 HBM4 양산·HBM4E 12단 인증</td><td>16단 HBM4E 인증 통과(Re-spec)</td><td>추가 De-spec, 인증 지연</td></tr><tr><td>2Q27</td><td>CXMT 상하이 F1 가동·4F² DDR5 실제 출하</td><td>수율·비트당 원가 열위 확인</td><td>4F² 양산 수율 확보, 점유율 10%→15%+</td></tr><tr><td>분기 실적</td><td>CSP·Dell·HPE 메모리 재고 일수</td><td>부품 재고가 서버 조립 대기분에 그침</td><td>서버 메모리 재고 5~6주 이상(2019년형)</td></tr><tr><td>분기 실적</td><td>마이크론 SCA 건수·RPO·금융약정</td><td>26건·1,500억$에서 계속 증가</td><td>계약 재협상·push-out 언급</td></tr><tr><td>2H27</td><td>범용 DRAM QoQ 부호 전환</td><td>HBM 덕에 Blended ASP 상승 유지(DS 경로)</td><td>범용 하락이 HBM 계약가로 전이</td></tr><tr><td>2028</td><td>3사 신규 팹 비트 기여·Sufficiency</td><td>DS 7월판 +0.5% 이내</td><td>키움형 범용 피크아웃이 HBM까지 확산</td></tr><tr><td>매월</td><td>재고지수(현재 +19.8% 악화)</td><td>증가율 둔화</td><td>출하 둔화 + 재고 증가 동시 발생</td></tr></tbody></table></div>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>날짜</th><th>증권사</th><th>제목</th><th>주로 쓴 부분</th></tr></thead><tbody><tr><td>2026-05-19</td><td>다올투자증권</td><td>반도체/소부장 2H26 전망: 꺼지지 않는 초록불</td><td>범용 캐파 증분</td></tr><tr><td>2026-05-20</td><td>IBK투자증권</td><td>메모리 장기공급계약(LTA)에 해답이 있다</td><td>LTA 조항, 모듈 계약가표</td></tr><tr><td>2026-05-26</td><td>신영증권</td><td>MEMORY WAR: HBM5로 보는 메모리 산업 전망</td><td>HBM4/5 기술, COP·침니·BL16</td></tr><tr><td>2026-06-01</td><td>키움증권</td><td>반도체 하반기 산업 전망</td><td>2Q26 가격, 수요 하향, LTA 체크포인트</td></tr><tr><td>2026-06-02</td><td>삼성증권</td><td>하반기 메모리 전망: 듀레이션 게임</td><td>웨이퍼 경제성, 22% 수렴선, LTA 회의론, CXMT</td></tr><tr><td>2026-06-08</td><td>하나증권</td><td>반도체 및 소부장 Weekly: LPDDR 과부족이 낳은 오해</td><td>Vera Rubin LPDDR</td></tr><tr><td>2026-06-18</td><td>iM증권</td><td>Rubin Ultra와 HBM4E의 변화?</td><td>HBM4E 스펙·본딩 노선</td></tr><tr><td>2026-07-02</td><td>한화투자증권</td><td>2026 하반기 전망: 2028년 글로벌 시가총액 5위권 시나리오</td><td>3Q26 가격, LTA OPM 30%</td></tr><tr><td>2026-07-07</td><td>KB증권</td><td>반도체장비: 약속된 호황에 투자하라</td><td>HBM3E vs HBM4, 구조도</td></tr><tr><td>2026-07-20</td><td>DS투자증권</td><td>공급 과잉이 우려되시나요?</td><td>2035 수급, 호남 팹</td></tr><tr><td>2026-07-28</td><td>유진투자증권</td><td>가속의 시간에서 증명의 시간으로</td><td>피크아웃 시차, CXMT, LTA</td></tr><tr><td>2026-07-30</td><td>한화투자증권</td><td>SK하이닉스: LTA가 불러올 나비효과</td><td>LTA 이익 하단</td></tr><tr><td>2026-08-03</td><td>하나증권</td><td>소부장 Weekly: 장기 공급 계약에 대한 재평가 필요</td><td>LTA 평가</td></tr><tr><td>2026-08-11</td><td>키움증권</td><td>Memory Split 2027: HBM의 질주와 범용 메모리 피크아웃</td><td>HBM 수급·캐파, CapEx 표, 피크아웃</td></tr><tr><td>2026-08-13</td><td>SK증권</td><td>긴 사이클</td><td>5년 LTA, Compute 자산화</td></tr><tr><td>2026-08-17</td><td>삼성증권</td><td>지능의 풍요: AI 내러티브의 새로운 변곡점</td><td>D1c 캐파</td></tr><tr><td>2026-08-18</td><td>BNK투자증권</td><td>반도체 웨이퍼 수요는 어디에서 나오는가</td><td>1c 비중, 서버 비중</td></tr><tr><td>2026-08-18</td><td>대신증권</td><td>Next Step: 반도체 주도력 회복(전략)</td><td>8/14 현물가</td></tr><tr><td>2026-08-20</td><td>IBK투자증권</td><td>아직도 사이클 타령</td><td>OMDIA 웨이퍼 증설, CXMT Gb/wafer</td></tr><tr><td>2026-09-07</td><td>KB증권</td><td>일본 반도체: AI 광풍 열도를 덮다</td><td>MR-MUF vs TC-NCF 그림</td></tr><tr><td>2026-09-08</td><td>대신증권</td><td>손익비가 좋은 구간</td><td>삼성 1c 수율</td></tr><tr><td>2026-09-14</td><td>BNK투자증권</td><td>수요 둔화흐름 지속, 상단이 제한된 박스권</td><td>캐파표, 경계 시각</td></tr><tr><td>2026-09-14</td><td>하나증권</td><td>반도체 및 소부장 Weekly: 이익 전망보다 가격에 주목</td><td>현물·고정가 그래프</td></tr><tr><td>2026-06-15 · 06-22 · 07-21</td><td>교보증권</td><td>반도체 Weekly(6월 셋째·넷째 주, 7월 셋째 주)</td><td>현물가 수치</td></tr><tr><td>2026-11-02</td><td>교보증권</td><td>CXMT, 과연 위협일까(2027년 전망)</td><td>CXMT, TrendForce 수급, SCA, 가격 전망</td></tr><tr><td>2026-11-04</td><td>iM증권</td><td>반도체 Overweight: STRESS TEST</td><td>HBM 잠식, LTA 해지선, cHBM</td></tr><tr><td>2026-11-06</td><td>유안타증권</td><td>2027년 연간전망(산업편): 수요의 재설계</td><td>HBM 세대표, 서버 메모리 분화, 가격</td></tr><tr><td>2026-11-10</td><td>DS투자증권</td><td>2027년 반도체 연간전망: 머슬 메모리</td><td>AI 서버·서버 DRAM 모델, 캐파, 다운사이클 시나리오</td></tr><tr><td>2026-11-10</td><td>대신증권</td><td>투자자 핵심 Q&amp;A 3선</td><td>2027 ASP 상향, 현물 조정 해석</td></tr></tbody></table></div>
+<ul>
+<li><small>기준 노트: 초기 샘플 노트(보관됨)(키움 2026-08-11 정리) 수치를 재사용하고 다른 하우스로 교차검증함</small></li>
+<li><small>업황 지표: 통계청 산업활동동향, 2026-09</small></li>
+</ul>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> 재고지수 +19.8%가 DRAM 공급사 비축 재고인지, NAND·레거시인지 리포트로 분리</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> SK하이닉스 2028년 웨이퍼 캐파 760K<small>(DS)</small> vs 865K<small>(BNK)</small> 차이의 근거(Y1 램프 가정) 확인</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> 키움 HBM 캐파 790K vs DS TSV 캐파 610K의 정의 차이 확인</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> CXL 메모리 수요·채택 수치 — 이번 기간 원문 없음</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> HBM5 스택 용량·대역폭 수치 — 원문 없음</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> 마이크론 웨이퍼 캐파(iM 기준) 수치 — 그래프 데이터 레이블 미확보</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> 1Q27 서버 DRAM 계약가 실제 타결치로 ⑤ 가격표 업데이트</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Rubin(2026) HBM4 GPU당 용량 표기(교보 “228GB”) 원문 재확인</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> BNK 이전(6~8월) 리포트 확보해 의견 변화 이력 보강 → <a href="../반도체/11_반도체_하우스시각_변경이력" class="internal internal-link alias" data-slug="반도체/11_반도체_하우스시각_변경이력">11_반도체_하우스시각_변경이력</a></li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> 공장별 분기 일정은 <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a>으로 이관·상세화</li>
+</ul>
+<blockquote>
+<p>한 줄: 믿어도 되는 것 — HBM이 웨이퍼의 30~40%를 쓰면서 범용 DRAM 비트 증가를 2027년까지 묶어두는 구조(5개 하우스 일치). 의심할 것 — 2H27~2028 범용 가격 조정의 깊이와 LTA가 실제로 그 충격을 막아주는지는 아직 아무도 숫자로 증명하지 못함. 키움(피크아웃)·BNK(중립)의 경고와 재고지수 악화가 같은 방향을 가리키는지가 다음 반기의 관전 포인트임</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-115" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#메모리-dramhbm--hbm이-웨이퍼를-삼키며-범용-dram-부족을-늘리는-사이클" data-for="메모리-dramhbm--hbm이-웨이퍼를-삼키며-범용-dram-부족을-늘리는-사이클">메모리 DRAM·HBM — HBM이 웨이퍼를 삼키며 범용 DRAM 부족을 늘리는 사이클</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-기술-기초" data-for="-기술-기초">① 기술 기초</a></li><li class="depth-1"><a href="#-전방-수요" data-for="-전방-수요">② 전방 수요</a></li><li class="depth-1"><a href="#-기술-심화" data-for="-기술-심화">③ 기술 심화</a></li><li class="depth-1"><a href="#-캐파증설" data-for="-캐파증설">④ 캐파·증설</a></li><li class="depth-1"><a href="#-가격수급" data-for="-가격수급">⑤ 가격·수급</a></li><li class="depth-1"><a href="#-하우스별-시각과-변화" data-for="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../반도체/00_반도체_index" class="internal">00_반도체_index</a></li><li><a href="../반도체/01_반도체_용어집" class="internal">01_반도체_용어집</a></li><li><a href="../반도체/03_메모리_nand" class="internal">03_메모리_NAND</a></li><li><a href="../반도체/04_메모리_증설로드맵" class="internal">04_메모리_증설로드맵</a></li><li><a href="../반도체/05_반도체파운드리" class="internal">05_반도체파운드리</a></li><li><a href="../반도체/06_반도체팹리스" class="internal">06_반도체팹리스</a></li><li><a href="../반도체/07_반도체장비" class="internal">07_반도체장비</a></li><li><a href="../반도체/08_반도체설비" class="internal">08_반도체설비</a></li><li><a href="../반도체/09_반도체부품소재" class="internal">09_반도체부품소재</a></li><li><a href="../반도체/10_반도체후공정" class="internal">10_반도체후공정</a></li><li><a href="../반도체/설명서/반도체_설명서" class="internal">반도체_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

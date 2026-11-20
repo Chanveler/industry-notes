@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>06_지주사_시장규모모델</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="06_지주사_시장규모모델"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="06_지주사_시장규모모델"/><meta name="twitter:description" content="지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율) 한 줄: 지주회사는 물건을 만들어 팔지 않음 → «시장규모»를 지주 본체로 들어오는 반복 현금(브랜드 로열티 + 수취 배당)과 그 위에 매겨지는 가치(NAV × (1 − 할인율))로 세움."/><meta property="og:description" content="지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율) 한 줄: 지주회사는 물건을 만들어 팔지 않음 → «시장규모»를 지주 본체로 들어오는 반복 현금(브랜드 로열티 + 수취 배당)과 그 위에 매겨지는 가치(NAV × (1 − 할인율))로 세움."/><meta property="og:image:alt" content="지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율) 한 줄: 지주회사는 물건을 만들어 팔지 않음 → «시장규모»를 지주 본체로 들어오는 반복 현금(브랜드 로열티 + 수취 배당)과 그 위에 매겨지는 가치(NAV × (1 − 할인율))로 세움."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/지주사/06_지주사_시장규모모델"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/지주사/06_지주사_시장규모모델"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율) 한 줄: 지주회사는 물건을 만들어 팔지 않음 → «시장규모»를 지주 본체로 들어오는 반복 현금(브랜드 로열티 + 수취 배당)과 그 위에 매겨지는 가치(NAV × (1 − 할인율))로 세움."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="지주사/06_지주사_시장규모모델" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-381" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-381" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../지주사/">6. 지주사</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>06_지주사_시장규모모델</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">06_지주사_시장규모모델</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>25 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="지주사-시장규모-모델--기준매출--사용료율--자회사-배당--nav--1--할인율">지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지주사-시장규모-모델--기준매출--사용료율--자회사-배당--nav--1--할인율" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>한 줄: 지주회사는 물건을 만들어 팔지 않음 → «시장규모»를 지주 본체로 들어오는 반복 현금(브랜드 로열티 + 수취 배당)과 그 위에 매겨지는 가치(NAV × (1 − 할인율))로 세움. 로열티는 «계열사 기준매출 Q × 사용료율 P» 계약이라 반도체 «캐파 × 가격»과 같은 틀로 계산함. Base 기준 8개 그룹 로열티 2025A 1.31조원 → 2027E 2.22조원, 8사 수취 배당 2.43조원 → 6.02조원, 미래에셋 5사 시가총액 43.1조원 → 12개월 후 47.8조원</p>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<ul>
+<li>지주사 캐시 165건 중 2026년 163건 · 2025년 2건(01-15·03-25) → 실질 기간은 <mark class="text-highlight">2026-04~2026-11</mark></li>
+<li>업종 전체를 다룬 리포트는 NH(04-08)·미래에셋(07-30)·대신(08-25)·IBK(09-01) 4건뿐. 나머지는 SK·LG·CJ·삼성물산 개별 리포트에서 산업 수치만 뽑음</li>
+<li>공정위 상표권 통계는 2024년이 마지막 → 2025A 이후는 지주 본체 수치(하우스)로 이어 붙임 ⚠</li>
+</ul>
+</div></blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>로열티 풀은 <mark class="text-highlight">2025A→2027E 증가분의 86%가 SK 한 곳</mark>(내 계산): 대신·한화 모두 SK 상표권이 2027E에 1.0~1.2조원으로 2배 넘게 뜀(하이닉스 매출 연동)</li>
+<li>배당 풀은 삼성물산 한 줄이 좌우: 삼성전자 특별배당 규모에 따라 2027E 삼성물산 수취 배당이 1.1~8.9조원으로 8배 차이</li>
+<li>가치 풀은 할인율보다 NAV 쪽 변동이 큼: 할인율 1%p = 시총 0.9조원, NAV 10% = 4.8조원(Base, 내 계산)</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>로열티 8개 그룹(십억원)</td><td style="text-align:right;">1,306</td><td style="text-align:right;">1,468</td><td style="text-align:right;">2,218</td><td style="text-align:right;">2,347</td></tr><tr><td>공정위 전체 풀 환산(십억원)</td><td style="text-align:right;">2,313</td><td style="text-align:right;">2,601</td><td style="text-align:right;">3,928</td><td style="text-align:right;">4,156</td></tr><tr><td>수취 배당 8사(십억원)</td><td style="text-align:right;">2,429</td><td style="text-align:right;">3,943</td><td style="text-align:right;">6,023</td><td style="text-align:right;">3,517</td></tr><tr><td>현금유입 풀 합(십억원)</td><td style="text-align:right;">3,734</td><td style="text-align:right;">5,412</td><td style="text-align:right;">8,241</td><td style="text-align:right;">5,864</td></tr><tr><td>5사 시총: 26-07 → 12M 후(조원)</td><td style="text-align:right;">—</td><td style="text-align:right;">43.1</td><td style="text-align:right;">47.8</td><td style="text-align:right;">—</td></tr></tbody></table></div>
+<p><small>Base · 자체 모델(엑셀 Model 시트). 로열티 8개 그룹 = LG·SK·한화·CJ·GS·HD현대·LS·두산(공정위 상위 집단), 수취 배당 8사 = 삼성물산·SK·LG·HD현대·한화·LS·CJ·두산, 5사 = LG·HD현대·한화·LS·CJ(미래에셋 커버리지). 5사 시총 2026E 칸 = 2026-07-29 값(미래에셋, 2026-07-30, p.47~79), 2027E 칸 = 그 12개월 후</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;계열사 기준매출 Q&lt;br/>8그룹 2025A 약 487조원\&quot;] -->|\&quot;× 사용료율 P 0.15~0.45%\&quot;| R[\&quot;브랜드 로열티&lt;br/>2027E 2.2조원\&quot;]\n    B[\&quot;자회사 이익 × 배당성향\&quot;] -->|\&quot;× 지주 지분율\&quot;| D[\&quot;수취 배당&lt;br/>2027E 6.0조원\&quot;]\n    R --> H[\&quot;지주 본체 현금유입&lt;br/>2027E 8.2조원\&quot;]\n    D --> H\n    H -->|\&quot;배당·소각\&quot;| S[\&quot;지주 주주\&quot;]\n    N[\&quot;NAV 5사 90.7조원\&quot;] -->|\&quot;× 1 − 할인율 47.3%\&quot;| M[\&quot;시가총액&lt;br/>12개월 후 47.8조원\&quot;]\n    H -.->|\&quot;환원 신뢰 → 할인율\&quot;| M&quot;">flowchart LR
+    A[&quot;계열사 기준매출 Q&lt;br/>8그룹 2025A 약 487조원&quot;] -->|&quot;× 사용료율 P 0.15~0.45%&quot;| R[&quot;브랜드 로열티&lt;br/>2027E 2.2조원&quot;]
+    B[&quot;자회사 이익 × 배당성향&quot;] -->|&quot;× 지주 지분율&quot;| D[&quot;수취 배당&lt;br/>2027E 6.0조원&quot;]
+    R --> H[&quot;지주 본체 현금유입&lt;br/>2027E 8.2조원&quot;]
+    D --> H
+    H -->|&quot;배당·소각&quot;| S[&quot;지주 주주&quot;]
+    N[&quot;NAV 5사 90.7조원&quot;] -->|&quot;× 1 − 할인율 47.3%&quot;| M[&quot;시가총액&lt;br/>12개월 후 47.8조원&quot;]
+    H -.->|&quot;환원 신뢰 → 할인율&quot;| M
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>Base. 기준매출 Q = 2025A 로열티 ÷ 요율 구간 중간값(내 계산) ⚠. 자체 모델</small></p>
+<ul>
+<li>세 풀은 범위가 달라 더하지 않음 — 로열티·배당은 «흐름», 가치 풀은 «잔액»</li>
+<li>기업분석 아님: 회사 숫자는 업종 합계를 만드는 재료로만 씀. 그룹별 지배구조는 <a href="../지주사/03_지주사_그룹별구조" class="internal internal-link alias" data-slug="지주사/03_지주사_그룹별구조">03_지주사_그룹별구조</a></li>
+</ul>
+<hr/>
+<h2 id="-모델-구조기초">① 모델 구조·기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-모델-구조기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>공정위 기준 대표지주 매출의 평균 51.5%가 배당 <small>(미래에셋, 2026-07-30, p.5)</small> → 나머지 대부분이 로열티·임대·수수료</li>
+<li>배당은 «지분율만큼», 로열티는 «계약금액 전액»이 지주로 감 → 같은 100억원이면 로열티가 지주에 약 3.3배 더 모임 <small>(미래에셋, 07-30, p.15)</small></li>
+</ul>
+</div></blockquote>
+<h3 id="계산-흐름">계산 흐름<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#계산-흐름" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    A[\&quot;공정위 2024A 그룹별 로열티&lt;br/>+ 요율 구간\&quot;] --> B[\&quot;P = 요율 구간 중간값\&quot;]\n    C[\&quot;2025A 지주 본체 로열티&lt;br/>SK증권·대신·삼성\&quot;] --> D[\&quot;Q = 로열티 ÷ P\&quot;]\n    D --> E[\&quot;Q × (1 + 하우스 성장률 + Δg)\&quot;]\n    B --> F[\&quot;P × 요율계수&lt;br/>Bear 0.8 = 공정위 정상가격\&quot;]\n    E --> G[\&quot;로열티 = Q × P\&quot;]\n    F --> G\n    H[\&quot;2025A 수취 배당&lt;br/>미래에셋 실측·하우스 표\&quot;] --> I[\&quot;삼성물산·SK·CJ = 하우스 경로&lt;br/>나머지 = 공통 성장률\&quot;]\n    J[\&quot;미래에셋 5사 NAV·시총\&quot;] --> K[\&quot;12개월 후 NAV × (1 − 할인율)\&quot;]&quot;">flowchart TD
+    A[&quot;공정위 2024A 그룹별 로열티&lt;br/>+ 요율 구간&quot;] --> B[&quot;P = 요율 구간 중간값&quot;]
+    C[&quot;2025A 지주 본체 로열티&lt;br/>SK증권·대신·삼성&quot;] --> D[&quot;Q = 로열티 ÷ P&quot;]
+    D --> E[&quot;Q × (1 + 하우스 성장률 + Δg)&quot;]
+    B --> F[&quot;P × 요율계수&lt;br/>Bear 0.8 = 공정위 정상가격&quot;]
+    E --> G[&quot;로열티 = Q × P&quot;]
+    F --> G
+    H[&quot;2025A 수취 배당&lt;br/>미래에셋 실측·하우스 표&quot;] --> I[&quot;삼성물산·SK·CJ = 하우스 경로&lt;br/>나머지 = 공통 성장률&quot;]
+    J[&quot;미래에셋 5사 NAV·시총&quot;] --> K[&quot;12개월 후 NAV × (1 − 할인율)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="엑셀-파일-구성">엑셀 파일 구성<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엑셀-파일-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>파일: <code>모델/지주사_모델.xlsx</code> — 시트 6개, 수식 991개</li>
+<li>pycel 재계산 Bear·Base·Bull 3안 모두 오류 0건 · Base 검산 7항목 차이 0</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시트</th><th>내용</th></tr></thead><tbody><tr><td>README</td><td>목적·사용법·계산 구조·주의</td></tr><tr><td>Summary</td><td>선택 결과·3안 비교·검산·민감도</td></tr><tr><td>Inputs</td><td>스위치 1개, 가정(노란 칸)·근거</td></tr><tr><td>Model</td><td>3안 고정 블록 + 선택 블록</td></tr><tr><td>Data</td><td>공정위 시계열·하우스 대조</td></tr><tr><td>Sources</td><td>하우스 원문 36개 그대로</td></tr></tbody></table></div>
+<p><small>스위치: Inputs!B3 = 시나리오(Bear/Base/Bull). 노란 칸 = 원문 없거나 결과를 크게 바꾸는 가정, 파란 글씨 = 원문</small></p>
+<h3 id="단위범위">단위·범위<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#단위범위" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>풀</th><th>단위</th><th>범위</th><th>기준</th></tr></thead><tbody><tr><td>A 로열티</td><td>십억원</td><td>8개 그룹</td><td>24A 그룹, 25A~ 지주 본체</td></tr><tr><td>B 수취 배당</td><td>십억원</td><td>8개 지주</td><td>별도 배당수익·귀속배당</td></tr><tr><td>C 가치</td><td>조원</td><td>미래에셋 5사</td><td>26-07-29 → 12개월 후</td></tr></tbody></table></div>
+<ul>
+<li><strong>로열티 2024A와 2025A는 기준이 다름</strong>: 공정위는 그룹 전체 수취액, 하우스는 상장 지주 본체 → LG 2025A(349)가 2024A(354.5)보다 작게 보이는 이유 ⚠</li>
+<li><strong>배당 정의도 섞임</strong>: SK·CJ는 별도 배당수익, 나머지는 미래에셋 «FY25 귀속배당»(DPS × 보유주식) ⚠</li>
+<li>제도·할인 요인 자체는 <a href="../지주사/02_지주사_제도와할인율" class="internal internal-link alias" data-slug="지주사/02_지주사_제도와할인율">02_지주사_제도와할인율</a></li>
+</ul>
+<hr/>
+<h2 id="-브랜드-로열티-풀--기준매출-q--사용료율-p">② 브랜드 로열티 풀 — 기준매출 Q × 사용료율 P<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-브랜드-로열티-풀--기준매출-q--사용료율-p" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>공정위 상표권 유상거래 2020년 1.35조원 → 2024년 2.15조원(연 12.4%, 내 계산). 집단 수도 46 → 72개</li>
+<li>Base 8개 그룹 합 2025A 1.31조원 → 2027E 2.22조원. SK 비중 28% → 52%</li>
+</ul>
+</div></blockquote>
+<h3 id="공정위-상표권-시장-20202024">공정위 상표권 시장 (2020~2024)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#공정위-상표권-시장-20202024" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;상표권 유상거래 수취액 (십억원)\&quot;\n    x-axis [\&quot;2020\&quot;, \&quot;2021\&quot;, \&quot;2022\&quot;, \&quot;2023\&quot;, \&quot;2024\&quot;]\n    y-axis \&quot;십억원\&quot; 1000 --> 2400\n    line [1347, 1521, 1776, 2035, 2153]&quot;">xychart-beta
+    title &quot;상표권 유상거래 수취액 (십억원)&quot;
+    x-axis [&quot;2020&quot;, &quot;2021&quot;, &quot;2022&quot;, &quot;2023&quot;, &quot;2024&quot;]
+    y-axis &quot;십억원&quot; 1000 --> 2400
+    line [1347, 1521, 1776, 2035, 2153]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>공정위 집계(미래에셋, 2026-07-30, p.14). 유상거래 집단 46·52·59·70·72개. 2024년 증가분 대부분은 기존 집단의 수취액 증가(p.15)</small></p>
+<ul>
+<li><strong>계약 구조 = Q × P</strong>: «기준매출액 × 사용료율로 산정» <small>(미래에셋, 07-30, p.15)</small> → 적자·무배당 자회사도 매출만 있으면 지급</li>
+<li><strong>총수일가 지분 20%+ 회사에 81.8% 집중</strong>: 사용료/매출 0.26% vs 1.37%(약 5.3배) <small>(미래에셋, 07-30, p.16)</small></li>
+<li>2024년 증가율 5.8%(내 계산)를 원문 없는 그룹·연도의 기본 성장률로 씀 ⚠</li>
+</ul>
+<h3 id="그룹별-입력-십억원">그룹별 입력 (십억원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#그룹별-입력-십억원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>그룹</th><th style="text-align:right;">2024A</th><th style="text-align:right;">2025A</th><th style="text-align:right;">요율 P</th><th style="text-align:right;">Q 2025(조원)</th></tr></thead><tbody><tr><td>LG</td><td style="text-align:right;">354.5</td><td style="text-align:right;">349.0</td><td style="text-align:right;">0.25%</td><td style="text-align:right;">139.6</td></tr><tr><td>SK</td><td style="text-align:right;">310.9</td><td style="text-align:right;">369.0</td><td style="text-align:right;">0.25%</td><td style="text-align:right;">147.6</td></tr><tr><td>한화</td><td style="text-align:right;">179.6</td><td style="text-align:right;">205.0</td><td style="text-align:right;">0.35%</td><td style="text-align:right;">58.6</td></tr><tr><td>CJ</td><td style="text-align:right;">134.7</td><td style="text-align:right;">133.1</td><td style="text-align:right;">0.45%</td><td style="text-align:right;">29.6</td></tr><tr><td>GS</td><td style="text-align:right;">104.2</td><td style="text-align:right;">110.2 ⚠</td><td style="text-align:right;">0.25%</td><td style="text-align:right;">44.1</td></tr><tr><td>HD현대</td><td style="text-align:right;">53.4</td><td style="text-align:right;">56.5 ⚠</td><td style="text-align:right;">0.15% ⚠</td><td style="text-align:right;">37.7</td></tr><tr><td>LS</td><td style="text-align:right;">50.6</td><td style="text-align:right;">53.5 ⚠</td><td style="text-align:right;">0.25%</td><td style="text-align:right;">21.4</td></tr><tr><td>두산</td><td style="text-align:right;">27.8</td><td style="text-align:right;">29.4 ⚠</td><td style="text-align:right;">0.35%</td><td style="text-align:right;">8.4</td></tr></tbody></table></div>
+<p><small>2024A·요율 구간 = 공정위(미래에셋, 07-30, p.16). P = 구간 중간값, HD현대 «0.2% 미만» → 0.15% 가정 ⚠. 2025A: LG = 브랜드가치 3,490 ÷ 10배(SK증권, 11-13, p.2), SK(대신, 11-17, p.4), 한화 2,050억원(대신, 08-25, p.1 그래프), CJ(삼성, 08-20, p.3). ⚠ = 2024A × 1.058. Q = 2025A ÷ P(내 계산)</small></p>
+<h3 id="성장-가정-기준매출-q-base">성장 가정 (기준매출 Q, Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#성장-가정-기준매출-q-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>그룹</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>근거</th></tr></thead><tbody><tr><td>SK</td><td style="text-align:right;">+26.8%</td><td style="text-align:right;">+147.4%</td><td>상표권 468 → 1,158<small>(대신 11-17)</small></td></tr><tr><td>CJ</td><td style="text-align:right;">+5.9%</td><td style="text-align:right;">+7.1%</td><td>141.0 → 151.0<small>(삼성 08-20)</small></td></tr><tr><td>한화</td><td style="text-align:right;">+10.2%</td><td style="text-align:right;">+5.8% ⚠</td><td>2026F 226<small>(대신 08-25)</small></td></tr><tr><td>나머지 5곳</td><td style="text-align:right;">+5.8% ⚠</td><td style="text-align:right;">+5.8% ⚠</td><td>공정위 2024 증가율 대용</td></tr></tbody></table></div>
+<p><small>2028E는 전 그룹 +5.8% ⚠. Bear = 성장 −5%p + 2027E부터 요율 −20%, Bull = 성장 +5%p(가정 ⚠)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;로열티 8개 그룹 3안 (십억원)\&quot;\n    x-axis [\&quot;2024A\&quot;, \&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;십억원\&quot; 1000 --> 2800\n    line [1216, 1306, 1534, 2390, 2648]\n    line [1216, 1306, 1468, 2218, 2347]\n    line [1216, 1306, 1403, 1642, 1655]&quot;">xychart-beta
+    title &quot;로열티 8개 그룹 3안 (십억원)&quot;
+    x-axis [&quot;2024A&quot;, &quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;십억원&quot; 1000 --> 2800
+    line [1216, 1306, 1534, 2390, 2648]
+    line [1216, 1306, 1468, 2218, 2347]
+    line [1216, 1306, 1403, 1642, 1655]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>위에서부터 Bull · Base · Bear. 자체 모델</small></p>
+<ul>
+<li><strong>SK 2027E 급증은 두 하우스 공통 시각</strong>: 대신 1,158 · 한화 1,045 <small>(11-17, p.4)</small> → 3Q26 상표권 이미 +18.3% YoY <small>(대신, 11-17, p.1)</small></li>
+<li>SK 2027E Q 463조원(내 계산)은 요율 0.25% 가정이 만든 값 → 공정위 구간은 «높은 회사 기준» 분류라 실제 기준매출은 더 클 수 있음 ⚠</li>
+<li><strong>Bear의 요율 −20%</strong>: 공정위가 한화(6/23~)·CJ(7/10~) 상표권 사용료 현장조사 착수 <small>(미래에셋, 07-30, p.40)</small> → 2027E 8개 그룹 −26%(Base 대비, 내 계산)</li>
+</ul>
+<hr/>
+<h2 id="-수취-배당-풀--자회사-이익--배당성향--지분율">③ 수취 배당 풀 — 자회사 이익 × 배당성향 × 지분율<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-수취-배당-풀--자회사-이익--배당성향--지분율" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>8사 수취 배당 2025A 2.43조원. 삼성물산(0.76조원)·SK(0.49조원)·HD현대(0.54조원)가 74%</li>
+<li>2027E는 삼성전자 특별배당이 갈라놓음: Bear 2.86 / Base 6.02 / Bull 11.38조원</li>
+</ul>
+</div></blockquote>
+<h3 id="2025a-수취-배당-십억원">2025A 수취 배당 (십억원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2025a-수취-배당-십억원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지주</th><th style="text-align:right;">2025A</th><th>정의</th><th>주 원천</th></tr></thead><tbody><tr><td>삼성물산</td><td style="text-align:right;">756.4</td><td>FY25 귀속배당</td><td>삼성전자·삼성생명</td></tr><tr><td>HD현대</td><td style="text-align:right;">538.6</td><td>FY25 귀속배당</td><td>조선·정유</td></tr><tr><td>SK</td><td style="text-align:right;">491.0</td><td>별도 배당수익</td><td>텔레콤·스퀘어 등</td></tr><tr><td>LG</td><td style="text-align:right;">326.6</td><td>FY25 귀속배당</td><td>5개 원천 분산</td></tr><tr><td>한화</td><td style="text-align:right;">116.2</td><td>FY25 귀속배당</td><td>에어로 단일 원천</td></tr><tr><td>CJ</td><td style="text-align:right;">101.8</td><td>별도 배당수익</td><td>제일제당·올리브영</td></tr><tr><td>LS</td><td style="text-align:right;">97.9</td><td>FY25 귀속배당</td><td>일렉트릭·전선·MnM</td></tr><tr><td>두산</td><td style="text-align:right;">0.0</td><td>FY25 귀속배당</td><td>«~0»</td></tr></tbody></table></div>
+<p><small>귀속배당(미래에셋, 07-30, p.28·30). SK 491(대신 11-17 p.4 · 한화 11-17 p.4 일치), CJ 101.8(삼성 08-20 p.3 · 한화 08-18 p.2 일치). SK는 미래에셋 귀속 1,090억원과 크게 다름 ⚠</small></p>
+<h3 id="특별배당-경로--최대-배당원-3안-십억원">특별배당 경로 — 최대 배당원 3안 (십억원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#특별배당-경로--최대-배당원-3안-십억원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시나리오</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>근거</th></tr></thead><tbody><tr><td>Bear</td><td style="text-align:right;">2,000</td><td style="text-align:right;">1,092</td><td style="text-align:right;">1,092</td><td>특별배당 1회성</td></tr><tr><td>Base</td><td style="text-align:right;">2,000</td><td style="text-align:right;">3,818</td><td style="text-align:right;">1,092</td><td>NH 배당총액 ÷ 60%</td></tr><tr><td>Bull</td><td style="text-align:right;">4,760</td><td style="text-align:right;">8,930</td><td style="text-align:right;">8,930 ⚠</td><td>DS 총 수취배당</td></tr></tbody></table></div>
+<p><small>2026E 관계사 배당수입 2조원(SK증권, 08-24, p.1, 4Q25~3Q26 기준). NH 배당총액 2027F 2,291·2028F 655, 배당/관계사배당수익 60% 가정(NH, 07-30, p.6·8) → ÷ 60%(내 계산). DS 4.76·8.93조원(DS, 06-19, p.4). Bull 2028E 유지 가정 ⚠</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;수취 배당 8사 3안 (십억원)\&quot;\n    x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;십억원\&quot; 0 --> 12500\n    line [2429, 6811, 11383, 11874]\n    line [2429, 3943, 6023, 3517]\n    line [2429, 3768, 2860, 2860]&quot;">xychart-beta
+    title &quot;수취 배당 8사 3안 (십억원)&quot;
+    x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;십억원&quot; 0 --> 12500
+    line [2429, 6811, 11383, 11874]
+    line [2429, 3943, 6023, 3517]
+    line [2429, 3768, 2860, 2860]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>위에서부터 Bull · Base · Bear. SK·CJ = Base 대신·삼성, Bear 한화 경로. 나머지 5사 연 0% / 10% / 20% 성장 가정 ⚠. 자체 모델</small></p>
+<h3 id="지주-본체-수익-구조-fy25">지주 본체 수익 구조 (FY25)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지주-본체-수익-구조-fy25" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지주</th><th style="text-align:right;">배당 비중</th><th style="text-align:right;">배당 커버리지</th><th>보완 재원</th></tr></thead><tbody><tr><td>HD현대</td><td style="text-align:right;">77.3%</td><td style="text-align:right;">1.44배</td><td>계약·임대 22.7%</td></tr><tr><td>LG</td><td style="text-align:right;">44.0%</td><td style="text-align:right;">0.81배</td><td>상표권·임대 56.0%</td></tr><tr><td>CJ</td><td style="text-align:right;">38.8%</td><td style="text-align:right;">0.92배</td><td>로열티·기타 61.2%</td></tr><tr><td>SK</td><td style="text-align:right;">13.6%</td><td style="text-align:right;">1.11배</td><td>IT서비스·상표권</td></tr><tr><td>한화</td><td style="text-align:right;">2.3%</td><td style="text-align:right;">1.02배</td><td>자체사업 97.7%</td></tr><tr><td>LS</td><td style="text-align:right;">2.7%</td><td style="text-align:right;">0.24배</td><td>지분법이익 77.6%</td></tr></tbody></table></div>
+<p><small>배당 커버리지 = 별도 배당금수익 ÷ 주주 현금배당 총액(미래에셋, 07-30, p.29). 두산 0.5%·0.12배</small></p>
+<ul>
+<li><strong>Base 2028E가 꺾이는 이유</strong>: NH는 삼성전자 특별배당을 2027년 한 번으로 봄 → 2028F 배당총액 655로 복귀 <small>(NH, 07-30, p.8)</small></li>
+<li><strong>삼성물산 정책 = 관계사 배당수익 60~70% 재배당 + 최소 DPS 2,500원</strong>, 2026~2028년 배당총액 1.3조원 이상 <small>(IBK, 2026-09-01, p.22)</small> → 유입이 곧 환원으로 이어지는 드문 구조</li>
+<li>배당 원천이 한 곳이면 그 자회사 결정 하나로 사라짐(한화 = 에어로 100%) <small>(미래에셋, 07-30, p.30)</small></li>
+<li>배당·소각 정책 비교는 <a href="../지주사/04_지주사_자본배분" class="internal internal-link alias" data-slug="지주사/04_지주사_자본배분">04_지주사_자본배분</a></li>
+</ul>
+<hr/>
+<h2 id="-가치-풀--nav--1--할인율">④ 가치 풀 — NAV × (1 − 할인율)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가치-풀--nav--1--할인율" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>미래에셋 5사 NAV 90.7조원 · 시총 43.1조원 → 가중 할인율 52.4%(26-07-29, 내 계산)</li>
+<li>12개월 후: Bear 38.8 / Base 47.8 / Bull 61.6조원(−10% / +11% / +43%)</li>
+</ul>
+</div></blockquote>
+<h3 id="5사-입력-조원-2026-07-29">5사 입력 (조원, 2026-07-29)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#5사-입력-조원-2026-07-29" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지주</th><th style="text-align:right;">NAV</th><th style="text-align:right;">시총</th><th style="text-align:right;">현 할인율</th><th style="text-align:right;">1년 후</th><th style="text-align:right;">목표</th></tr></thead><tbody><tr><td>LG</td><td style="text-align:right;">28.01</td><td style="text-align:right;">13.94</td><td style="text-align:right;">50.2%</td><td style="text-align:right;">43.9%</td><td style="text-align:right;">35.3%</td></tr><tr><td>HD현대</td><td style="text-align:right;">28.73</td><td style="text-align:right;">13.26</td><td style="text-align:right;">53.8%</td><td style="text-align:right;">48.8%</td><td style="text-align:right;">39.8%</td></tr><tr><td>LS</td><td style="text-align:right;">14.86</td><td style="text-align:right;">6.75</td><td style="text-align:right;">54.6%</td><td style="text-align:right;">50.2%</td><td style="text-align:right;">40.9%</td></tr><tr><td>한화</td><td style="text-align:right;">11.27</td><td style="text-align:right;">5.81</td><td style="text-align:right;">48.4%</td><td style="text-align:right;">43.9%</td><td style="text-align:right;">34.4%</td></tr><tr><td>CJ</td><td style="text-align:right;">7.83</td><td style="text-align:right;">3.37</td><td style="text-align:right;">57.0%</td><td style="text-align:right;">53.3%</td><td style="text-align:right;">46.0%</td></tr></tbody></table></div>
+<p><small>(미래에셋, 07-30, p.44·47·55·63·71·79). 한화는 분할 전. 1년 후 = 12개월 수렴속도 κ × 잔차만큼 해소, 목표 도달은 2~3년(p.44)</small></p>
+<h3 id="시나리오-12개월-후">시나리오 (12개월 후)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시나리오-12개월-후" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>NAV 변화</td><td style="text-align:right;">−10% ⚠</td><td style="text-align:right;">0%</td><td style="text-align:right;">+8~15%</td></tr><tr><td>적용 할인율</td><td style="text-align:right;">현 수준</td><td style="text-align:right;">1년 후</td><td style="text-align:right;">목표</td></tr><tr><td>5사 NAV(조원)</td><td style="text-align:right;">81.6</td><td style="text-align:right;">90.7</td><td style="text-align:right;">100.1</td></tr><tr><td>가중 할인율</td><td style="text-align:right;">52.4%</td><td style="text-align:right;">47.3%</td><td style="text-align:right;">38.4%</td></tr><tr><td>5사 시총(조원)</td><td style="text-align:right;">38.8</td><td style="text-align:right;">47.8</td><td style="text-align:right;">61.6</td></tr><tr><td>현재 대비</td><td style="text-align:right;">−10%</td><td style="text-align:right;">+11%</td><td style="text-align:right;">+43%</td></tr></tbody></table></div>
+<p><small>Bull NAV 성장 g = 미래에셋 «NAV 성장 할증 ÷ (1 − 앵커)» 역산: LG 8 · HD현대 12 · 한화 15 · LS 8 · CJ 10%(p.44·47·55, 내 계산). Bear NAV −10% = 상장 자회사 업황 되돌림 가정 ⚠(p.40)</small></p>
+<h3 id="할인율-스냅숏-하우스기준일-다름">할인율 스냅숏 (하우스·기준일 다름)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#할인율-스냅숏-하우스기준일-다름" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지주</th><th style="text-align:right;">NH 04-06</th><th style="text-align:right;">미래 07-29</th><th style="text-align:right;">최근값</th></tr></thead><tbody><tr><td>LG</td><td style="text-align:right;">49%</td><td style="text-align:right;">50.2%</td><td style="text-align:right;">51.2%<small>(SK 11-12)</small></td></tr><tr><td>SK</td><td style="text-align:right;">63%</td><td style="text-align:right;">43.5%</td><td style="text-align:right;">60.4%<small>(대신 역산)</small></td></tr><tr><td>삼성물산</td><td style="text-align:right;">62%</td><td style="text-align:right;">49.5%</td><td style="text-align:right;">⚠</td></tr><tr><td>한화</td><td style="text-align:right;">63%</td><td style="text-align:right;">48.4%</td><td style="text-align:right;">62%<small>(대신 08-25)</small></td></tr><tr><td>LS</td><td style="text-align:right;">57%</td><td style="text-align:right;">54.6%</td><td style="text-align:right;">⚠</td></tr><tr><td>CJ</td><td style="text-align:right;">—</td><td style="text-align:right;">57.0%</td><td style="text-align:right;">38.6%<small>(SK 11-16)</small></td></tr></tbody></table></div>
+<p><small>(NH, 04-08, p.5 / 미래에셋, 07-30, p.4·39 / SK증권, 11-13 p.2·11-16 p.4 / 대신, 11-17 p.3·08-25 p.3). SK 최근값 = 1 − 주가 475,500원 ÷ 주당 NAV 1,199,502원(내 계산). 한화 62%는 대신 «분할 전과 같은» 적용 할인율</small></p>
+<ul>
+<li><strong>수준은 «50% 초중반»이 공통 시각</strong>: NH «2020년 이후 50~60% 초중반» <small>(NH, 04-08, p.30)</small> · 미래에셋 한국 평균 52%, 일본 상사 12~18% <small>(07-30, p.34)</small></li>
+<li><strong>장기 바닥은 22~29%</strong>: 제도 효과가 다 실현되면 floor 수준까지 압축 가능, 목표 할인율은 그 중간 지점 <small>(미래에셋, 07-30, p.34)</small></li>
+<li><strong>같은 회사도 하우스마다 할인율이 갈림</strong> → NAV 정의 차이가 원인(⑥장). 가치 풀은 한 하우스 값만 합산함</li>
+</ul>
+<hr/>
+<h2 id="-결과--3안-비교와-민감도">⑤ 결과 — 3안 비교와 민감도<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-결과--3안-비교와-민감도" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E 현금유입 풀: Bear 4.50 / Base 8.24 / Bull 13.77조원 → 폭의 85%가 삼성물산 배당(내 계산)</li>
+<li>로열티는 시나리오 폭이 상대적으로 좁음(1.64~2.39조원) → 계약 기반 «반복 수익»의 성격</li>
+</ul>
+</div></blockquote>
+<h3 id="2027e-3안-비교">2027E 3안 비교<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-3안-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>로열티 8그룹(십억원)</td><td style="text-align:right;">1,642</td><td style="text-align:right;">2,218</td><td style="text-align:right;">2,390</td></tr><tr><td>수취 배당 8사(십억원)</td><td style="text-align:right;">2,860</td><td style="text-align:right;">6,023</td><td style="text-align:right;">11,383</td></tr><tr><td>　삼성물산(십억원)</td><td style="text-align:right;">1,092</td><td style="text-align:right;">3,818</td><td style="text-align:right;">8,930</td></tr><tr><td>현금유입 풀(십억원)</td><td style="text-align:right;">4,502</td><td style="text-align:right;">8,241</td><td style="text-align:right;">13,773</td></tr><tr><td>5사 시총(조원)</td><td style="text-align:right;">38.8</td><td style="text-align:right;">47.8</td><td style="text-align:right;">61.6</td></tr><tr><td>배당 비중</td><td style="text-align:right;">63.5%</td><td style="text-align:right;">73.1%</td><td style="text-align:right;">82.6%</td></tr></tbody></table></div>
+<p><small>자체 모델(Summary ③). 5사 시총은 12개월 후 값</small></p>
+<h3 id="민감도-base-2027e">민감도 (Base, 2027E)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#민감도-base-2027e" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>변수</th><th>변화</th><th style="text-align:right;">영향</th></tr></thead><tbody><tr><td>5사 할인율</td><td>+1%p</td><td style="text-align:right;">시총 −0.91조원</td></tr><tr><td>5사 NAV</td><td>+10%</td><td style="text-align:right;">시총 +4.78조원</td></tr><tr><td>사용료율(8그룹)</td><td>−10%</td><td style="text-align:right;">로열티 −222십억원</td></tr><tr><td>삼성물산 배당</td><td>Bull − Bear</td><td style="text-align:right;">+7,838십억원</td></tr></tbody></table></div>
+<p><small>자체 모델(Summary ⑤, 내 계산)</small></p>
+<ul>
+<li><strong>할인율 5%p 축소(+4.5조원) ≒ NAV 10% 증가(+4.8조원)</strong>(Base, 내 계산) → 지주 주가는 할인율보다 자회사 주가에 더 묶임</li>
+<li>SK증권도 같은 진단: LG 지분가치 90%가 상장 자회사 → 주가는 할인율보다 자회사 지분가치와 연동 <small>(SK증권, 11-13, p.1)</small></li>
+<li>미래에셋 «NAV 성장 할증은 NAV 하락을 방어하지 않음» <small>(07-30, p.40)</small> → Bear를 NAV −10%로 잡은 이유</li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-검증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>Base는 하우스 경로를 그대로 재현: 검산 7항목 차이 0(SK·CJ·한화 로열티, 삼성물산 배당, LG 할인율)</li>
+<li>가장 큰 엇갈림 3개 = SK 2027E 로열티 · 삼성물산 2027E 배당 · CJ 할인율</li>
+</ul>
+</div></blockquote>
+<h3 id="base-검산">Base 검산<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#base-검산" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">모델</th><th style="text-align:right;">원문</th><th>출처</th></tr></thead><tbody><tr><td>SK 로열티 2027E</td><td style="text-align:right;">1,158</td><td style="text-align:right;">1,158</td><td>대신 11-17</td></tr><tr><td>CJ 로열티 2027E</td><td style="text-align:right;">151.0</td><td style="text-align:right;">151.0</td><td>삼성 08-20</td></tr><tr><td>한화 로열티 2026E</td><td style="text-align:right;">226</td><td style="text-align:right;">226</td><td>대신 08-25</td></tr><tr><td>삼성물산 배당 × 60%</td><td style="text-align:right;">2,291</td><td style="text-align:right;">2,291</td><td>NH 07-30</td></tr><tr><td>LG 현 할인율</td><td style="text-align:right;">50.2%</td><td style="text-align:right;">50.2%</td><td>미래 07-30</td></tr></tbody></table></div>
+<p><small>엑셀 Summary ④. SK 2026E 468·CJ 2026E 141.0도 차이 0</small></p>
+<h3 id="엇갈림--같은-질문-다른-답">엇갈림 — 같은 질문, 다른 답<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엇갈림--같은-질문-다른-답" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스</th><th>답</th></tr></thead><tbody><tr><td>SK 로열티 2027E</td><td>대신 11-17</td><td>1,158십억원</td></tr><tr><td>SK 로열티 2027E</td><td>한화 11-17</td><td>1,045십억원</td></tr><tr><td>SK 로열티 12MF</td><td>하나 11-17</td><td>618.1십억원</td></tr><tr><td>삼성물산 수취 2027E</td><td>DS 06-19</td><td>8.93조원</td></tr><tr><td>삼성물산 수취 2027E</td><td>NH 07-30</td><td>3.8조원(역산)</td></tr><tr><td>삼성물산 DPS 2027</td><td>하나 07-30</td><td>17,000원</td></tr><tr><td>CJ 할인율</td><td>미래 07-30</td><td>57.0%(NAV 7.83조)</td></tr><tr><td>CJ 할인율</td><td>SK증권 11-16</td><td>38.6%(NAV 5.32조)</td></tr><tr><td>SK NAV</td><td>하나 11-17</td><td>84.1조원</td></tr><tr><td>SK NAV</td><td>한화 11-17</td><td>35.6조원</td></tr></tbody></table></div>
+<p><small>(대신 p.4 / 한화 p.4 / 하나 p.2 / DS p.4 / NH p.6·8 / 하나 07-30 p.1 / 미래에셋 p.79 / SK증권 p.4 / 하나 11-17 p.2 / 한화 11-17 p.2). 한화 SK NAV는 상장사 50% 할인 적용 후 값</small></p>
+<ul>
+<li><strong>삼성물산 폭의 원인 = 삼성전자 환원의 현금배당 비중</strong>: 신영은 추가 현금배당 비중 25·50·75%에 따라 삼성물산 수취 +1.67·3.34·5.02조원 <small>(신영, 08-06, p.5)</small></li>
+<li><strong>CJ 할인율 18.4%p 차이 = 올리브영 평가법</strong>: 미래에셋 EBITDA 9배(4.53조원) vs SK증권 유상증자 가치(1.77조원) <small>(미래에셋 p.79 / SK증권 p.4)</small></li>
+<li><strong>SK NAV 2.4배 차이 = 상장 자회사 할인 적용 여부</strong>: 하나 «실제 NAV»는 할인 전, 한화는 상장사 50% 할인 후 <small>(11-17, p.2)</small></li>
+<li>2년 사이 바뀐 시각 전체는 <a href="../지주사/07_지주사_하우스시각_변경이력" class="internal internal-link alias" data-slug="지주사/07_지주사_하우스시각_변경이력">07_지주사_하우스시각_변경이력</a></li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>Base의 세 기둥 = SK 로열티 2배 · 삼성물산 2027E 3.8조원 · 할인율 약 5%p 축소. 셋 다 2026-12~2027-03에 확인됨</li>
+<li>하방 단일 변수는 공정위 상표권 정상가격 기준(요율 −20%면 2027E 로열티 −0.44조원, 내 계산)</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>2026-12</td><td>SK 기업가치제고 갱신</td><td>로열티 연동 환원</td><td>환원 규모 동결</td></tr><tr><td>2027-01</td><td>삼성전자 잔여 환원 결정</td><td>현금배당 50%+</td><td>자사주 위주</td></tr><tr><td>2027-01-31</td><td>SK실트론 매각 종결</td><td>대금 환원 연결</td><td>투자로 흡수</td></tr><tr><td>2027-03</td><td>정기주총·주주제안</td><td>집중투표 첫 적용</td><td>정관 회피</td></tr><tr><td>미정 ⚠</td><td>공정위 상표권 기준</td><td>현행 요율 유지</td><td>요율 −10~20%</td></tr><tr><td>2027-09-06</td><td>기존 자사주 처리 시한</td><td>전량 소각</td><td>주총 보유 승인</td></tr><tr><td>분기</td><td>5사 가중 할인율</td><td>47% 이하</td><td>52% 이상 유지</td></tr><tr><td>2028 말</td><td>배당 분리과세 한시 종료</td><td>법제화</td><td>일몰</td></tr></tbody></table></div>
+<p><small>SK 연말 계획·실트론 종결(대신, 11-17, p.1), 삼성전자 2027-01 이사회(IBK, 09-01, p.43), 정기주총(NH, 04-08, p.30), 공정위 조사(미래에셋, 07-30, p.40), 자사주 경과조치 2027.9.6(미래에셋, p.41), 분리과세 2028년까지 한시(IBK, p.2). 할인율 기준값 = 엑셀 Base·Bear. 일정 전체는 <a href="../지주사/08_지주사_트래킹캘린더" class="internal internal-link alias" data-slug="지주사/08_지주사_트래킹캘린더">08_지주사_트래킹캘린더</a>, 이벤트는 <a href="../지주사/05_지주사_이벤트" class="internal internal-link alias" data-slug="지주사/05_지주사_이벤트">05_지주사_이벤트</a></small></p>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<small>
+<ul>
+<li>미래에셋증권 「지주회사: 가치 할인 해소, 경로가 결정한다」 2026-07-30, p.4·5·14~16·28~30·34·39·40·41·44·47·55·63·71·79 (공정위 상표권·귀속배당·NAV·할인율)</li>
+<li>NH투자증권 「지주회사 재평가는 이제 시작」 2026-04-08, p.5·30</li>
+<li>NH투자증권 삼성물산 2026-07-30, p.6·8 (배당총액·관계사 배당수익 60% 가정)</li>
+<li>대신증권 「다시 서는 지주회사」 2026-08-25, p.1·3 (한화 배당·브랜드 추이, 분할 SOTP)</li>
+<li>대신증권 SK 3Q26 Review 2026-11-17, p.1·3·4</li>
+<li>한화투자증권 SK 「SK로 집중되는 AI 현금흐름」 2026-11-17, p.1·2·4</li>
+<li>하나증권 SK 2026-11-17, p.2 · 하나증권 삼성물산 2026-07-30, p.1</li>
+<li>DB금융투자 SK 2026-11-17, p.1</li>
+<li>삼성증권 CJ 2026-08-20, p.3 · 한화투자증권 CJ 2026-08-18, p.2</li>
+<li>SK증권 LG 2026-11-13, p.1·2 · SK증권 CJ 2026-11-16, p.4 · SK증권 삼성물산 2026-08-24, p.1</li>
+<li>DS투자증권 삼성물산 2026-06-19, p.4 · 신영증권 삼성물산 2026-08-06, p.5</li>
+<li>IBK투자증권 「주주환원 각서, 시장의 질을 높인다」 2026-09-01, p.2·22·43</li>
+<li>엑셀: <code>모델/지주사_모델.xlsx</code> Sources 시트(하우스 원문 36개)</li>
+</ul>
+</small>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>공정위 2025년 상표권 통계 → 2025A 로열티를 지주 본체(하우스) 값에서 그룹 전체 값으로 교체, GS·HD현대·LS·두산 ⚠ 해소</li>
+<li>HD현대 요율 «0.2% 미만» 실제 값 → P 0.15% 가정 교체</li>
+<li>SK 귀속배당(미래에셋 1,090억원) vs 별도 배당수익(4,910억원) 정의 차이 확인</li>
+<li>삼성전자 2027-01 이사회 결과 → 삼성물산 2027E 배당 경로를 하나로 좁힘</li>
+<li>한화 분할 후 존속·신설 NAV 재기준 → 가치 풀 5사 한화 행 교체</li>
+<li>삼성물산·SK·두산을 가치 풀에 넣을 같은 하우스·같은 날짜 NAV 확보</li>
+<li>나머지 5사 배당 성장률(Base 10% ⚠)을 자회사 DPS 전망으로 교체</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-311" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#지주사-시장규모-모델--기준매출--사용료율--자회사-배당--nav--1--할인율" data-for="지주사-시장규모-모델--기준매출--사용료율--자회사-배당--nav--1--할인율">지주사 시장규모 모델 — 기준매출 × 사용료율 · 자회사 배당 · NAV × (1 − 할인율)</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-모델-구조기초" data-for="-모델-구조기초">① 모델 구조·기초</a></li><li class="depth-1"><a href="#-브랜드-로열티-풀--기준매출-q--사용료율-p" data-for="-브랜드-로열티-풀--기준매출-q--사용료율-p">② 브랜드 로열티 풀 — 기준매출 Q × 사용료율 P</a></li><li class="depth-1"><a href="#-수취-배당-풀--자회사-이익--배당성향--지분율" data-for="-수취-배당-풀--자회사-이익--배당성향--지분율">③ 수취 배당 풀 — 자회사 이익 × 배당성향 × 지분율</a></li><li class="depth-1"><a href="#-가치-풀--nav--1--할인율" data-for="-가치-풀--nav--1--할인율">④ 가치 풀 — NAV × (1 − 할인율)</a></li><li class="depth-1"><a href="#-결과--3안-비교와-민감도" data-for="-결과--3안-비교와-민감도">⑤ 결과 — 3안 비교와 민감도</a></li><li class="depth-1"><a href="#-하우스별-시각과-검증" data-for="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../지주사/00_지주사_index" class="internal">00_지주사_index</a></li><li><a href="../지주사/01_지주사_용어집" class="internal">01_지주사_용어집</a></li><li><a href="../지주사/02_지주사_제도와할인율" class="internal">02_지주사_제도와할인율</a></li><li><a href="../지주사/03_지주사_그룹별구조" class="internal">03_지주사_그룹별구조</a></li><li><a href="../지주사/04_지주사_자본배분" class="internal">04_지주사_자본배분</a></li><li><a href="../지주사/05_지주사_이벤트" class="internal">05_지주사_이벤트</a></li><li><a href="../지주사/07_지주사_하우스시각_변경이력" class="internal">07_지주사_하우스시각_변경이력</a></li><li><a href="../지주사/08_지주사_트래킹캘린더" class="internal">08_지주사_트래킹캘린더</a></li><li><a href="../지주사/설명서/지주사_설명서" class="internal">지주사_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

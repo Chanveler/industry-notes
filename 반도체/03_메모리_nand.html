@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>03_메모리_NAND</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="03_메모리_NAND"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="03_메모리_NAND"/><meta name="twitter:description" content="메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남 한눈에 보기 결론 AI 추론(KV 캐시·RAG)과 HDD 대체 → eSSD가 NAND 수요의 무게중심을 서버로 옮김 신규 팹 없이 적층 전환으로만 공급 증가 → 2027년까지 타이트하다는 쪽이 다수 2027년 수급을 ‘부족 지속’으로 볼지 ‘과잉 전환’으로 볼지는 하우스마다 갈림 항목값출처eSSD 비트 비중(NAND 수요 내)2025년 28% → 2026E 43% → 2027E 53%유진투자증권, 2026-05-181Tb TLC 계약가(8개월 만에..."/><meta property="og:description" content="메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남 한눈에 보기 결론 AI 추론(KV 캐시·RAG)과 HDD 대체 → eSSD가 NAND 수요의 무게중심을 서버로 옮김 신규 팹 없이 적층 전환으로만 공급 증가 → 2027년까지 타이트하다는 쪽이 다수 2027년 수급을 ‘부족 지속’으로 볼지 ‘과잉 전환’으로 볼지는 하우스마다 갈림 항목값출처eSSD 비트 비중(NAND 수요 내)2025년 28% → 2026E 43% → 2027E 53%유진투자증권, 2026-05-181Tb TLC 계약가(8개월 만에..."/><meta property="og:image:alt" content="메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남 한눈에 보기 결론 AI 추론(KV 캐시·RAG)과 HDD 대체 → eSSD가 NAND 수요의 무게중심을 서버로 옮김 신규 팹 없이 적층 전환으로만 공급 증가 → 2027년까지 타이트하다는 쪽이 다수 2027년 수급을 ‘부족 지속’으로 볼지 ‘과잉 전환’으로 볼지는 하우스마다 갈림 항목값출처eSSD 비트 비중(NAND 수요 내)2025년 28% → 2026E 43% → 2027E 53%유진투자증권, 2026-05-181Tb TLC 계약가(8개월 만에..."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/반도체/03_메모리_nand"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/반도체/03_메모리_nand"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남 한눈에 보기 결론 AI 추론(KV 캐시·RAG)과 HDD 대체 → eSSD가 NAND 수요의 무게중심을 서버로 옮김 신규 팹 없이 적층 전환으로만 공급 증가 → 2027년까지 타이트하다는 쪽이 다수 2027년 수급을 ‘부족 지속’으로 볼지 ‘과잉 전환’으로 볼지는 하우스마다 갈림 항목값출처eSSD 비트 비중(NAND 수요 내)2025년 28% → 2026E 43% → 2027E 53%유진투자증권, 2026-05-181Tb TLC 계약가(8개월 만에..."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="반도체/03_메모리_nand" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-144" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-144" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../반도체/">3. 반도체</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>03_메모리_NAND</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">03_메모리_NAND</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>50 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="메모리-nand--essd가-수요의-절반을-넘기는-해-공급은-전환으로만-늘어남">메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#메모리-nand--essd가-수요의-절반을-넘기는-해-공급은-전환으로만-늘어남" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>AI 추론(KV 캐시·RAG)과 HDD 대체 → eSSD가 NAND 수요의 무게중심을 서버로 옮김</li>
+<li>신규 팹 없이 적층 전환으로만 공급 증가 → 2027년까지 타이트하다는 쪽이 다수</li>
+<li><mark class="text-highlight">2027년 수급을 ‘부족 지속’으로 볼지 ‘과잉 전환’으로 볼지는 하우스마다 갈림</mark></li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>eSSD 비트 비중(NAND 수요 내)</td><td>2025년 28% → 2026E 43% → 2027E 53%</td><td><small>유진투자증권, 2026-05-18</small></td></tr><tr><td>1Tb TLC 계약가(8개월 만에 약 5배)</td><td>2025-09 $6.1 → 2026-05 $31.2</td><td><small>키움증권/TrendForce, 2026-06-01</small></td></tr><tr><td>글로벌 NAND 캐파 2027년</td><td>월 1,431천 장, +8%</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>└ 2027년 증설 주체</td><td>솔리다임·YMTC뿐</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>캐파 점유율 1Q25 → 4Q27E</td><td>YMTC 10% → 18% / 삼성전자 33% → 23%</td><td><small>유진투자증권, 2026-07-28</small></td></tr><tr><td>200단 이상 출하 비중(2025 → 2027E)</td><td>33.2% → 68.6%</td><td><small>BNK투자증권, 2026-08-18</small></td></tr><tr><td>QLC 비트 비중(2025 → 2027E)</td><td>18.0% → 33.6%</td><td><small>BNK투자증권, 2026-08-18</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  subgraph D[\&quot;수요\&quot;]\n    D1[\&quot;AI 추론&lt;br/>KV 캐시·RAG\&quot;] --> E[\&quot;eSSD&lt;br/>(TLC 고성능 + QLC 대용량)\&quot;]\n    D2[\&quot;HDD 부족&lt;br/>니어라인 대체\&quot;] --> E\n    D3[\&quot;모바일·PC&lt;br/>원가 부담에 탑재량↓\&quot;]\n  end\n  subgraph S[\&quot;공급\&quot;]\n    S1[\&quot;신규 팹 없음&lt;br/>(2027년까지)\&quot;] --> S2[\&quot;적층 전환&lt;br/>286→400단+ · 본딩\&quot;]\n    S3[\&quot;YMTC 우한3&lt;br/>솔리다임 다롄2\&quot;] --> S4[\&quot;유일한 캐파 증설\&quot;]\n  end\n  E --> P[\&quot;가격·수급&lt;br/>2026 급등 → 2027 판단 갈림\&quot;]\n  D3 --> P\n  S2 --> P\n  S4 --> P&quot;">flowchart LR
+  subgraph D[&quot;수요&quot;]
+    D1[&quot;AI 추론&lt;br/>KV 캐시·RAG&quot;] --> E[&quot;eSSD&lt;br/>(TLC 고성능 + QLC 대용량)&quot;]
+    D2[&quot;HDD 부족&lt;br/>니어라인 대체&quot;] --> E
+    D3[&quot;모바일·PC&lt;br/>원가 부담에 탑재량↓&quot;]
+  end
+  subgraph S[&quot;공급&quot;]
+    S1[&quot;신규 팹 없음&lt;br/>(2027년까지)&quot;] --> S2[&quot;적층 전환&lt;br/>286→400단+ · 본딩&quot;]
+    S3[&quot;YMTC 우한3&lt;br/>솔리다임 다롄2&quot;] --> S4[&quot;유일한 캐파 증설&quot;]
+  end
+  E --> P[&quot;가격·수급&lt;br/>2026 급등 → 2027 판단 갈림&quot;]
+  D3 --> P
+  S2 --> P
+  S4 --> P
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<blockquote>
+<p>DRAM·HBM은 <a href="../반도체/02_메모리_dram_hbm" class="internal internal-link alias" data-slug="반도체/02_메모리_dram_hbm">02_메모리_DRAM_HBM</a>, 팹별 상세 일정은 <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a> 참고</p>
+</blockquote>
+<hr/>
+<h2 id="-기술-기초">① 기술 기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>셀당 비트↑ = 용량·원가 유리, 속도·내구성 불리 → 용도별로 셀이 갈림</li>
+<li>단수 경쟁의 원가 효율이 떨어짐 → 셀·주변회로를 따로 만들어 붙이는 웨이퍼 본딩이 표준화 중</li>
+<li>NAND는 컨트롤러가 동작을 결정 → 인터페이스 세대 전환(PCIe Gen5→6→7)이 eSSD 가치를 좌우</li>
+</ul>
+</div></blockquote>
+<h3 id="셀-종류--slcmlctlcqlc">셀 종류 — SLC·MLC·TLC·QLC<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#셀-종류--slcmlctlcqlc" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>셀</th><th style="text-align:right;">셀당 비트</th><th>주 용도</th><th>이번 사이클에서의 위치</th></tr></thead><tbody><tr><td>SLC</td><td style="text-align:right;">1</td><td>산업·코드저장·초저지연 캐시(SLC 모드)</td><td>레거시 단종 → 가격 급등 <small>(IBK, 2026-05-20)</small></td></tr><tr><td>MLC</td><td style="text-align:right;">2</td><td>산업·임베디드</td><td>단종 예정 → 가격 상승폭 최대 <small>(IBK, 2026-05-20)</small></td></tr><tr><td>TLC</td><td style="text-align:right;">3</td><td>모바일·PC·고성능 eSSD(KV 캐시 오프로딩·GPU 근접 스토리지)</td><td>CMX(KV 캐시)용 고성능 eSSD 주력 <small>(유진, 2026-05-18)</small></td></tr><tr><td>QLC</td><td style="text-align:right;">4</td><td>대용량 eSSD(AI 데이터레이크·HDD 대체)</td><td>eSSD 내 비중 2026년 약 30% → 2027년 50% 이상 <small>(유안타증권, 2026-11-06)</small></td></tr></tbody></table></div>
+<ul>
+<li>QLC = 같은 웨이퍼에서 비트↑ → 용량당 원가 낮음 <small>(BNK투자증권, 2026-08-18)</small></li>
+<li>SLC는 같은 용량에 TLC의 3배, QLC의 4배 웨이퍼 → SLC 채택↑ = 업계 실효 공급↓ <small>(iM증권, 2026-11-04)</small></li>
+<li>2Q26 SLC·MLC 등 레거시 MoM 약 +50% → 공급사 레거시 공정 축소 결과 <small>(IBK투자증권, 2026-05-20)</small></li>
+<li>SK하이닉스: “셀 하나를 고르지 않고 워크로드별 포트폴리오로 대응” <small>(SK증권, 2026-07-29)</small></li>
+</ul>
+<h3 id="3d-적층--높이에서-얇고-효율적으로">3D 적층 — ‘높이’에서 ‘얇고 효율적으로’<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#3d-적층--높이에서-얇고-효율적으로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>스케일링 수단</th><th>비트 1%↑당 비트당 원가</th><th>비고</th></tr></thead><tbody><tr><td>적층(단수)</td><td>약 −0.24%</td><td>4대 수단 중 효율 최저 <small>(샌디스크 추정, KB증권, 2026-09-07)</small></td></tr><tr><td>평면 미세화</td><td>−1 (최대)</td><td><small>(KB증권, 2026-09-07)</small></td></tr></tbody></table></div>
+<ul>
+<li>단수↑ → 구조 높이·공정 횟수·비용 동반↑ → 단수만으로 원가 절감 한계 <small>(하나증권, 2026-11-12)</small></li>
+<li>대응 = 멀티스택 + 웨이퍼 본딩 + 층간 간격 축소(수직 미세화) <small>(하나증권, 2026-11-12)</small></li>
+</ul>
+<h3 id="업체별-적층-세대--현재-vs-차세대">업체별 적층 세대 — 현재 vs 차세대<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-적층-세대--현재-vs-차세대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>현 주력 세대</th><th>차세대</th><th>셀-주변회로 구조</th><th>I/O 속도</th><th>출처</th></tr></thead><tbody><tr><td>삼성전자</td><td>V9 286단 (V-NAND 캐파의 약 60%)</td><td>V10 400단+ (1H26 양산 착수), V11 500단급</td><td>V9 CoP → V10 W2W 웨이퍼 본딩·3스택</td><td>3.2Gbps</td><td><small>하나 2026-09-02, 2026-11-12 · 키움 2026-06-01</small></td></tr><tr><td>SK하이닉스</td><td>321단 (4Q26 국내 생산 절반 이상)</td><td>375단 (첫 웨이퍼 본딩, 1H27 eSSD 양산 추진)</td><td>PUC → 하이브리드 본딩 2027 양산 추진</td><td>3.2Gbps</td><td><small>하나 2026-11-12 · 유안타 2026-11-06 · 키움 2026-06-01</small></td></tr><tr><td>키옥시아</td><td>BiCS8 218단</td><td>BiCS10 332단 (2026-07 샘플, K2 생산)</td><td>CBA (BiCS8부터 양산 적용)</td><td>3.6 → 4.8Gbps</td><td><small>KB 2026-09-07</small></td></tr><tr><td>샌디스크</td><td>BiCS8 (키옥시아 JV)</td><td>BiCS10 332단 TLC · BiCS9 QLC</td><td>CBA</td><td>4.8Gbps</td><td><small>하나 2026-11-12</small></td></tr><tr><td>마이크론</td><td>G9 276단</td><td>⚠ 원문 없음</td><td>CuA (CMOS-under-Array)</td><td>3.6Gbps</td><td><small>키움 2026-06-01</small></td></tr><tr><td>YMTC</td><td>232단 → 3xx단 (256단 생산 중)</td><td>⚠ 단수 원문 없음</td><td>Xtacking (W2W 하이브리드 본딩)</td><td>2.4~3.2Gbps (3.2Gbps 2H26 양산)</td><td><small>키움 2026-06-01 · 유안타 2026-11-06</small></td></tr></tbody></table></div>
+<p><small>샌디스크 BiCS9 QLC = BiCS8 셀 + BiCS10 주변회로</small></p>
+<ul>
+<li>⚠ 키움<small>(2026-06-01, TrendForce 인용)</small>은 샌디스크 332단을 ‘BiCS9’로, 하나·KB는 BiCS10으로 표기 → 세대명 표기 차이</li>
+</ul>
+<h3 id="cmos-본딩--셀과-주변회로를-따로-만들어-붙임">CMOS 본딩 — 셀과 주변회로를 따로 만들어 붙임<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#cmos-본딩--셀과-주변회로를-따로-만들어-붙임" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  A[\&quot;기존 CoP/PUC&lt;br/>셀 아래 주변회로&lt;br/>(한 웨이퍼)\&quot;] -->|\&quot;400단 근접: 휨·열손상·식각 난도\&quot;| B[\&quot;웨이퍼 본딩&lt;br/>셀 웨이퍼 + CMOS 웨이퍼&lt;br/>Cu-Cu 접합\&quot;]\n  B --> C1[\&quot;키옥시아·샌디스크 CBA&lt;br/>(BiCS8 218단~)\&quot;]\n  B --> C2[\&quot;YMTC Xtacking&lt;br/>(2018년 발표)\&quot;]\n  B --> C3[\&quot;삼성 V10 W2W&lt;br/>(400단+, 2026)\&quot;]\n  B --> C4[\&quot;SK하이닉스 375단&lt;br/>(하이브리드 본딩 2027 목표)\&quot;]&quot;">flowchart LR
+  A[&quot;기존 CoP/PUC&lt;br/>셀 아래 주변회로&lt;br/>(한 웨이퍼)&quot;] -->|&quot;400단 근접: 휨·열손상·식각 난도&quot;| B[&quot;웨이퍼 본딩&lt;br/>셀 웨이퍼 + CMOS 웨이퍼&lt;br/>Cu-Cu 접합&quot;]
+  B --> C1[&quot;키옥시아·샌디스크 CBA&lt;br/>(BiCS8 218단~)&quot;]
+  B --> C2[&quot;YMTC Xtacking&lt;br/>(2018년 발표)&quot;]
+  B --> C3[&quot;삼성 V10 W2W&lt;br/>(400단+, 2026)&quot;]
+  B --> C4[&quot;SK하이닉스 375단&lt;br/>(하이브리드 본딩 2027 목표)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ul>
+<li>기존 방식: 셀 적층 고온 공정이 아래 주변회로 성능을 깎음 <small>(KB증권, 2026-09-07)</small></li>
+<li>400단 근접 → 웨이퍼 휨·깊은 식각·주변회로 열 손상이 겹침 <small>(유안타증권, 2026-11-06)</small></li>
+<li>본딩 = 각 웨이퍼 열공정 따로 최적화 → CMOS 성능↑·칩 면적↓ <small>(KB증권, 2026-09-07)</small></li>
+<li>YMTC 주장: Xtacking으로 개발 기간 최소 3개월, 제조 사이클 약 20% 단축 <small>(유진투자증권, 2026-07-28)</small></li>
+<li>유안타는 2023년에 “COP → 웨이퍼 본딩” 전환을 예상, 그대로 진행 중이라 평가 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+<h3 id="컨트롤러--컨트롤러가-동작을-결정하는-메모리">컨트롤러 — ‘컨트롤러가 동작을 결정하는 메모리’<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#컨트롤러--컨트롤러가-동작을-결정하는-메모리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>인터페이스</th><th>성능·시점</th><th>출처</th></tr></thead><tbody><tr><td>PCIe Gen4 → Gen5</td><td>진입장벽↑ → Marvell 등 상위 팹리스로 경쟁 압축</td><td><small>유진투자증권, 2026-08-18</small></td></tr><tr><td>PCIe Gen6</td><td>샘플 순차 읽기 26~28GB/s(Gen5 대비 약 2배)</td><td><small>유진투자증권, 2026-06-17</small></td></tr><tr><td>└ Gen6 지원(AMD)</td><td>Venice(2H26)</td><td><small>유진투자증권, 2026-06-17</small></td></tr><tr><td>└ Gen6 지원(Intel)</td><td>Diamond Rapids(2027)</td><td><small>유진투자증권, 2026-06-17</small></td></tr><tr><td>PCIe Gen7</td><td>NVIDIA Storage-Next(1억 IOPS 목표)에 도입 전망</td><td><small>유진투자증권, 2026-06-17</small></td></tr></tbody></table></div>
+<ul>
+<li>FTL·웨어 레벨링·큐 관리·데이터 배치·오류 보정을 컨트롤러가 맡음 <small>(삼성증권, 2026-06-02)</small></li>
+<li>부가가치를 컨트롤러·모듈 업체가 가져가 NAND는 범용재에 머묾 <small>(삼성증권, 2026-06-02)</small></li>
+<li>NAND 업체 인하우스 컨트롤러의 외주화도 늘어난 것으로 추정 <small>(유진투자증권, 2026-08-18)</small></li>
+<li>외주 컨트롤러는 세대별 고정가 → 실적이 NAND 가격 아닌 eSSD 물량·세대 전환에 연동 <small>(파두 사례, 유진투자증권, 2026-08-18)</small></li>
+<li>CSP 자체 구축 eSSD = 전체 eSSD의 한 자릿수 중반 비중 추정 <small>(유진투자증권, 2026-08-18)</small> · 생태계 상세는 <a href="../반도체/06_반도체팹리스" class="internal internal-link alias" data-slug="반도체/06_반도체팹리스">06_반도체팹리스</a></li>
+</ul>
+<hr/>
+<h2 id="-전방-수요">② 전방 수요<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-전방-수요" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>eSSD 혼자 시장을 끌어올림 → 2027E NAND 수요의 절반 이상이 eSSD</li>
+<li>동력 = KV 캐시가 HBM에서 SSD까지 내려옴 + 니어라인 HDD 부족을 QLC가 메움</li>
+<li>모바일·PC는 메모리 원가 급등에 탑재량부터 줄임</li>
+</ul>
+</div></blockquote>
+<h3 id="수요-구성이-서버로-넘어감">수요 구성이 서버로 넘어감<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#수요-구성이-서버로-넘어감" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>NAND 응용처별 비트 수요 비중(%)</strong> — 선 순서: eSSD / 모바일 / PC SSD <small>(유진투자증권, 2026-05-18)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;NAND 응용처별 비트 수요 비중 (%)\&quot;\n  x-axis [\&quot;2022\&quot;, \&quot;2023\&quot;, \&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;]\n  y-axis \&quot;비중 (%)\&quot; 0 --> 60\n  line [24, 18, 24, 28, 43, 53]\n  line [32, 33, 33, 34, 26, 22]\n  line [25, 25, 23, 21, 15, 13]&quot;">xychart-beta
+  title &quot;NAND 응용처별 비트 수요 비중 (%)&quot;
+  x-axis [&quot;2022&quot;, &quot;2023&quot;, &quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;]
+  y-axis &quot;비중 (%)&quot; 0 --> 60
+  line [24, 18, 24, 28, 43, 53]
+  line [32, 33, 33, 34, 26, 22]
+  line [25, 25, 23, 21, 15, 13]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><strong>하우스별 수요 성장률(YoY)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>연도</th><th>NAND 전체</th><th>eSSD</th><th>모바일</th><th>PC</th></tr></thead><tbody><tr><td><small>유진 2026-05-18</small></td><td>2025 / 2026E / 2027E</td><td>+15% / +21% / +27%</td><td>+37% / +84% / +56%</td><td>+19% / −5% / +4%</td><td>+3% / −11% / +5%</td></tr><tr><td><small>유진 2026-08-18 (수정)</small></td><td>2026E / 2027E</td><td>+20% / +25%</td><td>+86% / +45% (비중 44% / 51%)</td><td>–</td><td>–</td></tr><tr><td><small>키움 2026-06-01 (TrendForce)</small></td><td>2026</td><td>+20% (1조 2,095억GB)</td><td>+79% (비중 44%)</td><td>스마트폰 −9%</td><td>−15%</td></tr><tr><td><small>하나 2026-11-12</small></td><td>2027</td><td>B/G +18%</td><td>+47%</td><td>스마트폰 −3%</td><td>−12%</td></tr><tr><td><small>SK증권 2026-07-29 (SK하이닉스 컨콜)</small></td><td>2026</td><td>10% 후반</td><td>2Q26 eSSD 매출 두 배 이상</td><td>–</td><td>–</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목 (GB, 백만)</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th></tr></thead><tbody><tr><td>NAND 전체 수요</td><td style="text-align:right;">871,199</td><td style="text-align:right;">1,004,511</td><td style="text-align:right;">1,218,524</td><td style="text-align:right;">1,550,751</td></tr><tr><td>eSSD</td><td style="text-align:right;">208,387</td><td style="text-align:right;">285,643</td><td style="text-align:right;">526,949</td><td style="text-align:right;">822,095</td></tr><tr><td>└ eSSD 대당 탑재량(GB)</td><td style="text-align:right;">4,888</td><td style="text-align:right;">6,110</td><td style="text-align:right;">7,882</td><td style="text-align:right;">10,246</td></tr><tr><td>└ 그중 CMX(KV 캐시)</td><td style="text-align:right;">–</td><td style="text-align:right;">–</td><td style="text-align:right;">23,808</td><td style="text-align:right;">92,160</td></tr><tr><td>모바일</td><td style="text-align:right;">285,557</td><td style="text-align:right;">339,517</td><td style="text-align:right;">320,844</td><td style="text-align:right;">333,774</td></tr><tr><td>PC SSD</td><td style="text-align:right;">202,794</td><td style="text-align:right;">208,379</td><td style="text-align:right;">186,083</td><td style="text-align:right;">195,461</td></tr></tbody></table></div>
+<p><small><em>출처: 유진투자증권, 2026-05-18, p.30</em></small></p>
+<h3 id="ai-추론--kv-캐시가-ssd까지-내려옴">AI 추론 — KV 캐시가 SSD까지 내려옴<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#ai-추론--kv-캐시가-ssd까지-내려옴" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  H[\&quot;HBM\&quot;] --> R[\&quot;시스템 DRAM&lt;br/>(SOCAMM)\&quot;] --> L[\&quot;로컬 eSSD\&quot;] --> C[\&quot;CMX SSD&lt;br/>(KV 캐시, TLC)\&quot;] --> N[\&quot;네트워크 스토리지&lt;br/>(QLC eSSD/HDD)\&quot;]&quot;">flowchart LR
+  H[&quot;HBM&quot;] --> R[&quot;시스템 DRAM&lt;br/>(SOCAMM)&quot;] --> L[&quot;로컬 eSSD&quot;] --> C[&quot;CMX SSD&lt;br/>(KV 캐시, TLC)&quot;] --> N[&quot;네트워크 스토리지&lt;br/>(QLC eSSD/HDD)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small><em>메모리 계층: 유진투자증권, 2026-06-17 · 캐시가 넘쳐 아래로 내려가는 구조: 유안타증권, 2026-11-06</em></small></p>
+<p><strong>CMX(KV 캐시)용 eSSD 수요 추정 변화 <small>(유진투자증권)</small></strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>발간일</th><th>2026E</th><th>2027E</th><th>비고</th></tr></thead><tbody><tr><td>2026-05-18</td><td>238억 GB</td><td>922억 GB</td><td>2027년 NAND 수요의 6%</td></tr><tr><td>2026-08-18</td><td>299억 GB</td><td>1,428억 GB</td><td>Rubin 생산량 근거, 상향</td></tr></tbody></table></div>
+<ul>
+<li>긴 대화·에이전트 맥락 → KV 캐시가 HBM에 다 안 들어감 → DRAM·SOCAMM → eSSD <small>(유안타증권, 2026-11-06)</small></li>
+<li>100만 토큰 컨텍스트 캐시 = Rubin NVL72 GPU당 HBM의 7배 <small>(마이크론 인용, iM증권, 2026-11-04)</small></li>
+<li>초입엔 HDD 대안 QLC가 먼저 주목 → NVIDIA ICMS(현 CMX) 공개 후 고성능 TLC eSSD 급증 <small>(유진투자증권, 2026-05-18)</small></li>
+<li>BlueField-4 기반 CMX용 eSSD = 가속기당 16TB 수준 추정 <small>(유진투자증권, 2026-06-17)</small></li>
+<li>Google TPU v8의 TPU Direct Storage도 같은 방향 <small>(유진투자증권, 2026-05-18)</small></li>
+</ul>
+<details><summary>세부 근거 — 주문 확인·RAG</summary>
+<ul>
+<li>샌디스크: 2020년대 말 AI 데이터센터 NAND 시장의 1/3을 KV 캐시가 차지 전망 <small>(iM증권, 2026-11-04)</small></li>
+<li>미국 CSP eSSD 추가 주문의 70~80%가 긴 대화 기록·컨텍스트 저장 등 AI 실사용 <small>(채널체크, 유안타증권, 2026-11-06)</small></li>
+<li>미국 CSP가 기존 LTA 물량에 더해 eSSD 구매량을 두 배로 늘리는 중 <small>(유안타증권, 2026-11-06)</small></li>
+<li>KV 캐시는 “이제 막 실적 전망에 반영되기 시작한 단계” <small>(iM증권, 2026-11-04)</small></li>
+<li>RAG = 대규모 DB·빠른 검색 요구 → SSD가 GPU 메모리를 보완하는 계층 <small>(KB증권, 2026-09-07)</small></li>
+<li>Dataset·Checkpoint·Vector DB·Prefix/KV 캐시(Hot/Warm)는 SSD, 아카이브·Cold는 HDD <small>(BNK투자증권, 2026-08-18)</small></li>
+<li>키옥시아: 플래시 수요 2025~2028 CAGR — AI 추론 86% · 데이터센터 전체 46% · AI 학습·기존 서버 16% <small>(KB증권, 2026-09-07)</small></li>
+</ul>
+</details>
+<h3 id="hdd-대체--니어라인-자리를-qlc-ssd가-파고듦">HDD 대체 — 니어라인 자리를 QLC SSD가 파고듦<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hdd-대체--니어라인-자리를-qlc-ssd가-파고듦" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Seagate·WD는 2023~24년 다운턴 후 BTO 전환 → 리드타임 1년 이상, 2027년까지 니어라인 캐파 배정 완료 <small>(유진투자증권, 2026-05-18)</small></li>
+<li>HDD 리드타임이 적정의 3배 초과 → QLC SSD 대체 수요 지속 <small>(샌디스크 인용, iM증권, 2026-11-04)</small></li>
+<li>HDD 가격↑로 SSD와 가격 차 축소 + KV 캐시 오프로드용 고속 스토리지 수요 <small>(BNK투자증권, 2026-08-18)</small></li>
+<li>하이퍼스케일러가 전력효율 때문에 일부 HDD 데이터를 고용량 QLC SSD로 이전 <small>(KB증권, 2026-09-07)</small></li>
+<li>니어라인 HDD 출하 용량 10%만 바뀌어도 eSSD에 상당한 추가 수요 <small>(iM증권, 2026-11-04)</small> · 대체 비트량 추정치 ⚠ 원문 없음</li>
+</ul>
+<h3 id="고용량-qlc--essd-대당-용량이-빠르게-커짐">고용량 QLC — eSSD 대당 용량이 빠르게 커짐<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#고용량-qlc--essd-대당-용량이-빠르게-커짐" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>데이터센터 SSD 평균 NAND 탑재량</td><td>2025년 4,016GB → 2027E 6,781GB (+69%)</td><td><small>BNK투자증권, 2026-08-18</small></td></tr><tr><td>QLC 비트 비중</td><td>2025년 18.0% → 2027E 33.6%</td><td><small>BNK투자증권, 2026-08-18</small></td></tr><tr><td>eSSD 내 QLC 비중</td><td>2026년 약 30% → 2027년 50% 이상</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>└ 최대 수혜</td><td>솔리다임(QLC 비중 91%)</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>솔리다임 30TB 이상 SSD 매출</td><td>2Q26 3배 이상</td><td><small>SK증권, 2026-07-29</small></td></tr><tr><td>키옥시아 LC9</td><td>2Tb QLC 칩 32장 적층 → 245.76TB, 양산 출하 중</td><td><small>KB증권, 2026-09-07</small></td></tr></tbody></table></div>
+<ul>
+<li>삼성전자도 3Q26 “QLC 수요가 대규모로 접수” <small>(DS투자증권, 2026-10-29)</small></li>
+<li>개인 AI 에이전트용 QLC 수요도 증가 <small>(샌디스크 인용, iM증권, 2026-11-04)</small></li>
+</ul>
+<h3 id="모바일pc--원가-부담에-채용량-축소">모바일·PC — 원가 부담에 채용량 축소<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#모바일pc--원가-부담에-채용량-축소" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>세트</th><th>원가 지표</th><th>수요 영향</th><th>출처</th></tr></thead><tbody><tr><td>스마트폰</td><td>메모리 원가율 46%로 급등</td><td>2026년 −16%로 하향</td><td><small>키움증권, 2026-06-01</small></td></tr><tr><td>PC</td><td>DRAM 원가율 25%</td><td>−13%</td><td><small>키움증권, 2026-06-01</small></td></tr><tr><td>컨슈머 전체</td><td>—</td><td>2025년 대비 10% 이상 감소</td><td><small>IBK투자증권, 2026-05-20</small></td></tr><tr><td>└ 그래도 NAND 전체</td><td>—</td><td>물량 +20% 이상</td><td><small>IBK투자증권, 2026-05-20</small></td></tr></tbody></table></div>
+<ul>
+<li>NAND는 DRAM보다 원가에 민감 → 탑재량부터 줄임 <small>(하나증권, 2026-11-12)</small></li>
+<li>PC SSD 용량 축소 vs 서버 DDR5·eSSD 강세 공존 <small>(유안타증권, 2026-11-06)</small></li>
+<li>1Q26 스마트폰 +1%·PC +3% 출하 = 원가 인상 전 선주문(일시적) <small>(IBK투자증권, 2026-05-20)</small></li>
+<li>새 수요처: HBF — SK하이닉스·샌디스크가 2026-02 OCP 산하 표준화 공동 추진, HBM과 SSD 사이 계층 <small>(삼성증권, 2026-06-02)</small></li>
+<li>HBF는 스마트폰 선도입 가능성, 휴머노이드는 대당 100GB 이상 DRAM·NAND 탑재 예상 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+<hr/>
+<h2 id="-기술-심화">③ 기술 심화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-심화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>2026년 400단대 → 2030년 전후 1,000단+ 로드맵, 병목은 식각·증착·워드라인·휨</li>
+<li>본딩은 원가·속도 무기(키옥시아 선행) → 한국 업체의 약점으로 거론</li>
+<li>고난도 공정 비중↑ = 진입장벽↑ → 2028년 이후 공급 제약 요인 가능성</li>
+</ul>
+</div></blockquote>
+<h3 id="400단-전환--로드맵과-병목">400단+ 전환 — 로드맵과 병목<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#400단-전환--로드맵과-병목" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>연도</th><th>2026</th><th>2027</th><th>2029</th><th>2030 전후</th></tr></thead><tbody><tr><td>단수(TEL 전망)</td><td>400단대</td><td>500단대</td><td>800단대</td><td>1,000단+</td></tr></tbody></table></div>
+<p><small><em>출처: 하나증권, 2026-11-12</em></small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>차세대 제품</th><th>구조</th><th>개선 수치</th><th>출처</th></tr></thead><tbody><tr><td>삼성 V10 BV-NAND</td><td>400단+ 워드라인, 3스택 + 웨이퍼 본딩</td><td>V9 대비 비트 밀도 약 58%↑</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>키옥시아 BiCS10</td><td>332단 + 수평 미세화 + CBA</td><td>400단+ 대비 적층 23%↓, GB당 원가 약 10%↓</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>〃</td><td></td><td>전력효율 10%↑, 셀 신뢰성 35%↑</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>BiCS10 1Tb TLC 샘플</td><td>—</td><td>BiCS8 대비 비트 밀도 +59%, 4.8Gbps(+33%)</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>〃</td><td></td><td>읽기·쓰기 전력효율 +30%·+18%</td><td><small>KB증권, 2026-09-07</small></td></tr></tbody></table></div>
+<p><small>키옥시아 BiCS10 수치 = 회사 자체 비교, 개발 단계</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>공정 난제</th><th>내용 → 대응</th><th>출처</th></tr></thead><tbody><tr><td>식각</td><td>수백 층 관통 채널홀 → HARC(고종횡비) → 극저온 식각</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>└ 극저온(Cryogenic) 채택</td><td>삼성 장비 도입 준비</td><td><small>유안타 2026-11-06</small></td></tr><tr><td>└ TEL</td><td>한 고객사 양산 POR 확보, 400층급 매출 기여 CY26 시작</td><td><small>KB 2026-09-07</small></td></tr><tr><td>증착</td><td>깊은 홀 바닥까지 균일한 막 → ALD 필수, 배치 ALD 수요↑</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>워드라인 소재</td><td>W(텅스텐) → Mo(몰리브덴), 저항↓, SK하이닉스 일부 전환 중</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>웨이퍼 휨</td><td>박막 응력 누적 → 후면 증착·열처리·세정 중요도↑</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>소재</td><td>질화막↑ → 고선택비 인산↑</td><td><small>BNK투자증권, 2026-08-18</small></td></tr><tr><td>부품</td><td>깊은 식각 → 포커스링 마모·교체주기 단축</td><td><small>BNK투자증권, 2026-08-18</small></td></tr></tbody></table></div>
+<ul>
+<li>소재·장비 상세는 <a href="../반도체/07_반도체장비" class="internal internal-link alias" data-slug="반도체/07_반도체장비">07_반도체장비</a> · <a href="../반도체/09_반도체부품소재" class="internal internal-link alias" data-slug="반도체/09_반도체부품소재">09_반도체부품소재</a></li>
+</ul>
+<p><strong>단수별 NAND 출하 비중 전망 <small>(BNK투자증권, 2026-08-18)</small></strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">2025</th><th>2026E</th><th style="text-align:right;">2027E</th></tr></thead><tbody><tr><td>200단 이상</td><td style="text-align:right;">33.2%</td><td>53.1%</td><td style="text-align:right;">68.6%</td></tr><tr><td>└ 300단급</td><td style="text-align:right;">2.8%</td><td>8.9%</td><td style="text-align:right;">21.9%</td></tr><tr><td>QLC 비트 비중</td><td style="text-align:right;">18.0%</td><td>⚠ 원문 없음</td><td style="text-align:right;">33.6%</td></tr><tr><td>SK하이닉스 321단 비트 출하(억 GB)</td><td style="text-align:right;">3.8 (0.3%)</td><td>155.3 (11%)</td><td style="text-align:right;">639.0 (38%)</td></tr></tbody></table></div>
+<h3 id="하이브리드-본딩--원가-무기인가-비용인가">하이브리드 본딩 — 원가 무기인가 비용인가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하이브리드-본딩--원가-무기인가-비용인가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>측면</th><th>리포트 내용</th><th>출처</th></tr></thead><tbody><tr><td>원가(키옥시아)</td><td>BiCS8 원가 경쟁력, 5·6세대보다 뚜렷이↑</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>└ 조건</td><td>웨이퍼 2장·본딩 장비 추가에도</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>└ GB당 원가</td><td>2025년 업계 평균 아래(TechInsights 기준)</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>밀도(키옥시아, 회사 추정)</td><td>218단 BiCS8 밀도, 약 230층 경쟁품보다 15~20%↑</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>속도(키옥시아)</td><td>CBA를 미국·한국보다 약 4년 먼저 출시</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>└ 선행 기간</td><td>3.6Gbps 약 2년, 4.8Gbps 약 1년 선행(회사 추정)</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>└ 경쟁 비교</td><td>삼성·SK 3.2Gbps, 마이크론 3.6Gbps</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>└ 결과</td><td>키옥시아·샌디스크가 33~50% 빠름</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>한국 업체</td><td>삼성은 QLC·W2W 본딩에서 약점</td><td><small>삼성증권, 2026-06-02</small></td></tr><tr><td>└ 희석 요인</td><td>TLC·컨트롤러·eSSD 최적화 중요도 재부상</td><td><small>삼성증권, 2026-06-02</small></td></tr><tr><td>장비 시장</td><td>TEL: 본딩 장비 2030년 3,000억 엔, 연평균 약 24% 성장</td><td><small>KB 2026-09-07 / 하나 2026-11-12</small></td></tr><tr><td>└ 확산</td><td>CMP·세정·그라인딩·검사·계측으로 확산</td><td><small>KB 2026-09-07 / 하나 2026-11-12</small></td></tr><tr><td>공급 제약</td><td>본딩·ALD·극저온 식각 비중↑ → 진입장벽↑</td><td><small>유안타증권, 2026-11-06</small></td></tr><tr><td>└ 결과</td><td>2028년 이후 공급 제약 가능성</td><td><small>유안타증권, 2026-11-06</small></td></tr></tbody></table></div>
+<h3 id="hdd--qlc-ssd-대체-논리">HDD → QLC SSD 대체 논리<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#hdd--qlc-ssd-대체-논리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n  H1[\&quot;HDD 업체 BTO 전환&lt;br/>증설 억제\&quot;] --> H2[\&quot;니어라인 리드타임 1년+&lt;br/>(적정의 3배 초과)\&quot;]\n  H2 --> H3[\&quot;HDD 가격 상승&lt;br/>SSD와 $/TB 격차 축소\&quot;]\n  Q1[\&quot;QLC + 고단화&lt;br/>용량당 원가 하락\&quot;] --> H3\n  P1[\&quot;전력효율·랙 밀도&lt;br/>(하이퍼스케일러)\&quot;] --> R\n  H3 --> R[\&quot;니어라인 일부를&lt;br/>고용량 QLC eSSD로 대체\&quot;]\n  K1[\&quot;KV 캐시·RAG 등&lt;br/>실시간·병렬 접근\&quot;] --> R\n  R --> S[\&quot;eSSD 대당 탑재량&lt;br/>4.0TB→6.8TB (2025→27E)\&quot;]&quot;">flowchart TD
+  H1[&quot;HDD 업체 BTO 전환&lt;br/>증설 억제&quot;] --> H2[&quot;니어라인 리드타임 1년+&lt;br/>(적정의 3배 초과)&quot;]
+  H2 --> H3[&quot;HDD 가격 상승&lt;br/>SSD와 $/TB 격차 축소&quot;]
+  Q1[&quot;QLC + 고단화&lt;br/>용량당 원가 하락&quot;] --> H3
+  P1[&quot;전력효율·랙 밀도&lt;br/>(하이퍼스케일러)&quot;] --> R
+  H3 --> R[&quot;니어라인 일부를&lt;br/>고용량 QLC eSSD로 대체&quot;]
+  K1[&quot;KV 캐시·RAG 등&lt;br/>실시간·병렬 접근&quot;] --> R
+  R --> S[&quot;eSSD 대당 탑재량&lt;br/>4.0TB→6.8TB (2025→27E)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ul>
+<li>성립 조건: HDD 리드타임·가격 고공 유지 <small>(iM증권, 2026-11-04)</small> + QLC·고단수 원가 우위 지속 <small>(BNK투자증권, 2026-08-18)</small></li>
+<li>한계: SSD는 여전히 용량·비용에서 HDD 열위 → 아카이브·Cold는 HDD 잔류 <small>(BNK투자증권, 2026-08-18)</small></li>
+<li>전면 대체 아닌 ‘Hot/Warm은 SSD, Cold는 HDD’ 계층 분담 = 공통 시각 <small>(BNK 2026-08-18, 유진 2026-06-17)</small></li>
+</ul>
+<hr/>
+<h2 id="-캐파증설">④ 캐파·증설<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-캐파증설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li><mark class="text-highlight">2026년 메이저 캐파는 오히려 감소</mark>, 2027년 증설은 솔리다임·YMTC뿐</li>
+<li>2027년까지 ‘전환투자’ 국면 = 공통 시각 → 신규 라인은 2028~2029년 이후</li>
+<li>YMTC가 실질 변수 — 캐파 점유율 4Q27E 18%, eSSD 진입 여부가 관건</li>
+</ul>
+</div></blockquote>
+<h3 id="업체별-nand-웨이퍼-캐파-천-장월">업체별 NAND 웨이퍼 캐파 (천 장/월)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-nand-웨이퍼-캐파-천-장월" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">1Q26</th><th style="text-align:right;">2Q26</th><th style="text-align:right;">3Q26</th><th style="text-align:right;">4Q26F</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">375</td><td style="text-align:right;">365</td><td style="text-align:right;">340</td><td style="text-align:right;">310</td></tr><tr><td>SK하이닉스(국내)</td><td style="text-align:right;">140</td><td style="text-align:right;">140</td><td style="text-align:right;">140</td><td style="text-align:right;">135</td></tr><tr><td>솔리다임(다롄)</td><td style="text-align:right;">95</td><td style="text-align:right;">95</td><td style="text-align:right;">95</td><td style="text-align:right;">95</td></tr><tr><td>키옥시아/WDC(샌디스크)</td><td style="text-align:right;">400</td><td style="text-align:right;">405</td><td style="text-align:right;">418</td><td style="text-align:right;">418</td></tr><tr><td>마이크론</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td></tr><tr><td>YMTC</td><td style="text-align:right;">160</td><td style="text-align:right;">170</td><td style="text-align:right;">200</td><td style="text-align:right;">200</td></tr><tr><td><strong>글로벌(원문 표기 ⚠ 6사 합과 다름)</strong></td><td style="text-align:right;"><strong>1,328</strong></td><td style="text-align:right;"><strong>1,323</strong></td><td style="text-align:right;"><strong>1,308</strong></td><td style="text-align:right;"><strong>1,273</strong></td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">1Q27F</th><th style="text-align:right;">2Q27F</th><th style="text-align:right;">3Q27F</th><th style="text-align:right;">4Q27F</th><th>비고</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">320</td><td style="text-align:right;">320</td><td style="text-align:right;">320</td><td style="text-align:right;">320</td><td>Line12 축소, 시안 소폭 증가, P4L 20</td></tr><tr><td>SK하이닉스(국내)</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td>M11 축소</td></tr><tr><td>솔리다임(다롄)</td><td style="text-align:right;">110</td><td style="text-align:right;">120</td><td style="text-align:right;">120</td><td style="text-align:right;">120</td><td>다롄 Fab2 15→25</td></tr><tr><td>키옥시아/WDC(샌디스크)</td><td style="text-align:right;">410</td><td style="text-align:right;">420</td><td style="text-align:right;">420</td><td style="text-align:right;">420</td><td>K2 10→40, 욧카이치 −30</td></tr><tr><td>마이크론</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td style="text-align:right;">130</td><td>싱가포르 신규는 2H28</td></tr><tr><td>YMTC</td><td style="text-align:right;">220</td><td style="text-align:right;">240</td><td style="text-align:right;">260</td><td style="text-align:right;">270</td><td>우한3 0→70</td></tr><tr><td><strong>글로벌(원문 표기 ⚠ 6사 합과 다름)</strong></td><td style="text-align:right;"><strong>1,288</strong></td><td style="text-align:right;"><strong>1,318</strong></td><td style="text-align:right;"><strong>1,338</strong></td><td style="text-align:right;"><strong>1,348</strong></td><td></td></tr></tbody></table></div>
+<p><small><em>출처: 하나증권, 2026-11-12, p.9(도표 8). 하나 본문은 기타 업체 포함 2027년 글로벌 캐파 1,431천 장/월(+8%)로 제시</em></small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>값</th><th>출처</th></tr></thead><tbody><tr><td>삼성 평택 분기 웨이퍼 투입(V9 전환 중)</td><td>약 45만 → 42만 장</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>NAND 웨이퍼 투입 수준</td><td>2022년 고점 대비 여전히 약 25%↓</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>2027년 웨이퍼 투입</td><td>3년 만에 증가 전환 +3.8%</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>4Q27 6사 합산 비중</td><td>YMTC 약 20%, 삼성 약 24%</td><td><small>내 계산, 하나 2026-11-12 표 기준</small></td></tr></tbody></table></div>
+<h3 id="캐파-점유율-추이--삼성-하락-ymtc-상승">캐파 점유율 추이 — 삼성 하락, YMTC 상승<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#캐파-점유율-추이--삼성-하락-ymtc-상승" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>선 순서: 삼성전자 / 키옥시아·샌디스크 / SK하이닉스·솔리다임 / YMTC / 마이크론 <small>(유진투자증권, 2026-07-28)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;NAND 웨이퍼 캐파 점유율 (%)\&quot;\n  x-axis [\&quot;1Q25\&quot;, \&quot;2Q25\&quot;, \&quot;3Q25\&quot;, \&quot;4Q25\&quot;, \&quot;1Q26\&quot;, \&quot;2Q26E\&quot;, \&quot;3Q26E\&quot;, \&quot;4Q26E\&quot;, \&quot;1Q27E\&quot;, \&quot;2Q27E\&quot;, \&quot;3Q27E\&quot;, \&quot;4Q27E\&quot;]\n  y-axis \&quot;점유율 (%)\&quot; 0 --> 35\n  line [33, 31, 30, 29, 28, 27, 25, 23, 23, 23, 23, 23]\n  line [29, 30, 30, 29, 30, 30, 31, 31, 30, 30, 30, 30]\n  line [17, 17, 17, 18, 18, 18, 17, 18, 18, 18, 18, 18]\n  line [10, 10, 11, 12, 12, 13, 14, 15, 16, 17, 18, 18]\n  line [9, 10, 10, 10, 10, 10, 10, 10, 10, 9, 9, 9]&quot;">xychart-beta
+  title &quot;NAND 웨이퍼 캐파 점유율 (%)&quot;
+  x-axis [&quot;1Q25&quot;, &quot;2Q25&quot;, &quot;3Q25&quot;, &quot;4Q25&quot;, &quot;1Q26&quot;, &quot;2Q26E&quot;, &quot;3Q26E&quot;, &quot;4Q26E&quot;, &quot;1Q27E&quot;, &quot;2Q27E&quot;, &quot;3Q27E&quot;, &quot;4Q27E&quot;]
+  y-axis &quot;점유율 (%)&quot; 0 --> 35
+  line [33, 31, 30, 29, 28, 27, 25, 23, 23, 23, 23, 23]
+  line [29, 30, 30, 29, 30, 30, 31, 31, 30, 30, 30, 30]
+  line [17, 17, 17, 18, 18, 18, 17, 18, 18, 18, 18, 18]
+  line [10, 10, 11, 12, 12, 13, 14, 15, 16, 17, 18, 18]
+  line [9, 10, 10, 10, 10, 10, 10, 10, 10, 9, 9, 9]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="전환투자-vs-신규-증설">전환투자 vs 신규 증설<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#전환투자-vs-신규-증설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>2027년까지 ‘전환투자’ 국면 = 공통 시각</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>판단</th></tr></thead><tbody><tr><td><small>유진 2026-05-18</small></td><td>삼성·SK하이닉스·마이크론 모두 2027년까지 신규 증설 어려움</td></tr><tr><td><small>유진 2026-05-18</small></td><td>→ 신규 캐파는 DRAM 우선</td></tr><tr><td><small>키움 2026-06-01</small></td><td>키옥시아 제외하면 대부분 기존 라인 전환(브라운필드)</td></tr><tr><td><small>하나 2026-09-02</small></td><td>향후 1년 반은 공정 전환으로 비트 확대</td></tr><tr><td><small>하나 2026-09-02</small></td><td>→ 신규 라인 가동은 2029년 이후 가능성</td></tr><tr><td><small>iM 2026-11-04 (샌디스크 인용)</small></td><td>‘28년 공급 증가도 신규 팹보다 공정 전환이 주도</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>전환투자 사례·지표</th><th>내용</th><th>출처</th></tr></thead><tbody><tr><td>삼성</td><td>V-NAND 캐파 약 60% V9, 1H26 V10 양산 착수</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>└ 삼성 시안</td><td>280단대 V9 전환</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>SK하이닉스</td><td>청주 M15 321단 전환, 26년 말 국내 캐파의 50%가 321단</td><td><small>하나증권 2026-09-02, SK증권 2026-07-29</small></td></tr><tr><td>2027년 NAND Capex</td><td>$29.9B(+27%)</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>└ 의미</td><td>캐파는 거의 그대로, 고단화 투자로 Capex는 큼</td><td><small>하나증권, 2026-11-12</small></td></tr><tr><td>자본집약도(Capex/매출)</td><td>2026년 약 7% vs 역사적 30~50%</td><td><small>하나증권, 2026-09-02</small></td></tr></tbody></table></div>
+<p><strong>신규 증설 — 빈 공간 채우기 → 국내 신규 팹 순</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>팹</th><th>방식·규모</th><th>시점</th><th>출처</th></tr></thead><tbody><tr><td>다롄 Fab2·키옥시아 K2·YMTC 우한3</td><td>신규 클린룸 아닌 기존 확보 공간 채우기</td><td>2026~2027</td><td><small>하나증권, 2026-09-02</small></td></tr><tr><td>다롄 Fab2</td><td>V8 신규 투자 30~50K vs 15→25K ⚠ 하우스별 상이</td><td>2H26 vs 2027년</td><td><small>SK증권 2026-05-28 / 하나증권 2026-11-12</small></td></tr><tr><td>키옥시아 욧카이치 Y7·기타카미 K2</td><td>기존 공간 CY29까지 사용, 이후 신규 팹 필요</td><td>CY30 이후</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>삼성 P5 일부 Phase</td><td>NAND 배정 → 2028년부터 증설</td><td>2028</td><td><small>유진투자증권, 2026-05-18</small></td></tr><tr><td>삼성 P5·Y1 트리플 팹</td><td>일부 공간 NAND 할당, 국내 투자 재개</td><td>2H27</td><td><small>SK증권, 2026-05-28</small></td></tr><tr><td>SK하이닉스 청주 M17</td><td>NAND 팹 19.1조 원, 2027-02 착공 이사회 확정</td><td>첫 클린룸 4Q28 / 2028-12</td><td><small>하나 2026-09-02 / 유안타 2026-11-06, DS 2026-11-10</small></td></tr><tr><td>마이크론 싱가포르</td><td>2026-01 착공</td><td>가동·첫 출하 2H28</td><td><small>다올투자증권, 2026-05-19</small></td></tr></tbody></table></div>
+<ul>
+<li>일정 상세는 <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a></li>
+</ul>
+<h3 id="업체별-생산-비트점유율-전망-유진투자증권-2026-05-18">업체별 생산 비트·점유율 전망 (유진투자증권, 2026-05-18)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업체별-생산-비트점유율-전망-유진투자증권-2026-05-18" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th style="text-align:right;">2025 생산(GB, 백만)</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2027E B/G</th><th style="text-align:right;">점유율 2025 → 2027E</th></tr></thead><tbody><tr><td>삼성전자</td><td style="text-align:right;">272,099</td><td style="text-align:right;">300,468</td><td style="text-align:right;">351,882</td><td style="text-align:right;">+17%</td><td style="text-align:right;">29% → 25%</td></tr><tr><td>SK하이닉스/솔리다임</td><td style="text-align:right;">184,956</td><td style="text-align:right;">212,875</td><td style="text-align:right;">255,188</td><td style="text-align:right;">+20%</td><td style="text-align:right;">20% → 18%</td></tr><tr><td>키옥시아/샌디스크</td><td style="text-align:right;">265,198</td><td style="text-align:right;">315,585</td><td style="text-align:right;">394,482</td><td style="text-align:right;">+25%</td><td style="text-align:right;">28% → 28%</td></tr><tr><td>마이크론</td><td style="text-align:right;">103,563</td><td style="text-align:right;">123,241</td><td style="text-align:right;">147,889</td><td style="text-align:right;">+20%</td><td style="text-align:right;">11% → 10%</td></tr><tr><td>YMTC</td><td style="text-align:right;">117,183</td><td style="text-align:right;">187,492</td><td style="text-align:right;">262,489</td><td style="text-align:right;">+40%</td><td style="text-align:right;">12% → 19%</td></tr><tr><td>전체</td><td style="text-align:right;">943,344</td><td style="text-align:right;">1,140,127</td><td style="text-align:right;">1,412,544</td><td style="text-align:right;">+24%</td><td style="text-align:right;">–</td></tr></tbody></table></div>
+<h3 id="ymtc--nand-공급의-실질-변수">YMTC — NAND 공급의 실질 변수<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#ymtc--nand-공급의-실질-변수" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>현재 캐파</th><th>우한3</th><th>중장기</th></tr></thead><tbody><tr><td>유진 2026-05-18</td><td>–</td><td>설계 100K 중 절반은 DRAM</td><td>생산 점유율 2026E 16% → 2027E 19%</td></tr><tr><td>키움 2026-06-01</td><td>3Q26 Fab1·2 200K 풀가동</td><td>4Q26 양산, 총 300K</td><td>Fab4·5 2028 완공</td></tr><tr><td>유진 2026-07-28</td><td>200K</td><td>2026말 가동, 2027년 중 NAND 약 50K</td><td>캐파 점유율 4Q27E 18%</td></tr><tr><td>〃</td><td></td><td>나머지 절반 2H27 DRAM</td><td></td></tr><tr><td>키움 2026-08-11</td><td>4Q26 200K</td><td>2027년 가동</td><td>4Q28E 400~500K <small>(vs SK하이닉스 4Q26 215K)</small></td></tr><tr><td>하나 2026-09-02</td><td>–</td><td>1Q27 투입 시작 → 4Q27 50K</td><td>–</td></tr><tr><td>유안타 2026-11-06</td><td>2026말 20만 장</td><td>2027말 27만 장</td><td>이후 매년 6~7만 장, 상장으로 330억 위안 조달 계획</td></tr><tr><td>하나 2026-11-12</td><td>200K</td><td>4Q27 70K, 합계 270K</td><td>2027 Capex $7.5B(+67%)</td></tr></tbody></table></div>
+<ul>
+<li><strong>왜 CXMT보다 위협적인가</strong>
+<ul>
+<li>3D NAND는 적층·식각·증착·본딩이 핵심 → EUV 없이도 전환 가능 <small>(유진투자증권, 2026-07-28)</small></li>
+<li>2022년 말 Entity List로 128단 이상 장비 통제 → Naura·AMEC·ACM·Piotech로 국산화 <small>(키움증권, 2026-06-01)</small></li>
+<li>기술 격차 크지 않음, 글로벌 3~4위 수준 <small>(BNK투자증권, 2026-09-14)</small> · Xtacking으로 규제 우회해 256단 생산 <small>(유안타증권, 2026-11-06)</small></li>
+</ul>
+</li>
+<li><strong>시장 침투 경로</strong>
+<ul>
+<li>현재 중국 내수 스마트폰·클라이언트 SSD 위주, eSSD 진입 전 <small>(유안타증권, 2026-11-06)</small></li>
+<li>2H26 3.2Gbps 양산 → AI 추론 I/O 추격, 지방정부 보조금으로 중국 서버 모듈사 구매 가속 가능 <small>(키움증권, 2026-06-01)</small></li>
+<li>8분기 연속 점유율 상승, 3Q26 15% 예상 <small>(키움증권, 2026-08-11)</small> — ⚠ 원문 “2Q26 6% → 1Q26 13%“는 표기 오류로 보여 기점 확인 필요</li>
+<li>증설 물량 상당 부분 중국 내수 우선 → 조기 피크아웃 우려는 이름 <small>(유진투자증권, 2026-07-28)</small></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="-가격수급">⑤ 가격·수급<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격수급" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>계약가 2025년 4분기부터 수직 상승 → <mark class="text-highlight">이번 성장은 물량보다 가격</mark></li>
+<li>상승률은 3Q26부터 한 자릿수~10%대로 둔화, 1Q27 전망 폭이 매우 넓음</li>
+<li>LTA가 가격 하단을 만들지만, 2027년 수급은 ‘부족 지속’ vs ‘과잉 전환’으로 갈림</li>
+</ul>
+</div></blockquote>
+<h3 id="nand-계약가--2025년-4분기부터-수직-상승">NAND 계약가 — 2025년 4분기부터 수직 상승<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#nand-계약가--2025년-4분기부터-수직-상승" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>선 순서: 1Tb TLC / 1Tb QLC / 512Gb TLC 계약가 <small>(단위 USD, 키움증권·TrendForce, 2026-06-01)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;NAND 웨이퍼 계약가 (USD/개)\&quot;\n  x-axis [\&quot;25.05\&quot;, \&quot;25.06\&quot;, \&quot;25.07\&quot;, \&quot;25.08\&quot;, \&quot;25.09\&quot;, \&quot;25.10\&quot;, \&quot;25.11\&quot;, \&quot;25.12\&quot;, \&quot;26.01\&quot;, \&quot;26.02\&quot;, \&quot;26.03\&quot;, \&quot;26.04\&quot;, \&quot;26.05\&quot;]\n  y-axis \&quot;USD\&quot; 0 --> 35\n  line [5.9, 5.9, 5.9, 5.9, 6.1, 8.1, 13.1, 17.0, 21.7, 25.1, 29.0, 30.7, 31.2]\n  line [5.4, 5.5, 5.7, 5.8, 5.9, 7.5, 11.8, 15.8, 20.6, 24.1, 28.8, 29.8, 30.2]\n  line [3.1, 3.1, 3.3, 3.4, 3.5, 5.1, 8.5, 12.2, 16.1, 20.0, 23.7, 24.9, 25.4]&quot;">xychart-beta
+  title &quot;NAND 웨이퍼 계약가 (USD/개)&quot;
+  x-axis [&quot;25.05&quot;, &quot;25.06&quot;, &quot;25.07&quot;, &quot;25.08&quot;, &quot;25.09&quot;, &quot;25.10&quot;, &quot;25.11&quot;, &quot;25.12&quot;, &quot;26.01&quot;, &quot;26.02&quot;, &quot;26.03&quot;, &quot;26.04&quot;, &quot;26.05&quot;]
+  y-axis &quot;USD&quot; 0 --> 35
+  line [5.9, 5.9, 5.9, 5.9, 6.1, 8.1, 13.1, 17.0, 21.7, 25.1, 29.0, 30.7, 31.2]
+  line [5.4, 5.5, 5.7, 5.8, 5.9, 7.5, 11.8, 15.8, 20.6, 24.1, 28.8, 29.8, 30.2]
+  line [3.1, 3.1, 3.3, 3.4, 3.5, 5.1, 8.5, 12.2, 16.1, 20.0, 23.7, 24.9, 25.4]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>2Q26 QoQ</th><th>eMMC/UFS</th><th>eSSD</th><th>cSSD</th></tr></thead><tbody><tr><td>키움 2026-06-01</td><td>+79%</td><td>+70%</td><td>+73%</td></tr></tbody></table></div>
+<ul>
+<li>2026-04 이후 MoM +6% · +2%로 꺾임 → OEM 수용 임계점 도달 <small>(키움증권, 2026-06-01)</small></li>
+<li>TLC·QLC 주류는 공급사별 상승폭이 갈리기 시작, 2Tb 시세 형성 초기 <small>(IBK투자증권, 2026-05-20)</small></li>
+<li>2026-06 이후 월별 계약가 시계열 미확보 ⚠ → 아래 분기 ASP로 대체</li>
+</ul>
+<h3 id="분기-nand-asp--상승률-3q26부터-둔화">분기 NAND ASP — 상승률 3Q26부터 둔화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#분기-nand-asp--상승률-3q26부터-둔화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>선 순서: 삼성전자 / SK하이닉스 <small>(8Gb 환산 USD, 4Q26 이후 추정, iM증권, 2026-11-04)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;NAND 분기 ASP (8Gb eq., USD)\&quot;\n  x-axis [\&quot;1Q25\&quot;, \&quot;2Q25\&quot;, \&quot;3Q25\&quot;, \&quot;4Q25\&quot;, \&quot;1Q26\&quot;, \&quot;2Q26\&quot;, \&quot;3Q26\&quot;, \&quot;4Q26E\&quot;, \&quot;1Q27E\&quot;, \&quot;2Q27E\&quot;, \&quot;3Q27E\&quot;, \&quot;4Q27E\&quot;]\n  y-axis \&quot;USD\&quot; 0 --> 0.5\n  line [0.08, 0.07, 0.08, 0.09, 0.18, 0.30, 0.35, 0.37, 0.38, 0.38, 0.38, 0.37]\n  line [0.09, 0.08, 0.09, 0.11, 0.20, 0.31, 0.38, 0.41, 0.44, 0.44, 0.44, 0.42]&quot;">xychart-beta
+  title &quot;NAND 분기 ASP (8Gb eq., USD)&quot;
+  x-axis [&quot;1Q25&quot;, &quot;2Q25&quot;, &quot;3Q25&quot;, &quot;4Q25&quot;, &quot;1Q26&quot;, &quot;2Q26&quot;, &quot;3Q26&quot;, &quot;4Q26E&quot;, &quot;1Q27E&quot;, &quot;2Q27E&quot;, &quot;3Q27E&quot;, &quot;4Q27E&quot;]
+  y-axis &quot;USD&quot; 0 --> 0.5
+  line [0.08, 0.07, 0.08, 0.09, 0.18, 0.30, 0.35, 0.37, 0.38, 0.38, 0.38, 0.37]
+  line [0.09, 0.08, 0.09, 0.11, 0.20, 0.31, 0.38, 0.41, 0.44, 0.44, 0.44, 0.42]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><strong>분기 가격 전망 — 하우스별 비교 (QoQ)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>대상 (하우스·날짜)</th><th>2Q26</th><th>3Q26</th><th>4Q26</th><th>1Q27</th><th>2Q27</th></tr></thead><tbody><tr><td>1Tb TLC / 1Tb QLC <small>(IBK 2026-05-20, OMDIA)</small></td><td>+64.9% / +64.8%</td><td>+15% / +15%</td><td>+7% / +7%</td><td>0% / −3%</td><td>−7% / −7%</td></tr><tr><td>NAND 평균 <small>(키움 2026-06-01)</small></td><td>+70%</td><td>+10%</td><td>−7%</td><td>–</td><td>–</td></tr><tr><td>SK하이닉스 실적 <small>(SK증권 2026-07-29 · SK하이닉스 컨콜)</small></td><td>ASP +50% 중반</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>삼성 추정 실적 <small>(DS 2026-10-29)</small></td><td>–</td><td>+18%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>삼성 추정 <small>(유안타 2026-11-02)</small></td><td>–</td><td>–</td><td>+14%</td><td>–</td><td>–</td></tr><tr><td>NAND <small>(교보 2026-11-02)</small></td><td>–</td><td>–</td><td>–</td><td>+13~18%</td><td>–</td></tr><tr><td>삼성 / SK하이닉스 <small>(iM 2026-11-04)</small></td><td>+67% / +55%</td><td>+18% / +23%</td><td>+7% / +7%</td><td>+1% / +6%</td><td>+1% / +1%</td></tr><tr><td>NAND <small>(유안타 2026-11-06)</small></td><td>–</td><td>–</td><td>–</td><td>1H27 상승폭 둔화</td><td>–</td></tr></tbody></table></div>
+<ul>
+<li><mark class="text-highlight">키움(6/1) 3Q26 +10%·4Q26 −7%와 달리 실제 3Q26은 +18% 안팎</mark> <small>(DS 2026-10-29, iM 2026-11-04)</small> → 연말 하락 시나리오 빗나감</li>
+<li>1Q27 폭이 iM(삼성) +1% ~ 교보 +13~18%로 매우 넓음 → 실제치로 판정 필요</li>
+</ul>
+<h3 id="시장-규모--물량보다-가격">시장 규모 — 물량보다 가격<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시장-규모--물량보다-가격" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n  title \&quot;NAND 시장 규모 (억 달러)\&quot;\n  x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;]\n  y-axis \&quot;억 달러\&quot; 0 --> 3200\n  line [656, 711, 3040]&quot;">xychart-beta
+  title &quot;NAND 시장 규모 (억 달러)&quot;
+  x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;]
+  y-axis &quot;억 달러&quot; 0 --> 3200
+  line [656, 711, 3040]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>연도</th><th>시장</th><th style="text-align:right;">YoY</th><th style="text-align:right;">B/G</th><th style="text-align:right;">ASP</th></tr></thead><tbody><tr><td>2024</td><td>656억$</td><td style="text-align:right;">+73%</td><td style="text-align:right;">+11%</td><td style="text-align:right;">+56%</td></tr><tr><td>2025</td><td>711억$</td><td style="text-align:right;">+8%</td><td style="text-align:right;">+13%</td><td style="text-align:right;">−4%</td></tr><tr><td>2026E</td><td>3,040억$</td><td style="text-align:right;">+328%</td><td style="text-align:right;">+19%</td><td style="text-align:right;">+261%</td></tr></tbody></table></div>
+<p><small><em>출처: 키움증권·TrendForce, 2026-06-01</em></small></p>
+<ul>
+<li>2026년 NAND ASP +254% <small>(하나증권, 2026-09-02)</small> / eSSD 가격 2026년 +235% <small>(DS투자증권, 2026-09-01)</small></li>
+<li>8월 한국 NAND 수출(영업일 평균) 1.4억 달러 +322% YoY·+68% MoM, SSD 2.8억 달러 +453% YoY <small>(하나증권, 2026-09-07)</small></li>
+</ul>
+<h3 id="수급--2027년을-두고-하우스가-갈림">수급 — 2027년을 두고 하우스가 갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#수급--2027년을-두고-하우스가-갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>진영</th><th>하우스·날짜</th><th>근거</th></tr></thead><tbody><tr><td>부족 지속</td><td><small>유진 2026-05-18</small></td><td>2027년 수요 +27% vs 공급 +23%</td></tr><tr><td></td><td><small>유진 2026-05-18</small></td><td>→ DRAM·NAND 쇼티지 극대화</td></tr><tr><td></td><td><small>KB 2026-09-07 (키옥시아 인베스터 데이 2026-06)</small></td><td>타이트가 CY27 하반기 이후에도 지속</td></tr><tr><td></td><td><small>KB 2026-09-07 (키옥시아 인베스터 데이 2026-06)</small></td><td>CY25~28 비트 수요 CAGR 22%</td></tr><tr><td></td><td><small>KB 2026-09-07 (마이크론 2026-06)</small></td><td>클린룸 부족으로 CY27 이후까지 타이트</td></tr><tr><td></td><td><small>하나 2026-11-12</small></td><td>공급 B/G +20% vs 수요 +18%</td></tr><tr><td></td><td><small>하나 2026-11-12</small></td><td>→ 부족률 4%(2026) → 2%(2027), 부족 유지</td></tr><tr><td></td><td><small>유진 2026-08-18 (샌디스크)</small></td><td>FY2030까지 슈퍼사이클, FY28~30 매출총이익률 약 80%</td></tr><tr><td>과잉 전환</td><td><small>키움 2026-06-01</small></td><td>4Q26 소폭 공급 과잉 진입</td></tr><tr><td></td><td><small>하나 2026-09-02 (TrendForce 공급충족률)</small></td><td>4Q26 균형 → 2027년 연 약 +5% 과잉</td></tr><tr><td></td><td><small>하나 2026-09-02 (TrendForce 공급충족률)</small></td><td>4Q27 +16% 근접(적층 전환 비트 확대)</td></tr><tr><td></td><td><small>키움 2026-08-11</small></td><td>2027년 범용 blended ASP 하락 전환</td></tr><tr><td></td><td><small>키움 2026-08-11</small></td><td>→ 2027~28년 눈높이 하향 필요</td></tr><tr><td></td><td><small>BNK 2026-09-14</small></td><td>eSSD 외엔 소비경기 의존·경쟁 심화 → 수급 구조 취약</td></tr></tbody></table></div>
+<p><strong>다운사이클 가정 시나리오</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스·날짜</th><th>시나리오</th><th>내용</th></tr></thead><tbody><tr><td><small>유진 2026-11-12</small></td><td>Bear</td><td>2Q27부터 다운사이클 → 4Q28 NAND OPM 50%</td></tr><tr><td><small>유진 2026-11-12</small></td><td>└ 비교</td><td>OPM 50% = 2017~18 정점 수준</td></tr><tr><td><small>DS 2026-11-10</small></td><td>2028~29년 NAND ASP</td><td>Base −44%(−30%·−20%)</td></tr><tr><td><small>DS 2026-11-10</small></td><td>〃</td><td>Bear −59% · Bull −32%</td></tr><tr><td><small>DS 2026-11-10</small></td><td>〃</td><td>→ DRAM(−36%)보다 큰 조정</td></tr><tr><td><small>DS 2026-11-10</small></td><td>과거 참고</td><td>2년 다운사이클 NAND ASP −49~−56%</td></tr></tbody></table></div>
+<ul>
+<li>DS 근거: eSSD는 버티나 스마트폰·PC 감소 + 고단화 비트 생산성 개선 + 신규 팹 공급 <small>(DS투자증권, 2026-11-10)</small></li>
+</ul>
+<h3 id="lta장기공급계약--가격-하단을-만드는-장치">LTA(장기공급계약) — 가격 하단을 만드는 장치<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#lta장기공급계약--가격-하단을-만드는-장치" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>계약 내용</th><th>출처</th></tr></thead><tbody><tr><td>샌디스크 NBM (1차)</td><td>5건, 3건 최소 계약매출 약 $42B</td><td><small>유진투자증권, 2026-07-28</small></td></tr><tr><td>〃</td><td>재무보증 $11B 이상, FY27 비트 1/3 이상</td><td><small>유진투자증권, 2026-07-28</small></td></tr><tr><td>샌디스크 (이후)</td><td>FY27 출하 절반·FY28 2/3 확보</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>〃</td><td>최저가 기준 계약매출 $939억 + 금융보강 $165억</td><td><small>iM증권, 2026-11-04</small></td></tr><tr><td>마이크론 SCA</td><td>NAND 물량 약 1/3, Take-or-pay</td><td><small>유진투자증권, 2026-07-28</small></td></tr><tr><td>〃</td><td>2Q26 시장가 기준 상단·하단 밴드</td><td><small>유진투자증권, 2026-07-28</small></td></tr><tr><td>키옥시아</td><td>CY28 출하의 50%를 다년 계약으로 목표</td><td><small>KB증권, 2026-09-07</small></td></tr><tr><td>삼성</td><td>생산능력의 60~70%를 다년 계약으로 협의</td><td><small>하나증권, 2026-09-02</small></td></tr></tbody></table></div>
+<ul>
+<li>금융보강 = 최소 계약매출의 18~21% → 시장가가 LTA 하단보다 18~21% 더 빠져야 해지 유인 <small>(iM증권, 2026-11-04)</small></li>
+<li>비계약 물량↓ → 현물가가 전체 수급보다 민감 → 현물 급등락 ≠ 사이클 방향 <small>(하나증권, 2026-09-02)</small></li>
+</ul>
+<h3 id="객관-지표와-리포트의-괴리">객관 지표와 리포트의 괴리<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#객관-지표와-리포트의-괴리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표(2026-09)</th><th style="text-align:right;">값</th><th style="text-align:right;">YoY</th><th>판정</th></tr></thead><tbody><tr><td>반도체 출하지수</td><td style="text-align:right;">198.6</td><td style="text-align:right;">+3.1%</td><td>개선</td></tr><tr><td>반도체 재고지수</td><td style="text-align:right;">107.9</td><td style="text-align:right;">+19.8%</td><td>악화</td></tr></tbody></table></div>
+<p><small><em>출처: 업황 지표, 2026-09</em></small></p>
+<ul>
+<li><mark class="text-highlight">재고지수 +19.8% 악화 vs 리포트 다수의 ‘공급 부족’</mark> → NAND 단독 지표 아님 ⚠, 컨슈머 재고 누적 여부 병행 확인</li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>6개월간 방향은 ‘낙관 유지 + 2027년 하방 시나리오 추가’</li>
+<li>키움·DS는 보수화, 하나는 ‘과잉’에서 ‘부족 축소’로 이동(작성 팀 다름 ⚠)</li>
+<li>단기 가격 전망은 실제치(3Q26 +18%)가 비관론을 앞섬</li>
+</ul>
+</div></blockquote>
+<h3 id="질문별-입장">질문별 입장<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#질문별-입장" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스·날짜</th><th>입장</th></tr></thead><tbody><tr><td><strong>2027년 NAND 수급</strong></td><td>유진 2026-05-18</td><td>수요 +27% > 공급 +23%, 쇼티지 극대화</td></tr><tr><td></td><td>키움 2026-06-01</td><td>4Q26부터 소폭 과잉</td></tr><tr><td></td><td>키움 2026-08-11</td><td>2027년 범용 blended ASP 하락, 눈높이 하향</td></tr><tr><td></td><td>하나 2026-09-02 <small>(TrendForce)</small></td><td>2027년 연 +5% 과잉, 4Q27 +16% 근접</td></tr><tr><td></td><td>BNK 2026-09-14</td><td>eSSD 외 수급 구조 취약, 증설 경쟁 경계</td></tr><tr><td></td><td>유안타 2026-11-06</td><td>공급 과잉은 2029년 이후 점검 대상, 와도 완만한 조정</td></tr><tr><td></td><td>하나 2026-11-12</td><td>부족 2%로 축소되나 부족 유지</td></tr><tr><td><strong>NAND 가격 경로</strong></td><td>IBK 2026-05-20</td><td>2H26 +15%·+7%, 1Q27 보합, 2Q27 −7%</td></tr><tr><td></td><td>키움 2026-06-01</td><td>3Q26 +10%, 4Q26 −7%</td></tr><tr><td></td><td>교보 2026-11-02</td><td>1Q27 +13~18%</td></tr><tr><td></td><td>iM 2026-11-04</td><td>4Q26 +7%, 2027년 대체로 보합, 4Q27 −3%</td></tr><tr><td></td><td>유안타 2026-11-06</td><td>1H27 상승폭 둔화 (2H26 급등 부담 + 소비자 수요 부진)</td></tr><tr><td></td><td>DS 2026-11-10</td><td>2028~29 누적 −44% (Base)</td></tr><tr><td></td><td>유진 2026-11-12</td><td>Bear: 2Q27 다운사이클, 확률은 매우 낮다고 봄</td></tr><tr><td><strong>eSSD 주력은 TLC냐 QLC냐</strong></td><td>유진 2026-05-18</td><td>초입 QLC(HDD 대체) → CMX 이후 고성능 TLC로 이동</td></tr><tr><td></td><td>삼성증권 2026-06-02</td><td>TLC·컨트롤러 중요도 재부상 → QLC 약점 희석</td></tr><tr><td></td><td>BNK 2026-08-18</td><td>고용량 HDD 대체 → QLC·고단수 비중↑</td></tr><tr><td></td><td>유안타 2026-11-06</td><td>eSSD 내 QLC 30% → 50% 이상</td></tr><tr><td></td><td>iM 2026-11-04</td><td>KV 캐시(TLC)와 HDD 대체·개인 에이전트(QLC) 둘 다</td></tr><tr><td><strong>YMTC 위협 정도</strong></td><td>유진 2026-05-18·07-28</td><td>위협적이나 우한3 절반이 DRAM으로 분산 → 충격 완만</td></tr><tr><td></td><td>키움 2026-06-01·08-11</td><td>공격적 증설, 4Q28 400~500K</td></tr><tr><td></td><td>BNK 2026-09-14</td><td>기술 격차 크지 않음, 글로벌 3~4위</td></tr><tr><td></td><td>유안타 2026-11-06</td><td>NAND의 ‘실질 변수’, eSSD 진입 여부가 관건</td></tr><tr><td><strong>신규 NAND 증설 시점</strong></td><td>유진 2026-05-18</td><td>2027년까지 불가, 삼성 2028·SK 2029+</td></tr><tr><td></td><td>SK증권 2026-05-28</td><td>2H27 국내 투자 재개</td></tr><tr><td></td><td>하나 2026-09-02</td><td>신규 라인 가동 2029년 이후, M17 2027-02 착공</td></tr><tr><td></td><td>하나 2026-11-12</td><td>2027년 캐파 +8%는 솔리다임·YMTC뿐</td></tr><tr><td><strong>다운사이클 때 이익 방어</strong></td><td>iM 2026-11-04</td><td>LTA 해지선은 하단 대비 −18~21% 추가 하락</td></tr><tr><td></td><td>DS 2026-11-10</td><td>2029년에도 2027년 이익의 70% 유지</td></tr><tr><td></td><td>유진 2026-11-12</td><td>Bear에서도 NAND OPM 50%, 주가에 이미 반영</td></tr></tbody></table></div>
+<h3 id="6개월-사이-바뀐-것--언제-누가-무엇에서-무엇으로">6개월 사이 바뀐 것 — 언제 누가 무엇에서 무엇으로<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#6개월-사이-바뀐-것--언제-누가-무엇에서-무엇으로" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>하우스</th><th>시점</th><th>무엇에서</th><th>무엇으로</th></tr></thead><tbody><tr><td>유진투자증권</td><td><small>2026-05-18 → 08-18</small></td><td>CMX eSSD 2027E 922억 GB</td><td><strong>1,428억 GB</strong> 상향</td></tr><tr><td>〃</td><td><small>2026-05-18 → 08-18</small></td><td>eSSD 성장률 2027E +56%</td><td><strong>+45%</strong> 하향</td></tr><tr><td>〃</td><td><small>2026-05-18 → 08-18</small></td><td>NAND 수요 2027E +27%</td><td><strong>+25%</strong> 하향</td></tr><tr><td>유진투자증권</td><td><small>2026-11-12</small></td><td>’쇼티지 장기화’ 유지</td><td>+ NAND 2Q27 다운사이클 Bear 시나리오 <strong>첫 제시</strong></td></tr><tr><td>키움증권</td><td><small>2026-06-01 → 08-11</small></td><td>”4Q26 소폭 과잉, 가격 −7%&quot;</td><td><strong>&quot;2027년 범용 blended ASP 하락”</strong></td></tr><tr><td>〃</td><td><small>2026-06-01 → 08-11</small></td><td></td><td><strong>”2027~28 눈높이 하향”</strong></td></tr><tr><td>〃</td><td><small>2026-06-01 → 08-11</small></td><td>YMTC 우한3 4Q26 양산·총 300K</td><td><strong>2027년 가동</strong></td></tr><tr><td>하나증권</td><td><small>2026-09-02 → 11-12</small></td><td>2027년 연 +5% 공급 과잉(TrendForce 공급충족률 인용)</td><td><strong>공급 부족 4% → 2% 축소(부족 유지)</strong> ⚠</td></tr><tr><td>DS투자증권</td><td><small>2026-09-01 → 11-10</small></td><td>”2027년 추정치 상향 구간 진입”</td><td><strong>2028~29년 NAND ASP 누적 −44%(Base)</strong></td></tr><tr><td>〃</td><td><small>2026-09-01 → 11-10</small></td><td>eSSD 가격 2026년 +235%</td><td><strong>→ 이익 방어력 점검</strong></td></tr><tr><td>전망 vs 실제</td><td><small>2026-06-01 → 10~11월</small></td><td>키움 3Q26 +10% 전망</td><td>실제 삼성 3Q26 NAND ASP <strong>+18%</strong> 추정<small>(DS 2026-10-29)</small></td></tr><tr><td>〃</td><td><small>2026-06-01 → 10~11월</small></td><td></td><td>iM 집계 삼성 +18%·SK하이닉스 <strong>+23%</strong><small>(2026-11-04)</small></td></tr></tbody></table></div>
+<p><small>⚠ 하나증권: 작성 팀·데이터 출처가 달라 같은 하우스 안의 견해 차이일 수 있음</small></p>
+<h3 id="통념-vs-리포트가-말하는-것">통념 vs 리포트가 말하는 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#통념-vs-리포트가-말하는-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>통념</th><th>리포트가 말하는 것</th></tr></thead><tbody><tr><td>NAND는 DRAM의 들러리, AI와 무관</td><td>eSSD가 2027년 수요의 절반 이상 <small>(유진 2026-05-18)</small>, KV 캐시가 SSD까지 내려옴 <small>(유안타 2026-11-06)</small></td></tr><tr><td>단수를 높이면 원가가 내려감</td><td>적층 1%당 원가 −0.24%로 효율 최저, 본딩·수평 미세화가 관건 <small>(KB 2026-09-07)</small></td></tr><tr><td>가격 상승률 둔화 = 하락 전환</td><td>둔화 ≠ 하락, QoQ 고점 후 실제 하락까지 평균 4개 분기 <small>(유진 2026-07-28)</small></td></tr><tr><td>증설이 시작되면 곧 과잉</td><td>2027년까지는 빈 공간 채우기·전환뿐, 신규 라인은 2029년 이후 <small>(하나 2026-09-02)</small></td></tr><tr><td>하이브리드 본딩은 HBM 이야기</td><td>NAND는 이미 표준화 중(키옥시아 CBA 양산) vs HBM은 지연 <small>(유안타 2026-11-06)</small></td></tr></tbody></table></div>
+<blockquote>
+<p>하우스 시각 변경 누적 기록은 <a href="../반도체/11_반도체_하우스시각_변경이력" class="internal internal-link alias" data-slug="반도체/11_반도체_하우스시각_변경이력">11_반도체_하우스시각_변경이력</a></p>
+</blockquote>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>Summary</p></div></div><div class="callout-content">
+<ul>
+<li>단기 판정 = 1Q27 계약가(iM +1% vs 교보 +13~18%)와 4Q26 실적</li>
+<li>공급 변수 = YMTC 우한3 NAND 배정량·본딩 수율·M17 착공 일정</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>매월 초·중순(수출 잠정치)</td><td>한국 NAND·SSD 수출(영업일 평균)</td><td>MoM 증가 지속 <small>(8월 NAND +68% MoM, 하나 2026-09-07)</small></td><td>YoY 둔화에 MoM까지 감소</td></tr><tr><td>매월 말</td><td>TrendForce 1Tb TLC·QLC 계약가</td><td>1Q27 두 자릿수 상승 (교보 전망 +13~18%)</td><td>1Q27 보합~하락 (iM +1%, IBK QLC −3%)</td></tr><tr><td>2027-01 (4Q26 실적)</td><td>삼성·SK하이닉스 NAND B/G·ASP, SK하이닉스 321단 비중</td><td>4Q26 B/G 10% 중반 달성 + ASP 상승 <small>(DS 2026-10-29)</small></td><td>출하 늘었는데 ASP 정체</td></tr><tr><td>1Q27</td><td>YMTC 우한3 웨이퍼 투입 개시</td><td>NAND 배정 50K 이하, 절반 DRAM 확인 <small>(유진 2026-07-28)</small></td><td>100K 전량 NAND, eSSD 진입</td></tr><tr><td>1H27</td><td>SK하이닉스 375단(웨이퍼 본딩) eSSD 양산, 삼성 V10 램프</td><td>일정대로 양산 → 원가·속도 격차 축소</td><td>본딩 수율 이슈로 지연</td></tr><tr><td>2027-02</td><td>SK하이닉스 M17 NAND 팹 착공</td><td>일정 유지(=수요 가시성)</td><td>연기 = 수요 의구심 / 앞당김 = 2029년 과잉 위험</td></tr><tr><td>2Q27</td><td>키옥시아 K2 월 4만 장 도달</td><td>계획 내 램프</td><td>계획 초과 증설</td></tr><tr><td>2027 내내</td><td>eSSD 내 QLC 비중 <small>(2026 약 30% → 2027 50%+ 전망, 유안타)</small></td><td>50% 도달 = HDD 대체 확산</td><td>30%대 정체</td></tr><tr><td>2027 내내</td><td>HDD 리드타임·가격</td><td>리드타임 1년+ 유지</td><td>HDD 증설·리드타임 정상화 → QLC 대체 둔화</td></tr><tr><td>2027</td><td>PCIe Gen6 eSSD 채택, Rubin CMX 배치</td><td>CMX eSSD 2027E 1,428억 GB 경로 <small>(유진 2026-08-18)</small></td><td>Rubin 일정 지연·HBM 디스펙 확대</td></tr><tr><td>분기별</td><td>샌디스크·키옥시아 실적·LTA(NBM 2차 계약)</td><td>2차 계약 확대, FY28 계약 비중 2/3 이상</td><td>계약가 재협상·해지 사례</td></tr><tr><td>2H27</td><td>소비자용 NAND 가격·재고</td><td>컨슈머 재고 소진</td><td>2Q27 하락 전환(유진 Bear 경로)</td></tr><tr><td>2H28~4Q28</td><td>마이크론 싱가포르·M17 첫 클린룸</td><td>수요 증가와 동행</td><td>2028년 동시 가동 + 수요 둔화</td></tr></tbody></table></div>
+<blockquote>
+<p>날짜별 캘린더는 <a href="../반도체/12_반도체_트래킹캘린더" class="internal internal-link alias" data-slug="반도체/12_반도체_트래킹캘린더">12_반도체_트래킹캘린더</a></p>
+</blockquote>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>하우스</th><th style="text-align:right;">날짜</th><th>제목</th><th>주 사용 내용</th></tr></thead><tbody><tr><td>1</td><td>유진투자증권(손인준)</td><td style="text-align:right;">2026-05-18</td><td>반도체 Paradigm Shift</td><td>수요·공급 표, 업체별 생산 전망, 증설 시점</td></tr><tr><td>2</td><td>다올투자증권</td><td style="text-align:right;">2026-05-19</td><td>반도체 2H26 전망: 꺼지지 않는 초록불</td><td>마이크론 싱가포르 NAND 팹 일정</td></tr><tr><td>3</td><td>IBK투자증권(김운호)</td><td style="text-align:right;">2026-05-20</td><td>메모리 장기공급계약(LTA)에 해답이 있다</td><td>OMDIA 셀별 ASP 전망, 컨슈머 수요</td></tr><tr><td>4</td><td>SK증권</td><td style="text-align:right;">2026-05-28</td><td>반도체 소부장 2026년 하반기 전망</td><td>다롄·국내 NAND 투자 재개</td></tr><tr><td>5</td><td>키움증권</td><td style="text-align:right;">2026-06-01</td><td>반도체 하반기 산업 전망</td><td>TrendForce 계약가, 시장 규모, YMTC, 단수 표</td></tr><tr><td>6</td><td>삼성증권</td><td style="text-align:right;">2026-06-02</td><td>하반기 메모리 전망: 듀레이션 게임</td><td>HBF, 컨트롤러, TLC·QLC 경쟁력</td></tr><tr><td>7</td><td>유진투자증권</td><td style="text-align:right;">2026-06-17</td><td>All Roads Lead to Memory</td><td>메모리 계층, CMX 16TB, PCIe Gen6</td></tr><tr><td>8</td><td>유진투자증권</td><td style="text-align:right;">2026-07-28</td><td>가속의 시간에서 증명의 시간으로</td><td>업체별 웨이퍼 캐파·점유율, YMTC, LTA</td></tr><tr><td>9</td><td>SK증권</td><td style="text-align:right;">2026-07-29</td><td>SK하이닉스 2Q26 Conference call</td><td>eSSD·321단·포트폴리오 전략</td></tr><tr><td>10</td><td>키움증권</td><td style="text-align:right;">2026-08-11</td><td>Memory Split 2027</td><td>2027 범용 ASP 하락, YMTC 캐파</td></tr><tr><td>11</td><td>BNK투자증권(김영규)</td><td style="text-align:right;">2026-08-18</td><td>웨이퍼 수요는 어디에서 나오는가</td><td>단수별 출하 비중, QLC, eSSD 탑재량</td></tr><tr><td>12</td><td>유진투자증권</td><td style="text-align:right;">2026-08-18</td><td>병목의 핑퐁 게임</td><td>eSSD 수정치, 컨트롤러, 샌디스크</td></tr><tr><td>13</td><td>DS투자증권</td><td style="text-align:right;">2026-09-01</td><td>2027년 추정치 상향 구간 진입</td><td>eSSD 가격 +235%</td></tr><tr><td>14</td><td>하나증권</td><td style="text-align:right;">2026-09-02</td><td>증설의 시대, 후공정의 수혜도 함께 온다</td><td>공급충족률, 전환형 투자, M17</td></tr><tr><td>15</td><td>하나증권</td><td style="text-align:right;">2026-09-07</td><td>반도체 및 소부장 Weekly</td><td>NAND·SSD 수출</td></tr><tr><td>16</td><td>KB증권</td><td style="text-align:right;">2026-09-07</td><td>일본 반도체: AI 광풍, 열도를 덮다</td><td>CBA, BiCS10, 키옥시아 수급 전망</td></tr><tr><td>17</td><td>BNK투자증권(이민희)</td><td style="text-align:right;">2026-09-14</td><td>수요 둔화흐름 지속, 상단이 제한된 박스권</td><td>증설 경쟁, YMTC, 수익성</td></tr><tr><td>18</td><td>DS투자증권</td><td style="text-align:right;">2026-10-29</td><td>3Q26 실적 호조 및 향후 전망 상향</td><td>삼성 3Q26 NAND ASP·B/G, QLC</td></tr><tr><td>19</td><td>교보증권 / 유안타증권</td><td style="text-align:right;">2026-11-02</td><td>CXMT 과연 위협일까 / 11월 Preview</td><td>1Q27 NAND 가격, 4Q26 출하·가격</td></tr><tr><td>20</td><td>iM증권(고의영·박정하)</td><td style="text-align:right;">2026-11-04</td><td>반도체 Overweight: STRESS TEST</td><td>분기 ASP, LTA 해지선, 샌디스크</td></tr><tr><td>21</td><td>유안타증권</td><td style="text-align:right;">2026-11-06</td><td>2027년 연간전망(산업편): 수요의 재설계</td><td>웨이퍼 본딩, QLC 비중, 과잉 시점</td></tr><tr><td>22</td><td>DS투자증권</td><td style="text-align:right;">2026-11-10</td><td>머슬 메모리</td><td>2028~29 NAND ASP 시나리오</td></tr><tr><td>23</td><td>유진투자증권</td><td style="text-align:right;">2026-11-12</td><td>이미 많은 것이 반영된 주가</td><td>Bear 시나리오</td></tr><tr><td>24</td><td>하나증권</td><td style="text-align:right;">2026-11-12</td><td>반도체 소재·부품·장비 (2027 전망)</td><td>팹별 캐파 표, 2027 수급, 기술 로드맵</td></tr><tr><td>–</td><td>업황 지표</td><td style="text-align:right;">2026-09</td><td>–</td><td>출하·재고지수</td></tr></tbody></table></div>
+<ul>
+<li><small>중복 배포본(같은 리포트의 다른 파일명: 유진 6/17·8/18, 하나 9/7 등)은 1건으로만 집계함</small></li>
+</ul>
+<hr/>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026-06 이후 월별 NAND 계약가<small>(TrendForce)</small> 시계열 확보 → 계약가 차트를 2026-11까지 연장 ⚠</li>
+<li>마이크론 차세대 NAND 단수, YMTC 차세대 단수 ⚠ 원문 없음</li>
+<li>니어라인 HDD → QLC SSD 대체 비트량 정량 추정 ⚠ 원문 없음</li>
+<li>키움(8/11) YMTC 점유율 원문 표기(“2Q26 6% → 1Q26 13%”) 기점 확인</li>
+<li>다롄 Fab2 투자 규모(SK증권 30~50K vs 하나 15→25K) 확인</li>
+<li>하나증권 두 리포트(9/2 과잉 vs 11/12 부족)의 2027 수급 판단 차이 — 후속 리포트에서 어느 쪽으로 수렴하는지</li>
+<li>4Q26 실적(2027-01)으로 1Q27 가격 전망(iM +1% vs 교보 +13~18%) 판정</li>
+<li>메모리 전체 증설 일정은 <a href="../반도체/04_메모리_증설로드맵" class="internal internal-link alias" data-slug="반도체/04_메모리_증설로드맵">04_메모리_증설로드맵</a>과 숫자 일치 여부 대조</li>
+</ul>
+<blockquote>
+<p>한 줄: 믿을 것은 ‘eSSD가 NAND 수요의 절반을 넘긴다’와 ‘2027년까지 공급은 전환으로만 늘어난다’는 두 가지임. 의심할 것은 2027년 하반기 가격임 — 적층 전환에 따른 비트 증가와 YMTC 우한3, 컨슈머 부진이 겹치면 eSSD 혼자 버티기 어렵다는 시나리오를 하우스 다수가 이미 숫자로 깔기 시작했음.</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-116" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#메모리-nand--essd가-수요의-절반을-넘기는-해-공급은-전환으로만-늘어남" data-for="메모리-nand--essd가-수요의-절반을-넘기는-해-공급은-전환으로만-늘어남">메모리 NAND — eSSD가 수요의 절반을 넘기는 해, 공급은 ‘전환’으로만 늘어남</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-기술-기초" data-for="-기술-기초">① 기술 기초</a></li><li class="depth-1"><a href="#-전방-수요" data-for="-전방-수요">② 전방 수요</a></li><li class="depth-1"><a href="#-기술-심화" data-for="-기술-심화">③ 기술 심화</a></li><li class="depth-1"><a href="#-캐파증설" data-for="-캐파증설">④ 캐파·증설</a></li><li class="depth-1"><a href="#-가격수급" data-for="-가격수급">⑤ 가격·수급</a></li><li class="depth-1"><a href="#-하우스별-시각과-변화" data-for="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../반도체/00_반도체_index" class="internal">00_반도체_index</a></li><li><a href="../반도체/01_반도체_용어집" class="internal">01_반도체_용어집</a></li><li><a href="../반도체/02_메모리_dram_hbm" class="internal">02_메모리_DRAM_HBM</a></li><li><a href="../반도체/04_메모리_증설로드맵" class="internal">04_메모리_증설로드맵</a></li><li><a href="../반도체/06_반도체팹리스" class="internal">06_반도체팹리스</a></li><li><a href="../반도체/07_반도체장비" class="internal">07_반도체장비</a></li><li><a href="../반도체/설명서/반도체_설명서" class="internal">반도체_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

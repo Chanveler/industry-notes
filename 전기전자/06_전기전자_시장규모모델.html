@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>06_전기전자_시장규모모델</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="06_전기전자_시장규모모델"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="06_전기전자_시장규모모델"/><meta name="twitter:description" content="전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM 원천 한계 전기전자 캐시 166건(2025년 6건 · 2026년 160건) → 모델 숫자는 2025-10-27~2026-11-19 발간 20건에서 뽑음 MLCC 시장 금액의 출발점은 iM 한 곳(2026-06-02 응용처별 추정) → 2025A 19.2조원 자체가 하우스 추정치 ⚠ 업계 «평균» 판가 원문 없음 → 삼성전기 블렌디드 ASP·유통/직납 인상폭에서 낮춰 잡음 ⚠ PCB 유형별 2024·2029 값..."/><meta property="og:description" content="전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM 원천 한계 전기전자 캐시 166건(2025년 6건 · 2026년 160건) → 모델 숫자는 2025-10-27~2026-11-19 발간 20건에서 뽑음 MLCC 시장 금액의 출발점은 iM 한 곳(2026-06-02 응용처별 추정) → 2025A 19.2조원 자체가 하우스 추정치 ⚠ 업계 «평균» 판가 원문 없음 → 삼성전기 블렌디드 ASP·유통/직납 인상폭에서 낮춰 잡음 ⚠ PCB 유형별 2024·2029 값..."/><meta property="og:image:alt" content="전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM 원천 한계 전기전자 캐시 166건(2025년 6건 · 2026년 160건) → 모델 숫자는 2025-10-27~2026-11-19 발간 20건에서 뽑음 MLCC 시장 금액의 출발점은 iM 한 곳(2026-06-02 응용처별 추정) → 2025A 19.2조원 자체가 하우스 추정치 ⚠ 업계 «평균» 판가 원문 없음 → 삼성전기 블렌디드 ASP·유통/직납 인상폭에서 낮춰 잡음 ⚠ PCB 유형별 2024·2029 값..."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/전기전자/06_전기전자_시장규모모델"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/전기전자/06_전기전자_시장규모모델"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM 원천 한계 전기전자 캐시 166건(2025년 6건 · 2026년 160건) → 모델 숫자는 2025-10-27~2026-11-19 발간 20건에서 뽑음 MLCC 시장 금액의 출발점은 iM 한 곳(2026-06-02 응용처별 추정) → 2025A 19.2조원 자체가 하우스 추정치 ⚠ 업계 «평균» 판가 원문 없음 → 삼성전기 블렌디드 ASP·유통/직납 인상폭에서 낮춰 잡음 ⚠ PCB 유형별 2024·2029 값..."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="전기전자/06_전기전자_시장규모모델" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-350" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-350" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../전기전자/">9. 전기전자</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>06_전기전자_시장규모모델</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">06_전기전자_시장규모모델</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>17 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="전기전자-시장규모-모델--mlcc응용처--물량--판가--pcb유형별-물량--판가--socamm-기판-tam">전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#전기전자-시장규모-모델--mlcc응용처--물량--판가--pcb유형별-물량--판가--socamm-기판-tam" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<ul>
+<li>전기전자 캐시 166건(2025년 6건 · 2026년 160건) → 모델 숫자는 2025-10-27~2026-11-19 발간 20건에서 뽑음</li>
+<li>MLCC 시장 금액의 출발점은 iM 한 곳(2026-06-02 응용처별 추정) → 2025A 19.2조원 자체가 하우스 추정치 ⚠</li>
+<li>업계 «평균» 판가 원문 없음 → 삼성전기 블렌디드 ASP·유통/직납 인상폭에서 낮춰 잡음 ⚠</li>
+<li>PCB 유형별 2024·2029 값은 키움(Prismark) 그래프 판독 → 합계만 본문 숫자와 일치시킴</li>
+<li>가전·TV·공조 시장 규모 원천은 기관 보고서 1건(GM Insights) + 회사 수주뿐 → 모델 밖 대조용</li>
+</ul>
+</div></blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>MLCC 시장 Base 19.2조(2025A) → 29.0조원(2027E, +29%). 증가분의 절반 이상이 <mark class="text-highlight">물량보다 범용 판가</mark> — 범용 판가 10%p = 2.2조, 서버 판가 10%p = 0.35조</li>
+<li>서버 MLCC는 매출 비중 14%(27E)인데 이익 비중은 약 30% → AI 서버는 «매출 크기»보다 «이익 믹스» 변수</li>
+<li>PCB 830억 달러(2025) → 1,110억 달러(2027E Base). Prismark가 2029년에 본 1,025억 달러를 Base는 2027년에 넘김 → 2024년식 경로는 이미 낡음</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>MLCC 시장(조원)</td><td style="text-align:right;">19.2</td><td style="text-align:right;">22.4</td><td style="text-align:right;">29.0</td><td style="text-align:right;">32.4</td></tr><tr><td>서버 MLCC(조원)</td><td style="text-align:right;">1.1</td><td style="text-align:right;">2.2</td><td style="text-align:right;">4.2</td><td style="text-align:right;">5.9</td></tr><tr><td>PCB 시장(십억달러)</td><td style="text-align:right;">83.0</td><td style="text-align:right;">95.7</td><td style="text-align:right;">111.0</td><td style="text-align:right;">123.4</td></tr><tr><td>패키지기판(십억달러)</td><td style="text-align:right;">14.2</td><td style="text-align:right;">18.7</td><td style="text-align:right;">25.8</td><td style="text-align:right;">29.8</td></tr><tr><td>SoCAMM PCB TAM(억원)</td><td style="text-align:right;">—</td><td style="text-align:right;">2,811</td><td style="text-align:right;">5,695</td><td style="text-align:right;">⚠</td></tr></tbody></table></div>
+<p><small>Base. 2025A = iM 응용처별 추정·키움(Prismark) 본문, 2026E~ = 자체 모델(엑셀 Model 시트). SoCAMM은 iM 표 그대로 재현, 2028E 원천 없음</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;AI 서버·전장&lt;br/>물량\&quot;] --> B[\&quot;MLCC 4개 응용처&lt;br/>물량 × 판가\&quot;]\n    C[\&quot;범용 판가&lt;br/>유통·직납 인상\&quot;] --> B\n    B --> D[\&quot;MLCC 시장&lt;br/>29조원 (27E)\&quot;]\n    A --> E[\&quot;PCB 유형 4개&lt;br/>MLB·기판 = 물량 × 판가\&quot;]\n    F[\&quot;CCL·T-glass&lt;br/>원가 전가\&quot;] --> E\n    E --> G[\&quot;PCB 시장&lt;br/>1,110억 달러 (27E)\&quot;]\n    H[\&quot;Vera CPU&lt;br/>SoCAMM 출하\&quot;] --> I[\&quot;모듈+LPDDR 기판&lt;br/>면적 × 단가\&quot;]\n    I --> J[\&quot;SoCAMM TAM&lt;br/>5,695억원 (27E)\&quot;]&quot;">flowchart LR
+    A[&quot;AI 서버·전장&lt;br/>물량&quot;] --> B[&quot;MLCC 4개 응용처&lt;br/>물량 × 판가&quot;]
+    C[&quot;범용 판가&lt;br/>유통·직납 인상&quot;] --> B
+    B --> D[&quot;MLCC 시장&lt;br/>29조원 (27E)&quot;]
+    A --> E[&quot;PCB 유형 4개&lt;br/>MLB·기판 = 물량 × 판가&quot;]
+    F[&quot;CCL·T-glass&lt;br/>원가 전가&quot;] --> E
+    E --> G[&quot;PCB 시장&lt;br/>1,110억 달러 (27E)&quot;]
+    H[&quot;Vera CPU&lt;br/>SoCAMM 출하&quot;] --> I[&quot;모듈+LPDDR 기판&lt;br/>면적 × 단가&quot;]
+    I --> J[&quot;SoCAMM TAM&lt;br/>5,695억원 (27E)&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>Base, 자체 모델</small></p>
+<ul>
+<li>관련 노트: <a href="../전기전자/00_전기전자_index" class="internal internal-link alias" data-slug="전기전자/00_전기전자_index">00_전기전자_index</a> · <a href="../전기전자/01_전기전자_용어집" class="internal internal-link alias" data-slug="전기전자/01_전기전자_용어집">01_전기전자_용어집</a> · <a href="../전기전자/02_전기전자_수요와전방" class="internal internal-link alias" data-slug="전기전자/02_전기전자_수요와전방">02_전기전자_수요와전방</a> · <a href="../전기전자/03_전기전자_mlcc와수동부품" class="internal internal-link alias" data-slug="전기전자/03_전기전자_mlcc와수동부품">03_전기전자_MLCC와수동부품</a> · <a href="../전기전자/04_전기전자_pcb와기판" class="internal internal-link alias" data-slug="전기전자/04_전기전자_pcb와기판">04_전기전자_PCB와기판</a> · <a href="../전기전자/05_전기전자_가전과공조" class="internal internal-link alias" data-slug="전기전자/05_전기전자_가전과공조">05_전기전자_가전과공조</a> · <a href="../전기전자/07_전기전자_하우스시각_변경이력" class="internal internal-link alias" data-slug="전기전자/07_전기전자_하우스시각_변경이력">07_전기전자_하우스시각_변경이력</a> · <a href="../전기전자/08_전기전자_트래킹캘린더" class="internal internal-link alias" data-slug="전기전자/08_전기전자_트래킹캘린더">08_전기전자_트래킹캘린더</a></li>
+</ul>
+<hr/>
+<h2 id="-모델-구조기초">① 모델 구조·기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-모델-구조기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>블록 3개: A MLCC(조원) · B PCB(십억달러) · C SoCAMM 기판 TAM(억원) → A+B 합산 풀(조원)</li>
+<li>스위치 1개(Bear/Base/Bull)가 물량·판가·출하 배수를 함께 움직임 → 3안 전 수식(237개) 재계산 오류 0</li>
+</ul>
+</div></blockquote>
+<h3 id="블록별-식">블록별 식<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#블록별-식" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>블록</th><th>식</th><th>출발점</th></tr></thead><tbody><tr><td>A MLCC 응용처</td><td>전년 × (1+물량) × (1+판가)</td><td>iM 2025 응용처별 19.2조</td></tr><tr><td>A 이익 비중</td><td>서버 × 배수 ÷ (서버 × 배수 + 나머지)</td><td>iM «서버 수익성 2~3배»</td></tr><tr><td>A 수급 갭</td><td>캐파 가중 수요 성장 − 업계 캐파</td><td>서버 1개 = 범용 2개분</td></tr><tr><td>B 범용·HDI</td><td>전년 × (1+금액 성장)</td><td>Prismark 2025 판독</td></tr><tr><td>B MLB·기판</td><td>전년 × (1+물량) × (1+판가)</td><td>MLB 319억·기판 142억 달러</td></tr><tr><td>C SoCAMM</td><td>출하 × 면적 × 1.2 × 단가 × 환율</td><td>iM 2026-06-02 p.20 표</td></tr></tbody></table></div>
+<h3 id="엑셀-파일-구성">엑셀 파일 구성<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엑셀-파일-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시트</th><th>내용</th></tr></thead><tbody><tr><td>README</td><td>목적·식·색 규칙·주의</td></tr><tr><td>Summary</td><td>선택안 결과 · 3안 동시 비교 · 민감도</td></tr><tr><td>Inputs</td><td>시나리오 가정 22개(노란 칸 + 근거)</td></tr><tr><td>Model</td><td>계산 · 검증·대조 11행 · 민감도</td></tr><tr><td>Data</td><td>원문 숫자(파란 글씨) + 출처</td></tr><tr><td>Sources</td><td>하우스 원문 34줄(날짜·쪽)</td></tr></tbody></table></div>
+<ul>
+<li>결과 셀은 전부 수식 → 파일을 열면 재계산(fullCalcOnLoad)</li>
+<li>3안 동시 비교는 닫힌 식으로 따로 계산 → «선택안 − Model» 검산 행 = 0</li>
+</ul>
+<hr/>
+<h2 id="-mlcc--응용처--물량--판가">② MLCC — 응용처 × 물량 × 판가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-mlcc--응용처--물량--판가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2025A 19.2조원 = IT 8.1 · 전장 5.9 · 기타 4.1 · 서버 1.1 <small>(iM 06-02)</small></li>
+<li>Base 27E 29.0조원 → iM 6월 Bull 합(24.9조)보다 16% 큼. 차이는 거의 전부 6월 이후 판가 인상</li>
+<li>수량 기준 시장은 키움 수요 4.7조개(2025E) → 개당 평균 4.1원(내 계산)</li>
+</ul>
+</div></blockquote>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;MLCC 응용처별 시장 (Base, 조원)\&quot;\n    x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;조원\&quot; 0 --> 12\n    line [8.1, 8.8, 10.4, 10.7]\n    line [5.9, 6.9, 8.9, 10.0]\n    line [4.1, 4.5, 5.5, 5.7]\n    line [1.1, 2.2, 4.2, 5.9]&quot;">xychart-beta
+    title &quot;MLCC 응용처별 시장 (Base, 조원)&quot;
+    x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;조원&quot; 0 --> 12
+    line [8.1, 8.8, 10.4, 10.7]
+    line [5.9, 6.9, 8.9, 10.0]
+    line [4.1, 4.5, 5.5, 5.7]
+    line [1.1, 2.2, 4.2, 5.9]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>선 순서: IT · 전장 · 기타 · 서버. 2025A = (iM, 2026-06-02, p.30), 이후 자체 모델</small></p>
+<h3 id="물량판가-가정-base">물량·판가 가정 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#물량판가-가정-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>응용처</th><th style="text-align:right;">물량 26~28E</th><th style="text-align:right;">판가 26E</th><th style="text-align:right;">판가 27E</th><th style="text-align:right;">판가 28E</th></tr></thead><tbody><tr><td>IT</td><td style="text-align:right;">+3%/년</td><td style="text-align:right;">+5%</td><td style="text-align:right;">+15%</td><td style="text-align:right;">0%</td></tr><tr><td>전장</td><td style="text-align:right;">+12%/년</td><td style="text-align:right;">+5%</td><td style="text-align:right;">+15%</td><td style="text-align:right;">0%</td></tr><tr><td>기타(산업·가전)</td><td style="text-align:right;">+5%/년</td><td style="text-align:right;">+5%</td><td style="text-align:right;">+15%</td><td style="text-align:right;">0%</td></tr><tr><td>서버(AI·DC)</td><td style="text-align:right;">+80·60·35%</td><td style="text-align:right;">+10%</td><td style="text-align:right;">+20%</td><td style="text-align:right;">+5%</td></tr></tbody></table></div>
+<p><small>근거: 유통 인상 20~30%(6·8월)·직납 X5R 25~30%·X6S 10~20%(4Q), iM 10-28 → 연평균엔 일부만 반영 ⚠. 전체 근거는 Inputs F열</small></p>
+<ul>
+<li>범용 판가 Base 27E +15% → 시장 평균 판가 +15.7%(믹스 포함 역산). iM 삼성전기 27년 ASP +30%는 Bull로 둠</li>
+<li>서버 물량 Bull(+120%·+120%)은 iM 11-01 «DC 비중 ‘26년 12% → ‘27년 23%» 경로에 맞춘 값 → 모델 27E 21%</li>
+<li>키움 수량 기준 수요 성장(+9%·+8%)보다 모델 물량 성장(+11%·+12%)이 큼 → 금액 가중이라 서버 몫이 더 반영됨</li>
+<li>수급 갭(캐파 가중 수요 − 업계 캐파): Base 26E +4%p → 27E −4%p. 캐파 +20%(27E)가 들어오면 Base도 부족이 풀리는 숫자 → 27E 판가 +15%는 «LTA 선반영»에 기댄 가정 ⚠</li>
+</ul>
+<h3 id="매출-비중-vs-이익-비중">매출 비중 vs 이익 비중<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#매출-비중-vs-이익-비중" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>서버 비중(매출)</td><td style="text-align:right;">5.7%</td><td style="text-align:right;">9.7%</td><td style="text-align:right;">14.4%</td><td style="text-align:right;">18.3%</td></tr><tr><td>서버 비중(이익)</td><td style="text-align:right;">13.2%</td><td style="text-align:right;">21.2%</td><td style="text-align:right;">29.7%</td><td style="text-align:right;">35.9%</td></tr><tr><td>iM 11월 DC 비중</td><td style="text-align:right;">5%</td><td style="text-align:right;">12%</td><td style="text-align:right;">23%</td><td style="text-align:right;">⚠</td></tr></tbody></table></div>
+<p><small>이익 비중 = 서버 수익성 2.5배(Base) 가정(iM 06-02 «2~3배»), 업계 이익률 원문 없음 → 비율만 봄</small></p>
+<hr/>
+<h2 id="-pcb--유형별-물량--판가">③ PCB — 유형별 물량 × 판가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-pcb--유형별-물량--판가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2025 PCB 830억 달러 = 범용+Flex 214 · MLB 319 · HDI 155 · 패키지기판 142억 달러 <small>(키움·Prismark)</small></li>
+<li>Base 26E +15.3% → TPCA·ITRI 생산액 전망 +13.9%와 1.4%p 차이 <small>(DB 04-08)</small></li>
+<li>AI 민감 3종(HDI·MLB·기판) 비중 74%(2025) → 80%(27E). 성장분은 사실상 이 3종</li>
+</ul>
+</div></blockquote>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;PCB 유형별 시장 (Base, 십억달러)\&quot;\n    x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;십억달러\&quot; 0 --> 55\n    line [21.4, 22.0, 22.7, 23.4]\n    line [15.5, 17.1, 18.8, 20.6]\n    line [31.9, 37.9, 43.8, 49.6]\n    line [14.2, 18.7, 25.8, 29.8]&quot;">xychart-beta
+    title &quot;PCB 유형별 시장 (Base, 십억달러)&quot;
+    x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;십억달러&quot; 0 --> 55
+    line [21.4, 22.0, 22.7, 23.4]
+    line [15.5, 17.1, 18.8, 20.6]
+    line [31.9, 37.9, 43.8, 49.6]
+    line [14.2, 18.7, 25.8, 29.8]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>선 순서: 범용+Flex · HDI · MLB · 패키지기판. 2025A = (키움, 2025-11-25, p.16~17, 일부 그래프 판독), 이후 자체 모델</small></p>
+<h3 id="유형별-가정-base">유형별 가정 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#유형별-가정-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>유형</th><th style="text-align:right;">물량</th><th style="text-align:right;">판가 26E</th><th style="text-align:right;">판가 27E</th><th style="text-align:right;">판가 28E</th></tr></thead><tbody><tr><td>범용+Flex</td><td style="text-align:right;">금액 +3%</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td></tr><tr><td>HDI</td><td style="text-align:right;">금액 +10%</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td><td style="text-align:right;">—</td></tr><tr><td>MLB(다층)</td><td style="text-align:right;">+10%/년</td><td style="text-align:right;">+8%</td><td style="text-align:right;">+5%</td><td style="text-align:right;">+3%</td></tr><tr><td>패키지기판</td><td style="text-align:right;">+10%/년</td><td style="text-align:right;">+20%</td><td style="text-align:right;">+25%</td><td style="text-align:right;">+5%</td></tr></tbody></table></div>
+<ul>
+<li>MLB 판가 26E +8%: 수출단가 412 → 443만원/㎡(+7%) <small>(신한 25-11-20)</small> + CCL 인상 전가</li>
+<li>패키지기판 판가: ABF·BT 평균가 분기 +7~8% <small>(iM 10-22, MoneyDJ)</small> → 연 30%대지만 Base는 20%로 낮춤</li>
+<li>28E 판가 둔화: 패키지기판 CapEx 37 → 66억 달러로 상향 <small>(iM 07-03)</small> → 28년 증설 물량 출회 가정</li>
+<li>기판 물량 +10%: BT 캐파 연 +6% <small>(iM 10-27, Goldman)</small>와 ABF 캐파 28년 2배+ <small>(키움 10-20)</small>의 가중 ⚠</li>
+</ul>
+<hr/>
+<h2 id="-socamm-기판-tam">④ SoCAMM 기판 TAM<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-socamm-기판-tam" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>iM 표를 그대로 재현: 2026E 2,811억 · 2027E 5,695억원 (모듈 PCB + LPDDR 기판 4개)</li>
+<li>같은 시장인데 하우스 숫자가 4배 차이 — 범위(모듈만 vs 모듈+LPDDR 기판)와 시점이 다름</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>범위</th><th>출처</th></tr></thead><tbody><tr><td>한투 10월</td><td style="text-align:right;">499</td><td style="text-align:right;">960</td><td>모듈 PCB만</td><td><small>(한투 25-10-27)</small></td></tr><tr><td>한투 11월</td><td style="text-align:right;">790</td><td style="text-align:right;">⚠</td><td>모듈 PCB만</td><td><small>(한투 25-11-27)</small></td></tr><tr><td>iM 이전</td><td style="text-align:right;">1,136</td><td style="text-align:right;">1,875</td><td>모듈+LPDDR</td><td><small>(iM 06-02 인용)</small></td></tr><tr><td>iM 6월</td><td style="text-align:right;">2,811</td><td style="text-align:right;">5,695</td><td>모듈+LPDDR</td><td><small>(iM 06-02)</small></td></tr><tr><td>회사 제시</td><td style="text-align:right;">3,000</td><td style="text-align:right;">⚠</td><td>모듈+MCP</td><td><small>(iM 06-02 인용)</small></td></tr></tbody></table></div>
+<p><small>단위 억원. 모델 Bear = iM × 0.5, Bull = iM × 1.2 (Inputs «SoCAMM 출하 배수»)</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>요소</th><th style="text-align:right;">모듈 PCB</th><th style="text-align:right;">LPDDR 기판</th></tr></thead><tbody><tr><td>면적(㎟)</td><td style="text-align:right;">1,260</td><td style="text-align:right;">186 × 4개</td></tr><tr><td>단가(달러/㎡)</td><td style="text-align:right;">2,100</td><td style="text-align:right;">2,250</td></tr><tr><td>2026E TAM(억원)</td><td style="text-align:right;">1,722</td><td style="text-align:right;">1,089</td></tr></tbody></table></div>
+<p><small>출하 3,615만개(26E)·7,324만개(27E), 버퍼 1.2배, 환율 1,500원 (iM 06-02, p.20)</small></p>
+<ul>
+<li>iM이 1,136억 → 2,811억으로 올린 이유 = Vera CPU 단독 판매 수요 반영 → 출하 가정 하나가 TAM을 2.5배 흔듦</li>
+<li>2028E 원천 없음 ⚠</li>
+</ul>
+<hr/>
+<h2 id="-결과--3안-비교">⑤ 결과 — 3안 비교<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-결과--3안-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E MLCC 22.4 / 29.0 / 38.2조원 → Bear는 판가 인상이 거의 없는 세계, Bull은 iM 11월 DC 경로</li>
+<li>2027E PCB 937 / 1,110 / 1,302억 달러 → 위아래 폭의 절반이 패키지기판·MLB 판가</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>2027E</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>MLCC 시장(조원)</td><td style="text-align:right;">22.4</td><td style="text-align:right;">29.0</td><td style="text-align:right;">38.2</td></tr><tr><td>서버 MLCC(조원)</td><td style="text-align:right;">2.5</td><td style="text-align:right;">4.2</td><td style="text-align:right;">8.0</td></tr><tr><td>서버 비중(매출)</td><td style="text-align:right;">11.1%</td><td style="text-align:right;">14.4%</td><td style="text-align:right;">20.8%</td></tr><tr><td>PCB 시장(십억달러)</td><td style="text-align:right;">93.7</td><td style="text-align:right;">111.0</td><td style="text-align:right;">130.2</td></tr><tr><td>패키지기판(십억달러)</td><td style="text-align:right;">18.9</td><td style="text-align:right;">25.8</td><td style="text-align:right;">34.2</td></tr><tr><td>MLCC+PCB 풀(조원)</td><td style="text-align:right;">162.8</td><td style="text-align:right;">195.5</td><td style="text-align:right;">233.6</td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;MLCC 시장 3안 (조원)\&quot;\n    x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;조원\&quot; 15 --> 50\n    line [19.2, 20.2, 22.4, 22.3]\n    line [19.2, 22.4, 29.0, 32.4]\n    line [19.2, 24.3, 38.2, 47.5]&quot;">xychart-beta
+    title &quot;MLCC 시장 3안 (조원)&quot;
+    x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;조원&quot; 15 --> 50
+    line [19.2, 20.2, 22.4, 22.3]
+    line [19.2, 22.4, 29.0, 32.4]
+    line [19.2, 24.3, 38.2, 47.5]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>선 순서: Bear · Base · Bull. 자체 모델</small></p>
+<h3 id="2027e-민감도-base">2027E 민감도 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-민감도-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정 +10%p</th><th style="text-align:right;">시장 변화</th><th>단위</th></tr></thead><tbody><tr><td>범용 MLCC 판가</td><td style="text-align:right;">+2.15</td><td>조원</td></tr><tr><td>서버 MLCC 판가</td><td style="text-align:right;">+0.35</td><td>조원</td></tr><tr><td>서버 MLCC 물량</td><td style="text-align:right;">+0.26</td><td>조원</td></tr><tr><td>MLB 판가</td><td style="text-align:right;">+4.17</td><td>십억달러</td></tr><tr><td>패키지기판 판가</td><td style="text-align:right;">+2.06</td><td>십억달러</td></tr></tbody></table></div>
+<ul>
+<li><mark class="text-highlight">MLCC 시장 크기는 서버가 아니라 범용 판가가 정함</mark> — 범용 3개 응용처가 시장의 86%(27E)</li>
+<li>PCB도 같은 구조: 덩치 큰 MLB 판가 10%p가 기판 판가 10%p의 2배 효과</li>
+<li>Bear 28E MLCC가 27E보다 줄어듦 → 판가 −5%(증설 출회)가 물량 성장을 상쇄하는 경로</li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-검증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>판가 눈높이가 하우스마다 다름: MLCC 27년 인상 SK 40~50% vs iM 30%(삼성전기 ASP) vs 모델 Base 15%(시장 평균)</li>
+<li>수요 성장도 «수량»과 «금액»이 섞여 숫자가 3배 차이(Taiyo 32% vs 키움 8~9%)</li>
+</ul>
+</div></blockquote>
+<h3 id="하우스-수치-대조">하우스 수치 대조<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-수치-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">하우스 값</th><th style="text-align:right;">모델 Base</th><th style="text-align:right;">차이</th></tr></thead><tbody><tr><td>서버 MLCC 26E</td><td style="text-align:right;">1.9~2.0조 <small>(iM 06-02)</small></td><td style="text-align:right;">2.2조</td><td style="text-align:right;">+10%대</td></tr><tr><td>MLCC 27E 합계</td><td style="text-align:right;">24.9조 <small>(iM 6월 Bull)</small></td><td style="text-align:right;">29.0조</td><td style="text-align:right;">+16%</td></tr><tr><td>DC 비중 27E</td><td style="text-align:right;">23% <small>(iM 11-01)</small></td><td style="text-align:right;">14.4%</td><td style="text-align:right;">−8.6%p</td></tr><tr><td>PCB 26E 성장</td><td style="text-align:right;">+13.9% <small>(TPCA, DB)</small></td><td style="text-align:right;">+15.3%</td><td style="text-align:right;">+1.4%p</td></tr><tr><td>PCB 28E vs 29F</td><td style="text-align:right;">1,025억달러 <small>(Prismark)</small></td><td style="text-align:right;">1,234억달러</td><td style="text-align:right;">+20%</td></tr><tr><td>기판 28E vs 29F</td><td style="text-align:right;">197억달러 <small>(판독)</small></td><td style="text-align:right;">298억달러</td><td style="text-align:right;">+51%</td></tr></tbody></table></div>
+<p><small>Prismark 2029F는 2025-11 시점 전망 → 2026년 판가 급등 전 숫자. 모델이 위로 벗어나는 건 판가 가정 때문</small></p>
+<h3 id="하우스-간-엇갈림">하우스 간 엇갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-간-엇갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>쪽 A</th><th>쪽 B</th><th>모델 처리</th></tr></thead><tbody><tr><td>MLCC 27년 판가</td><td>SK: 40~50%는 이미 눈높이</td><td>iM: 삼성전기 ASP +30%</td><td>Bull 30%·Base 15%</td></tr><tr><td>MLCC 수요 성장</td><td>Taiyo: 수량 CAGR +32%</td><td>키움: 연 +8~9%(개수)</td><td>키움 쪽 + 서버 가중</td></tr><tr><td>27년 캐파</td><td>하나: 1선 25%로 상향</td><td>키움: 업계 연 10% 내외</td><td>업계 20%(중간) ⚠</td></tr><tr><td>SoCAMM TAM</td><td>한투: 790억(모듈만)</td><td>iM: 2,811억(+LPDDR)</td><td>iM 표 = Base</td></tr><tr><td>기판 28년 가격</td><td>BofA: ABF 부족률 19%</td><td>iM: CapEx 66억달러로 상향</td><td>Base +5%로 둔화</td></tr></tbody></table></div>
+<p><small>출처: SK 11-13 · iM 11-19 · iM 06-02 · 키움 25-11-25 · 하나 10-23 · 한투 25-11-27 · iM 10-22 · iM 07-03</small></p>
+<ul>
+<li>범용 MLCC는 이미 엇갈림 신호: 유통 채널 저용량 품목 5% 내외 하락 <small>(iM 10-21)</small> → Base 28E 범용 판가 0%의 근거</li>
+<li>«컨센서스»로 부를 숫자 없음 — 판가는 하우스마다 대상(회사 ASP·유통·직납)이 달라 같은 줄에 놓을 수 없음</li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>주기</th><th>모델 칸</th><th>확인 방법</th></tr></thead><tbody><tr><td>MLCC 유통가·리드타임</td><td>월</td><td>범용 판가 26~28E</td><td>iM MLCC Tracker</td></tr><tr><td>Murata DC향 가이던스</td><td>분기</td><td>서버 물량</td><td>Murata 실적</td></tr><tr><td>1Q27 LTA 가격</td><td>1Q27</td><td>범용·서버 판가 27E</td><td>삼성전기 컨콜</td></tr><tr><td>ABF·BT 평균가</td><td>월</td><td>기판 판가</td><td>대만 기판사 월매출</td></tr><tr><td>CCL 인상 공지</td><td>수시</td><td>MLB 판가 27E</td><td>iM PCB Tracker</td></tr><tr><td>Vera CPU 출하</td><td>분기</td><td>SoCAMM 배수</td><td>Nvidia 실적</td></tr></tbody></table></div>
+<ul>
+<li>가장 먼저 볼 것: 1Q27 LTA 인상률이 15%(Base)보다 높으면 Bull 쪽으로 이동</li>
+</ul>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<ul>
+<li>iM증권(하이투자증권): 「2026년 하반기 전망 패키지기판과 MLCC」 p.3·19~20·29~30 <small>(2026-06-02)</small> · Murata 실적 시사 <small>(2026-11-01)</small> · MLCC 실적 시즌 <small>(2026-10-28)</small> · MLCC Tracker #4 <small>(2026-10-21)</small> · 삼성전기 기판 공급 파트너 p.4 <small>(2026-10-22)</small> · PCB Tracker #2 p.4 <small>(2026-10-27)</small> · 패키지기판 이슈 <small>(2026-07-03)</small> · 삼성전기 마진 피크 <small>(2026-11-19)</small></li>
+<li>키움증권: 기판·MLCC·폴더블 p.16~17·20·28~30 <small>(2025-11-25)</small> · 삼성전기 공시의 의미 <small>(2026-10-20)</small></li>
+<li>SK증권: 삼성전기 NDR 후기 p.1 <small>(2026-11-13)</small></li>
+<li>하나증권: 높아지는 패키지 기판의 위상 p.4 <small>(2026-10-23)</small></li>
+<li>메리츠증권: 삼성전기·Murata·Ibiden 실적 <small>(2026-11-02)</small></li>
+<li>한국투자증권: AI PCB 체리피킹 p.14 <small>(2025-10-27)</small> · 2026년 연간전망 p.16 <small>(2025-11-27)</small></li>
+<li>신한투자증권: 전화위복 p.46 <small>(2025-11-20)</small></li>
+<li>DB금융투자: 전례 없는 단가 인상 <small>(2026-04-08)</small> · LG전자 <small>(2026-10-29)</small></li>
+<li>교보증권: 기판 산업 Update <small>(2026-03-23)</small></li>
+<li>NICE평가정보: 씨케이솔루션(GM Insights 인용) <small>(2026-10-16)</small></li>
+<li>원문 인용 34줄(날짜·하우스·쪽)은 엑셀 Sources 시트</li>
+</ul>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026A MLCC 시장 실적치(iM 또는 다른 하우스) → 출발점을 19.2조 추정에서 실적으로 교체</li>
+<li>업계 평균 판가 원천(TrendForce·Paumanok) 확보 시 범용 판가 가정의 ⚠ 해제</li>
+<li>Prismark 2026년판 유형별 전망 → 2029F 대조 행 갱신, Flex 잔차 대신 실측</li>
+<li>SoCAMM 2028E 원천, 가전·공조 시장 규모 원천 확보 시 블록 추가 ⚠</li>
+</ul>
+<blockquote>
+<p>한 줄: AI가 수동부품·기판의 «이익 믹스»를 바꾸지만, 2027년 시장 크기를 정하는 건 덩치 큰 범용 MLCC와 MLB의 판가 인상이 얼마나 유지되느냐임.</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-286" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#전기전자-시장규모-모델--mlcc응용처--물량--판가--pcb유형별-물량--판가--socamm-기판-tam" data-for="전기전자-시장규모-모델--mlcc응용처--물량--판가--pcb유형별-물량--판가--socamm-기판-tam">전기전자 시장규모 모델 — MLCC(응용처 × 물량 × 판가) + PCB(유형별 물량 × 판가) + SoCAMM 기판 TAM</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-모델-구조기초" data-for="-모델-구조기초">① 모델 구조·기초</a></li><li class="depth-1"><a href="#-mlcc--응용처--물량--판가" data-for="-mlcc--응용처--물량--판가">② MLCC — 응용처 × 물량 × 판가</a></li><li class="depth-1"><a href="#-pcb--유형별-물량--판가" data-for="-pcb--유형별-물량--판가">③ PCB — 유형별 물량 × 판가</a></li><li class="depth-1"><a href="#-socamm-기판-tam" data-for="-socamm-기판-tam">④ SoCAMM 기판 TAM</a></li><li class="depth-1"><a href="#-결과--3안-비교" data-for="-결과--3안-비교">⑤ 결과 — 3안 비교</a></li><li class="depth-1"><a href="#-하우스별-시각과-검증" data-for="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../전기전자/00_전기전자_index" class="internal">00_전기전자_index</a></li><li><a href="../전기전자/02_전기전자_수요와전방" class="internal">02_전기전자_수요와전방</a></li><li><a href="../전기전자/03_전기전자_mlcc와수동부품" class="internal">03_전기전자_MLCC와수동부품</a></li><li><a href="../전기전자/04_전기전자_pcb와기판" class="internal">04_전기전자_PCB와기판</a></li><li><a href="../전기전자/05_전기전자_가전과공조" class="internal">05_전기전자_가전과공조</a></li><li><a href="../전기전자/07_전기전자_하우스시각_변경이력" class="internal">07_전기전자_하우스시각_변경이력</a></li><li><a href="../전기전자/08_전기전자_트래킹캘린더" class="internal">08_전기전자_트래킹캘린더</a></li><li><a href="../전기전자/설명서/전기전자_설명서" class="internal">전기전자_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

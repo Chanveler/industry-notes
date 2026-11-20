@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>06_배터리_시장규모모델</title><meta charset="utf-8"/><link rel="preload" href="../index-e1b48d4a.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="06_배터리_시장규모모델"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="06_배터리_시장규모모델"/><meta name="twitter:description" content="배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫 한 줄: xEV 배터리 수요(GWh) × 팩 판가와 ESS 물량 × ESS 팩 가격으로 글로벌 배터리 시장을 세우고, 한국 3사 EV 점유율과 ESS 2사 출하·ASP로 한국 몫을 떼어냄."/><meta property="og:description" content="배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫 한 줄: xEV 배터리 수요(GWh) × 팩 판가와 ESS 물량 × ESS 팩 가격으로 글로벌 배터리 시장을 세우고, 한국 3사 EV 점유율과 ESS 2사 출하·ASP로 한국 몫을 떼어냄."/><meta property="og:image:alt" content="배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫 한 줄: xEV 배터리 수요(GWh) × 팩 판가와 ESS 물량 × ESS 팩 가격으로 글로벌 배터리 시장을 세우고, 한국 3사 EV 점유율과 ESS 2사 출하·ASP로 한국 몫을 떼어냄."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/배터리/06_배터리_시장규모모델"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/배터리/06_배터리_시장규모모델"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫 한 줄: xEV 배터리 수요(GWh) × 팩 판가와 ESS 물량 × ESS 팩 가격으로 글로벌 배터리 시장을 세우고, 한국 3사 EV 점유율과 ESS 2사 출하·ASP로 한국 몫을 떼어냄."/><meta name="generator" content="Quartz"/><link href="../index-e1b48d4a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="배터리/06_배터리_시장규모모델" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-173" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-173" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../배터리/">19. 배터리</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>06_배터리_시장규모모델</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">06_배터리_시장규모모델</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>28 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="배터리-시장규모-모델--evess-물량--단가--글로벌-시장--한국-셀-몫">배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#배터리-시장규모-모델--evess-물량--단가--글로벌-시장--한국-셀-몫" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>한 줄: xEV 배터리 수요(GWh) × 팩 판가와 ESS 물량 × ESS 팩 가격으로 글로벌 배터리 시장을 세우고, 한국 3사 EV 점유율과 ESS 2사 출하·ASP로 한국 몫을 떼어냄. Base(NH 출하 기준) 글로벌 시장 2025A 1,713억달러 → 2026E 1,985억달러 → 2027E 2,319억달러 → 2028E 2,665억달러</p>
+</blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>성장의 절반 이상이 ESS: 금액 비중 2025A 22% → 2028E 38%. EV는 물량이 늘어도 판가 하락이 상쇄</li>
+<li>한국 몫은 약 12%에서 정체. <mark class="text-highlight">EV 점유율 하락(유럽 35% → 29%)을 ESS 2사 매출 증가(35.6 → 114억달러)가 메움</mark></li>
+<li>결과를 가르는 건 ESS를 «설치»로 세느냐 «출하»로 세느냐 — 같은 2026E가 459GWh vs 880GWh, 시장 차이 약 290억달러</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>xEV 수요(GWh)</td><td style="text-align:right;">1,328</td><td style="text-align:right;">1,505</td><td style="text-align:right;">1,705</td><td style="text-align:right;">1,931</td></tr><tr><td>ESS 물량(GWh, 출하)</td><td style="text-align:right;">550</td><td style="text-align:right;">880</td><td style="text-align:right;">1,197</td><td style="text-align:right;">1,556</td></tr><tr><td>글로벌 시장(억달러)</td><td style="text-align:right;">1,713</td><td style="text-align:right;">1,985</td><td style="text-align:right;">2,319</td><td style="text-align:right;">2,665</td></tr><tr><td>한국 셀 매출(조원)</td><td style="text-align:right;">29.2</td><td style="text-align:right;">32.3</td><td style="text-align:right;">38.1</td><td style="text-align:right;">40.0</td></tr><tr><td>한국 ESS 이익(조원)</td><td style="text-align:right;">⚠</td><td style="text-align:right;">1.14</td><td style="text-align:right;">2.08</td><td style="text-align:right;">2.50</td></tr></tbody></table></div>
+<p><small>Base · ESS 기준 NH출하. xEV·EV 판가 2025A·2026E(삼성, 2026-06-18, p.34), ESS 물량(NH, 2026-06-25, p.9), 한국 ESS 이익 = 2사 영업이익+AMPC 중간값(유안타, 2026-06-28, p.61~62). 2027E 2사 ESS 출하는 유안타 11-05 범위로 갱신(유안타, 2026-11-05, p.26). 2025A 한국 매출 일부 역산 ⚠. 나머지는 자체 모델(엑셀 Model 시트)</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;xEV 수요&lt;br/>1,705GWh\&quot;] --> C[\&quot;EV 시장&lt;br/>1,505억달러\&quot;]\n    B[\&quot;EV 팩 판가&lt;br/>88달러/kWh\&quot;] --> C\n    D[\&quot;ESS 출하&lt;br/>1,197GWh\&quot;] --> F[\&quot;ESS 시장&lt;br/>814억달러\&quot;]\n    E[\&quot;ESS 팩 가격&lt;br/>68달러/kWh\&quot;] --> F\n    C --> G[\&quot;글로벌 시장&lt;br/>2,319억달러\&quot;]\n    F --> G\n    C --> H[\&quot;한국 EV 몫&lt;br/>점유율 10.3%\&quot;]\n    I[\&quot;ESS 2사 출하&lt;br/>84.5GWh × 134달러\&quot;] --> J[\&quot;한국 셀 매출&lt;br/>38.1조원\&quot;]\n    H --> J\n    J --> K[\&quot;ESS 이익+AMPC&lt;br/>2.08조원\&quot;]&quot;">flowchart LR
+    A[&quot;xEV 수요&lt;br/>1,705GWh&quot;] --> C[&quot;EV 시장&lt;br/>1,505억달러&quot;]
+    B[&quot;EV 팩 판가&lt;br/>88달러/kWh&quot;] --> C
+    D[&quot;ESS 출하&lt;br/>1,197GWh&quot;] --> F[&quot;ESS 시장&lt;br/>814억달러&quot;]
+    E[&quot;ESS 팩 가격&lt;br/>68달러/kWh&quot;] --> F
+    C --> G[&quot;글로벌 시장&lt;br/>2,319억달러&quot;]
+    F --> G
+    C --> H[&quot;한국 EV 몫&lt;br/>점유율 10.3%&quot;]
+    I[&quot;ESS 2사 출하&lt;br/>84.5GWh × 134달러&quot;] --> J[&quot;한국 셀 매출&lt;br/>38.1조원&quot;]
+    H --> J
+    J --> K[&quot;ESS 이익+AMPC&lt;br/>2.08조원&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>2027E Base. 자체 모델</small></p>
+<ul>
+<li><mark class="text-highlight">원천은 2026년에 몰림</mark>: 배터리 캐시 450건 중 2026년 390건·2025년 56건·2024년 4건. 최신 원문 2026-11-18(9/19~11/18 신규 91건 중 모델 관련 9건 반영) → 4Q26 실적·BNEF 12월 팩 가격은 아직 없음 ⚠</li>
+<li>캐시에 철강·특수강 리포트가 섞여 있음(세아베스틸지주·POSCO홀딩스 철강물) → 모델엔 배터리 대목만 씀</li>
+<li>기업분석 아님: 회사 숫자는 «한국 셀 몫»을 세우는 재료로만 씀</li>
+</ul>
+<hr/>
+<h2 id="-모델-구조기초">① 모델 구조·기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-모델-구조기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>반도체 «캐파×가격», 원유 «처리량×마진» 틀을 배터리에선 «전방 GWh × 팩 단가»로 옮김</li>
+<li>EV와 ESS는 판가 구조가 다름(EV 메탈 연동 vs ESS 고정가·시스템 판매) → 두 블록으로 따로 계산</li>
+</ul>
+</div></blockquote>
+<h3 id="계산-흐름">계산 흐름<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#계산-흐름" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    A[\&quot;xEV 수요 GWh&lt;br/>(삼성, HEV 포함)\&quot;] --> B[\&quot;× EV 팩 판가&lt;br/>(BNEF·삼성)\&quot;]\n    C[\&quot;ESS 물량 GWh&lt;br/>(NH 출하 or BNEF 설치)\&quot;] --> D[\&quot;× ESS 팩 가격&lt;br/>(BNEF 70 → 유안타)\&quot;]\n    B --> E[\&quot;글로벌 배터리 시장\&quot;]\n    D --> E\n    A --> F[\&quot;× 한국 3사 점유율&lt;br/>× 판가 × 1.05\&quot;]\n    G[\&quot;ESS 2사 출하 × ASP&lt;br/>(유안타 범위)\&quot;] --> H[\&quot;한국 셀 매출\&quot;]\n    F --> H\n    G --> I[\&quot;ESS 이익+AMPC\&quot;]&quot;">flowchart TD
+    A[&quot;xEV 수요 GWh&lt;br/>(삼성, HEV 포함)&quot;] --> B[&quot;× EV 팩 판가&lt;br/>(BNEF·삼성)&quot;]
+    C[&quot;ESS 물량 GWh&lt;br/>(NH 출하 or BNEF 설치)&quot;] --> D[&quot;× ESS 팩 가격&lt;br/>(BNEF 70 → 유안타)&quot;]
+    B --> E[&quot;글로벌 배터리 시장&quot;]
+    D --> E
+    A --> F[&quot;× 한국 3사 점유율&lt;br/>× 판가 × 1.05&quot;]
+    G[&quot;ESS 2사 출하 × ASP&lt;br/>(유안타 범위)&quot;] --> H[&quot;한국 셀 매출&quot;]
+    F --> H
+    G --> I[&quot;ESS 이익+AMPC&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="엑셀-파일-구성">엑셀 파일 구성<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엑셀-파일-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>파일: <code>모델/배터리_모델.xlsx</code> — 시트 6개, 수식 218개</li>
+<li>시나리오 3 × ESS 기준 2 = 6개 조합, pycel 재계산 오류 0건·검산 행(합계·민감도·Summary 대조) 모두 0</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시트</th><th>내용</th></tr></thead><tbody><tr><td>README</td><td>목적·사용법·계산 구조·주의</td></tr><tr><td>Summary</td><td>선택 결과·3안 동시 비교·민감도</td></tr><tr><td>Inputs</td><td>스위치 2개, 가정(노란 칸)·근거</td></tr><tr><td>Model</td><td>수요→시장→한국 몫→검증</td></tr><tr><td>Data</td><td>하우스 표·월별 가격 원값(⑧ 11월 신규)</td></tr><tr><td>Sources</td><td>하우스 원문 37개 그대로</td></tr></tbody></table></div>
+<p><small>스위치: Inputs!B3 = 시나리오(Bear/Base/Bull), B6 = ESS 물량 기준(NH출하/BNEF설치). 노란 칸 = 결과를 크게 바꾸는 가정, 파란 글씨 = 원문</small></p>
+<h3 id="단위범위">단위·범위<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#단위범위" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>블록</th><th>단위</th><th>범위</th></tr></thead><tbody><tr><td>수요</td><td>GWh</td><td>xEV(HEV 포함) + ESS</td></tr><tr><td>단가</td><td>달러/kWh</td><td>팩 기준(셀 아님)</td></tr><tr><td>시장</td><td>억달러</td><td>셀·팩 매출 합</td></tr><tr><td>한국 몫</td><td>조원</td><td>3사 EV + 2사 ESS</td></tr><tr><td>이익</td><td>조원</td><td>ESS 2사, AMPC 포함</td></tr></tbody></table></div>
+<ul>
+<li><strong>팩 기준 시장</strong>: 셀 메이커 매출과 팩 조립 부가가치가 섞임 → 소재·장비 시장은 이 숫자의 일부로만 봄</li>
+<li><strong>SK온 ESS·한국 소재 매출은 범위 밖</strong>: 출하 경로 원문이 부족 ⚠</li>
+</ul>
+<hr/>
+<h2 id="-수요-입력--ev와-ess">② 수요 입력 — EV와 ESS<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-수요-입력--ev와-ess" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>xEV 수요 2026E 1,505GWh(+13%) — 3월 1,617GWh에서 7% 하향. 중국 +5%·미국 −10%</li>
+<li>ESS는 같은 해를 두고 하우스 숫자가 두 배 차이: BNEF 설치 459GWh vs NH 출하 880GWh</li>
+</ul>
+</div></blockquote>
+<h3 id="물량-추이-gwh">물량 추이 (GWh)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#물량-추이-gwh" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;EV·ESS 배터리 물량 (GWh)\&quot;\n    x-axis [\&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;GWh\&quot; 0 --> 2000\n    line [1054, 1328, 1505, 1705, 1931]\n    line [307, 550, 880, 1197, 1556]\n    line [184, 307, 459, 625, 812]&quot;">xychart-beta
+    title &quot;EV·ESS 배터리 물량 (GWh)&quot;
+    x-axis [&quot;2024&quot;, &quot;2025&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;GWh&quot; 0 --> 2000
+    line [1054, 1328, 1505, 1705, 1931]
+    line [307, 550, 880, 1197, 1556]
+    line [184, 307, 459, 625, 812]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>위에서부터 xEV · ESS(NH 출하) · ESS(BNEF 설치). 2024~2026E 원문(삼성, 2026-06-18, p.34~35 / NH, 2026-06-25, p.9), xEV 2027E~ = Base 성장률, BNEF 2027E~ = Base 성장률을 설치 기준에 적용(내 계산)</small></p>
+<h3 id="지역별-2026e-gwh">지역별 2026E (GWh)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지역별-2026e-gwh" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">EV</th><th style="text-align:right;">ESS(BNEF)</th><th style="text-align:right;">ESS(NH)</th></tr></thead><tbody><tr><td>중국</td><td style="text-align:right;">653.4</td><td style="text-align:right;">222.5</td><td style="text-align:right;">616</td></tr><tr><td>유럽</td><td style="text-align:right;">262.4</td><td style="text-align:right;">83.0</td><td style="text-align:right;">49</td></tr><tr><td>미국</td><td style="text-align:right;">104.4</td><td style="text-align:right;">64.5</td><td style="text-align:right;">115</td></tr><tr><td>글로벌</td><td style="text-align:right;">1,504.6</td><td style="text-align:right;">459.4</td><td style="text-align:right;">880</td></tr></tbody></table></div>
+<p><small>(삼성, 2026-06-18, p.35 / NH, 2026-06-25, p.9). 유럽 ESS만 BNEF가 NH보다 큼 → 집계 범위 차이 ⚠</small></p>
+<h3 id="시나리오-성장률">시나리오 성장률<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시나리오-성장률" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>EV 2027E</td><td style="text-align:right;">+5.0%</td><td style="text-align:right;">+13.3%</td><td style="text-align:right;">+25.6%</td></tr><tr><td>EV 2028E</td><td style="text-align:right;">+5.0%</td><td style="text-align:right;">+13.3%</td><td style="text-align:right;">+21.9%</td></tr><tr><td>ESS 2027E</td><td style="text-align:right;">+18%</td><td style="text-align:right;">+36%</td><td style="text-align:right;">+50%</td></tr><tr><td>ESS 2028E</td><td style="text-align:right;">+18%</td><td style="text-align:right;">+30%</td><td style="text-align:right;">+40%</td></tr></tbody></table></div>
+<p><small>EV Bear = 2026E 중국 성장 속도, Base = 2026E 성장률 유지 ⚠, Bull = 삼성 3월 경로(2,031÷1,617, 2027→2030 연 21.9%)(삼성, 2026-03-20, p.40). ESS Bear = BNEF 3월 경로 425÷360, Base = NH 경로, Bull 2027E = BNEF 2026E +50% 지속, Bull 2028E 40%는 직접 가정 ⚠</small></p>
+<ul>
+<li><strong>EV는 하향, ESS는 상향의 반년</strong>: xEV 2026E −7%(1.6 → 1.5TWh) vs BNEF ESS 2026E 360 → 459GWh(+28%) <small>(삼성, 2026-06-18, p.33~34)</small></li>
+<li><strong>ESS 집계 기준 셋</strong>: 설치(BNEF·Rho Motion) &lt; 출하(InfoLink 1Q26 126GWh) &lt; 출하·생산(NH·교보 1H26 461GWh) <small>(키움, 2026-05-30, p.22 / 교보, 2026-08-11, p.1)</small></li>
+<li>iM도 «실제 배터리 수요는 신규 설치보다 40~50% 많음»으로 봄 <small>(iM, 2026-07-01, p.3)</small> → 셀 매출엔 출하 기준이 맞아 기본값 NH</li>
+<li>생산 기준은 더 큼: 22개 제조사 2026년 ESS 생산 1.2TWh <small>(삼성, 2026-05-22, p.6)</small></li>
+<li><strong>2026E 880GWh는 낮을 수 있음</strong>: SNE 3Q26 누적 출하 780GWh(YoY +73%), 3분기 단독 286.8GWh <small>(대신, 2026-11-11, p.69)</small> → 4/3 연환산 1,040GWh 대비 모델 −15%(내 계산, 엑셀 Model!C39). SNE 2025 663GWh <small>(iM, 2026-11-09, p.17)</small> vs NH 550GWh → 집계 범위 차이 ⚠</li>
+<li><strong>EV 2027E 성장 Base 유지</strong>: SNE 기준 EV 배터리 1,439 → 1,618GWh(+12.5%) → 1,885GWh(+16.5%) <small>(DB, 2026-11-16, p.25)</small> → Base +13.3%와 1%p 이내</li>
+<li>수요 동인(데이터센터·재생에너지·정책)은 <a href="../배터리/02_배터리_수요와전방" class="internal internal-link alias" data-slug="배터리/02_배터리_수요와전방">02_배터리_수요와전방</a></li>
+</ul>
+<hr/>
+<h2 id="-가격-입력--팩-판가리튬양극재">③ 가격 입력 — 팩 판가·리튬·양극재<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격-입력--팩-판가리튬양극재" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>하우스 가격 경로는 하락(EV 100 → 91달러, ESS 70 → 65달러)인데 2026년 상반기 원가 지표는 반대로 오름</li>
+<li>탄산리튬 5월 말 173.5위안/kg(YTD +47%) → 10월 말 98위안/kg로 5월 말 대비 약 −44%(내 계산) → 가격 Bull 근거가 꺼져 Bull EV·ESS 가격 가정을 낮춤</li>
+</ul>
+</div></blockquote>
+<h3 id="팩-가격-경로-달러kwh">팩 가격 경로 (달러/kWh)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#팩-가격-경로-달러kwh" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>EV 팩(Base)</td><td style="text-align:right;">100</td><td style="text-align:right;">91</td><td style="text-align:right;">88.3</td><td style="text-align:right;">85.6</td></tr><tr><td>ESS 팩(Base)</td><td style="text-align:right;">70</td><td style="text-align:right;">70</td><td style="text-align:right;">68</td><td style="text-align:right;">65</td></tr><tr><td>EV 팩 Bear</td><td style="text-align:right;">100</td><td style="text-align:right;">91</td><td style="text-align:right;">83.3</td><td style="text-align:right;">76.2</td></tr><tr><td>EV 팩 Bull</td><td style="text-align:right;">100</td><td style="text-align:right;">91</td><td style="text-align:right;">91</td><td style="text-align:right;">91</td></tr><tr><td>ESS 팩 Bear/Bull</td><td style="text-align:right;">70</td><td style="text-align:right;">70</td><td style="text-align:right;">64/70</td><td style="text-align:right;">59/70</td></tr></tbody></table></div>
+<p><small>EV 2025A·2026E(삼성, 2026-06-18, p.34), BNEF 2025 EV 99·ESS 70달러(삼성, 2026-07-23, p.3), ESS 2026E~28E «글로벌 stationary»(유안타, 2026-06-28, p.60). Bear·Bull 변화율은 엑셀 Inputs 근거 칸 ⚠. Bull은 2026-11-19 갱신: EV 2027E +5% → 0%, ESS 77 → 70달러(리튬 급락, 아래 ③)</small></p>
+<h3 id="셀-단가-비교-달러kwh">셀 단가 비교 (달러/kWh)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#셀-단가-비교-달러kwh" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">하단</th><th style="text-align:right;">상단</th></tr></thead><tbody><tr><td>중국 내수 LFP</td><td style="text-align:right;">50</td><td style="text-align:right;">60</td></tr><tr><td>중국 내수 NCM</td><td style="text-align:right;">70</td><td style="text-align:right;">80</td></tr><tr><td>한국 NCM(미·유럽 생산)</td><td style="text-align:right;">90</td><td style="text-align:right;">120</td></tr><tr><td>한국 ESS ASP 2026E</td><td style="text-align:right;">135</td><td style="text-align:right;">155</td></tr></tbody></table></div>
+<p><small>(한화, 2026-03-24, p.8 / 유안타, 2026-06-28, p.60~62). 한국 ESS ASP는 시스템·현지화 포함 → 글로벌 팩 가격의 약 2배. LGES DTE 수주 환산 267달러/kWh(유진, 2026-06-02, p.1)</small></p>
+<h3 id="탄산리튬-중국-위안kg">탄산리튬 (중국, 위안/kg)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#탄산리튬-중국-위안kg" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;탄산리튬 가격 (위안/kg)\&quot;\n    x-axis [\&quot;25.6\&quot;, \&quot;25.12\&quot;, \&quot;26.3\&quot;, \&quot;26.4\&quot;, \&quot;26.5\&quot;, \&quot;26.6\&quot;, \&quot;26.8초\&quot;, \&quot;26.9초\&quot;, \&quot;26.10말\&quot;]\n    y-axis \&quot;위안/kg\&quot; 0 --> 200\n    line [59, 118, 159, 172.5, 173.5, 142.5, 136, 156, 98]&quot;">xychart-beta
+    title &quot;탄산리튬 가격 (위안/kg)&quot;
+    x-axis [&quot;25.6&quot;, &quot;25.12&quot;, &quot;26.3&quot;, &quot;26.4&quot;, &quot;26.5&quot;, &quot;26.6&quot;, &quot;26.8초&quot;, &quot;26.9초&quot;, &quot;26.10말&quot;]
+    y-axis &quot;위안/kg&quot; 0 --> 200
+    line [59, 118, 159, 172.5, 173.5, 142.5, 136, 156, 98]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>월말 현물: 26.3~26.6(삼성 Monthly, 2026-04-08·05-22·06-04·07-07, p.4). 25.6 저점 58~60·26.9.1 선물 156(키움, 2026-09-15, p.20), 26.8초 선물 136(삼성, 2026-08-14, p.2). 25.12 = 3월 말 ÷ 1.35 역산(내 계산). 26.10말 현물 96.9~98.3(유안타, 2026-11-05, p.25) 상단. 현물·선물 혼재 ⚠</small></p>
+<h3 id="양극재-수출단가-달러kg">양극재 수출단가 (달러/kg)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#양극재-수출단가-달러kg" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;한국 양극재 수출단가 (달러/kg)\&quot;\n    x-axis [\&quot;25.5\&quot;, \&quot;25.7\&quot;, \&quot;25.9\&quot;, \&quot;25.11\&quot;, \&quot;26.1\&quot;, \&quot;26.2\&quot;, \&quot;26.3\&quot;, \&quot;26.4\&quot;, \&quot;26.5\&quot;, \&quot;26.6\&quot;, \&quot;26.7\&quot;, \&quot;26.8\&quot;]\n    y-axis \&quot;달러/kg\&quot; 20 --> 30\n    line [24.2, 23.2, 23.2, 23.5, 23.5, 23.8, 23.8, 24.7, 25.4, 26.9, 27.8, 27.9]&quot;">xychart-beta
+    title &quot;한국 양극재 수출단가 (달러/kg)&quot;
+    x-axis [&quot;25.5&quot;, &quot;25.7&quot;, &quot;25.9&quot;, &quot;25.11&quot;, &quot;26.1&quot;, &quot;26.2&quot;, &quot;26.3&quot;, &quot;26.4&quot;, &quot;26.5&quot;, &quot;26.6&quot;, &quot;26.7&quot;, &quot;26.8&quot;]
+    y-axis &quot;달러/kg&quot; 20 --> 30
+    line [24.2, 23.2, 23.2, 23.5, 23.5, 23.8, 23.8, 24.7, 25.4, 26.9, 27.8, 27.9]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>25.5~26.1(한화, 2026-05-19, p.2 표1), 26.2~26.8(하나 Monthly·Weekly, 2026-03-03~09-02, 산업부). 격월 표기 구간은 원문 월값 중 홀수월만 표시. 월별 전체는 엑셀 Data ⑦</small></p>
+<ul>
+<li><strong>리튬은 6월 −18% 꺾인 뒤 재반등</strong>: CATL 젠샤워 광산 재개 → 6월 하락, 8월 선물 136 → 148위안 <small>(삼성, 2026-07-07, p.4 / 2026-08-14, p.2)</small></li>
+<li><strong>2026 리튬 전망 하우스 폭</strong>: Fastmarkets 24 · BMI 30 · Citi 37달러/kg vs 2025 평균 10.8달러/kg <small>(NH, 2026-06-25, p.7 / 하나, 2026-06-22, p.3 / 삼성, 2026-04-01, p.2)</small></li>
+<li><strong>ESS 셀은 더 빨리 오름</strong>: 중국 314Ah 셀 2025년 초 0.28 → 2026년 중반 0.38위안/Wh <small>(하나, 2026-09-14, p.4)</small></li>
+<li>판가 전가 시차는 1~2개 분기 → 2H26부터 셀 판가 상승 <small>(대신, 2026-05-06, p.12)</small></li>
+<li><strong>10월부터 반전</strong>: 리튬 월평균 5월 22 → 10월 17달러/kg <small>(하나, 2026-11-16, p.24)</small>, 현물 9월 이후 두 달 −41%로 톤당 14,000달러 <small>(유진, 2026-11-04, p.1)</small>. 원인 = 中 소비세·VAT 환급 폐지 앞 선출하 반작용 + 호주·짐바브웨 정광 유입 + 트레이더 재고 출회</li>
+<li><strong>2027 리튬 하우스 전망</strong>: 탄산리튬 9.5~12.0만위안/톤 박스권, 2026 평균 9.2만 <small>(유안타, 2026-11-05, p.25)</small> → 셀 원가 약 −15%, 리튬 래깅으로 1H27부터 반영. 유진은 «펀더멘털 대비 과도한 하락»으로 반등 여지 <small>(유진, 2026-11-04, p.1)</small></li>
+<li>소재별 원가·LFP 전환은 <a href="../배터리/04_배터리_소재" class="internal internal-link alias" data-slug="배터리/04_배터리_소재">04_배터리_소재</a></li>
+</ul>
+<hr/>
+<h2 id="-한국-셀-몫--ev-점유율과-ess-출하">④ 한국 셀 몫 — EV 점유율과 ESS 출하<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-한국-셀-몫--ev-점유율과-ess-출하" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>한국 3사 EV 점유율(xEV 대비) 2025A 12.4% → 2026E 10.3%(구 10.6%). 유럽 점유율 하락 속도(35% → 29%)를 그대로 적용</li>
+<li>ESS 2사 출하 2026E 57.5GWh → 2027E 84.5GWh(구 80) → 2028E 91GWh. 미국 ESS 수요 대비 비중 22% → 38%(2027E)</li>
+</ul>
+</div></blockquote>
+<h3 id="유럽-한국-3사-점유율">유럽 한국 3사 점유율<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#유럽-한국-3사-점유율" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;유럽 EV 배터리 한국 3사 점유율 (%)\&quot;\n    x-axis [\&quot;2023\&quot;, \&quot;2024\&quot;, \&quot;2025\&quot;, \&quot;2026(1~9월)\&quot;]\n    y-axis \&quot;%\&quot; 0 --> 60\n    line [55, 45, 35, 29]&quot;">xychart-beta
+    title &quot;유럽 EV 배터리 한국 3사 점유율 (%)&quot;
+    x-axis [&quot;2023&quot;, &quot;2024&quot;, &quot;2025&quot;, &quot;2026(1~9월)&quot;]
+    y-axis &quot;%&quot; 0 --> 60
+    line [55, 45, 35, 29]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>(하나, 2026-11-03, p.1). 2025는 09-02 자료 34%에서 35%로 수정. 9월 단월 29%(YoY −8%p)지만 출하량은 10.1GWh로 2023-03 이후 최대</small></p>
+<h3 id="한국-ev-블록">한국 EV 블록<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한국-ev-블록" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>3사 점유율</td><td style="text-align:right;">12.4%</td><td style="text-align:right;">10.3%</td><td style="text-align:right;">10.3%</td><td style="text-align:right;">10.5%</td></tr><tr><td>물량(GWh)</td><td style="text-align:right;">165</td><td style="text-align:right;">155</td><td style="text-align:right;">176</td><td style="text-align:right;">203</td></tr><tr><td>판가(달러/kWh)</td><td style="text-align:right;">105</td><td style="text-align:right;">95.6</td><td style="text-align:right;">92.7</td><td style="text-align:right;">89.9</td></tr><tr><td>매출(억달러)</td><td style="text-align:right;">173</td><td style="text-align:right;">148</td><td style="text-align:right;">163</td><td style="text-align:right;">182</td></tr></tbody></table></div>
+<p><small>2025A 점유율 = 중국 외 445GWh × 3사 37% ÷ xEV 1,328GWh(신한, 2026-04-06, p.47·56 → 내 계산). SNE는 HEV 제외·삼성은 포함 → 분모 기준 차이 ⚠. 판가 = 글로벌 팩 × 1.05(한국 NCM 90~120달러 중간 ÷ 100달러) ⚠. Base 2027E는 10.5% → 10.3%로 낮춤: IAA 시행이 2028년이라 점유율 회복은 2028년부터(NH, 2026-11-16, p.5). Bear/Bull 2028E 점유율 9.0%/12.5%</small></p>
+<h3 id="한국-ess-블록-2사">한국 ESS 블록 (2사)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한국-ess-블록-2사" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>LGES 출하(GWh)</td><td style="text-align:right;">39~44</td><td style="text-align:right;">55~62</td><td style="text-align:right;">60~68</td></tr><tr><td>SDI 출하(GWh)</td><td style="text-align:right;">14.5~17.5</td><td style="text-align:right;">24~28</td><td style="text-align:right;">25.5~28.5</td></tr><tr><td>2사 평균 ASP(달러)</td><td style="text-align:right;">143.9</td><td style="text-align:right;">133.7</td><td style="text-align:right;">125.3</td></tr><tr><td>2사 매출(억달러)</td><td style="text-align:right;">82.7</td><td style="text-align:right;">113.0</td><td style="text-align:right;">114.0</td></tr><tr><td>이익+AMPC(조원)</td><td style="text-align:right;">1.14</td><td style="text-align:right;">2.08</td><td style="text-align:right;">2.50</td></tr></tbody></table></div>
+<p><small>출하·ASP 범위(유안타, 2026-06-28, p.60~62), 2027E 출하만 11월 범위로 교체(유안타, 2026-11-05, p.26: 26E 점추정 LGES 42·SDI 16.5GWh). Base = 범위 중간, Bear = 하단, Bull = 상단. 이익률(AMPC 포함) 9.8% → 13.3% → 16.2%. 이익 범위는 06-28 값 그대로 ⚠. 2025A 매출 35.6억달러 = 유안타 26E 중간 매출 ÷ 하나 «3배·+50%»(하나, 2026-03-29, p.1) 역산 ⚠</small></p>
+<h3 id="미국-ess-수급">미국 ESS 수급<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#미국-ess-수급" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>미국 수요 NH(GWh)</td><td style="text-align:right;">115</td><td style="text-align:right;">149</td><td style="text-align:right;">186</td></tr><tr><td>미국 설치 BNEF(GWh)</td><td style="text-align:right;">64.5</td><td style="text-align:right;">⚠</td><td style="text-align:right;">87.5</td></tr><tr><td>2사 미국 출하(GWh)</td><td style="text-align:right;">25</td><td style="text-align:right;">57</td><td style="text-align:right;">⚠</td></tr><tr><td>2사 비중(NH 대비)</td><td style="text-align:right;">21.7%</td><td style="text-align:right;">38.3%</td><td style="text-align:right;">⚠</td></tr><tr><td>미국 출하 NH 11월(GWh)</td><td style="text-align:right;">134</td><td style="text-align:right;">150</td><td style="text-align:right;">165</td></tr></tbody></table></div>
+<p><small>(NH, 2026-06-25, p.9 / 삼성, 2026-06-18, p.35·37 / 대신, 2026-05-26, p.2). 삼성 NDR은 2028E 미국 수요 153GWh vs 28년 초 현지 캐파 141GWh(삼성, 2026-07-20, p.2). NH 11월 행 = FTM+BTM 출하(NH, 2026-11-16, p.7), 모델 비중 계산은 06-25 값 유지</small></p>
+<ul>
+<li><strong>EV 점유율은 바닥 신호 약함</strong>: 1H26 유럽 출하는 늘었으나 시장 성장률 하회 <small>(하나, 2026-09-02, p.1)</small></li>
+<li><strong>반등 재료는 정책</strong>: 유럽 IAA 2027년 시행 → 역내 조달 의무 → 3사 점유율 반등 <small>(NH, 2026-06-25, p.6 / NH, 2026-08-03, p.2)</small></li>
+<li><strong>글로벌 ESS 점유는 아직 작음</strong>: 1H26 글로벌 출하 461GWh 중 LGES 2.6%·SDI 1.4% <small>(교보, 2026-08-11, p.1)</small> → 한국 ESS는 «미국 적격 공급망» 시장</li>
+<li><strong>북미 점유는 빠르게 오름</strong>: 2사 북미 합산 점유율 약 13% → 약 21%(3Q26 누적) <small>(iM, 2026-11-09, p.2)</small>. 2027E 북미 BESS 셀 수요 106GWh 중 비중국 적격 85GWh vs 비중국 실질 공급 66~89GWh <small>(유안타, 2026-11-05, p.2)</small></li>
+<li><strong>글로벌 EV 점유 교차 확인</strong>: SNE 1~9월 국내 3사 12.6%(YoY −4.1%p) <small>(대신, 2026-11-11, p.64)</small> → 하락 폭 −25%로 모델 2026E(−17%)보다 가파름 ⚠</li>
+<li>셀 폼팩터·캐파 상세는 <a href="../배터리/03_배터리_셀과폼팩터" class="internal internal-link alias" data-slug="배터리/03_배터리_셀과폼팩터">03_배터리_셀과폼팩터</a></li>
+</ul>
+<hr/>
+<h2 id="-결과--글로벌-시장과-한국-몫">⑤ 결과 — 글로벌 시장과 한국 몫<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-결과--글로벌-시장과-한국-몫" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>Base 글로벌 시장 2025A → 2028E 연 16% 성장. EV 판가 하락 탓에 금액 성장 &lt; 물량 성장(연 23%)</li>
+<li>2027E 시나리오 폭 1,980~2,644억달러(Bull 2,822 → 2,644, 가격 가정 하향). Bear는 2026E와 같은 수준(성장 0%)</li>
+</ul>
+</div></blockquote>
+<h3 id="연도별-시장-억달러-base">연도별 시장 (억달러, Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#연도별-시장-억달러-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>EV 시장</td><td style="text-align:right;">1,328</td><td style="text-align:right;">1,369</td><td style="text-align:right;">1,505</td><td style="text-align:right;">1,654</td></tr><tr><td>ESS 시장</td><td style="text-align:right;">385</td><td style="text-align:right;">616</td><td style="text-align:right;">814</td><td style="text-align:right;">1,011</td></tr><tr><td><strong>합계</strong></td><td style="text-align:right;"><strong>1,713</strong></td><td style="text-align:right;"><strong>1,985</strong></td><td style="text-align:right;"><strong>2,319</strong></td><td style="text-align:right;"><strong>2,665</strong></td></tr><tr><td>성장률</td><td style="text-align:right;">—</td><td style="text-align:right;">+15.9%</td><td style="text-align:right;">+16.8%</td><td style="text-align:right;">+14.9%</td></tr><tr><td>ESS 비중(금액)</td><td style="text-align:right;">22.5%</td><td style="text-align:right;">31.0%</td><td style="text-align:right;">35.1%</td><td style="text-align:right;">37.9%</td></tr><tr><td>가중 단가(달러/kWh)</td><td style="text-align:right;">91.2</td><td style="text-align:right;">83.3</td><td style="text-align:right;">79.9</td><td style="text-align:right;">76.4</td></tr></tbody></table></div>
+<p><small>자체 모델. ESS 기준을 BNEF설치로 바꾸면 합계 1,543 · 1,691 · 1,930 · 2,182억달러</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;xychart-beta\n    title \&quot;글로벌 배터리 시장 시나리오 (억달러)\&quot;\n    x-axis [\&quot;2025A\&quot;, \&quot;2026E\&quot;, \&quot;2027E\&quot;, \&quot;2028E\&quot;]\n    y-axis \&quot;억달러\&quot; 1500 --> 3800\n    line [1713, 1985, 2644, 3390]\n    line [1713, 1985, 2319, 2665]\n    line [1713, 1985, 1980, 1987]&quot;">xychart-beta
+    title &quot;글로벌 배터리 시장 시나리오 (억달러)&quot;
+    x-axis [&quot;2025A&quot;, &quot;2026E&quot;, &quot;2027E&quot;, &quot;2028E&quot;]
+    y-axis &quot;억달러&quot; 1500 --> 3800
+    line [1713, 1985, 2644, 3390]
+    line [1713, 1985, 2319, 2665]
+    line [1713, 1985, 1980, 1987]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>위에서부터 Bull · Base · Bear. ESS 기준 NH출하. 자체 모델</small></p>
+<h3 id="2027e-시나리오-비교">2027E 시나리오 비교<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-시나리오-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>xEV 수요(GWh)</td><td style="text-align:right;">1,580</td><td style="text-align:right;">1,705</td><td style="text-align:right;">1,890</td></tr><tr><td>ESS 물량(GWh)</td><td style="text-align:right;">1,038</td><td style="text-align:right;">1,197</td><td style="text-align:right;">1,320</td></tr><tr><td>글로벌 시장(억달러)</td><td style="text-align:right;">1,980</td><td style="text-align:right;">2,319</td><td style="text-align:right;">2,644</td></tr><tr><td>2028E 시장(억달러)</td><td style="text-align:right;">1,987</td><td style="text-align:right;">2,665</td><td style="text-align:right;">3,390</td></tr><tr><td>한국 EV 매출(억달러)</td><td style="text-align:right;">131</td><td style="text-align:right;">163</td><td style="text-align:right;">208</td></tr><tr><td>한국 ESS 매출(억달러)</td><td style="text-align:right;">99</td><td style="text-align:right;">113</td><td style="text-align:right;">127</td></tr><tr><td>한국 ESS 이익(조원)</td><td style="text-align:right;">1.42</td><td style="text-align:right;">2.08</td><td style="text-align:right;">2.74</td></tr></tbody></table></div>
+<p><small>Summary 시트 닫힌 식. 선택 시나리오 값 − Model 값 = 0 검산</small></p>
+<h3 id="2027e-민감도-base-억달러">2027E 민감도 (Base, 억달러)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-민감도-base-억달러" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>변수</th><th>변화</th><th style="text-align:right;">시장 변화</th></tr></thead><tbody><tr><td>EV 팩 판가</td><td>+5달러/kWh</td><td style="text-align:right;">+85</td></tr><tr><td>EV 성장률</td><td>+5%p</td><td style="text-align:right;">+66</td></tr><tr><td>ESS 가격</td><td>+5달러/kWh</td><td style="text-align:right;">+60</td></tr><tr><td>ESS 성장률</td><td>+10%p</td><td style="text-align:right;">+60</td></tr><tr><td>한국 EV 점유율</td><td>+1%p</td><td style="text-align:right;">한국 +16</td></tr></tbody></table></div>
+<p><small>민감도 = 닫힌 식, EV 판가 +5달러 재계산 차이 0. ESS 기준을 BNEF설치로 바꾸면 ESS 가격·성장 민감도가 각각 +31로 줄어듦</small></p>
+<ul>
+<li><mark class="text-highlight">가장 큰 변수는 EV 판가</mark>: 물량이 가장 크기 때문 → 메탈 전가 여부(③)가 하우스 경로보다 중요</li>
+<li><strong>한국 몫 정체</strong>: 2025A 12.2% → 2026E 11.6% → 2027E 11.9% → 2028E 11.1%(금액). EV 몫 감소를 ESS 단가 프리미엄이 대부분 메움</li>
+<li><strong>ESS 이익률 개선은 AMPC 덕</strong>: 2사 이익의 상당 부분이 미국 생산세액공제(셀 35·모듈 10달러/kWh) <small>(유안타, 2026-06-28, p.60)</small></li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-검증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>원문 대조: 모델 EV 시장은 삼성 원표와 ±0.4% 이내, 2025A 합계는 신한 «1,500억달러 상회»와 맞음</li>
+<li>쟁점 셋: ESS 물량 기준, 가격 방향, 미국 ESS 2028 수요</li>
+</ul>
+</div></blockquote>
+<h3 id="하우스-수치-vs-모델">하우스 수치 vs 모델<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-수치-vs-모델" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">하우스</th><th style="text-align:right;">모델</th></tr></thead><tbody><tr><td>xEV 시장 2026E(억달러, 삼성)</td><td style="text-align:right;">1,375</td><td style="text-align:right;">1,369</td></tr><tr><td>리튬이온 시장 2025(억달러, 신한)</td><td style="text-align:right;">1,500+</td><td style="text-align:right;">1,713</td></tr><tr><td>ESS 2026E(GWh, NH)</td><td style="text-align:right;">880</td><td style="text-align:right;">880</td></tr><tr><td>1H26 ESS 출하×2(GWh, 교보)</td><td style="text-align:right;">922</td><td style="text-align:right;">880</td></tr><tr><td>LGES ESS 이익 27E(조원, 유안타)</td><td style="text-align:right;">1.48</td><td style="text-align:right;">2.91</td></tr><tr><td>ESS 출하 3Q26 누적×4/3(GWh, SNE)</td><td style="text-align:right;">1,040</td><td style="text-align:right;">880</td></tr><tr><td>EV 배터리 27E 성장(SNE, DB)</td><td style="text-align:right;">+12.5%</td><td style="text-align:right;">+13.3%</td></tr></tbody></table></div>
+<p><small>(삼성, 2026-06-18, p.33 / 신한, 2026-04-06, p.15 / NH, 2026-06-25, p.9 / 교보, 2026-08-11, p.1 / 유안타, 2026-06-28, p.61 / 대신, 2026-11-11, p.69 / DB, 2026-11-16, p.25). LGES 행 모델 값 = 삼성 NDR «미국 ESS kWh당 영업이익 36달러»(삼성, 2026-07-20, p.2) × 유안타 중간 출하 58.5GWh × 1,380원(내 계산, 2027E 출하 갱신으로 2.81 → 2.91)</small></p>
+<ul>
+<li><strong>ESS 기준을 BNEF로 두면 2025A 1,543억달러</strong> → 신한 하한(1,500억달러)과 +3% 차이로 더 가까움. 신한 집계가 설치 기준일 가능성 ⚠</li>
+<li><strong>LGES ESS 이익 1.9배 차이</strong>: 삼성 36달러/kWh는 시스템 판매 마진(16%)·AMPC 포함 여부 불명 → 유안타 «실효 AMPC» 차감이 원인으로 추정 ⚠</li>
+</ul>
+<h3 id="하우스-간-충돌불일치">하우스 간 충돌·불일치<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-간-충돌불일치" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스</th><th>입장</th></tr></thead><tbody><tr><td>2026E ESS 물량</td><td>삼성(BNEF) 06-18</td><td>459GWh(설치)</td></tr><tr><td>2026E ESS 물량</td><td>NH 06-25</td><td>880GWh(출하)</td></tr><tr><td>2026E ESS 물량</td><td>삼성 05-22</td><td>생산 1.2TWh</td></tr><tr><td>2026 가격 방향</td><td>삼성 06-18</td><td>EV 팩 −8.5%</td></tr><tr><td>2026 가격 방향</td><td>하나 09-14(GGII)</td><td>ESS 셀 +36%</td></tr><tr><td>2026~28 ESS 가격</td><td>유안타 06-28</td><td>70 → 68 → 65달러</td></tr><tr><td>미국 ESS 2028</td><td>삼성(BNEF) 06-18</td><td>설치 87.5GWh</td></tr><tr><td>미국 ESS 2028</td><td>삼성 07-20</td><td>수요 153GWh</td></tr><tr><td>미국 ESS 2028</td><td>NH 06-25</td><td>186GWh</td></tr><tr><td>미국 ESS 2028</td><td>NH 11-16</td><td>165GWh(출하)</td></tr><tr><td>ESS 마진</td><td>하나 11-09</td><td>AMPC 제외 흑자 어려움</td></tr><tr><td>ESS 마진</td><td>DS 11-04</td><td>AMPC 제외 흑전 1Q27</td></tr></tbody></table></div>
+<p><small>(삼성, 2026-06-18, p.34·37 / NH, 2026-06-25, p.9 / 삼성, 2026-05-22, p.6 / 하나, 2026-09-14, p.4 / 유안타, 2026-06-28, p.60 / 삼성, 2026-07-20, p.2 / NH, 2026-11-16, p.7 / 하나, 2026-11-09, p.1 / DS, 2026-11-04, p.1)</small></p>
+<ul>
+<li><strong>ESS 물량</strong>: 설치 vs 출하 차이는 재고·운송 시차와 집계 범위 → 모델 기본값은 출하, 엑셀 스위치로 설치 확인 가능</li>
+<li><strong>가격 방향</strong>: 하우스 전망(학습곡선 하락) vs 시장 지표(리튬·양극재·중국 셀 상승) → Base는 −3%로 절충 ⚠, Bull만 상승 반영</li>
+<li><strong>바뀐 시각</strong>: 삼성 xEV 2026E 1.6TWh(03-20) → 1.5TWh(06-18), BNEF ESS 2026E 360GWh(25년 11월) → 459GWh(26년 상반기) <small>(삼성, 2026-03-20, p.40 / 2026-06-18, p.33~34)</small></li>
+<li><strong>바뀐 시각(11월)</strong>: NH 미국 ESS 2026E 115 → 134GWh 상향, 2028F 186 → 165GWh 하향 → «단기 상향·장기 둔화» <small>(NH, 2026-06-25, p.9 / 2026-11-16, p.7)</small>. 하나는 ESS 마진 눈높이를 «AMPC 제외 한 자릿수 초반»으로 낮춤 <small>(하나, 2026-11-09, p.1)</small> → 이익 블록(06-28 범위)은 상단 위험 ⚠</li>
+<li>공급 쪽 경고: 2025년 수요 대비 약 900GWh 공급과잉 <small>(교보, 2026-04-08, p.4)</small> → 가격 Bear 근거</li>
+<li>2년 사이 바뀐 시각 전체는 <a href="../배터리/07_배터리_하우스시각_변경이력" class="internal internal-link alias" data-slug="배터리/07_배터리_하우스시각_변경이력">07_배터리_하우스시각_변경이력</a></li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>Base의 세 기둥 = ESS 출하 +36%(2027E) · EV 판가 −3% · 한국 EV 점유율 10.5% 유지</li>
+<li>매월 양극재 수출단가·리튬, 분기마다 ESS 출하·유럽 점유율을 같이 봄</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>매월 1일</td><td>양극재 수출단가</td><td>28달러/kg 이상</td><td>24달러/kg 아래</td></tr><tr><td>매주</td><td>탄산리튬(중국)</td><td>150위안/kg 이상</td><td>120위안/kg 아래</td></tr><tr><td>매월</td><td>유럽 한국 3사 점유율</td><td>30% 회복</td><td>26% 아래 지속</td></tr><tr><td>분기</td><td>글로벌 ESS 출하</td><td>연환산 1,197GWh↑</td><td>1,038GWh 이하</td></tr><tr><td>분기</td><td>미국 ESS 2사 출하</td><td>27E 57GWh 경로</td><td>26E 25GWh 미달</td></tr><tr><td>2026-12~</td><td>2027 하우스 전망 추가분</td><td>ESS +36% 이상</td><td>ESS +18% 이하</td></tr><tr><td>2027-01~02</td><td>4Q26 실적·ESS 마진</td><td>AMPC 제외 흑전</td><td>적자 지속</td></tr><tr><td>매주</td><td>리튬 박스권</td><td>9.5만위안/톤 위</td><td>8.5만위안/톤 아래</td></tr><tr><td>2027</td><td>유럽 IAA 시행 세칙</td><td>셀 역내조달 포함</td><td>셀 제외·유예</td></tr></tbody></table></div>
+<p><small>기준값은 엑셀 Base·Bear 2027E. 위 리튬 150/120위안 기준선은 9월 설정값 ⚠ → 10월 말 98위안으로 이미 하회. 박스권 행은 유안타 2027 전망·한계원가 8.5~9.5만위안(유안타, 2026-11-05, p.25). 일정 전체는 <a href="../배터리/08_배터리_트래킹캘린더" class="internal internal-link alias" data-slug="배터리/08_배터리_트래킹캘린더">08_배터리_트래킹캘린더</a></small></p>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<small>
+- 삼성증권 「2026 하반기 전망: 미국 ESS 수요와 탈중국망 기회」 2026-06-18, p.33~35·37~38 (xEV·ESS 수요표, 판가, 미국 ESS 2028)
+- 삼성증권 「Applying EV-era lessons to humanoid robotics」 2026-03-20, p.40 (xEV·ESS 2025~2030 경로)
+- 삼성증권 Rechargeable Batteries Dialogue 58 2026-07-23, p.3 (BNEF 2025 팩 가격)
+- 삼성증권 「미국 NDR 후기」 2026-07-20, p.2 · Rechargeable Batteries 2026-05-22 p.4·6, 2026-06-04 p.4, 2026-07-07 p.4, 2026-04-08 p.4~5
+- 삼성증권 2차전지 시대 52 2026-04-01 p.2 · 시대 59 2026-08-14 p.2
+- NH투자증권 「다운사이클 종료」 2026-06-25, p.6~9 · 2차전지 Weekly 2026-08-03, p.2
+- 유안타증권 「2차전지 2H26 Outlook」 2026-06-28, p.60~62 (셀 2사 ESS 출하·ASP·이익)
+- 대신증권 2026 하반기 전망 2026-05-26, p.2 · 「숏티지 롱전략」 2026-05-06, p.4·12
+- 한화투자증권 「배터리 기술 평준화 시대」 2026-03-24, p.8·20 · 양극재 4월 수출 2026-05-19, p.2
+- 하나증권 2차전지 Weekly·Monthly 2026-03-03·03-29·04-06·05-04·06-08·06-22·07-02·08-06·09-02·09-14 · ESS Battery 2026-04-15·05-20·06-25·08-03·08-21 · Electro-state 2026-09-03
+- 신한투자증권 「생산적 금융 II」 2026-04-06, p.15·47·56
+- 교보증권 「봄이 오나 봄」 2026-04-08, p.4 · 자동차/이차전지 Weekly 2026-08-11, p.1
+- 키움증권 이차전지 하반기 전망 2026-05-30, p.22 · 소듐이온 전지 2026-09-15, p.13·20
+- iM증권 7월 Monthly 에너자이저 2026-07-01, p.3
+- 유진투자증권 Next Energy Weekly 2026-06-02, p.1 · 철강 Weekly 「리튬 가격 펀더멘탈 이상의 하락」 2026-11-04, p.1
+- 유안타증권 「2027 왜 다시 2차전지인가」 2026-11-05, p.2·25·26 (27E 출하·리튬·북미 수급)
+- NH투자증권 「2027년 전망: 국면 전환」 2026-11-16, p.5·7 (미국 ESS·IAA 2028)
+- DB증권 「2027 이차전지 연간전망」 2026-11-16, p.25 (SNE EV 배터리, 표지 10-30 표기)
+- 대신증권 자동차/2차전지 월보 2026-11-11, p.64·69 (SNE ESS·점유율)
+- iM증권 「미국 중간선거 블루웨이브, 오히려 기회」 2026-11-09, p.2·17
+- 하나증권 친환경차/2차전지 Monthly 2026-11-03 p.1 · 이배속 2026-11-09 p.1 · 2026-11-16 p.24
+- DS투자증권 LG에너지솔루션(사례) 2026-11-04, p.1
+- 엑셀: `모델/배터리_모델.xlsx` Sources 시트(하우스 원문 37개 × 모델 대조)
+</small>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>4Q26 실적(2027-01~02) → 2026E 물량·가격을 실적치로 교체. 특히 ESS 2026E 880GWh(SNE 3Q 누적 780) 상향 여부 ⚠</li>
+<li>BNEF 12월 팩 가격 조사(2026년 값) → EV·ESS 2026E 가격(91·70달러) 교체</li>
+<li>2027년 연간 전망 일부 반영(유안타·NH·DB, 11월). 글로벌 ESS 2027E 출하 경로를 낸 하우스 없음 → ESS Base +36%는 06-25 경로 유지 ⚠</li>
+<li>한국 ESS 이익+AMPC 범위(유안타 06-28)를 11월 마진 하향(하나 11-09) 반영해 재설정 ⚠</li>
+<li>한국 3사 글로벌 EV 점유율 연간 원문(SNE) → 2025A 12.4%(⚠ 역산)·2026E 10.6% 교체</li>
+<li>SK온 ESS 출하·ASP 원문 → 한국 ESS 블록을 3사로 확대</li>
+<li>2025A 원/달러 연평균 원문 → 1,400원 대용값 교체</li>
+<li>3Q26 셀 판가(메탈 전가) 실적 → EV 판가 Base −3% 가정 검증</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-141" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#배터리-시장규모-모델--evess-물량--단가--글로벌-시장--한국-셀-몫" data-for="배터리-시장규모-모델--evess-물량--단가--글로벌-시장--한국-셀-몫">배터리 시장규모 모델 — EV·ESS 물량 × 단가 → 글로벌 시장 → 한국 셀 몫</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-모델-구조기초" data-for="-모델-구조기초">① 모델 구조·기초</a></li><li class="depth-1"><a href="#-수요-입력--ev와-ess" data-for="-수요-입력--ev와-ess">② 수요 입력 — EV와 ESS</a></li><li class="depth-1"><a href="#-가격-입력--팩-판가리튬양극재" data-for="-가격-입력--팩-판가리튬양극재">③ 가격 입력 — 팩 판가·리튬·양극재</a></li><li class="depth-1"><a href="#-한국-셀-몫--ev-점유율과-ess-출하" data-for="-한국-셀-몫--ev-점유율과-ess-출하">④ 한국 셀 몫 — EV 점유율과 ESS 출하</a></li><li class="depth-1"><a href="#-결과--글로벌-시장과-한국-몫" data-for="-결과--글로벌-시장과-한국-몫">⑤ 결과 — 글로벌 시장과 한국 몫</a></li><li class="depth-1"><a href="#-하우스별-시각과-검증" data-for="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../배터리/00_배터리_index" class="internal">00_배터리_index</a></li><li><a href="../배터리/01_배터리_용어집" class="internal">01_배터리_용어집</a></li><li><a href="../배터리/02_배터리_수요와전방" class="internal">02_배터리_수요와전방</a></li><li><a href="../배터리/03_배터리_셀과폼팩터" class="internal">03_배터리_셀과폼팩터</a></li><li><a href="../배터리/04_배터리_소재" class="internal">04_배터리_소재</a></li><li><a href="../배터리/05_배터리_장비와재활용" class="internal">05_배터리_장비와재활용</a></li><li><a href="../배터리/07_배터리_하우스시각_변경이력" class="internal">07_배터리_하우스시각_변경이력</a></li><li><a href="../배터리/08_배터리_트래킹캘린더" class="internal">08_배터리_트래킹캘린더</a></li><li><a href="../배터리/설명서/배터리_설명서" class="internal">배터리_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>
