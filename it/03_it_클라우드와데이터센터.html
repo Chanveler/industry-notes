@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>03_IT_클라우드와데이터센터</title><meta charset="utf-8"/><link rel="preload" href="../index-d311a580.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="03_IT_클라우드와데이터센터"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="03_IT_클라우드와데이터센터"/><meta name="twitter:description" content="IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함 원천 한계 IT 원천 148건 중 2025년 1건·2026년 147건 → 이 노트 인용 24건 중 20건이 2026-08~11월 발간물 국내 데이터센터 시장 총량(용량·임대료 시계열)과 국내 퍼블릭 클라우드 시장 규모는 원천 0건 ⚠ — 수도권 임대료는 2025년 한 점(NH)·아시아 비교(유진)뿐 데이터센터 전용 주간물(삼성증권 대체투자 Weekly 2건)은 스캔본·텍스트 없음 → 미반영 ⚠ 한눈에 보기 결론 GPU·데이터센터는 «공급자 우위»: H..."/><meta property="og:description" content="IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함 원천 한계 IT 원천 148건 중 2025년 1건·2026년 147건 → 이 노트 인용 24건 중 20건이 2026-08~11월 발간물 국내 데이터센터 시장 총량(용량·임대료 시계열)과 국내 퍼블릭 클라우드 시장 규모는 원천 0건 ⚠ — 수도권 임대료는 2025년 한 점(NH)·아시아 비교(유진)뿐 데이터센터 전용 주간물(삼성증권 대체투자 Weekly 2건)은 스캔본·텍스트 없음 → 미반영 ⚠ 한눈에 보기 결론 GPU·데이터센터는 «공급자 우위»: H..."/><meta property="og:image:alt" content="IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함 원천 한계 IT 원천 148건 중 2025년 1건·2026년 147건 → 이 노트 인용 24건 중 20건이 2026-08~11월 발간물 국내 데이터센터 시장 총량(용량·임대료 시계열)과 국내 퍼블릭 클라우드 시장 규모는 원천 0건 ⚠ — 수도권 임대료는 2025년 한 점(NH)·아시아 비교(유진)뿐 데이터센터 전용 주간물(삼성증권 대체투자 Weekly 2건)은 스캔본·텍스트 없음 → 미반영 ⚠ 한눈에 보기 결론 GPU·데이터센터는 «공급자 우위»: H..."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/it/03_it_클라우드와데이터센터"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/it/03_it_클라우드와데이터센터"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함 원천 한계 IT 원천 148건 중 2025년 1건·2026년 147건 → 이 노트 인용 24건 중 20건이 2026-08~11월 발간물 국내 데이터센터 시장 총량(용량·임대료 시계열)과 국내 퍼블릭 클라우드 시장 규모는 원천 0건 ⚠ — 수도권 임대료는 2025년 한 점(NH)·아시아 비교(유진)뿐 데이터센터 전용 주간물(삼성증권 대체투자 Weekly 2건)은 스캔본·텍스트 없음 → 미반영 ⚠ 한눈에 보기 결론 GPU·데이터센터는 «공급자 우위»: H..."/><meta name="generator" content="Quartz"/><link href="../index-d311a580.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="it/03_it_클라우드와데이터센터" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../it/">2. IT</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>03_IT_클라우드와데이터센터</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">03_IT_클라우드와데이터센터</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>39 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="it-클라우드와-데이터센터--gpu는-모자라고-증설-속도는-전력인허가가-정함">IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#it-클라우드와-데이터센터--gpu는-모자라고-증설-속도는-전력인허가가-정함" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<ul>
+<li>IT 원천 148건 중 2025년 1건·2026년 147건 → 이 노트 인용 24건 중 20건이 <strong>2026-08~11월</strong> 발간물</li>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> 데이터센터 시장 총량(용량·임대료 시계열)과 국내 퍼블릭 클라우드 시장 규모는 원천 0건 ⚠ — 수도권 임대료는 2025년 한 점(NH)·아시아 비교(유진)뿐</li>
+<li>데이터센터 전용 주간물(삼성증권 대체투자 Weekly 2건)은 스캔본·텍스트 없음 → 미반영 ⚠</li>
+</ul>
+</div></blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span>·데이터센터는 «공급자 우위»: H100 임대가 1년 +54.5%, <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>당 연매출 2,000만 → 2,500만달러+, 투자 회수 1~2년</li>
+<li>병목은 칩에서 전력·인허가로 이동 → 기존 부지 고밀도화(랙 600kW·800V 직류)와 여러 부지 분산·해외 이전으로 우회</li>
+<li>한국은 <span class="gl" tabindex="0" data-gl="정부가 GPU를 사서 배분 (Graphics Processing Unit)">정부 GPU 조달</span>이 바닥, 대기업 <span class="gl" tabindex="0" data-gl="그룹 계열사 물량">캡티브</span>가 기반, <mark class="text-highlight">해외 Compute 유치가 상방</mark> — 글로벌 <span class="gl" tabindex="0" data-gl="첫 대형 장기 임차 고객">앵커 테넌트</span> «첫 대형 계약»은 아직 없음</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">값</th><th>비고</th><th>출처</th></tr></thead><tbody><tr><td>H100 임대가</td><td style="text-align:right;">+54.5%</td><td>최근 1년, <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 지수</td><td><small>(미래에셋, 11-16)</small></td></tr><tr><td>네오클라우드 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>당 연매출</td><td style="text-align:right;">2,000만~2,500만달러</td><td>장기계약, 단기 4,000만+</td><td><small>(NH, 11-11)</small></td></tr><tr><td>AI 랙 전력 2027E</td><td style="text-align:right;">600kW</td><td>2026 240kW → 2028 1.2MW</td><td><small>(미래에셋, 11-16)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 외 가속기 서버 비중</td><td style="text-align:right;">22.4%</td><td>1H25 11.5% → 1H26</td><td><small>(미래에셋, 11-16)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> AI DC 수요 2030E</td><td style="text-align:right;">7.0GW</td><td>해외 유입 4.5GW 포함</td><td><small>(한화, 08-31)</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    subgraph INP[\&quot;투입\&quot;]\n      CHIP[\&quot;칩&lt;br/>GPU·ASIC·HBM\&quot;]\n      PWR[\&quot;전력·부지&lt;br/>계통 연결 대기 5년\&quot;]\n      FIN[\&quot;자금&lt;br/>선급금·계약담보 대출\&quot;]\n    end\n    CHIP --> SRV[\&quot;서버·랙&lt;br/>랙 240 → 600kW\&quot;]\n    SRV --> DC[\&quot;데이터센터&lt;br/>액체냉각·800V 직류\&quot;]\n    PWR --> DC\n    FIN -.-> DC\n    DC --> NET[\&quot;네트워크&lt;br/>스케일업·아웃·어크로스\&quot;]\n    NET --> B1[\&quot;하이퍼스케일러&lt;br/>자체 클라우드\&quot;]\n    NET --> B2[\&quot;네오클라우드·GPUaaS&lt;br/>GPU 시간 과금\&quot;]\n    B3[\&quot;IDC·코로케이션&lt;br/>MW 임대\&quot;] --> B2\n    DC --> B3\n    B1 --> U[\&quot;최종 고객&lt;br/>모델사·기업·정부\&quot;]\n    B2 --> U&quot;">flowchart LR
+    subgraph INP[&quot;투입&quot;]
+      CHIP[&quot;칩&lt;br/>GPU·ASIC·HBM&quot;]
+      PWR[&quot;전력·부지&lt;br/>계통 연결 대기 5년&quot;]
+      FIN[&quot;자금&lt;br/>선급금·계약담보 대출&quot;]
+    end
+    CHIP --> SRV[&quot;서버·랙&lt;br/>랙 240 → 600kW&quot;]
+    SRV --> DC[&quot;데이터센터&lt;br/>액체냉각·800V 직류&quot;]
+    PWR --> DC
+    FIN -.-> DC
+    DC --> NET[&quot;네트워크&lt;br/>스케일업·아웃·어크로스&quot;]
+    NET --> B1[&quot;하이퍼스케일러&lt;br/>자체 클라우드&quot;]
+    NET --> B2[&quot;네오클라우드·GPUaaS&lt;br/>GPU 시간 과금&quot;]
+    B3[&quot;IDC·코로케이션&lt;br/>MW 임대&quot;] --> B2
+    DC --> B3
+    B1 --> U[&quot;최종 고객&lt;br/>모델사·기업·정부&quot;]
+    B2 --> U
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>구성: 미래에셋(2026-11-16)·한화(2026-08-31)·하나(2026-11-17)·NH(2026-11-11) 내용을 엮음</small></p>
+<ul>
+<li>관련 노트: <a href="../it/00_it_index" class="internal internal-link" data-slug="it/00_it_index">00_IT_index</a> · <a href="../it/01_it_용어집" class="internal internal-link alias" data-slug="it/01_it_용어집">01_IT_용어집</a> · <a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a> · <a href="../it/04_it_소프트웨어와ai" class="internal internal-link alias" data-slug="it/04_it_소프트웨어와ai">04_IT_소프트웨어와AI</a> · <a href="../it/05_it_인터넷플랫폼" class="internal internal-link alias" data-slug="it/05_it_인터넷플랫폼">05_IT_인터넷플랫폼</a> · <a href="../it/06_it_시장규모모델" class="internal internal-link alias" data-slug="it/06_it_시장규모모델">06_IT_시장규모모델</a> · <a href="../it/07_it_하우스시각_변경이력" class="internal internal-link alias" data-slug="it/07_it_하우스시각_변경이력">07_IT_하우스시각_변경이력</a> · <a href="../it/08_it_트래킹캘린더" class="internal internal-link alias" data-slug="it/08_it_트래킹캘린더">08_IT_트래킹캘린더</a></li>
+</ul>
+<hr/>
+<h2 id="-기초--ai-데이터센터의-구조와-돈-버는-방식">① 기초 — AI 데이터센터의 구조와 돈 버는 방식<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기초--ai-데이터센터의-구조와-돈-버는-방식" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>AI 데이터센터 = 칩 + 전력·냉각 + 네트워크를 묶은 «연산 공장». 규모 단위는 서버 대수가 아니라 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>(IT 부하)</li>
+<li>같은 AI DC라도 돈 버는 방식은 넷 → <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span>를 누가 보유하느냐가 위험과 이익 레버리지를 가름</li>
+</ul>
+</div></blockquote>
+<h3 id="사업모델-4유형">사업모델 4유형<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#사업모델-4유형" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>유형</th><th>파는 것</th><th>핵심 변수</th><th>GPU 보유</th><th>국내 예</th></tr></thead><tbody><tr><td>풀스택·플랫폼</td><td>DC+클라우드+AI 서비스</td><td>자체 수요·외부 가동률</td><td>직접</td><td>NAVER</td></tr><tr><td><span class="gl" tabindex="0" data-gl="GPU를 빌려주는 클라우드 (GPU as a Service)">GPUaaS</span>·AI 클라우드</td><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 사용 시간</td><td>가동률·단가·내용연수</td><td>직접</td><td>삼성SDS·NHN</td></tr><tr><td>IDC·<span class="gl" tabindex="0" data-gl="DC 공간·전력만 임대">코로케이션</span></td><td>랙·<span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>·전력</td><td>계약 MW·전력원가</td><td>고객 몫</td><td>케이아이엔엑스</td></tr><tr><td><span class="gl" tabindex="0" data-gl="시스템 구축 사업 (System Integration)">SI</span>·<span class="gl" tabindex="0" data-gl="클라우드 구축·운영 관리 (Managed Service Provider)">MSP</span>·<span class="gl" tabindex="0" data-gl="DC 설계·건설·운영 일괄 (Design-Build-Operate)">DBO</span></td><td>설계·구축·운영</td><td>수주 규모·운영계약</td><td>적음</td><td>LG CNS</td></tr></tbody></table></div>
+<p><small>자료: 한화(2026-08-31) p.16~17. DBO = 설계·구축·운영 대행(자산은 운용사 소유)</small></p>
+<ul>
+<li>IDC 경제성 = 확보 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span> × 계약률 × MW당 임대단가 → <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 세대교체·감가 위험은 고객 몫, 대신 GPU 가격 상승의 이익도 없음 <small>(한화, 2026-08-31)</small></li>
+<li><span class="gl" tabindex="0" data-gl="GPU를 빌려주는 클라우드 (GPU as a Service)">GPUaaS</span>는 감가상각이 가동 여부와 무관하게 발생 → 초기 가동률·장기계약 비중이 수익성을 좌우 <small>(한화, 2026-08-31)</small></li>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> IT서비스는 세 방식을 섞음: 자체투자형(GPUaaS) + 지분투자형(SPC 지분법) + <span class="gl" tabindex="0" data-gl="DC 설계·건설·운영 일괄 (Design-Build-Operate)">DBO</span>(수수료) <small>(대신, 2026-11-10)</small></li>
+</ul>
+<h3 id="핵심-지표-읽는-법">핵심 지표 읽는 법<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#핵심-지표-읽는-법" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>뜻</th><th>함정</th></tr></thead><tbody><tr><td>IT 부하(<span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>)</td><td>서버가 쓰는 전력</td><td>수전 용량 = IT 부하 × <span class="gl" tabindex="0" data-gl="DC 총전력 ÷ IT 전력 (Power Usage Effectiveness)">PUE</span></td></tr><tr><td>PUE</td><td>총전력 ÷ <span class="gl" tabindex="0" data-gl="서버에 실제 쓰는 전력">IT 전력</span></td><td>구글 1.09 vs 업계 1.56</td></tr><tr><td>MW당 연매출</td><td>연산 임대 수익성</td><td>장·단기 계약 섞임</td></tr><tr><td><span class="gl" tabindex="0" data-gl="계약됐지만 아직 안 잡힌 매출 (Remaining Performance Obligations)">수주잔고</span>·<span class="gl" tabindex="0" data-gl="계약됐지만 아직 안 잡힌 매출 (Remaining Performance Obligations)">RPO</span></td><td>계약됐으나 미인식 매출</td><td>해지 조건 따로 확인</td></tr><tr><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 임대가</td><td>달러/GPU·시간</td><td>세대별로 따로 봄</td></tr></tbody></table></div>
+<p><small>PUE: 구글 TTM 1.09(2024), 상위 하이퍼스케일러 AIDC 평균 1.15, 업계 평균 1.56(유안타, 2026-04-02). IT 1GW × PUE 1.5 = 설계상 전력수요 1.5GW(유진, 2026-11-17)</small></p>
+<ul>
+<li>상위 <span class="gl" tabindex="0" data-gl="초대형 클라우드 사업자">하이퍼스케일러</span>는 건물 효율(<span class="gl" tabindex="0" data-gl="DC 총전력 ÷ IT 전력 (Power Usage Effectiveness)">PUE</span>) 개선 여지가 거의 없음 → 이제 경쟁은 랙 안쪽의 전력 변환·배전 손실 <small>(유안타, 2026-04-02)</small></li>
+</ul>
+<hr/>
+<h2 id="-전방-수요--누가-데이터센터를-채우나">② 전방 수요 — 누가 데이터센터를 채우나<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-전방-수요--누가-데이터센터를-채우나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>글로벌: <span class="gl" tabindex="0" data-gl="초대형 클라우드 사업자">하이퍼스케일러</span>가 몸통, <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span>·소버린이 증가분. 금액·주체별 수요는 <a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a></li>
+<li><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 공급자의 데이터센터 매출은 2년 새 약 3배, 공급 약정은 메모리 확보 중심으로 급증</li>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span>: 정부 → 대기업 <span class="gl" tabindex="0" data-gl="그룹 계열사 물량">캡티브</span> → 일반기업 <span class="gl" tabindex="0" data-gl="GPU를 빌려주는 클라우드 (GPU as a Service)">GPUaaS</span> → 해외 순으로 쌓이는 구조</li>
+</ul>
+</div></blockquote>
+<h3 id="gpu-공급자-매출로-본-수요">GPU 공급자 매출로 본 수요<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#gpu-공급자-매출로-본-수요" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="엔비디아 데이터센터 매출 (십억달러)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 25.685 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 25.685 59.677125  L 25.685 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="78.637215" y="282.853594" transform="rotate(-0 78.637215 282.853594)">3Q25</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="146.675868" y="282.853594" transform="rotate(-0 146.675868 282.853594)">4Q25</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="214.714521" y="282.853594" transform="rotate(-0 214.714521 282.853594)">1Q26</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="282.753174" y="282.853594" transform="rotate(-0 282.753174 282.853594)">2Q26</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="350.791826" y="282.853594" transform="rotate(-0 350.791826 282.853594)">3Q26</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="418.830479" y="282.853594" transform="rotate(-0 418.830479 282.853594)">4Q26</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="486.869132" y="282.853594" transform="rotate(-0 486.869132 282.853594)">1Q27</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="554.907785" y="282.853594" transform="rotate(-0 554.907785 282.853594)">2Q27</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_9"> <path d="M 25.685 272.152891  L 607.86 272.152891  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="275.56375" transform="rotate(-0 22.185 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_11"> <path d="M 25.685 226.679212  L 607.86 226.679212  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="230.090071" transform="rotate(-0 22.185 230.090071)">20</text> </g> </g> <g id="ytick_3"> <g id="line2d_13"> <path d="M 25.685 181.205532  L 607.86 181.205532  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="184.616392" transform="rotate(-0 22.185 184.616392)">40</text> </g> </g> <g id="ytick_4"> <g id="line2d_15"> <path d="M 25.685 135.731853  L 607.86 135.731853  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="139.142713" transform="rotate(-0 22.185 139.142713)">60</text> </g> </g> <g id="ytick_5"> <g id="line2d_17"> <path d="M 25.685 90.258174  L 607.86 90.258174  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="93.669034" transform="rotate(-0 22.185 93.669034)">80</text> </g> </g> </g> <g id="patch_3"> <path d="M 52.1475 272.152891  L 68.839649 272.152891  L 68.839649 202.123425  L 52.1475 202.123425  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 120.186153 272.152891  L 136.878302 272.152891  L 136.878302 191.209742  L 120.186153 191.209742  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_5"> <path d="M 188.224805 272.152891  L 204.916955 272.152891  L 204.916955 183.251848  L 188.224805 183.251848  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_6"> <path d="M 256.263458 272.152891  L 272.955608 272.152891  L 272.955608 178.70448  L 256.263458 178.70448  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_7"> <path d="M 324.302111 272.152891  L 340.99426 272.152891  L 340.99426 155.740272  L 324.302111 155.740272  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_8"> <path d="M 392.340764 272.152891  L 409.032913 272.152891  L 409.032913 130.50238  L 392.340764 130.50238  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_9"> <path d="M 460.379416 272.152891  L 477.071566 272.152891  L 477.071566 101.171857  L 460.379416 101.171857  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_10"> <path d="M 528.418069 272.152891  L 545.110219 272.152891  L 545.110219 69.795019  L 528.418069 69.795019  z " clip-path="url(#p68995996c8)" style="fill:#2f74c0;"></path> </g> <g id="patch_11"> <path d="M 70.291141 272.152891  L 86.98329 272.152891  L 86.98329 241.685526  L 70.291141 241.685526  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_12"> <path d="M 138.329793 272.152891  L 155.021943 272.152891  L 155.021943 228.725527  L 138.329793 228.725527  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_13"> <path d="M 206.368446 272.152891  L 223.060596 272.152891  L 223.060596 232.136053  L 206.368446 232.136053  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_14"> <path d="M 274.407099 272.152891  L 291.099248 272.152891  L 291.099248 217.811844  L 274.407099 217.811844  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_15"> <path d="M 342.445752 272.152891  L 359.137901 272.152891  L 359.137901 203.260267  L 342.445752 203.260267  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_16"> <path d="M 410.484404 272.152891  L 427.176554 272.152891  L 427.176554 195.302373  L 410.484404 195.302373  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_17"> <path d="M 478.523057 272.152891  L 495.215207 272.152891  L 495.215207 185.980269  L 478.523057 185.980269  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_18"> <path d="M 546.56171 272.152891  L 563.253859 272.152891  L 563.253859 161.424482  L 546.56171 161.424482  z " clip-path="url(#p68995996c8)" style="fill:#e8590c;"></path> </g> <g id="patch_19"> <path d="M 88.434781 272.152891  L 105.126931 272.152891  L 105.126931 232.59079  L 88.434781 232.59079  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_20"> <path d="M 156.473434 272.152891  L 173.165584 272.152891  L 173.165584 234.637105  L 156.473434 234.637105  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_21"> <path d="M 224.512087 272.152891  L 241.204236 272.152891  L 241.204236 223.268686  L 224.512087 223.268686  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_22"> <path d="M 292.55074 272.152891  L 309.242889 272.152891  L 309.242889 233.045527  L 292.55074 233.045527  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_23"> <path d="M 360.589392 272.152891  L 377.281542 272.152891  L 377.281542 224.632896  L 360.589392 224.632896  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_24"> <path d="M 428.628045 272.152891  L 445.320195 272.152891  L 445.320195 207.352898  L 428.628045 207.352898  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_25"> <path d="M 496.666698 272.152891  L 513.358847 272.152891  L 513.358847 187.117111  L 496.666698 187.117111  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="patch_26"> <path d="M 564.705351 272.152891  L 581.3975 272.152891  L 581.3975 180.523427  L 564.705351 180.523427  z " clip-path="url(#p68995996c8)" style="fill:#2b9348;"></path> </g> <g id="line2d_19"> <path d="M 25.685 272.152891  L 607.86 272.152891  " clip-path="url(#p68995996c8)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_27"> <path d="M 25.685 272.152891  L 25.685 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_28"> <path d="M 25.685 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_14"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="25.685" y="53.677125" transform="rotate(-0 25.685 53.677125)">십억달러</text> </g> </g> <g id="text_15"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.6455" transform="rotate(-0 6.192 13.6455)">엔비디아 데이터센터 매출 (십억달러)</text> </g> <g id="legend_1"> <g id="patch_29"> <path d="M 11.646 35.035188  L 24.946 35.035188  L 24.946 28.385188  L 11.646 28.385188  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.035188" transform="rotate(-0 32.546 35.035188)">데이터센터 합계</text> </g> <g id="patch_30"> <path d="M 105.866703 35.035188  L 119.166703 35.035188  L 119.166703 28.385188  L 105.866703 28.385188  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="126.766703" y="35.035188" transform="rotate(-0 126.766703 35.035188)">하이퍼스케일</text> </g> <g id="patch_31"> <path d="M 189.371703 35.035188  L 202.671703 35.035188  L 202.671703 28.385188  L 189.371703 28.385188  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="210.271703" y="35.035188" transform="rotate(-0 210.271703 35.035188)">ACIE</text> </g> </g> </g> <defs> <clipPath id="p68995996c8"> <rect x="25.685" y="59.677125" width="582.175" height="212.475766"></rect> </clipPath> </defs> </svg> </figure>
+<p><small>위 선 = 데이터센터 합계, 나머지 = 하이퍼스케일 / ACIE(AI 클라우드·산업·기업). 엔비디아 회계연도 분기(FY27 2Q = 2026년 5~7월). 자료: IBK(2026-08-27) 표1</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">값</th><th>출처</th></tr></thead><tbody><tr><td>FY27 3Q 전사 매출</td><td style="text-align:right;">1,158억달러(+103%)</td><td><small>(유진, 11-18)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="엔비디아 차세대 플랫폼">Vera Rubin</span> 매출 3Q</td><td style="text-align:right;">약 200억달러</td><td><small>(유진, 11-18)</small></td></tr><tr><td>FY28 매출 성장 가이던스</td><td style="text-align:right;">+75%(기존 +70%)</td><td><small>(유진, 11-18)</small></td></tr><tr><td>공급·용량 약정</td><td style="text-align:right;">2,790억달러(QoQ 2.3배)</td><td><small>(IBK, 08-27)</small></td></tr><tr><td>지급 보증</td><td style="text-align:right;">1,085억달러</td><td><small>(IBK, 08-27)</small></td></tr></tbody></table></div>
+<p><small>Vera Rubin은 데이터센터 매출의 약 19%. 공급 약정 대부분은 메모리, 지급 보증 중 SB Energy 1,050억달러 → GPU 150만개 판매 연결 (IBK)</small></p>
+<ul>
+<li>ACIE(<span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span>·기업) 매출이 하이퍼스케일과 비슷한 규모 → 수요자가 빅테크 밖으로 넓어짐 <small>(IBK, 2026-08-27)</small></li>
+<li>공급 약정 급증 = 메모리 확보 경쟁 → 부품 부족은 ⑤ 참조</li>
+</ul>
+<h3 id="네오클라우드--gpu를-빌려주는-신흥-사업자">네오클라우드 — GPU를 빌려주는 신흥 사업자<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#네오클라우드--gpu를-빌려주는-신흥-사업자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">코어위브</th><th style="text-align:right;">네비우스</th><th style="text-align:right;">아이렌</th></tr></thead><tbody><tr><td>잔고·<span class="gl" tabindex="0" data-gl="연 환산 반복 매출 (Annual Recurring Revenue)">ARR</span></td><td style="text-align:right;">잔고 1,325억달러</td><td style="text-align:right;">ARR 64억달러</td><td style="text-align:right;">계약 ARR 40억달러</td></tr><tr><td>가동 용량</td><td style="text-align:right;">1.7GW+</td><td style="text-align:right;">⚠</td><td style="text-align:right;">0.3GW(26년 목표)</td></tr><tr><td>계약·파이프라인</td><td style="text-align:right;">계약 4.6GW+</td><td style="text-align:right;">⚠</td><td style="text-align:right;">개발 5GW+</td></tr><tr><td>2026 CAPEX</td><td style="text-align:right;">370억~390억달러</td><td style="text-align:right;">⚠</td><td style="text-align:right;">⚠</td></tr><tr><td>2027 계획</td><td style="text-align:right;">무담보 차입 중단</td><td style="text-align:right;">매출 125억·CAPEX 425억</td><td style="text-align:right;">0.8GW(누적)</td></tr><tr><td>출처</td><td style="text-align:right;"><small>(IBK, 11-16)</small></td><td style="text-align:right;"><small>(유진, 11-13)</small></td><td style="text-align:right;"><small>(미래에셋, 09-18)</small></td></tr></tbody></table></div>
+<p><small>코어위브 계약 용량 중 미국 외 1.3GW+, 가동 데이터센터 52곳. 네비우스 ARR엔 일회성 3.3억달러 포함 가능성(유진). 아이렌 26년 공급분 대부분 판매 완료</small></p>
+<ul>
+<li>코어위브 올해 신규 고객 절반 이상이 AI 업종 밖, 포춘500의 약 10%가 고객 → 수요가 모델사에서 기업으로 확장 <small>(IBK, 2026-11-16)</small></li>
+<li>2027년 공급분은 대부분 판매 완료, 2028년 물량은 완공에 가까워질수록 조건이 좋아져 판매를 늦추는 중 <small>(NH, 2026-11-11)</small></li>
+<li><span class="gl" tabindex="0" data-gl="가중치를 공개한 모델">오픈웨이트</span> 서빙(네비우스 Token Factory) 계약 QoQ 17배 → 오픈웨이트 확산의 수혜가 인프라 사업자로 감 <small>(유진, 2026-11-13)</small></li>
+<li>글로벌 AI <span class="gl" tabindex="0" data-gl="AI 연산 능력(GPU·전력 묶음)">컴퓨트</span> 수요 2030년 약 187GW vs 공급 129GW → 2030년까지 단가 상승 압력 <small>(미래에셋, 2026-09-18)</small></li>
+</ul>
+<h3 id="소버린-ai--정부가-직접-수요자">소버린 AI — 정부가 직접 수요자<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#소버린-ai--정부가-직접-수요자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>국가·권역</th><th>계획</th><th style="text-align:right;">규모</th><th>출처</th></tr></thead><tbody><tr><td>UAE</td><td>스타게이트 UAE</td><td style="text-align:right;">1GW → 최종 5GW</td><td><small>(현대차, 05-13)</small></td></tr><tr><td>사우디</td><td>HUMAIN</td><td style="text-align:right;">10년 6.6GW</td><td><small>(현대차, 05-13)</small></td></tr><tr><td>EU</td><td>InvestAI</td><td style="text-align:right;">2030년까지 2,000억유로</td><td><small>(현대차, 05-13)</small></td></tr><tr><td>EU</td><td>AI 기가팩토리</td><td style="text-align:right;">최대 7곳, 공공 €10bn</td><td><small>(한화, 08-31)</small></td></tr><tr><td>프랑스</td><td>국가 AI 투자</td><td style="text-align:right;">1,090억유로</td><td><small>(현대차, 05-13)</small></td></tr><tr><td>일본</td><td><span class="gl" tabindex="0" data-gl="국가 단위 자체 AI 인프라 (Artificial Intelligence)">소버린 AI</span> 패키지</td><td style="text-align:right;">5년 1조엔</td><td><small>(현대차, 05-13)</small></td></tr><tr><td>한국</td><td>정부 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 1·2차</td><td style="text-align:right;">약 1.3조 + 2조원</td><td><small>(한화, 08-31)</small></td></tr></tbody></table></div>
+<p><small>UAE 1GW 구축에만 300억달러+ 추정, 사우디는 3년 내 엔비디아 GPU 60만개+ 확보 계획. EU 기가팩토리는 시설당 첨단 AI 프로세서 10만개+, 민간 최소 €20bn 유도. 일본 별도로 2030년까지 AI·반도체 10조엔</small></p>
+<ul>
+<li>동기: 수출통제·관세 등 지정학 위험 + «AI 인프라를 못 끌어오면 부가가치가 해외로» 라는 경제안보 인식 <small>(현대차, 2026-05-13)</small></li>
+<li>소버린 = «전부 소유»가 아니라 «선택권·회복력» → 경쟁력 있는 층만 보유, 나머지는 동맹 <small>(현대차 FT, 2026-11-16)</small></li>
+<li>유럽형: 공공이 초기 수요·금융, 민간이 구축·운영 → 공공·민간 클라우드 경계가 흐려짐 <small>(한화, 2026-08-31)</small></li>
+<li>정부 주도 투자는 초기 단계 → 실제 집행액·캐파는 확인 필요 <small>(현대차, 2026-05-13)</small></li>
+</ul>
+<h3 id="국내--정부가-수요자공급자금융자">국내 — 정부가 수요자·공급자·금융자<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#국내--정부가-수요자공급자금융자" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>사업</th><th style="text-align:right;">규모</th><th>GPU</th><th style="text-align:right;">수량</th></tr></thead><tbody><tr><td>1차 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 확보(2025)</td><td style="text-align:right;">약 1.3조원</td><td>B200·H200</td><td style="text-align:right;">1만3,136개</td></tr><tr><td>2차 GPU 확보(2026)</td><td style="text-align:right;">약 2.08조원</td><td><span class="gl" tabindex="0" data-gl="엔비디아 차세대 플랫폼">Vera Rubin</span>·<span class="gl" tabindex="0" data-gl="엔비디아 Blackwell 상위 GPU">B300</span></td><td style="text-align:right;">9,704개</td></tr><tr><td>해남 국가 AICC</td><td style="text-align:right;">약 2.5조원</td><td>GPU+국산 <span class="gl" tabindex="0" data-gl="AI 전용 신경망 칩(국산 포함) (Neural Processing Unit)">NPU</span></td><td style="text-align:right;">1.5만장(2028)</td></tr><tr><td>데이터센터 정책금융</td><td style="text-align:right;">4,000억원(3%대)</td><td>—</td><td style="text-align:right;">총사업비 9,221억</td></tr></tbody></table></div>
+<p><small>자료: 한화(2026-08-31) p.8~9. 1차 수량은 사업자별 합(내 계산). 2차 9,704개 중 6,376개는 국가 AI·산학연, 3,328개는 선정 CSP 자체 활용. 해남은 2030년 5만개 목표, 민관 SPC 방식</small></p>
+<ul>
+<li>정부 물량이 초기 가동률 하방, 대기업 <span class="gl" tabindex="0" data-gl="그룹 계열사 물량">캡티브</span>가 기반, 일반기업 <span class="gl" tabindex="0" data-gl="GPU를 빌려주는 클라우드 (GPU as a Service)">GPUaaS</span>·해외가 상방 → 4층 수요 추정(2030E 7GW)은 <a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a> ②</li>
+<li>해외 후보: 글로벌 AI 랩(오픈AI·앤트로픽 MOU), 일본 기업(전력비·건설비 높음), 동남아 플랫폼, 글로벌 <span class="gl" tabindex="0" data-gl="자체 클라우드 인프라 제공 (Cloud Service Provider)">CSP</span> 임차 <small>(한화, 2026-08-31)</small></li>
+<li>공개된 해외-<span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> 협력 10건은 대부분 MOU·LOI·파트너십 단계 → 계약 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span> 확정 사례는 AWS-SK 울산 100MW 정도 <small>(한화, 2026-08-31)</small></li>
+<li>국내 CSP 임차만으로는 수백MW~<span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">GW</span> 계획을 못 채움 → <mark class="text-highlight">글로벌 고객의 장기 <span class="gl" tabindex="0" data-gl="완공 전 미리 맺는 임차">선임차</span> 첫 사례가 분수령</mark> <small>(유진 건설, 2026-11-16)</small></li>
+<li>공공 클라우드 노출이 큰 사업자가 정부 AI 정책의 1차 수혜(광주 국가 AI 데이터센터 사례) <small>(삼성, 2025-06-26)</small></li>
+</ul>
+<hr/>
+<h2 id="-기술-심화--밀도전력연결">③ 기술 심화 — 밀도·전력·연결<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-심화--밀도전력연결" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>신규 부지가 막히니 기존 부지에 더 많이 넣음 → 랙 전력이 480V 교류 한계(약 300kW)를 2027년에 넘음 → 800V 직류·액체냉각</li>
+<li>한 부지로 모자라면 여러 부지를 묶음 → 데이터센터 간 연결(<span class="gl" tabindex="0" data-gl="멀리 떨어진 DC끼리 묶기">스케일어크로스</span>) 수요</li>
+<li><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 밖 가속기(<span class="gl" tabindex="0" data-gl="특정 회사·용도 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span>) 확대 → 개방형 이더넷 기회, <span class="gl" tabindex="0" data-gl="랙 안 GPU끼리 묶기">스케일업</span> 수혜는 2028년부터</li>
+</ul>
+</div></blockquote>
+<h3 id="랙-전력-밀도">랙 전력 밀도<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#랙-전력-밀도" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="AI 랙당 전력 (kW)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 37.096719 272.152891  L 607.86 272.152891  L 607.86 44.825719  L 37.096719 44.825719  L 37.096719 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="96.329601" y="282.853594" transform="rotate(-0 96.329601 282.853594)">2023</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="186.789105" y="282.853594" transform="rotate(-0 186.789105 282.853594)">2024</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="277.248608" y="282.853594" transform="rotate(-0 277.248608 282.853594)">2025</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="367.708111" y="282.853594" transform="rotate(-0 367.708111 282.853594)">2026</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="458.167614" y="282.853594" transform="rotate(-0 458.167614 282.853594)">2027E</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="548.627117" y="282.853594" transform="rotate(-0 548.627117 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_7"> <path d="M 37.096719 272.152891  L 607.86 272.152891  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="275.56375" transform="rotate(-0 33.596719 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_9"> <path d="M 37.096719 236.069213  L 607.86 236.069213  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="239.480072" transform="rotate(-0 33.596719 239.480072)">200</text> </g> </g> <g id="ytick_3"> <g id="line2d_11"> <path d="M 37.096719 199.985534  L 607.86 199.985534  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="203.396394" transform="rotate(-0 33.596719 203.396394)">400</text> </g> </g> <g id="ytick_4"> <g id="line2d_13"> <path d="M 37.096719 163.901856  L 607.86 163.901856  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="167.312716" transform="rotate(-0 33.596719 167.312716)">600</text> </g> </g> <g id="ytick_5"> <g id="line2d_15"> <path d="M 37.096719 127.818178  L 607.86 127.818178  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="131.229038" transform="rotate(-0 33.596719 131.229038)">800</text> </g> </g> <g id="ytick_6"> <g id="line2d_17"> <path d="M 37.096719 91.7345  L 607.86 91.7345  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="95.14536" transform="rotate(-0 33.596719 95.14536)">1,000</text> </g> </g> <g id="ytick_7"> <g id="line2d_19"> <path d="M 37.096719 55.650822  L 607.86 55.650822  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="33.596719" y="59.061682" transform="rotate(-0 33.596719 59.061682)">1,200</text> </g> </g> </g> <g id="patch_3"> <path d="M 63.040504 272.152891  L 129.618699 272.152891  L 129.618699 263.131971  L 63.040504 263.131971  z " clip-path="url(#p1eba5cf36c)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 153.500007 272.152891  L 220.078202 272.152891  L 220.078202 250.502684  L 153.500007 250.502684  z " clip-path="url(#p1eba5cf36c)" style="fill:#2f74c0;"></path> </g> <g id="patch_5"> <path d="M 243.959511 272.152891  L 310.537705 272.152891  L 310.537705 246.894316  L 243.959511 246.894316  z " clip-path="url(#p1eba5cf36c)" style="fill:#2f74c0;"></path> </g> <g id="patch_6"> <path d="M 334.419014 272.152891  L 400.997208 272.152891  L 400.997208 228.852477  L 334.419014 228.852477  z " clip-path="url(#p1eba5cf36c)" style="fill:#2f74c0;"></path> </g> <g id="patch_7"> <path d="M 424.878517 272.152891  L 491.456711 272.152891  L 491.456711 163.901856  L 424.878517 163.901856  z " clip-path="url(#p1eba5cf36c)" style="fill:url(#hf3f955df5d);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_8"> <path d="M 515.33802 272.152891  L 581.916214 272.152891  L 581.916214 55.650822  L 515.33802 55.650822  z " clip-path="url(#p1eba5cf36c)" style="fill:url(#hf3f955df5d);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_21"> <path d="M 37.096719 272.152891  L 607.86 272.152891  " clip-path="url(#p1eba5cf36c)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_9"> <path d="M 37.096719 272.152891  L 37.096719 44.825719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_10"> <path d="M 37.096719 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="96.329601" y="260.131971" transform="rotate(-0 96.329601 260.131971)">50</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="186.789105" y="247.502684" transform="rotate(-0 186.789105 247.502684)">120</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="277.248608" y="243.894316" transform="rotate(-0 277.248608 243.894316)">140</text> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="367.708111" y="225.852477" transform="rotate(-0 367.708111 225.852477)">240</text> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="458.167614" y="160.901856" transform="rotate(-0 458.167614 160.901856)">600</text> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="548.627117" y="52.650822" transform="rotate(-0 548.627117 52.650822)">1,200</text> </g> <g id="text_20"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="37.096719" y="38.825719" transform="rotate(-0 37.096719 38.825719)">kW</text> </g> </g> <g id="text_21"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.741125" transform="rotate(-0 6.192 13.741125)">AI 랙당 전력 (kW)</text> </g> <g id="text_22"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="p1eba5cf36c"> <rect x="37.096719" y="44.825719" width="570.763281" height="227.327172"></rect> </clipPath> </defs> <defs> <pattern id="hf3f955df5d" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>이튼 전망. 480V 교류 급전 한계 약 300kW(보쉬). 자료: 미래에셋(2026-11-16) p.13</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시기</th><th style="text-align:right;">랙 전력</th><th>급전 구조</th><th>사례</th></tr></thead><tbody><tr><td>2026</td><td style="text-align:right;">240kW</td><td>교류 위주</td><td>MS Mt. Diablo</td></tr><tr><td>2026~27</td><td style="text-align:right;">600kW</td><td>660~800kW 사이드카</td><td>엔비디아 첫 800V 직류</td></tr><tr><td>2028경</td><td style="text-align:right;">1.2MW</td><td>1.5~2MW 파워센터</td><td>Open DC 800V 표준</td></tr><tr><td>2029경</td><td style="text-align:right;">—</td><td>4~5MW 파워블록</td><td>가속기 패키지 약 4kW</td></tr><tr><td>2030 이후</td><td style="text-align:right;">—</td><td>중압 직접변환</td><td>9.6MW SST 설계안</td></tr></tbody></table></div>
+<p><small>시기 = 보쉬 800V 로드맵, 랙 전력 = 이튼 전망, 실제 전환은 고객별로 다름. 자료: 미래에셋(2026-11-16) p.13</small></p>
+<ul>
+<li>800V 직류 전환 시 1GW당 약 30MW 손실 절감 → 같은 수전 용량으로 연산을 더 뽑음 <small>(미래에셋, 2026-11-16)</small></li>
+<li>일반 데이터센터 평균 랙은 아직 10kW 미만 → 기존 IDC를 AI용으로 바꾸려면 배전·냉각을 갈아엎어야 함 <small>(유안타, 2026-04-02)</small></li>
+<li>스위치도 전력 증가로 액체냉각 적용 → 장비당 매출 확대 <small>(미래에셋, 2026-11-16)</small></li>
+</ul>
+<h3 id="네트워크-3구간">네트워크 3구간<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#네트워크-3구간" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구간</th><th>연결 범위</th><th>대표 장비</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="랙 안 GPU끼리 묶기">스케일업</span></td><td>랙 내부 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span></td><td>NVLink 스위치·Tomahawk Ultra</td></tr><tr><td><span class="gl" tabindex="0" data-gl="DC 안 랙끼리 묶기">스케일아웃</span></td><td>랙과 랙</td><td>Spectrum-X·Tomahawk 6·Etherlink</td></tr><tr><td><span class="gl" tabindex="0" data-gl="멀리 떨어진 DC끼리 묶기">스케일어크로스</span></td><td>데이터센터 간(수십km+)</td><td>7800R4·ZR+ 광모듈</td></tr></tbody></table></div>
+<p><small>자료: 미래에셋(2026-11-16) p.14. 네트워크 지출 전망은 <a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a> ②</small></p>
+<ul>
+<li>2026년 7월 이후 최대 단일 사이트 증설이 추세에 못 미침 → 1GW 이상 부지는 2026년 말 1곳 → 2028년 말 10곳으로 «분산» <small>(미래에셋, 2026-11-16)</small></li>
+<li><span class="gl" tabindex="0" data-gl="모델을 만드는 연산">학습</span> 클러스터 연결 용량 6년 전 대비 14배(시에나) → 장거리 광·라우터 수요 <small>(미래에셋, 2026-11-16)</small></li>
+</ul>
+<h3 id="gpu-밖-가속기asic">GPU 밖 가속기(ASIC)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#gpu-밖-가속기asic" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>칩</th><th>개발사</th><th>현황(2026-11)</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="구글 자체 AI 칩 (Tensor Processing Unit)">TPU</span></td><td>구글</td><td>외부 고객 100곳+, 27년 출하 2배</td></tr><tr><td><span class="gl" tabindex="0" data-gl="아마존 자체 AI 칩">Trainium</span></td><td>아마존</td><td>1년 도입 AI칩 210만개+의 절반+</td></tr><tr><td><span class="gl" tabindex="0" data-gl="메타 자체 AI 칩 (Meta Training and Inference Accelerator)">MTIA</span></td><td>메타</td><td>28년까지 3세대 합산 3GW</td></tr><tr><td>Maia</td><td>MS</td><td>Maia 300 27년 배치</td></tr><tr><td>자체칩(브로드컴)</td><td>오픈AI</td><td>27년 1.3GW 배치 계획</td></tr></tbody></table></div>
+<p><small>앤트로픽 TPU 용량 26년 1GW → 27년 5GW 계획. 27년 ASIC 출하는 24년의 약 3배. 2027E 가속기 전력: 엔비디아 14.5GW, AMD 2.3GW, 전용링크 ASIC 6.8GW, 이더넷 ASIC 2.8GW(미래에셋 추정). 자료: 미래에셋(2026-11-16) p.18~20</small></p>
+<ul>
+<li>전용링크 <span class="gl" tabindex="0" data-gl="특정 회사·용도 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span>(구글·AWS)은 외부 스위치 기회가 없고, 이더넷 ASIC(메타·MS·오픈AI)이 개방형 네트워크의 기회 <small>(미래에셋, 2026-11-16)</small></li>
+<li>엔비디아 로드맵: 2027 <span class="gl" tabindex="0" data-gl="2027·2028 후속 세대">Rubin Ultra</span> → 2028 <span class="gl" tabindex="0" data-gl="2027·2028 후속 세대">Feynman</span>, <span class="gl" tabindex="0" data-gl="광부품을 칩 옆에 붙인 스위치 (Co-Packaged Optics)">CPO</span> 등 새 구조 양산 확대 <small>(유진, 2026-11-18)</small></li>
+</ul>
+<hr/>
+<h2 id="-캐파증설--전력이-속도를-정함">④ 캐파·증설 — 전력이 속도를 정함<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-캐파증설--전력이-속도를-정함" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>데이터센터 건설은 18~30개월, 계통 연결은 미국 중간값 5년(버지니아 7년) → <mark class="text-highlight">가장 긴 단계가 전체 일정을 결정</mark></li>
+<li>미국 규제는 «중단»보다 «비용 자부담(<span class="gl" tabindex="0" data-gl="전력비는 DC가 직접 부담">BYOP</span>)·지연·재배치», 영향은 2028년 이후 가동분부터</li>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span>는 통신·IT서비스·인터넷 3진영이 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span> 경쟁, 2027년이 첫 대형 가동 해</li>
+</ul>
+</div></blockquote>
+<h3 id="전력-수요-전망">전력 수요 전망<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#전력-수요-전망" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>전망</th><th style="text-align:right;">기준값</th><th style="text-align:right;">2030</th><th>출처</th></tr></thead><tbody><tr><td>IEA 글로벌 DC 전력</td><td style="text-align:right;">415TWh(2024)</td><td style="text-align:right;">약 945TWh</td><td><small>(유안타, 04-02)</small></td></tr><tr><td>IEA 글로벌 DC 전력</td><td style="text-align:right;">485TWh(2025)</td><td style="text-align:right;">950TWh</td><td><small>(하나, 11-10)</small></td></tr><tr><td>LBNL 미국 DC 전력</td><td style="text-align:right;">—</td><td style="text-align:right;">649TWh</td><td><small>(하나, 11-10)</small></td></tr><tr><td>JLL APAC DC 용량</td><td style="text-align:right;">32GW(2025)</td><td style="text-align:right;">57GW</td><td><small>(한화, 08-31)</small></td></tr><tr><td>계통 지연 위험(IEA)</td><td style="text-align:right;">—</td><td style="text-align:right;">계획 용량의 약 20%</td><td><small>(유진, 11-17)</small></td></tr></tbody></table></div>
+<p><small>LBNL 649TWh = 미국 전체 전력의 11.8%. JLL APAC은 연 12% 성장, 2030년 AI 비중 50% 가정 시 AI용 약 28.5GW(한화 계산)</small></p>
+<h3 id="미국--개발-단계와-규제">미국 — 개발 단계와 규제<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#미국--개발-단계와-규제" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>단계</th><th style="text-align:right;">소요 기간</th></tr></thead><tbody><tr><td>시장·부지 선정</td><td style="text-align:right;">1~16주</td></tr><tr><td>토지 권리 확보</td><td style="text-align:right;">3~12개월</td></tr><tr><td>전력회사 연계</td><td style="text-align:right;">3~24개월+</td></tr><tr><td>고객 검증·임대</td><td style="text-align:right;">6~18개월</td></tr><tr><td>건설자금 조달</td><td style="text-align:right;">12~24개월</td></tr><tr><td>EPC 계약·FID</td><td style="text-align:right;">18~30개월+</td></tr></tbody></table></div>
+<p><small>LOI → FID 30개월+. 100MW 이상 연계 = 연계신청 → 계통영향연구 → 비용분담계약. 자료: 하나(2026-11-17) p.11</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>권역</th><th>최소 계약</th><th>비용 회수</th><th>시행 요청</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="미국 동부 최대 전력시장 (Pennsylvania-New Jersey-Maryland Interconnection)">PJM</span></td><td>10년+</td><td>firm 요금 80~100%</td><td>2027-03-16(일부)</td></tr><tr><td>MISO</td><td>20년</td><td>망 보강비 20년치</td><td>2027-02-14</td></tr><tr><td>NYISO</td><td>15년</td><td>보강·접속비 100%</td><td>2027-02-01</td></tr><tr><td>CAISO</td><td>송전사별</td><td>송전사별</td><td>2027-02-16</td></tr><tr><td><span class="gl" tabindex="0" data-gl="미국 권역 전력망 운영기관 (Independent System Operator · Regional Transmission Organization)">ISO</span>-NE</td><td>계약별</td><td>신청비 5만달러</td><td>연구 2027-06</td></tr></tbody></table></div>
+<p><small>공통: 대형부하 = 50MW 이상, 보강 전 감발조건부 임시 접속, 보강비 공개. 감발 기준 MISO 100·NYISO 200·ISO-NE 250달러/MWh. FERC 최종 결정 2027 상반기 추정. 자료: DS(2026-11-19)</small></p>
+<ul>
+<li>연방 <span class="gl" tabindex="0" data-gl="미 초당적 인허가 개혁법 (Bipartisan American Affordability and Jobs Act)">BAAJA</span>: 송전 비용을 데이터센터가 전액 부담·타 고객 전가 금지, <span class="gl" tabindex="0" data-gl="미국 연방에너지규제위원회 (Federal Energy Regulatory Commission)">FERC</span> 270일 내 정책 개정 → 상원 토론종결 70:27, 하원이 관문 <small>(DS, 2026-11-19)</small></li>
+<li>노스캐롤라이나: 100MW 초과 데이터센터에 15년+ 계약·계약수요 75% 최소요금 승인 → 주별 사례가 연방 표준으로 <small>(DS, 2026-11-19)</small></li>
+<li>텍사스 = 계획 기준 미국 DC의 약 27%, <span class="gl" tabindex="0" data-gl="텍사스 전력망 운영기관 (Electric Reliability Council of Texas)">ERCOT</span> 연결 신청 474GW 중 90%가 데이터센터 → 신임 주지사 <span class="gl" tabindex="0" data-gl="신규 DC 승인 일시 중단">모라토리엄</span> 예고 <small>(하나, 2026-11-17)</small></li>
+<li>주지사 당선인 34명 중 32명이 규제·제한 지지 → 전면 철회보다 착공 지연·비용 상승·재배치 <small>(하나, 2026-11-10)</small></li>
+<li>규제 반사이익: 보유 자산 가치 상승, 고압 송전 기자재·자가발전(가스터빈·연료전지) 수요 <small>(하나, 2026-11-17)</small></li>
+</ul>
+<h3 id="발표가-공급은-아님--지연취소-사례">발표가 공급은 아님 — 지연·취소 사례<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#발표가-공급은-아님--지연취소-사례" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>프로젝트</th><th>시점</th><th>원인</th></tr></thead><tbody><tr><td>영국 Nscale×MS</td><td>2026-10 철회</td><td>계통 접속 2030년대로</td></tr><tr><td>호주 NEXTDC M3</td><td>2026-10 이연</td><td>66kV 망 공사 차질</td></tr><tr><td>미국 일리노이 1GW</td><td>2026-08 철회</td><td>전력원 불확실</td></tr><tr><td>미국 Project Jupiter</td><td>2026-11 이연</td><td>현장발전 대기 인허가</td></tr><tr><td>미국 Vineland(MS향)</td><td>2026-11 지연</td><td>임시 발전 조기 종료</td></tr><tr><td><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> 구미 300MW 통합</td><td>무산</td><td>고객 요구 일정 미충족</td></tr><tr><td>국내 용인 고매동</td><td>2026-11 소송</td><td>인허가 재심의·전력계약 해지</td></tr></tbody></table></div>
+<p><small>자료: 유진(2026-11-17) p.12, Vineland는 유진(2026-11-13). 구미 통합개발은 앤트로픽 부지 요구 미대응으로 불발, 별도 200MW·100MW 사업은 진행</small></p>
+<ul>
+<li>공급이 늦어질수록 이미 가동 중인 센터·전력 확보 부지의 희소가치 상승 <small>(유진, 2026-11-17)</small></li>
+<li>154kV 송변전 신설을 동반하면 가동까지 약 7~8년 → 수도권 제약에 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">GW</span>급은 영남·충청·강원으로 이동 <small>(유진, 2026-11-17)</small></li>
+</ul>
+<h3 id="국내-증설--3진영-캐파">국내 증설 — 3진영 캐파<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#국내-증설--3진영-캐파" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>사업자</th><th style="text-align:right;">현재</th><th>목표</th><th>출처</th></tr></thead><tbody><tr><td>SKT</td><td style="text-align:right;">137MW</td><td>장기 5,137MW</td><td><small>(유진, 11-17)</small></td></tr><tr><td>KT</td><td style="text-align:right;">152MW</td><td>2031년까지 +1GW</td><td><small>(iM, 11-11)</small></td></tr><tr><td>LGU+</td><td style="text-align:right;">165MW</td><td>장기 400MW</td><td><small>(유진, 11-17)</small></td></tr><tr><td>삼성SDS</td><td style="text-align:right;">114MW</td><td>2031년 800MW+</td><td><small>(교보, 10-12)</small></td></tr><tr><td>NAVER</td><td style="text-align:right;">—</td><td>28년 200MW → 1GW+</td><td><small>(한화, 08-31)</small></td></tr><tr><td>NHN</td><td style="text-align:right;">38MW</td><td>27년 하반기 68MW</td><td><small>(한화, 08-31)</small></td></tr></tbody></table></div>
+<p><small>통신3사 목표는 전방 상황에 따라 변동 가능. KT 파이프라인 20개소 911MW, 2026년 200MW 투자 결정. LGU+ 파주 1~4동 200MW. SDS 800MW 중 DBO 500MW+. NHN 38MW 중 매출 발생은 22MW</small></p>
+<div class="table-container"><table style="border-collapse:collapse;width:100%;table-layout:fixed;"><colgroup><col style="width:92px;"/><col style="width:150px;"/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">구분</th><th rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;">사업</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2026</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2027</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2028</th><th colspan="4" style="padding:4px 6px;font-size:15px;white-space:nowrap;border-left:3px solid #94a3b8;text-align:center;">2029</th></tr><tr><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;background:#f59e0b;color:#111;">지금 4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;border-left:3px solid #94a3b8;opacity:.7;">1Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">2Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">3Q</th><th style="padding:4px 6px;font-size:12px;white-space:nowrap;text-align:center;opacity:.7;">4Q</th></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">국가·공공</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">해남 국가 AICC</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="착공(8월)">◆ 착공(8월)</td><td colspan="5" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="구축">구축</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="1단계 40MW 개소 목표">1단계 40MW 개소 목표</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="GPU 1.5만 → 5만(2030)"><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 1.5만 → 5만(2030)</td></tr><tr><td rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">IT서비스</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">동탄 AI DC 서관</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="20MW 개소">◆ 20MW 개소</td><td colspan="3" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="정부·계열사·조기서비스">정부·계열사·조기서비스</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">구미 AIDC</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="10" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="착공 → 60MW 준공(28년 말)">착공 → 60MW 준공(28년 말)</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="가동">◆ 가동</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="2" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">인터넷</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">NAVER AI 팩토리</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="55MW 가동(1H27)">55MW 가동(1H27)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:2px solid #64748b;background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="100MW">◆ 100MW</td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="200MW">200MW</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">NHN 증설</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="+30MW(38→68MW)">+30MW(38→68MW)</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="3" style="padding:4px 6px;font-size:12px;white-space:nowrap;font-weight:700;border-top:2px solid #64748b;vertical-align:middle;">통신</td><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;vertical-align:middle;">KT 부천</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:2px solid #64748b;"></td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="1센터">1센터</td><td colspan="2" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="2센터">2센터</td><td colspan="8" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:2px solid #64748b;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="6개 센터 순차 개소(~29년)">6개 센터 순차 개소(~29년)</td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">SKT 울산</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#5b21b6;color:#fff;font-weight:600;border-radius:4px;line-height:1.25;" title="AWS 공동 구축 100MW">AWS 공동 구축 100MW</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="가동">◆ 가동</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td></tr><tr><td rowspan="1" style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);vertical-align:middle;">LGU+ 파주</td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);border-left:3px solid #94a3b8;"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td style="padding:4px 6px;font-size:12px;white-space:nowrap;border-top:1px solid rgba(148,163,184,.25);"></td><td colspan="4" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-radius:4px;line-height:1.25;" title="1동 구축">1동 구축</td><td colspan="1" style="padding:4px 6px;font-size:11px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:#a78bfa;color:#1e1b4b;font-weight:700;border-radius:4px;line-height:1.25;" title="1동">◆ 1동</td><td colspan="8" style="padding:4px 6px;font-size:12px;white-space:normal;border-top:1px solid rgba(148,163,184,.25);background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;border-left:3px solid #94a3b8;border-radius:4px;line-height:1.25;" title="1~4동 200MW">1~4동 200MW</td></tr></tbody></table></div>
+<p style="font-size:12px;margin-top:6px;"><span style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 8px;border-radius:4px;">진행·확정</span>   <span style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 8px;border-radius:4px;">◆ 가동 개시·핵심 마일스톤</span>   <span style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 8px;border-radius:4px;">계획 구간</span>   | 굵은 세로선 = 연도 경계</p>
+<p><small>국내 AI DC 주요 일정. 자료: 한화(08-31)·하나(07-30)·대신(11-10)·유진(11-17)·iM(11-11). 분기 미공개 일정은 연간 구간으로 표시</small></p>
+<ul>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> 데이터센터 2030년까지 4GW 증설 가능, 공사 수주 40조원 <small>(하나 건설, 2026-11-16)</small></li>
+<li>수전 100MW당 공사 수주 약 1조원 가정 → 건설사 매출 대비 3~13% 규모 <small>(유진 건설, 2026-11-16)</small></li>
+<li>초기엔 임차로 속도를 내고 수요 확인 뒤 자체 구축(NAVER 200MW까지 외부 상면 활용) → 자본 부담을 외부 금융·지분으로 분산 <small>(한화, 2026-08-31)</small></li>
+</ul>
+<hr/>
+<h2 id="-가격수급--임대가단가부품">⑤ 가격·수급 — 임대가·단가·부품<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격수급--임대가단가부품" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 임대가 상승 → 구형(Ampere·Hopper) <span class="gl" tabindex="0" data-gl="만료 GPU 계약 갱신 가격">재계약 단가</span> 30~50% 인상, 차입 상환 끝난 GPU가 «무차입 현금원»으로</li>
+<li><span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span>당 연매출이 오르고 <span class="gl" tabindex="0" data-gl="고객이 미리 내주는 대금">선급금</span>이 CAPEX를 메움 → <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 투자 회수 1~2년</li>
+<li>부품(메모리·<span class="gl" tabindex="0" data-gl="AI 서버용 기판·콘덴서 (Flip Chip Ball Grid Array · Multi-Layer Ceramic Capacitor)">MLCC</span>·<span class="gl" tabindex="0" data-gl="AI 서버용 기판·콘덴서 (Flip Chip Ball Grid Array · Multi-Layer Ceramic Capacitor)">FC-BGA</span>) 부족 → GPU ASP 2027년 초 +15% 이상</li>
+</ul>
+</div></blockquote>
+<h3 id="mw당-연매출과-회수기간">MW당 연매출과 회수기간<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#mw당-연매출과-회수기간" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>사업자</th><th>계약</th><th style="text-align:right;">MW당 연매출</th><th style="text-align:right;">회수기간</th><th>출처</th></tr></thead><tbody><tr><td>코어위브</td><td>장기(4~5년)</td><td style="text-align:right;">2,000만~2,500만달러</td><td style="text-align:right;">1~2년</td><td><small>(NH, 11-11)</small></td></tr><tr><td>코어위브</td><td>단기</td><td style="text-align:right;">4,000만달러+</td><td style="text-align:right;">6~18개월</td><td><small>(NH, 11-11)</small></td></tr><tr><td>네비우스</td><td>혼합</td><td style="text-align:right;">2,000만 → 2,500만달러+</td><td style="text-align:right;">1년 7개월</td><td><small>(유진, 11-13)</small></td></tr><tr><td>아이렌</td><td>3년</td><td style="text-align:right;">2,000만달러+</td><td style="text-align:right;">약 2년</td><td><small>(미래에셋, 09-18)</small></td></tr></tbody></table></div>
+<p><small>네비우스 회수기간은 선급금 제외, 전분기 대비 3개월 단축. 아이렌 협상 중 계약은 MW당 2,500만달러 수준</small></p>
+<ul>
+<li><span class="gl" tabindex="0" data-gl="고객이 미리 내주는 대금">선급금</span>이 투자비를 메움: 네비우스 3Q 신규 계약 선급금이 CAPEX의 100%+, 아이렌은 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> CAPEX의 45~55% <small>(유진, 2026-11-13; 미래에셋, 2026-09-18)</small></li>
+<li>코어위브 2027년 13만대·2028년 17만대 초기 계약 만료 → 재계약 추가 매출 2027년 약 40억, 2028년 누적 약 100억달러 <small>(NH, 2026-11-11)</small></li>
+<li>계약 체결 시점에 장비도 같이 발주해 구매가를 고정 → 장비가 상승 위험을 줄임 <small>(NH, 2026-11-11)</small></li>
+</ul>
+<h3 id="gpu-임대가">GPU 임대가<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#gpu-임대가" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">변화</th><th>기간</th><th>출처</th></tr></thead><tbody><tr><td>H100 임대가</td><td style="text-align:right;">+54.5%</td><td>최근 1년</td><td><small>(미래에셋, 11-16)</small></td></tr><tr><td>H100 렌탈가</td><td style="text-align:right;">+41%</td><td>연초 대비</td><td><small>(유진, 11-18)</small></td></tr><tr><td>B200 렌탈가</td><td style="text-align:right;">+56%</td><td>연초 대비</td><td><small>(유진, 11-18)</small></td></tr><tr><td>구형 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 서비스가</td><td style="text-align:right;">+30~50%</td><td>전분기 대비</td><td><small>(IBK, 11-16)</small></td></tr></tbody></table></div>
+<p><small>미래에셋은 Silicon Data 네오클라우드 임대가격 지수 기준. 신규 공급이 막히면 기존 용량 가격이 오름 → 규제가 임대가를 받침(미래에셋, 2026-11-16)</small></p>
+<h3 id="국내-gpuaas-손익-구조--30mw-증설-사례-추정">국내 GPUaaS 손익 구조 — 30MW 증설 사례 추정<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#국내-gpuaas-손익-구조--30mw-증설-사례-추정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th style="text-align:right;">2029E</th></tr></thead><tbody><tr><td>가동률(정부형)</td><td style="text-align:right;">70%</td><td style="text-align:right;">92%</td><td style="text-align:right;">92%</td></tr><tr><td>가동률(상업형)</td><td style="text-align:right;">30%</td><td style="text-align:right;">50%</td><td style="text-align:right;">60%</td></tr><tr><td>매출</td><td style="text-align:right;">1,083억원</td><td style="text-align:right;">3,246억원</td><td style="text-align:right;">3,625억원</td></tr><tr><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 감가상각</td><td style="text-align:right;">587억원</td><td style="text-align:right;">1,175억원</td><td style="text-align:right;">1,175억원</td></tr><tr><td>영업이익률</td><td style="text-align:right;">−2%</td><td style="text-align:right;">23%</td><td style="text-align:right;">30%</td></tr></tbody></table></div>
+<p><small>한화(2026-08-31) p.22 추정(NHN 증설분 사례). GPU 1만대(정부 40%·상업 60%), 시간당 단가 정부형 4,200원·상업형 7,200원, GPU 4년 정액상각, 임차료 20만원/kW/월, 전력 150원/kWh·부하율 80%</small></p>
+<ul>
+<li>첫해엔 감가·임차료·전력비가 가동과 동시에 나와 적자 → 2년차 상업 가동률이 이익을 결정 <small>(한화, 2026-08-31)</small></li>
+<li>정부형은 단가가 낮지만 가동률 안정, 상업형은 단가가 높지만 가동률 불확실</li>
+</ul>
+<h3 id="데이터센터-임대료">데이터센터 임대료<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#데이터센터-임대료" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">임대료(달러/kW·월)</th></tr></thead><tbody><tr><td>싱가포르</td><td style="text-align:right;">310~470</td></tr><tr><td>도쿄</td><td style="text-align:right;">190~355</td></tr><tr><td>시드니</td><td style="text-align:right;">140~215</td></tr><tr><td>한국 수도권</td><td style="text-align:right;">179</td></tr><tr><td>조호르</td><td style="text-align:right;">80~120</td></tr></tbody></table></div>
+<p><small>자료: CBRE·Kaohoon, 유진(2026-11-17) p.23. 수도권 코로케이션 2.5억원/MW/월(2025, CBRE·NH 11-16) ≈ 약 180달러/kW·월(원/달러 1,400 가정, 내 계산)</small></p>
+<ul>
+<li>한국은 동남아보다 건설원가가 높아 대규모 <span class="gl" tabindex="0" data-gl="모델을 만드는 연산">학습</span> 수요에선 조호르와 경쟁이 버거움 → 지방 이전엔 임대료·전력비 확정 조건 필요 <small>(유진, 2026-11-17)</small></li>
+<li>북미 <span class="gl" tabindex="0" data-gl="비어 있는 DC 용량 비율">공실률</span> 3.7%(2023) → 1.9%(2024) → 1.4%(2025), 공급 부족이 임대료 상승으로 <small>(유진, 2026-11-17)</small></li>
+<li>지방 개발 사례(군산 60MW, 총사업비 8,700억원): 매각가 1.3조원 가정 시 IRR 약 20% → 개발 자금은 계속 붙는 구조 <small>(NH, 2026-11-16)</small></li>
+</ul>
+<h3 id="부품-부족과-칩-가격">부품 부족과 칩 가격<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#부품-부족과-칩-가격" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>품목</th><th>상황</th><th>출처</th></tr></thead><tbody><tr><td>메모리</td><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span>사 공급 약정 QoQ 2.3배</td><td><small>(IBK, 08-27)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="AI 서버용 기판·콘덴서 (Flip Chip Ball Grid Array · Multi-Layer Ceramic Capacitor)">MLCC</span></td><td>메모리 다음 부족, 26년 2회 인상</td><td><small>(대신, 10-26)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="AI 서버용 기판·콘덴서 (Flip Chip Ball Grid Array · Multi-Layer Ceramic Capacitor)">FC-BGA</span></td><td>대면적화 → 수율 부담·부족</td><td><small>(대신, 10-26)</small></td></tr><tr><td>GPU ASP</td><td>2027년 초 출하분 +15%↑</td><td><small>(유진, 11-18)</small></td></tr><tr><td>GPU 마진</td><td><span class="gl" tabindex="0" data-gl="매출 대비 원가 뺀 이익 (Gross Profit Margin)">GPM</span> 4Q 71.5% → 72.5% 회복</td><td><small>(유진, 11-18)</small></td></tr></tbody></table></div>
+<ul>
+<li>부품값 상승이 <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 가격에 전가 → 같은 CAPEX로 들이는 연산량은 줄어듦</li>
+<li>자금조달 금리는 계약의 질이 결정(우량 계약 담보 SOFR+2.25% vs 단기 SOFR+5.5%) → 세부는 <a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a> ⑤</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>차입 거래</th><th>담보·보증</th><th style="text-align:right;">금리</th></tr></thead><tbody><tr><td>앤트로픽 <span class="gl" tabindex="0" data-gl="구글 자체 AI 칩 (Tensor Processing Unit)">TPU</span> <span class="gl" tabindex="0" data-gl="장비 구매용으로 따로 세운 회사 (Special Purpose Vehicle)">SPV</span> 선순위</td><td>브로드컴 보증</td><td style="text-align:right;">5.75%</td></tr><tr><td>앤트로픽 TPU SPV 후순위</td><td>보증 없음</td><td style="text-align:right;">8.5%</td></tr><tr><td>메타 하이퍼리온</td><td>잔존가치 보증</td><td style="text-align:right;">6.6%</td></tr><tr><td>메타 엘패소</td><td>잔존가치 보증</td><td style="text-align:right;">약 7.5%</td></tr><tr><td>크루소</td><td>AMD 임차인 보증</td><td style="text-align:right;">약 6.0%</td></tr></tbody></table></div>
+<p><small>네오클라우드 무담보채는 약 16%(그래프 값). 코어위브 3Q 평균 조달금리 7.9%(−250bp YoY). 자료: 미래에셋(2026-11-16) p.10, NH(2026-11-11)</small></p>
+<hr/>
+<h2 id="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>공통 시각(3곳 이상): <span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> 임대가 상승(미래에셋·유진·NH), 계통 연결이 최대 병목(하나·유진·DS), 2027 공급분은 이미 판매됨(NH·미래에셋·IBK)</li>
+<li>갈리는 곳: 미국 규제 충격 크기, <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 신용·실행력, <span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> AI DC의 해외 수요 유치 가능성</li>
+</ul>
+</div></blockquote>
+<h3 id="엇갈림">엇갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엇갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스 A</th><th>하우스 B</th></tr></thead><tbody><tr><td>미국 규제 영향</td><td>미래에셋: 신규 허가 집중, 고밀도화 우회</td><td>하나: 28년 이후 가동분 지연↑</td></tr><tr><td>〃 규모</td><td>하나: 2030 감소 약 3GW(Modo)</td><td>현대차: 28년 가동 37.5GW 노출</td></tr><tr><td><span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span></td><td>NH: 재무 개선, 우려 일축</td><td>유진: 실행력·지원 축소 위험</td></tr><tr><td><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> AI DC 수요</td><td>한화: 해외 4.5GW가 상방</td><td>유진 건설: 최종 수요처 불확실</td></tr><tr><td>한국 입지 경쟁력</td><td>한화: 반도체·산업 생태계</td><td>유진 통신: 원가↑, 동남아와 경쟁</td></tr><tr><td>IEA 전력 기준값</td><td>유안타: 415TWh(2024)</td><td>하나: 485TWh(2025)</td></tr></tbody></table></div>
+<p><small>날짜: 미래에셋 11-16, 하나 11-17·11-10, 현대차 11-16(<a href="../it/02_it_수요와전방" class="internal internal-link alias" data-slug="it/02_it_수요와전방">02_IT_수요와전방</a> ④), NH 11-11, 유진 11-13·11-16·11-17, 한화 08-31, 유안타 04-02</small></p>
+<ul>
+<li><mark class="text-highlight">«수요가 있느냐»는 쟁점이 아님</mark> — 갈리는 건 «언제 전력이 붙느냐»와 «누가 돈을 대느냐»</li>
+<li><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span>는 정부·<span class="gl" tabindex="0" data-gl="그룹 계열사 물량">캡티브</span>로 하방은 공통 인정, 해외 <span class="gl" tabindex="0" data-gl="첫 대형 장기 임차 고객">앵커 테넌트</span> 유무가 한화(낙관)와 유진(관망)을 가름</li>
+</ul>
+<h3 id="6개월-사이-바뀐-것">6개월 사이 바뀐 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#6개월-사이-바뀐-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>하우스</th><th>무엇에서</th><th>무엇으로</th></tr></thead><tbody><tr><td>2026-07-30</td><td>하나</td><td><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> IT서비스 DC 114MW</td><td>2031년 800MW+ 로드맵</td></tr><tr><td>2026-08-27</td><td>IBK</td><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span>사 FY28 성장 +70%</td><td>유진 11-18: +75%로 상향</td></tr><tr><td>2026-11-11</td><td>NH</td><td>코어위브 잔고 1,042억(2Q)</td><td>1,330억달러(3Q)</td></tr><tr><td>2026-11-13</td><td>유진</td><td>네비우스 <span class="gl" tabindex="0" data-gl="연 환산 반복 매출 (Annual Recurring Revenue)">ARR</span> 70억 26년 말</td><td>2027-02로 이연</td></tr><tr><td>2026-11-16</td><td>IBK</td><td>코어위브 CAPEX 350~390억</td><td>370~390억달러</td></tr><tr><td>2026-11-17</td><td>유진</td><td>구미 300MW 통합개발</td><td>앤트로픽 계약 불발·무산</td></tr><tr><td>2026-11-18</td><td>유진</td><td><span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 전방위 지원</td><td>엔비디아 선별 지원 예고</td></tr></tbody></table></div>
+<ul>
+<li>엔비디아 CEO 사임(CFO 임시 CEO) → <span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 지원 전략 변화 우려, 회사는 상위 업체 중심 «선별 지원» 입장 <small>(유진, 2026-11-18)</small></li>
+<li>자세한 이력은 <a href="../it/07_it_하우스시각_변경이력" class="internal internal-link alias" data-slug="it/07_it_하우스시각_변경이력">07_IT_하우스시각_변경이력</a></li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>11월 말</td><td><span class="gl" tabindex="0" data-gl="미 초당적 인허가 개혁법 (Bipartisan American Affordability and Jobs Act)">BAAJA</span> 상원 최종 표결</td><td>통과 → 하원 상정</td><td>표결 연기</td></tr><tr><td>12-16</td><td><span class="gl" tabindex="0" data-gl="미국 연방에너지규제위원회 (Federal Energy Regulatory Commission)">FERC</span> <span class="gl" tabindex="0" data-gl="50MW 이상 전력 수요처">대형부하</span> 반론 기한</td><td>쟁점 축소</td><td>비용회수 다툼 확대</td></tr><tr><td>2027-01</td><td>텍사스 신임 주지사 취임</td><td>조건부 승인</td><td><span class="gl" tabindex="0" data-gl="신규 DC 승인 일시 중단">모라토리엄</span> 입법</td></tr><tr><td>2027 상반기</td><td>FERC 접속규칙 결정</td><td>승인·시행</td><td>재제출 요구</td></tr><tr><td>1H27</td><td><span class="gl" tabindex="0" data-gl="따냈지만 남은 공사·운영">국내</span> 첫 대형 AI 팩토리 가동</td><td><span class="gl" tabindex="0" data-gl="첫 대형 장기 임차 고객">앵커 테넌트</span> 공개</td><td>가동 지연</td></tr><tr><td>2027 중</td><td>국내 글로벌 <span class="gl" tabindex="0" data-gl="완공 전 미리 맺는 임차">선임차</span> 계약</td><td>수백<span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">MW</span> 장기계약</td><td>MOU에서 정체</td></tr><tr><td>2027 초</td><td><span class="gl" tabindex="0" data-gl="병렬 연산 칩, AI 기본 장비 (Graphics Processing Unit)">GPU</span> <span class="gl" tabindex="0" data-gl="평균 판매단가 올림 (Average Selling Price)">ASP 인상</span> 적용</td><td>발주 유지</td><td>발주 이연</td></tr><tr><td>2027~28</td><td>구형 GPU 재계약</td><td>단가 유지·상승</td><td>임대가 하락</td></tr><tr><td>매 분기</td><td><span class="gl" tabindex="0" data-gl="GPU 임대 전문 신생 클라우드">네오클라우드</span> 잔고·가동 <span class="gl" tabindex="0" data-gl="DC 규모 단위(전력 용량)">GW</span></td><td>잔고·GW 동반 증가</td><td>지연·가이던스 하향</td></tr><tr><td>수시</td><td>GPU 임대가 지수</td><td>상승 유지</td><td>하락 전환</td></tr></tbody></table></div>
+<ul>
+<li>일정 전체는 <a href="../it/08_it_트래킹캘린더" class="internal internal-link alias" data-slug="it/08_it_트래킹캘린더">08_IT_트래킹캘린더</a></li>
+</ul>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<p><small>- 미래에셋증권 장다현, 2027 전망 글로벌 AI 인프라: 우회는 있어도 후퇴는 없다 (2026-11-16) — p.5~20</small><br/>
+<small>- 미래에셋증권 임희석, 아이렌 AI Cloud, 성장의 중심으로 (2026-09-18) — p.1~2</small><br/>
+<small>- 한화투자증권, 누가 이 GPU를 다 쓸까: 국내 AI DC의 수요와 수익화 전략 (2026-08-31) — p.3~24</small><br/>
+<small>- 유진투자증권 이찬영, 통신서비스·통신장비 2027년 연간전망 새 판 깔자 (2026-11-17) — p.10~25</small><br/>
+<small>- 유진투자증권 류태환, 건설 Weekly 데이터센터 모멘텀 확대의 조건 (2026-11-16) — p.1</small><br/>
+<small>- 유진투자증권 박재환, Nebius Group 문제는 수요가 아닌 실행력 (2026-11-13) — p.1~4</small><br/>
+<small>- 유진투자증권 박재환, Nvidia 충분히 반영된 우려 (2026-11-18) — p.1~3</small><br/>
+<small>- DS투자증권 허준서, 가장 강력한 데이터센터 비용분담 체계 구축 가시화 (2026-11-19) — p.1~6</small><br/>
+<small>- 하나증권 김시현, 2027년 글로벌 산업재 전망 풍선 효과: 데이터센터 규제 (2026-11-17) — p.4~12</small><br/>
+<small>- 하나증권 김두언, DIN 데이터센터 규제와 앤트로픽 로드쇼 이후의 투자 기회 (2026-11-10) — p.1~2</small><br/>
+<small>- 하나증권, 건설 Weekly 27년 데이터센터와 공공주택의 해 (2026-11-16) — p.1</small><br/>
+<small>- 하나증권, 삼성에스디에스 데이터센터 로드맵 공개 (2026-07-30) — p.1</small><br/>
+<small>- IBK투자증권 이승훈, AI Money Map 06 코어위브 3Q26 (2026-11-16) — p.1~3</small><br/>
+<small>- IBK투자증권 김운호, NVIDIA 27년 2분기 실적 발표 (2026-08-27) — p.1~2</small><br/>
+<small>- NH투자증권 고민성, 코어위브 시장의 우려를 일축 (2026-11-11) — p.1~3</small><br/>
+<small>- NH투자증권 이은상, 2027년 전망 건설·리츠 (2026-11-16) — 데이터센터 장</small><br/>
+<small>- iM증권(파일명 하이투자증권), KT 본업 정상화와 ktCloud 성장을 기대 (2026-11-11) — p.1</small><br/>
+<small>- 대신증권 정해창, 삼성에스디에스 NDR 후기 (2026-11-10) — p.1, 5~8</small><br/>
+<small>- 대신증권, 전기전자 양극화 확대: AI 부품만 성장, 공급부족 (2026-10-26) — p.1~2</small><br/>
+<small>- 교보증권 김동우, 삼성에스디에스 헬릭스 투자를 통한 중장기 추가 업사이드 (2026-10-12) — p.1~2</small><br/>
+<small>- 유안타증권, 지금은 에너지, 결국은 전력 효율화 전쟁 (2026-04-02) — PUE·랙 밀도 장</small><br/>
+<small>- 현대차증권, 반도체 장비 타오르는 시장에 솟구치는 투자 (2026-05-13) — Sovereign AI 장</small><br/>
+<small>- 현대차증권 장문수 외, FT Future of AI 2026 견문록 (2026-11-16) — D218 소버린 AI 패널</small><br/>
+<small>- 삼성증권, Enterprise value of NHN Cloud &amp; NHN KCP rising (2025-06-26) — p.1</small></p>
+<p><small>참조 리포트 수 24 = 원문 파일 기준</small></p>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>국내 데이터센터 총 용량·임대료 시계열(CBRE·JLL 국내판) 원천 확보 여부 ⚠</li>
+<li>국내 퍼블릭 클라우드 시장 규모(원천 0건) ⚠</li>
+<li>삼성증권 대체투자 Weekly(데이터센터, 11-09·11-16) 스캔본 판독 ⚠</li>
+<li>네비우스·아이렌 가동 용량·CAPEX 빈칸(⚠) 채우기</li>
+<li>IEA 데이터센터 전력 기준값 415TWh(2024) vs 485TWh(2025) 차이 원인</li>
+<li>국내 첫 글로벌 앵커 테넌트 계약(오픈AI·앤트로픽·AWS) 체결 여부와 MW·단가</li>
+<li>BAAJA 하원 처리·FERC 결정 결과 → ④ 표 갱신</li>
+<li>코어위브 2027 재계약 실제 단가(현재가 가정 40억달러 검증)</li>
+</ul>
+<blockquote>
+<p>한 줄: 데이터센터는 «짓겠다»가 아니라 «언제 전력이 붙느냐»의 산업 — GPU 임대가가 오르는 한 기존 자산이 가장 비싸고, 한국의 상방은 해외 고객 첫 계약에 달림</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-3" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#it-클라우드와-데이터센터--gpu는-모자라고-증설-속도는-전력인허가가-정함" data-for="it-클라우드와-데이터센터--gpu는-모자라고-증설-속도는-전력인허가가-정함">IT 클라우드와 데이터센터 — GPU는 모자라고, 증설 속도는 전력·인허가가 정함</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-기초--ai-데이터센터의-구조와-돈-버는-방식" data-for="-기초--ai-데이터센터의-구조와-돈-버는-방식">① 기초 — AI 데이터센터의 구조와 돈 버는 방식</a></li><li class="depth-1"><a href="#-전방-수요--누가-데이터센터를-채우나" data-for="-전방-수요--누가-데이터센터를-채우나">② 전방 수요 — 누가 데이터센터를 채우나</a></li><li class="depth-1"><a href="#-기술-심화--밀도전력연결" data-for="-기술-심화--밀도전력연결">③ 기술 심화 — 밀도·전력·연결</a></li><li class="depth-1"><a href="#-캐파증설--전력이-속도를-정함" data-for="-캐파증설--전력이-속도를-정함">④ 캐파·증설 — 전력이 속도를 정함</a></li><li class="depth-1"><a href="#-가격수급--임대가단가부품" data-for="-가격수급--임대가단가부품">⑤ 가격·수급 — 임대가·단가·부품</a></li><li class="depth-1"><a href="#-하우스별-시각과-변화" data-for="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../it/00_it_index" class="internal">00_IT_index</a></li><li><a href="../it/01_it_용어집" class="internal">01_IT_용어집</a></li><li><a href="../it/02_it_수요와전방" class="internal">02_IT_수요와전방</a></li><li><a href="../it/04_it_소프트웨어와ai" class="internal">04_IT_소프트웨어와AI</a></li><li><a href="../it/05_it_인터넷플랫폼" class="internal">05_IT_인터넷플랫폼</a></li><li><a href="../it/06_it_시장규모모델" class="internal">06_IT_시장규모모델</a></li><li><a href="../it/07_it_하우스시각_변경이력" class="internal">07_IT_하우스시각_변경이력</a></li><li><a href="../it/08_it_트래킹캘린더" class="internal">08_IT_트래킹캘린더</a></li><li><a href="../it/설명서/it_설명서" class="internal">IT_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div><script id="gl-tip-js">(function(){if(window.__glTip)return;window.__glTip=1;var tip,timer,cur;
+function box(){if(!tip||!document.body.contains(tip)){tip=document.createElement('div');tip.className='gl-tip';document.body.appendChild(tip);}return tip;}
+function show(el){var t=box();t.textContent=el.getAttribute('data-gl');t.style.display='block';var r=el.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;
+var x=Math.min(Math.max(8,r.left),window.innerWidth-w-8);var y=r.bottom+6;if(y+h>window.innerHeight-8)y=r.top-h-6;t.style.left=x+'px';t.style.top=y+'px';cur=el;}
+function hide(){clearTimeout(timer);if(tip)tip.style.display='none';cur=null;}
+document.addEventListener('mouseover',function(e){var el=e.target.closest&&e.target.closest('.gl');if(!el)return;clearTimeout(timer);timer=setTimeout(function(){show(el);},700);});
+document.addEventListener('mouseout',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el)hide();});
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el){if(cur===el)hide();else{clearTimeout(timer);show(el);}}else hide();});
+window.addEventListener('scroll',hide,true);document.addEventListener('nav',hide);})();</script></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

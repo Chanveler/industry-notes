@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>06_자동차_시장규모모델</title><meta charset="utf-8"/><link rel="preload" href="../index-d311a580.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="06_자동차_시장규모모델"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="06_자동차_시장규모모델"/><meta name="twitter:description" content="자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀 한 줄: 글로벌 신차 수요(GlobalData 8,812만대, 2026E)를 9개 지역으로 쪼개 2027E를 세우고, 한국 완성차(현대차·기아 합산)는 «도매 대수 × 대당 달러 매출 × 원/달러»로 매출을, «고정환율 매출 × 핵심 이익률 + 환율 효과 − 관세»로 이익 풀을 만듦."/><meta property="og:description" content="자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀 한 줄: 글로벌 신차 수요(GlobalData 8,812만대, 2026E)를 9개 지역으로 쪼개 2027E를 세우고, 한국 완성차(현대차·기아 합산)는 «도매 대수 × 대당 달러 매출 × 원/달러»로 매출을, «고정환율 매출 × 핵심 이익률 + 환율 효과 − 관세»로 이익 풀을 만듦."/><meta property="og:image:alt" content="자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀 한 줄: 글로벌 신차 수요(GlobalData 8,812만대, 2026E)를 9개 지역으로 쪼개 2027E를 세우고, 한국 완성차(현대차·기아 합산)는 «도매 대수 × 대당 달러 매출 × 원/달러»로 매출을, «고정환율 매출 × 핵심 이익률 + 환율 효과 − 관세»로 이익 풀을 만듦."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/자동차/06_자동차_시장규모모델"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/자동차/06_자동차_시장규모모델"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀 한 줄: 글로벌 신차 수요(GlobalData 8,812만대, 2026E)를 9개 지역으로 쪼개 2027E를 세우고, 한국 완성차(현대차·기아 합산)는 «도매 대수 × 대당 달러 매출 × 원/달러»로 매출을, «고정환율 매출 × 핵심 이익률 + 환율 효과 − 관세»로 이익 풀을 만듦."/><meta name="generator" content="Quartz"/><link href="../index-d311a580.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="자동차/06_자동차_시장규모모델" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-359" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-359" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../자동차/">4. 자동차</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>06_자동차_시장규모모델</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">06_자동차_시장규모모델</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>36 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="자동차-시장규모-모델--지역-수요--침투율--한국-완성차-물량--단가--환율--관세이익-풀">자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#자동차-시장규모-모델--지역-수요--침투율--한국-완성차-물량--단가--환율--관세이익-풀" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>한 줄: 글로벌 신차 수요(GlobalData 8,812만대, 2026E)를 9개 지역으로 쪼개 2027E를 세우고, 한국 완성차(현대차·기아 합산)는 «도매 대수 × 대당 달러 매출 × 원/달러»로 매출을, «고정환율 매출 × 핵심 이익률 + 환율 효과 − 관세»로 이익 풀을 만듦. Base(환율 1,320원·관세 15%) 기준 2027E 수요 8,969만대(+1.8%), 2사 영업이익 16.8조원(−12%)</p>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<ul>
+<li>텍스트 캐시 228건 중 2026년 226건, 2025년 2건 → 실제 원천 기간은 2026-02~2026-11(2025년은 6월·8월 2건뿐). 모델 수치는 그중 2027 전망 숫자가 있는 8건에서 뽑음</li>
+<li>글로벌 수요는 기관마다 기준이 다름: GlobalData 8,812만(현대차증권) vs Omdia 9,650만(하나) vs 1.0억대(대신, 승용+상용) → 대수 수준은 GlobalData로 고정, 하우스 차이는 «지역 성장률 경로» 스위치로만 반영</li>
+<li>글로벌 평균 판매가격 원천 없음 ⚠ → 글로벌 «금액» 시장은 세우지 않음. 금액은 한국 완성차 2사만</li>
+<li><span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>·<span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span>·유통·정비 시장 규모는 원천에 일관된 총량이 없어 모델 밖 ⚠ (본문은 <a href="../자동차/04_자동차_부품" class="internal internal-link alias" data-slug="자동차/04_자동차_부품">04_자동차_부품</a>·<a href="../자동차/05_자동차_타이어와유통" class="internal internal-link alias" data-slug="자동차/05_자동차_타이어와유통">05_자동차_타이어와유통</a>)</li>
+</ul>
+</div></blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>2027년 수요는 기저 반등(+1.8%)일 뿐 2019년 수준(9,018만)에 못 미침. 늘어나는 건 대수보다 EV·<span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span> 비중(<span class="gl" tabindex="0" data-gl="엔진만 쓰는 내연기관차 (Internal Combustion Engine)">ICE</span> 5,735만 → 5,561만대)</li>
+<li><mark class="text-highlight">2027년 한국 완성차 이익을 가르는 변수는 물량이 아니라 환율·관세</mark>: 환율 1,435 → 1,320원이면 −4.6조원, 관세율 15 → 25%면 −4.1조원. 물량 +1%p는 +0.2조원</li>
+<li>하우스 이익 전망(현대차증권 20.4조, 하나 18.4조)은 같은 환율에서 모델보다 높음 → 환율 손실을 가격·<span class="gl" tabindex="0" data-gl="비싼 차 비중 변화의 이익 효과">믹스</span>로 메운다는 가정이 들어 있음</li>
+</ul>
+</div></blockquote>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="글로벌 수요와 한국 2사 판매 (만대, Base)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 39.058438 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 39.058438 59.677125  L 39.058438 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="118.191445" y="282.853594" transform="rotate(-0 118.191445 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="255.036628" y="282.853594" transform="rotate(-0 255.036628 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="391.88181" y="282.853594" transform="rotate(-0 391.88181 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.726992" y="282.853594" transform="rotate(-0 528.726992 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 39.058438 272.152891  L 607.86 272.152891  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="275.56375" transform="rotate(-0 35.558438 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 39.058438 228.343003  L 607.86 228.343003  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="231.753862" transform="rotate(-0 35.558438 231.753862)">2,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 39.058438 184.533115  L 607.86 184.533115  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="187.943974" transform="rotate(-0 35.558438 187.943974)">4,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 39.058438 140.723227  L 607.86 140.723227  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="144.134086" transform="rotate(-0 35.558438 144.134086)">6,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 39.058438 96.913339  L 607.86 96.913339  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="100.324199" transform="rotate(-0 35.558438 100.324199)">8,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 64.913054 272.152891  L 98.485739 272.152891  L 98.485739 69.795019  L 64.913054 69.795019  z " clip-path="url(#pe3c3d0ff59)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 201.758236 272.152891  L 235.330921 272.152891  L 235.330921 79.10462  L 201.758236 79.10462  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#he9c3b59af5);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 338.603419 272.152891  L 372.176104 272.152891  L 372.176104 75.687449  L 338.603419 75.687449  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#he9c3b59af5);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 475.448601 272.152891  L 509.021286 272.152891  L 509.021286 71.372175  L 475.448601 71.372175  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#he9c3b59af5);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 101.405103 272.152891  L 134.977787 272.152891  L 134.977787 204.203755  L 101.405103 204.203755  z " clip-path="url(#pe3c3d0ff59)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 238.250285 272.152891  L 271.82297 272.152891  L 271.82297 204.729473  L 238.250285 204.729473  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#hba3f0a194a);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 375.095468 272.152891  L 408.668152 272.152891  L 408.668152 197.500842  L 375.095468 197.500842  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#hba3f0a194a);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 511.94065 272.152891  L 545.513335 272.152891  L 545.513335 190.841739  L 511.94065 190.841739  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#hba3f0a194a);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 137.897151 272.152891  L 171.469836 272.152891  L 171.469836 256.392283  L 137.897151 256.392283  z " clip-path="url(#pe3c3d0ff59)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 274.742334 272.152891  L 308.315019 272.152891  L 308.315019 256.085614  L 274.742334 256.085614  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#h2f85886f72);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 411.587516 272.152891  L 445.160201 272.152891  L 445.160201 255.507324  L 411.587516 255.507324  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#h2f85886f72);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 548.432699 272.152891  L 582.005384 272.152891  L 582.005384 255.007891  L 548.432699 255.007891  z " clip-path="url(#pe3c3d0ff59)" style="fill:url(#h2f85886f72);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="line2d_15"> <path d="M 39.058438 272.152891  L 607.86 272.152891  " clip-path="url(#pe3c3d0ff59)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_15"> <path d="M 39.058438 272.152891  L 39.058438 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_16"> <path d="M 39.058438 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_10"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="39.058438" y="53.677125" transform="rotate(-0 39.058438 53.677125)">만대</text> </g> </g> <g id="text_11"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">글로벌 수요와 한국 2사 판매 (만대, Base)</text> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_17"> <path d="M 11.646 35.091594  L 24.946 35.091594  L 24.946 28.441594  L 11.646 28.441594  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_13"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.091594" transform="rotate(-0 32.546 35.091594)">글로벌 수요</text> </g> <g id="patch_18"> <path d="M 89.431703 35.091594  L 102.731703 35.091594  L 102.731703 28.441594  L 89.431703 28.441594  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="110.331703" y="35.091594" transform="rotate(-0 110.331703 35.091594)">EV·HEV 합</text> </g> <g id="patch_19"> <path d="M 165.421312 35.091594  L 178.721313 35.091594  L 178.721313 28.441594  L 165.421312 28.441594  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="186.321313" y="35.091594" transform="rotate(-0 186.321313 35.091594)">한국 2사 판매</text> </g> </g> </g> <defs> <clipPath id="pe3c3d0ff59"> <rect x="39.058438" y="59.677125" width="568.801562" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="he9c3b59af5" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hba3f0a194a" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h2f85886f72" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="한국 2사 관세와 영업이익 (조원, Base)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 26.161719 272.152891  L 607.86 272.152891  L 607.86 59.585719  L 26.161719 59.585719  L 26.161719 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="106.494689" y="282.853594" transform="rotate(-0 106.494689 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="246.838803" y="282.853594" transform="rotate(-0 246.838803 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="387.182916" y="282.853594" transform="rotate(-0 387.182916 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="527.527029" y="282.853594" transform="rotate(-0 527.527029 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 26.161719 272.152891  L 607.86 272.152891  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="275.56375" transform="rotate(-0 22.661719 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 26.161719 247.464485  L 607.86 247.464485  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="250.875344" transform="rotate(-0 22.661719 250.875344)">2.5</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 26.161719 222.77608  L 607.86 222.77608  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="226.186939" transform="rotate(-0 22.661719 226.186939)">5</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 26.161719 198.087674  L 607.86 198.087674  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="201.498533" transform="rotate(-0 22.661719 201.498533)">7.5</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 26.161719 173.399268  L 607.86 173.399268  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="176.810128" transform="rotate(-0 22.661719 176.810128)">10</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 26.161719 148.710863  L 607.86 148.710863  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="152.121722" transform="rotate(-0 22.661719 152.121722)">12</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 26.161719 124.022457  L 607.86 124.022457  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="127.433317" transform="rotate(-0 22.661719 127.433317)">15</text> </g> </g> <g id="ytick_8"> <g id="line2d_19"> <path d="M 26.161719 99.334052  L 607.86 99.334052  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="102.744911" transform="rotate(-0 22.661719 102.744911)">18</text> </g> </g> <g id="ytick_9"> <g id="line2d_21"> <path d="M 26.161719 74.645646  L 607.86 74.645646  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_22"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.661719" y="78.056506" transform="rotate(-0 22.661719 78.056506)">20</text> </g> </g> </g> <g id="patch_3"> <path d="M 52.60255 272.152891  L 104.249183 272.152891  L 104.249183 69.707965  L 52.60255 69.707965  z " clip-path="url(#pe3856e274b)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 192.946663 272.152891  L 244.593297 272.152891  L 244.593297 82.545936  L 192.946663 82.545936  z " clip-path="url(#pe3856e274b)" style="fill:url(#h4d3682549a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 333.290777 272.152891  L 384.93741 272.152891  L 384.93741 106.246805  L 333.290777 106.246805  z " clip-path="url(#pe3856e274b)" style="fill:url(#h4d3682549a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 473.63489 272.152891  L 525.281524 272.152891  L 525.281524 85.508545  L 473.63489 85.508545  z " clip-path="url(#pe3856e274b)" style="fill:url(#h4d3682549a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 108.740195 272.152891  L 160.386829 272.152891  L 160.386829 201.544051  L 108.740195 201.544051  z " clip-path="url(#pe3856e274b)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 249.084308 272.152891  L 300.730942 272.152891  L 300.730942 204.80292  L 249.084308 204.80292  z " clip-path="url(#pe3856e274b)" style="fill:url(#h0fe0b70879);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 389.428422 272.152891  L 441.075056 272.152891  L 441.075056 211.913181  L 389.428422 211.913181  z " clip-path="url(#pe3856e274b)" style="fill:url(#h0fe0b70879);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 529.772535 272.152891  L 581.419169 272.152891  L 581.419169 212.999471  L 529.772535 212.999471  z " clip-path="url(#pe3856e274b)" style="fill:url(#h0fe0b70879);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="line2d_23"> <path d="M 26.161719 272.152891  L 607.86 272.152891  " clip-path="url(#pe3856e274b)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_11"> <path d="M 26.161719 272.152891  L 26.161719 59.585719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_12"> <path d="M 26.161719 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="78.425867" y="66.707965" transform="rotate(-0 78.425867 66.707965)">20.5</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="218.76998" y="79.545936" transform="rotate(-0 218.76998 79.545936)">19.2</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="359.114093" y="103.246805" transform="rotate(-0 359.114093 103.246805)">16.8</text> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="499.458207" y="82.508545" transform="rotate(-0 499.458207 82.508545)">18.9</text> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="134.563512" y="198.544051" transform="rotate(-0 134.563512 198.544051)">7.15</text> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="274.907625" y="201.80292" transform="rotate(-0 274.907625 201.80292)">6.82</text> </g> <g id="text_20"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="415.251739" y="208.913181" transform="rotate(-0 415.251739 208.913181)">6.1</text> </g> <g id="text_21"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="555.595852" y="209.999471" transform="rotate(-0 555.595852 209.999471)">5.99</text> </g> <g id="text_22"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="26.161719" y="53.585719" transform="rotate(-0 26.161719 53.585719)">조원</text> </g> </g> <g id="text_23"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">한국 2사 관세와 영업이익 (조원, Base)</text> </g> <g id="text_24"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_13"> <path d="M 11.646 35.054484  L 24.946 35.054484  L 24.946 28.404484  L 11.646 28.404484  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_25"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.054484" transform="rotate(-0 32.546 35.054484)">영업이익</text> </g> <g id="patch_14"> <path d="M 78.716 35.054484  L 92.016 35.054484  L 92.016 28.404484  L 78.716 28.404484  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_26"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="99.616" y="35.054484" transform="rotate(-0 99.616 35.054484)">관세</text> </g> </g> </g> <defs> <clipPath id="pe3856e274b"> <rect x="26.161719" y="59.585719" width="581.698281" height="212.567172"></rect> </clipPath> </defs> <defs> <pattern id="h4d3682549a" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h0fe0b70879" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 대수와 금액은 단위가 달라 2개로 나눔</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>글로벌 수요(만대)</td><td style="text-align:right;">9,238</td><td style="text-align:right;">8,813</td><td style="text-align:right;">8,969</td><td style="text-align:right;">9,166</td></tr><tr><td>EV·<span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span> 합(만대)</td><td style="text-align:right;">3,102</td><td style="text-align:right;">3,078</td><td style="text-align:right;">3,408</td><td style="text-align:right;">3,712</td></tr><tr><td>한국 2사 판매(만대)</td><td style="text-align:right;">719.5</td><td style="text-align:right;">733.5</td><td style="text-align:right;">759.9</td><td style="text-align:right;">782.7</td></tr><tr><td>2사 관세(조원)</td><td style="text-align:right;">7.15</td><td style="text-align:right;">6.82</td><td style="text-align:right;">6.10</td><td style="text-align:right;">5.99</td></tr><tr><td>2사 영업이익(조원)</td><td style="text-align:right;">20.5</td><td style="text-align:right;">19.2</td><td style="text-align:right;">16.8</td><td style="text-align:right;">18.9</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>Base · 지역 경로 현대차증권 · 환율 컨센서스 1,320원 · 관세 15%. 2025A·2026E 수요(현대차증권, 2026-11-11, p.37), 2사 판매·이익 2025A·2026E(같은 자료, p.149·153), 관세 2025A(한화투자증권, 2026-07-06, p.7). 나머지는 자체 모델(엑셀 Model 시트). 2027E 영업이익 Bear~Bull 13.2~19.9조원</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;지역 9개 수요&lt;br/>8,969만대\&quot;] --> B[\&quot;× 침투율&lt;br/>EV 25%·HEV 13%\&quot;]\n    A --> C[\&quot;미국 1,621만대\&quot;]\n    D[\&quot;2사 도매 760만대&lt;br/>× 대당 2.6만 달러&lt;br/>× 1,320원\&quot;] --> E[\&quot;2사 매출 311조원\&quot;]\n    C --> F[\&quot;× 점유율 12% × 대상 58%&lt;br/>× 신고가 × 15%\&quot;]\n    F --> G[\&quot;관세 6.1조원\&quot;]\n    E --> H[\&quot;핵심 이익 27.5조\&quot;]\n    H --> I[\&quot;− 환율 4.6조 − 관세 6.1조&lt;br/>= 이익 16.8조원\&quot;]\n    G --> I&quot;">flowchart LR
+    A[&quot;지역 9개 수요&lt;br/>8,969만대&quot;] --> B[&quot;× 침투율&lt;br/>EV 25%·HEV 13%&quot;]
+    A --> C[&quot;미국 1,621만대&quot;]
+    D[&quot;2사 도매 760만대&lt;br/>× 대당 2.6만 달러&lt;br/>× 1,320원&quot;] --> E[&quot;2사 매출 311조원&quot;]
+    C --> F[&quot;× 점유율 12% × 대상 58%&lt;br/>× 신고가 × 15%&quot;]
+    F --> G[&quot;관세 6.1조원&quot;]
+    E --> H[&quot;핵심 이익 27.5조&quot;]
+    H --> I[&quot;− 환율 4.6조 − 관세 6.1조&lt;br/>= 이익 16.8조원&quot;]
+    G --> I
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>2027E Base, 자체 모델</small></p>
+<ul>
+<li>기업분석 아님: 현대차·기아 합산은 «한국 완성차 산업» 대용으로만 씀</li>
+<li>수요·판매 흐름은 <a href="../자동차/02_자동차_수요와판매" class="internal internal-link alias" data-slug="자동차/02_자동차_수요와판매">02_자동차_수요와판매</a>, 전동화·완성차 경쟁은 <a href="../자동차/03_자동차_완성차와전동화" class="internal internal-link alias" data-slug="자동차/03_자동차_완성차와전동화">03_자동차_완성차와전동화</a></li>
+</ul>
+<hr/>
+<h2 id="-밸류체인-단계별-규모매출영업이익--신규-1124">⓪ 밸류체인 단계별 규모·매출·영업이익 <mark>🆕 신규 11/24</mark><a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-밸류체인-단계별-규모매출영업이익--신규-1124" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>매출이 가장 큰 단계는 완성차(대표 2사 316.3조원, 2026E)이고 그다음이 <span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>(대표 7사 101.7조원)</li>
+<li>많이 남기는 단계는 A<span class="gl" tabindex="0" data-gl="수리용 교체 부품 판매">S 부품</span>(이익률 26.4%)·<span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span>(15.1%) → 완성차(6.1%)·부품(5.2%)·캡티브 금융(6.9%)의 2~5배</li>
+<li>금액 «시장 규모»는 전 단계가 비어 있음(대수·GWh 물량뿐). 오토바이·특수차량은 세 칸 모두, 재활용은 매출·이익이 원문 없음 ⚠</li>
+</ul>
+</div></blockquote>
+<h3 id="단계별-한눈에">단계별 한눈에<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#단계별-한눈에" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>단계</th><th style="text-align:right;">시장 규모</th><th style="text-align:right;">매출</th><th style="text-align:right;">영업이익(률)</th><th>기준</th><th>출처</th></tr></thead><tbody><tr><td>완성차</td><td style="text-align:right;">글로벌 8,812만대(2026E)</td><td style="text-align:right;">316.3조원(2026E)</td><td style="text-align:right;">19.2조원·6.1%(2026E)</td><td>대표 2사 합산 · 시장은 물량만</td><td><small>(현대차증권, 2026-11-11)</small></td></tr><tr><td>전동화·전기차부품</td><td style="text-align:right;">EV·<span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span> 3,078만대(2026E)</td><td style="text-align:right;">5.59조원(2026E)</td><td style="text-align:right;">⚠ 원문 없음</td><td>1위사 1곳 · 시장은 물량만</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>(<span class="gl" tabindex="0" data-gl="조립 단위 부품 묶음 공급">모듈</span>·전장·섀시·<span class="gl" tabindex="0" data-gl="관절 열을 식히는 설계">열관리</span>·램프)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">101.7조원(2026E)</td><td style="text-align:right;">5.27조원·5.2%(2026E)</td><td>대표 7사 합산</td><td><small>(하나증권, 2026-11-13)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span></td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">16.18조원(2026E)</td><td style="text-align:right;">2.45조원·15.1%(2026E)</td><td>대표 2사 합산 · 타이어만</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>A<span class="gl" tabindex="0" data-gl="수리용 교체 부품 판매">S 부품</span>·정비</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">14.25조원(2026E)</td><td style="text-align:right;">3.76조원·26.4%(2026E)</td><td>1위사 1곳 · AS 부문</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>유통·중고차·캡티브 금융</td><td style="text-align:right;">중고차 수출 88.7억달러(2025)</td><td style="text-align:right;">34.18조원(2026E)</td><td style="text-align:right;">2.36조원·6.9%(2026E)</td><td>1위사 금융 부문 · 시장은 수출분만</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>재활용(폐배터리·폐차)</td><td style="text-align:right;">150GWh(2026E) → 280GWh(2030E)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td>업계 전체 · 물량만</td><td><small>(삼성증권, 2026-05-19)</small></td></tr><tr><td>오토바이·특수차량</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td>원문 없음</td><td>—</td></tr></tbody></table></div>
+<p><small>합산·이익률은 모두 내 계산. 완성차 이익률 = 2사 영업이익 ÷ 2사 매출. EV·HEV 대수는 자체 모델 Base(하나증권 침투율 × GlobalData 대수). 중고차 수출(신한투자증권, 2026-04-06). 부품 7사 = 하나증권 커버리지 중 모듈·전장·섀시·열관리·램프·구동 업체(현대모비스·현대위아·한온시스템·HL만도·에스엘·피에이치에이·SNT모티브), 1위사 AS 부문이 들어 있어 «AS 부품·정비» 행과 겹침 ⚠</small></p>
+<ul>
+<li>단계끼리 더하지 않음: <span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>·<span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span> 매출의 상당 부분이 완성차 원가이고, 부품 7사 안에 AS·전동화가 들어 있음</li>
+<li>하우스·발간 시점이 다름(현대차증권·하나 11월, 대신 7월) → 단계 간 비교는 이익률 수준까지만</li>
+</ul>
+<h3 id="완성차">완성차<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#완성차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>글로벌 수요(만대)</td><td style="text-align:right;">9,238</td><td style="text-align:right;">8,813</td><td style="text-align:right;">8,969</td><td style="text-align:right;">9,166</td><td><small>(현대차증권, 2026-11-11)</small></td></tr><tr><td>2사 합산 매출(조원)</td><td style="text-align:right;">300.4</td><td style="text-align:right;">316.3</td><td style="text-align:right;">311.4</td><td style="text-align:right;">325.8</td><td><small>(현대차증권, 2026-11-11)</small></td></tr><tr><td>2사 합산 영업이익(조원)</td><td style="text-align:right;">20.5</td><td style="text-align:right;">19.2</td><td style="text-align:right;">16.8</td><td style="text-align:right;">18.9</td><td><small>(현대차증권, 2026-11-11)</small></td></tr><tr><td>영업이익률</td><td style="text-align:right;">6.8%</td><td style="text-align:right;">6.1%</td><td style="text-align:right;">5.4%</td><td style="text-align:right;">5.8%</td><td><small>(내 계산)</small></td></tr></tbody></table></div>
+<ul>
+<li>2025A·2026E는 원문, 2027E~는 자체 모델 Base(환율 1,320원·관세 15%) → 2027E 영업이익 범위 13.2~19.9조원</li>
+<li>같은 2027E를 하나증권은 매출 323조원·영업이익 18.4조원(이익률 5.7%)으로 봄 <small>(하나증권, 2026-11-13)</small></li>
+<li>글로벌 평균 판매가격 원문 없음 ⚠ → 글로벌 완성차 «금액» 시장은 계산 못 함</li>
+</ul>
+<h3 id="전동화전기차부품">전동화·전기차부품<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#전동화전기차부품" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>EV(<span class="gl" tabindex="0" data-gl="배터리만 쓰는 순수 전기차 (Battery Electric Vehicle)">BEV</span>+<span class="gl" tabindex="0" data-gl="충전도 되는 하이브리드 (Plug-in Hybrid Electric Vehicle)">PHEV</span>) 대수(만대)</td><td style="text-align:right;">2,051</td><td style="text-align:right;">1,995</td><td style="text-align:right;">2,242</td><td style="text-align:right;">2,475</td><td><small>(자체 모델 Base)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span> 대수(만대)</td><td style="text-align:right;">1,051</td><td style="text-align:right;">1,082</td><td style="text-align:right;">1,166</td><td style="text-align:right;">1,237</td><td><small>(자체 모델 Base)</small></td></tr><tr><td>1위사 전동화 매출(조원)</td><td style="text-align:right;">5.35</td><td style="text-align:right;">5.59</td><td style="text-align:right;">5.62</td><td style="text-align:right;">⚠ 원문 없음</td><td><small>(대신증권, 2026-07-19)</small></td></tr></tbody></table></div>
+<ul>
+<li>전동화 부문만의 영업이익은 원문에 따로 없음 ⚠ → 1위사는 <span class="gl" tabindex="0" data-gl="조립 단위 부품 묶음 공급">모듈</span>·<span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>(전동화 포함) 묶음으로만 공개: 이익률 0.2%(2025) → 0.0%(2026E) → 1.8%(2027E) <small>(대신증권, 2026-07-19)</small></li>
+<li>물량은 전방 대수일 뿐 부품 금액 시장이 아님 → 대당 전동화 부품 단가 원문 없음 ⚠</li>
+</ul>
+<h3 id="부품모듈전장섀시열관리램프">부품(모듈·전장·섀시·열관리·램프)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#부품모듈전장섀시열관리램프" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>대표 7사 합산 매출 101.7조원(2026E) → 107.8조원(2027E, +6.1%), 영업이익 5.27조원 → 5.62조원, 이익률 5.2% → 5.2% (내 계산) <small>(하나증권, 2026-11-13)</small></li>
+<li>품목별 이익률은 크게 갈림: 헤드램프 8.1%(2026E) · <span class="gl" tabindex="0" data-gl="관절 열을 식히는 설계">열관리</span> 4%(2026 <span class="gl" tabindex="0" data-gl="회사가 제시한 연간 목표">가이던스</span>) · 구동·엔진 <span class="gl" tabindex="0" data-gl="조립 단위 부품 묶음 공급">모듈</span> 1.9%(2Q26E) <small>(삼성증권, 2026-06-01; 대신증권, 2026-10-26; 대신증권, 2026-07-19)</small></li>
+<li>글로벌 1위 <span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span>사는 자동차 부품 매출 631억달러·이익률 1.8%(2025) <small>(삼성증권, 2026-06-01)</small> → 규모가 커도 이익률은 낮은 단계</li>
+<li>7사 매출의 63%가 1위사 한 곳(내 계산) → 합산 이익률은 1위사 사업 구성(AS 포함)에 좌우됨 ⚠</li>
+</ul>
+<h3 id="타이어">타이어<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#타이어" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>2사 합산 매출(조원)</td><td style="text-align:right;">15.02</td><td style="text-align:right;">16.18</td><td style="text-align:right;">17.31</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>2사 합산 영업이익(조원)</td><td style="text-align:right;">2.26</td><td style="text-align:right;">2.45</td><td style="text-align:right;">2.97</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>영업이익률</td><td style="text-align:right;">15.0%</td><td style="text-align:right;">15.1%</td><td style="text-align:right;">17.1%</td><td><small>(내 계산)</small></td></tr></tbody></table></div>
+<ul>
+<li>국내 1·2위사 합산, 1위사는 <span class="gl" tabindex="0" data-gl="관절 열을 식히는 설계">열관리</span> 자회사를 뺀 <span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span> 부문만(연결 매출은 2026E 22.6조원으로 2배) <small>(대신증권, 2026-07-19)</small></li>
+<li>3위사를 넣은 3사 연결 합산은 매출 30.6조원·영업이익 2.98조원(2026E, 내 계산)이나 열관리 매출이 섞여 타이어 단계 숫자로 쓰기 어려움 ⚠ <small>(하나증권, 2026-11-13)</small></li>
+<li>4대 원재료 10%↑ → 이익률 −1.3~−3.4%p, 판가 낮은 업체일수록 타격 큼 <small>(신영증권, 2026-05-06)</small></li>
+</ul>
+<h3 id="as-부품정비">AS 부품·정비<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#as-부품정비" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>계열 A<span class="gl" tabindex="0" data-gl="수리용 교체 부품 판매">S 부품</span> 매출(조원)</td><td style="text-align:right;">13.32</td><td style="text-align:right;">14.25</td><td style="text-align:right;">14.87</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>AS 부품 영업이익(조원)</td><td style="text-align:right;">3.28</td><td style="text-align:right;">3.76</td><td style="text-align:right;">3.81</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>영업이익률</td><td style="text-align:right;">24.6%</td><td style="text-align:right;">26.4%</td><td style="text-align:right;">25.6%</td><td><small>(대신증권, 2026-07-19)</small></td></tr></tbody></table></div>
+<ul>
+<li>계열 순정 A<span class="gl" tabindex="0" data-gl="수리용 교체 부품 판매">S 부품</span> 한 곳 기준 → 비순정품·독립 정비업 매출은 원문 없음 ⚠</li>
+<li>운행 대수는 약 6,000만대(2018) → 5,800만대(2025 추정)로 줄었는데 매출은 7조 → 14조원 → 가격·<span class="gl" tabindex="0" data-gl="비싼 차 비중 변화의 이익 효과">믹스</span>·환율 효과 <small>(신영증권, 2026-05-06)</small></li>
+</ul>
+<h3 id="유통중고차캡티브-금융">유통·중고차·캡티브 금융<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#유통중고차캡티브-금융" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>1위사 금융 부문 매출(조원)</td><td style="text-align:right;">30.29</td><td style="text-align:right;">34.18</td><td style="text-align:right;">34.84</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>금융 부문 영업이익(조원)</td><td style="text-align:right;">2.16</td><td style="text-align:right;">2.36</td><td style="text-align:right;">2.35</td><td><small>(대신증권, 2026-07-19)</small></td></tr><tr><td>영업이익률</td><td style="text-align:right;">7.1%</td><td style="text-align:right;">6.9%</td><td style="text-align:right;">6.7%</td><td><small>(대신증권, 2026-07-19)</small></td></tr></tbody></table></div>
+<ul>
+<li>모델 ④의 2사 «금융·기타» 매출 47.2조원(2026E)은 금융 외 기타 사업이 섞인 값 → 캡티브 금융만 보려면 위 표</li>
+<li>한국 중고차 수출 88.7억달러(2025, +75.1%) <small>(신한투자증권, 2026-04-06)</small> → 국내 중고차 거래 금액·딜러 매출·이익은 원문 없음 ⚠</li>
+</ul>
+<h3 id="비어-있는-곳">비어 있는 곳<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#비어-있는-곳" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>완성차 · 시장 규모(금액): 글로벌 평균 판매가격이 없어 대수만 있음 → 기관(GlobalData·S&amp;P) 금액 전망이 있으면 채움</li>
+<li>전동화·전기차부품 · 시장 규모(금액)·영업이익: 대당 전동화 <span class="gl" tabindex="0" data-gl="부품 관세 일부 보전">부품</span> 단가, 전동화 부문 분리 손익이 있으면 채움</li>
+<li>부품 · 시장 규모: 글로벌·국내 부품 시장 총액 없음 → 협회(KAICA) 납품액 통계나 글로벌 100대 부품사 매출 집계가 있으면 채움</li>
+<li><span class="gl" tabindex="0" data-gl="해상운임 등 운송 비용">타이어</span> · 시장 규모: OE·RE 수요 증감률뿐 → 글로벌 판매 본수 × 평균 단가 자료(Michelin 시장 자료 등)가 있으면 채움</li>
+<li>A<span class="gl" tabindex="0" data-gl="수리용 교체 부품 판매">S 부품</span>·정비 · 시장 규모: 계열 1곳 매출뿐 → 국내 정비업 매출·비순정 부품 시장 통계가 있으면 채움</li>
+<li>유통·중고차 · 매출·영업이익: 금융 부문만 있음 → 국내 중고차 거래 대수·금액, 딜러·경매 사업자 실적이 있으면 채움</li>
+<li>재활용 · 매출·영업이익: 물량(GWh) 전망뿐 → 회수 금속 가격 × 처리량, 리사이클 업체 합산 실적이 있으면 채움</li>
+<li>오토바이·특수차량 · 전 항목: 원문 0건(이륜차는 동남아 전기 전환 언급뿐) → 이륜차·특장차 산업 리포트가 있어야 함</li>
+</ul>
+<hr/>
+<h2 id="-모델-구조기초">① 모델 구조·기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-모델-구조기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>블록 4개: A 글로벌 수요(지역×성장률) → B <span class="gl" tabindex="0" data-gl="동력 구성 방식 (Powertrain)">파워트레인</span>(<span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span>) → C 한국 완성차(물량×단가×환율) → D 관세·이익</li>
+<li>스위치 4개: 시나리오 · 2027 지역 성장률 경로 · 환율 경로 · 관세율 → 54개 조합 재계산 오류 0</li>
+</ul>
+</div></blockquote>
+<h3 id="계산-흐름">계산 흐름<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#계산-흐름" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    A[\&quot;지역 수요 2026E&lt;br/>(GlobalData)\&quot;] --> B[\&quot;2027E = × (1 + 경로 성장률 ± 가감)\&quot;]\n    B --> C[\&quot;× EV·HEV 침투율\&quot;]\n    B --> D[\&quot;미국 수요 × 2사 점유율\&quot;]\n    D --> E[\&quot;× 관세 대상 비중 × 신고가&lt;br/>× 관세율 × 환율 = 관세\&quot;]\n    F[\&quot;2사 판매 × 대당 달러&lt;br/>× 환율 + 금융·기타\&quot;] --> G[\&quot;매출\&quot;]\n    G --> H[\&quot;고정환율 매출 × 핵심 이익률\&quot;]\n    H --> I[\&quot;+ 환율 효과 − 관세 = 이익 풀\&quot;]\n    E --> I&quot;">flowchart TD
+    A[&quot;지역 수요 2026E&lt;br/>(GlobalData)&quot;] --> B[&quot;2027E = × (1 + 경로 성장률 ± 가감)&quot;]
+    B --> C[&quot;× EV·HEV 침투율&quot;]
+    B --> D[&quot;미국 수요 × 2사 점유율&quot;]
+    D --> E[&quot;× 관세 대상 비중 × 신고가&lt;br/>× 관세율 × 환율 = 관세&quot;]
+    F[&quot;2사 판매 × 대당 달러&lt;br/>× 환율 + 금융·기타&quot;] --> G[&quot;매출&quot;]
+    G --> H[&quot;고정환율 매출 × 핵심 이익률&quot;]
+    H --> I[&quot;+ 환율 효과 − 관세 = 이익 풀&quot;]
+    E --> I
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="블록별-식">블록별 식<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#블록별-식" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>블록</th><th>식</th><th>출발점</th></tr></thead><tbody><tr><td>A 수요</td><td>2026E × (1+g지역±가감)</td><td>GlobalData 지역표</td></tr><tr><td>B <span class="gl" tabindex="0" data-gl="동력 구성 방식 (Powertrain)">파워트레인</span></td><td>수요 × <span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span></td><td>하나(SNE) 비율</td></tr><tr><td>C 매출</td><td>판매 × 대당 달러 × 환율</td><td>현대차증권 2사 표</td></tr><tr><td>C 관세</td><td>미국 판매 × 대상 비중 × 신고가 × 세율</td><td>한화 관세 표</td></tr><tr><td>D 이익</td><td>고정환율 매출 × 핵심 이익률</td><td>2026E 역산</td></tr><tr><td>D 이익</td><td>+ Δ환율÷10 × 민감도 − 관세</td><td>하나·현대차증권</td></tr></tbody></table></div>
+<p><small>핵심 이익률 = (영업이익 + 관세) ÷ 매출(내 계산) → 2025A 9.2%, 2026E 8.2%. 2026E는 현대차증권 2사 영업이익 19.2조원과 일치하도록 역산(검산 0)</small></p>
+<h3 id="엑셀-파일-구성">엑셀 파일 구성<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엑셀-파일-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>파일: <code>모델/자동차_모델.xlsx</code> — 시트 7개, 수식 766개</li>
+<li>시나리오 3 × 지역 경로 3 × 환율 3 × 관세율 2 = 54개 조합, pycel 재계산 오류 0건 · 검산 합 0</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시트</th><th>내용</th></tr></thead><tbody><tr><td>README</td><td>목적·사용법·계산 구조·주의</td></tr><tr><td>Summary</td><td>결과·3안·하우스 대조·검산</td></tr><tr><td>Inputs</td><td>스위치 4개, 가정 22개(노란 칸)</td></tr><tr><td>Model</td><td>선택 시나리오 연도별 계산</td></tr><tr><td>Scenarios</td><td>같은 식을 3안 고정으로 3번</td></tr><tr><td>Data</td><td>원문 수치(지역표·2사·관세)</td></tr><tr><td>Sources</td><td>하우스 원문 31개 × 모델 대응</td></tr></tbody></table></div>
+<p><small>스위치: Inputs!B3 시나리오, B6 지역 경로(현대차증권/하나/대신), B9 환율(컨센서스 1,320/하나 1,350/고환율 1,435), B12 관세율(15%/25%). 노란 칸 = 가정, 파란 글씨 = 원문</small></p>
+<hr/>
+<h2 id="-출발점--지역별-신차-수요">② 출발점 — 지역별 신차 수요<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-출발점--지역별-신차-수요" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2026E 8,812만대(−4.6%): 중국 −18.8%(2,692 → 2,185만)가 전부. 중국 빼면 +1.3%(내 계산)</li>
+<li>2027E 순증 155만대 중 중국 43만·인도 21만·유럽 11만. 미국은 +0.2%로 정체</li>
+</ul>
+</div></blockquote>
+<h3 id="글로벌-신차-수요-만대">글로벌 신차 수요 (만대)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#글로벌-신차-수요-만대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="글로벌 신차 수요 (만대)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 39.058438 264.602897  L 607.86 264.602897  L 607.86 44.917125  L 39.058438 44.917125  L 39.058438 264.602897  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(73.958464 278.616821) rotate(-35)">17</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(117.357354 279.079984) rotate(-35)">18</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(161.580643 278.965896) rotate(-35)">19</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(203.680921 280.338357) rotate(-35)">20</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(249.865504 278.850957) rotate(-35)">21</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(292.556724 279.809636) rotate(-35)">22</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(336.593976 279.825813) rotate(-35)">23</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(380.505988 279.929684) rotate(-35)">24</text> </g> </g> <g id="xtick_9"> <g id="line2d_9"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(425.001646 279.624882) rotate(-35)">25</text> </g> </g> <g id="xtick_10"> <g id="line2d_10"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(464.353925 282.921512) rotate(-35)">26E</text> </g> </g> <g id="xtick_11"> <g id="line2d_11"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(508.912811 282.572437) rotate(-35)">27E</text> </g> </g> <g id="xtick_12"> <g id="line2d_12"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(552.311701 283.0356) rotate(-35)">28E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_13"> <path d="M 39.058438 264.602897  L 607.86 264.602897  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="268.013757" transform="rotate(-0 35.558438 268.013757)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_15"> <path d="M 39.058438 220.643543  L 607.86 220.643543  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="224.054403" transform="rotate(-0 35.558438 224.054403)">2,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_17"> <path d="M 39.058438 176.684189  L 607.86 176.684189  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="180.095049" transform="rotate(-0 35.558438 180.095049)">4,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_19"> <path d="M 39.058438 132.724836  L 607.86 132.724836  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="136.135695" transform="rotate(-0 35.558438 136.135695)">6,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_21"> <path d="M 39.058438 88.765482  L 607.86 88.765482  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_22"></g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.558438" y="92.176341" transform="rotate(-0 35.558438 92.176341)">8,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 64.913054 264.602897  L 97.341475 264.602897  L 97.341475 55.378352  L 64.913054 55.378352  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 108.973409 264.602897  L 141.401831 264.602897  L 141.401831 57.268604  L 108.973409 57.268604  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_5"> <path d="M 153.033765 264.602897  L 185.462186 264.602897  L 185.462186 66.39017  L 153.033765 66.39017  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_6"> <path d="M 197.09412 264.602897  L 229.522541 264.602897  L 229.522541 93.66695  L 197.09412 93.66695  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_7"> <path d="M 241.154475 264.602897  L 273.582897 264.602897  L 273.582897 88.787461  L 241.154475 88.787461  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_8"> <path d="M 285.21483 264.602897  L 317.643252 264.602897  L 317.643252 91.447002  L 285.21483 91.447002  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_9"> <path d="M 329.275186 264.602897  L 361.703607 264.602897  L 361.703607 73.511586  L 329.275186 73.511586  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_10"> <path d="M 373.335541 264.602897  L 405.763962 264.602897  L 405.763962 69.093671  L 373.335541 69.093671  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_11"> <path d="M 417.395896 264.602897  L 449.824318 264.602897  L 449.824318 61.576621  L 417.395896 61.576621  z " clip-path="url(#pebc205db10)" style="fill:#2f74c0;"></path> </g> <g id="patch_12"> <path d="M 461.456251 264.602897  L 493.884673 264.602897  L 493.884673 70.917984  L 461.456251 70.917984  z " clip-path="url(#pebc205db10)" style="fill:url(#hd91e2d77c1);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 505.516607 264.602897  L 537.945028 264.602897  L 537.945028 67.511134  L 505.516607 67.511134  z " clip-path="url(#pebc205db10)" style="fill:url(#hd91e2d77c1);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 549.576962 264.602897  L 582.005384 264.602897  L 582.005384 63.159158  L 549.576962 63.159158  z " clip-path="url(#pebc205db10)" style="fill:url(#hd91e2d77c1);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_23"> <path d="M 39.058438 264.602897  L 607.86 264.602897  " clip-path="url(#pebc205db10)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_15"> <path d="M 39.058438 264.602897  L 39.058438 44.917125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_16"> <path d="M 39.058438 264.602897  L 607.86 264.602897  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="81.127265" y="52.378352" transform="rotate(-0 81.127265 52.378352)">9,519</text> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="125.18762" y="54.268604" transform="rotate(-0 125.18762 54.268604)">9,433</text> </g> <g id="text_20"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="169.247975" y="63.39017" transform="rotate(-0 169.247975 63.39017)">9,018</text> </g> <g id="text_21"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="213.308331" y="90.66695" transform="rotate(-0 213.308331 90.66695)">7,777</text> </g> <g id="text_22"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="257.368686" y="85.787461" transform="rotate(-0 257.368686 85.787461)">7,999</text> </g> <g id="text_23"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="301.429041" y="88.447002" transform="rotate(-0 301.429041 88.447002)">7,878</text> </g> <g id="text_24"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="345.489396" y="70.511586" transform="rotate(-0 345.489396 70.511586)">8,694</text> </g> <g id="text_25"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="389.549752" y="66.093671" transform="rotate(-0 389.549752 66.093671)">8,895</text> </g> <g id="text_26"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="433.610107" y="58.576621" transform="rotate(-0 433.610107 58.576621)">9,237</text> </g> <g id="text_27"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="477.670462" y="67.917984" transform="rotate(-0 477.670462 67.917984)">8,812</text> </g> <g id="text_28"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="521.730818" y="64.511134" transform="rotate(-0 521.730818 64.511134)">8,967</text> </g> <g id="text_29"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="565.791173" y="60.159158" transform="rotate(-0 565.791173 60.159158)">9,165</text> </g> <g id="text_30"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="39.058438" y="38.917125" transform="rotate(-0 39.058438 38.917125)">만대</text> </g> </g> <g id="text_31"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.65675" transform="rotate(-0 6.192 13.65675)">글로벌 신차 수요 (만대)</text> </g> <g id="text_32"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="pebc205db10"> <rect x="39.058438" y="44.917125" width="568.801562" height="219.685772"></rect> </clipPath> </defs> <defs> <pattern id="hd91e2d77c1" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>2017~2025 실적·2026E~ 전망(현대차증권, 2026-11-11, p.34, GlobalData 3Q26). 모델 Base 2027E 8,969 · 2028E 9,166으로 거의 같음</small></p>
+<h3 id="주요-4개-지역-만대">주요 4개 지역 (만대)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#주요-4개-지역-만대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="중국·미국·유럽·인도 (만대)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 38.680156 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 38.680156 59.677125  L 38.680156 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="106.950587" y="282.853594" transform="rotate(-0 106.950587 282.853594)">23</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="215.110333" y="282.853594" transform="rotate(-0 215.110333 282.853594)">24</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="323.270078" y="282.853594" transform="rotate(-0 323.270078 282.853594)">25</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="431.429823" y="282.853594" transform="rotate(-0 431.429823 282.853594)">26E</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="539.589569" y="282.853594" transform="rotate(-0 539.589569 282.853594)">27E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_6"> <path d="M 38.680156 272.152891  L 607.86 272.152891  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_7"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="275.56375" transform="rotate(-0 35.180156 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_8"> <path d="M 38.680156 234.567848  L 607.86 234.567848  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_9"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="237.978707" transform="rotate(-0 35.180156 237.978707)">500</text> </g> </g> <g id="ytick_3"> <g id="line2d_10"> <path d="M 38.680156 196.982804  L 607.86 196.982804  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_11"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="200.393664" transform="rotate(-0 35.180156 200.393664)">1,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_12"> <path d="M 38.680156 159.397761  L 607.86 159.397761  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_13"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="162.808621" transform="rotate(-0 35.180156 162.808621)">1,500</text> </g> </g> <g id="ytick_5"> <g id="line2d_14"> <path d="M 38.680156 121.812718  L 607.86 121.812718  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_15"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="125.223578" transform="rotate(-0 35.180156 125.223578)">2,000</text> </g> </g> <g id="ytick_6"> <g id="line2d_16"> <path d="M 38.680156 84.227675  L 607.86 84.227675  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_17"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.180156" y="87.638535" transform="rotate(-0 35.180156 87.638535)">2,500</text> </g> </g> </g> <g id="patch_3"> <path d="M 64.551967 272.152891  L 84.45336 272.152891  L 84.45336 82.423593  L 64.551967 82.423593  z " clip-path="url(#pbb8cd85c42)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 172.711713 272.152891  L 192.613106 272.152891  L 192.613106 80.544341  L 172.711713 80.544341  z " clip-path="url(#pbb8cd85c42)" style="fill:#2f74c0;"></path> </g> <g id="patch_5"> <path d="M 280.871458 272.152891  L 300.772851 272.152891  L 300.772851 69.795019  L 280.871458 69.795019  z " clip-path="url(#pbb8cd85c42)" style="fill:#2f74c0;"></path> </g> <g id="patch_6"> <path d="M 389.031203 272.152891  L 408.932596 272.152891  L 408.932596 107.906252  L 389.031203 107.906252  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#h3a5809a16f);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 497.190949 272.152891  L 517.092342 272.152891  L 517.092342 104.673939  L 497.190949 104.673939  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#h3a5809a16f);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_8"> <path d="M 86.183916 272.152891  L 106.08531 272.152891  L 106.08531 155.263407  L 86.183916 155.263407  z " clip-path="url(#pbb8cd85c42)" style="fill:#e8590c;"></path> </g> <g id="patch_9"> <path d="M 194.343662 272.152891  L 214.245055 272.152891  L 214.245055 152.406943  L 194.343662 152.406943  z " clip-path="url(#pbb8cd85c42)" style="fill:#e8590c;"></path> </g> <g id="patch_10"> <path d="M 302.503407 272.152891  L 322.4048 272.152891  L 322.4048 149.47531  L 302.503407 149.47531  z " clip-path="url(#pbb8cd85c42)" style="fill:#e8590c;"></path> </g> <g id="patch_11"> <path d="M 410.663152 272.152891  L 430.564545 272.152891  L 430.564545 150.602861  L 410.663152 150.602861  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#h970f8ef77f);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_12"> <path d="M 518.822898 272.152891  L 538.724291 272.152891  L 538.724291 150.302181  L 518.822898 150.302181  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#h970f8ef77f);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 107.815865 272.152891  L 127.717259 272.152891  L 127.717259 161.502524  L 107.815865 161.502524  z " clip-path="url(#pbb8cd85c42)" style="fill:#2b9348;"></path> </g> <g id="patch_14"> <path d="M 215.975611 272.152891  L 235.877004 272.152891  L 235.877004 159.623272  L 215.975611 159.623272  z " clip-path="url(#pbb8cd85c42)" style="fill:#2b9348;"></path> </g> <g id="patch_15"> <path d="M 324.135356 272.152891  L 344.036749 272.152891  L 344.036749 158.721231  L 324.135356 158.721231  z " clip-path="url(#pbb8cd85c42)" style="fill:#2b9348;"></path> </g> <g id="patch_16"> <path d="M 432.295101 272.152891  L 452.196495 272.152891  L 452.196495 154.211025  L 432.295101 154.211025  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#hb4e1c9ed8f);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_17"> <path d="M 540.454847 272.152891  L 560.35624 272.152891  L 560.35624 153.384154  L 540.454847 153.384154  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#hb4e1c9ed8f);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_18"> <path d="M 129.447815 272.152891  L 149.349208 272.152891  L 149.349208 236.74778  L 129.447815 236.74778  z " clip-path="url(#pbb8cd85c42)" style="fill:#d6336c;"></path> </g> <g id="patch_19"> <path d="M 237.60756 272.152891  L 257.508953 272.152891  L 257.508953 235.394718  L 237.60756 235.394718  z " clip-path="url(#pbb8cd85c42)" style="fill:#d6336c;"></path> </g> <g id="patch_20"> <path d="M 345.767305 272.152891  L 365.668698 272.152891  L 365.668698 233.139616  L 345.767305 233.139616  z " clip-path="url(#pbb8cd85c42)" style="fill:#d6336c;"></path> </g> <g id="patch_21"> <path d="M 453.92705 272.152891  L 473.828444 272.152891  L 473.828444 227.276349  L 453.92705 227.276349  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#he1d8ed1b40);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_22"> <path d="M 562.086796 272.152891  L 581.988189 272.152891  L 581.988189 225.697777  L 562.086796 225.697777  z " clip-path="url(#pbb8cd85c42)" style="fill:url(#he1d8ed1b40);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="line2d_18"> <path d="M 38.680156 272.152891  L 607.86 272.152891  " clip-path="url(#pbb8cd85c42)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_23"> <path d="M 38.680156 272.152891  L 38.680156 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_24"> <path d="M 38.680156 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="38.680156" y="53.677125" transform="rotate(-0 38.680156 53.677125)">만대</text> </g> </g> <g id="text_13"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.71675" transform="rotate(-0 6.192 13.71675)">중국·미국·유럽·인도 (만대)</text> </g> <g id="text_14"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_25"> <path d="M 11.646 35.091594  L 24.946 35.091594  L 24.946 28.441594  L 11.646 28.441594  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.091594" transform="rotate(-0 32.546 35.091594)">중국</text> </g> <g id="patch_26"> <path d="M 62.281 35.091594  L 75.581 35.091594  L 75.581 28.441594  L 62.281 28.441594  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="83.181" y="35.091594" transform="rotate(-0 83.181 35.091594)">미국</text> </g> <g id="patch_27"> <path d="M 112.916 35.091594  L 126.216 35.091594  L 126.216 28.441594  L 112.916 28.441594  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="133.816" y="35.091594" transform="rotate(-0 133.816 35.091594)">유럽</text> </g> <g id="patch_28"> <path d="M 163.551 35.091594  L 176.851 35.091594  L 176.851 28.441594  L 163.551 28.441594  z " style="fill:#d6336c;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="184.451" y="35.091594" transform="rotate(-0 184.451 35.091594)">인도</text> </g> </g> </g> <defs> <clipPath id="pbb8cd85c42"> <rect x="38.680156" y="59.677125" width="569.179844" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="h3a5809a16f" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h970f8ef77f" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hb4e1c9ed8f" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="he1d8ed1b40" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#d6336c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#d6336c;stroke:#d6336c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>선 위부터 중국 · 미국 · 유럽 · 인도. GlobalData 3Q26(현대차증권, 2026-11-11, p.37)</small></p>
+<h3 id="2027-지역-성장률-경로-스위치">2027 지역 성장률 경로 (스위치)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027-지역-성장률-경로-스위치" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">2026E(만대)</th><th style="text-align:right;">현대차증권</th><th style="text-align:right;">하나</th><th style="text-align:right;">대신</th></tr></thead><tbody><tr><td>중국</td><td style="text-align:right;">2,185</td><td style="text-align:right;">+2.0%</td><td style="text-align:right;">−1%</td><td style="text-align:right;">⚠</td></tr><tr><td>미국</td><td style="text-align:right;">1,617</td><td style="text-align:right;">+0.2%</td><td style="text-align:right;">+1%</td><td style="text-align:right;">+0.9%</td></tr><tr><td>유럽</td><td style="text-align:right;">1,569</td><td style="text-align:right;">+0.7%</td><td style="text-align:right;">+3%</td><td style="text-align:right;">+2.2%</td></tr><tr><td>일본</td><td style="text-align:right;">449</td><td style="text-align:right;">−3.8%</td><td style="text-align:right;">−2%</td><td style="text-align:right;">⚠</td></tr><tr><td>인도</td><td style="text-align:right;">597</td><td style="text-align:right;">+3.5%</td><td style="text-align:right;">+7%</td><td style="text-align:right;">+2.8%</td></tr><tr><td>브라질</td><td style="text-align:right;">288</td><td style="text-align:right;">+2.9%</td><td style="text-align:right;">+3%(기타)</td><td style="text-align:right;">⚠</td></tr><tr><td>한국</td><td style="text-align:right;">165</td><td style="text-align:right;">+0.6%</td><td style="text-align:right;">+1%</td><td style="text-align:right;">⚠</td></tr><tr><td>기타(러시아 포함)</td><td style="text-align:right;">1,943</td><td style="text-align:right;">+4.3%</td><td style="text-align:right;">+3%</td><td style="text-align:right;">⚠</td></tr><tr><td><strong>글로벌</strong></td><td style="text-align:right;"><strong>8,812</strong></td><td style="text-align:right;"><strong>+1.8%</strong></td><td style="text-align:right;"><strong>+2%</strong></td><td style="text-align:right;"><strong>+1.3%</strong></td></tr></tbody></table></div>
+<p><small>⚠ = 대신 값 없음 → 모델은 현대차증권 값 사용. 대신 유럽은 독·영·프·이 4개국, 중국은 내수+수출(3,344만대) 기준이라 제외. 기타 +4.3%는 러시아·기타 합산(내 계산). 현대차증권(2026-11-11, p.37), 하나 «2% 증가한 9,800만대»(하나증권, 2026-11-13, p.6), 대신 «2027년글로벌자동차판매1.0억대(YoY +1.3%)»(대신증권, 2026-10-26, p.6)</small></p>
+<ul>
+<li>경로를 바꾸면 2027E 글로벌은 8,956만(하나) ~ 8,999만대(대신)로 ±0.3%만 움직임</li>
+<li>대신 경로가 +2.1%로 대신 원문(+1.3%)보다 높은 건 미·유·인도만 대신 값이고 중국은 현대차증권 +2.0%를 쓰기 때문 ⚠</li>
+<li>하나와 현대차증권의 가장 큰 차이 = 중국 방향(−1% vs +2.0%)과 유럽·인도 속도</li>
+</ul>
+<hr/>
+<h2 id="-파워트레인--evhevice">③ 파워트레인 — EV·HEV·ICE<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-파워트레인--evhevice" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E EV(<span class="gl" tabindex="0" data-gl="배터리만 쓰는 순수 전기차 (Battery Electric Vehicle)">BEV</span>+<span class="gl" tabindex="0" data-gl="충전도 되는 하이브리드 (Plug-in Hybrid Electric Vehicle)">PHEV</span>) <span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span> Base 25%(하나) → 2,242만대. Bull 30%는 현대차증권 2,694만대</li>
+<li><span class="gl" tabindex="0" data-gl="엔진만 쓰는 내연기관차 (Internal Combustion Engine)">ICE</span>는 2025A 6,136만 → 2028E 5,454만대(Base). 대수 증가분은 전부 전동화 몫</li>
+</ul>
+</div></blockquote>
+<h3 id="파워트레인별-대수-base-만대">파워트레인별 대수 (Base, 만대)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#파워트레인별-대수-base-만대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="ICE·EV·HEV (만대, Base)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 38.878438 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 38.878438 59.677125  L 38.878438 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="118.036487" y="282.853594" transform="rotate(-0 118.036487 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="254.924975" y="282.853594" transform="rotate(-0 254.924975 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="391.813463" y="282.853594" transform="rotate(-0 391.813463 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.70195" y="282.853594" transform="rotate(-0 528.70195 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 38.878438 272.152891  L 607.86 272.152891  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="275.56375" transform="rotate(-0 35.378438 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 38.878438 239.174098  L 607.86 239.174098  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="242.584957" transform="rotate(-0 35.378438 242.584957)">1,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 38.878438 206.195305  L 607.86 206.195305  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="209.606165" transform="rotate(-0 35.378438 209.606165)">2,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 38.878438 173.216513  L 607.86 173.216513  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="176.627372" transform="rotate(-0 35.378438 176.627372)">3,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 38.878438 140.23772  L 607.86 140.23772  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="143.648579" transform="rotate(-0 35.378438 143.648579)">4,000</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 38.878438 107.258927  L 607.86 107.258927  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="110.669786" transform="rotate(-0 35.378438 110.669786)">5,000</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 38.878438 74.280134  L 607.86 74.280134  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="77.690994" transform="rotate(-0 35.378438 77.690994)">6,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 64.741236 272.152891  L 98.324545 272.152891  L 98.324545 69.795019  L 64.741236 69.795019  z " clip-path="url(#p10b559fb55)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 201.629724 272.152891  L 235.213033 272.152891  L 235.213033 83.019514  L 201.629724 83.019514  z " clip-path="url(#p10b559fb55)" style="fill:url(#h395a5e3a92);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 338.518211 272.152891  L 372.10152 272.152891  L 372.10152 88.757824  L 338.518211 88.757824  z " clip-path="url(#p10b559fb55)" style="fill:url(#h395a5e3a92);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 475.406699 272.152891  L 508.990008 272.152891  L 508.990008 92.286555  L 475.406699 92.286555  z " clip-path="url(#p10b559fb55)" style="fill:url(#h395a5e3a92);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 101.244833 272.152891  L 134.828142 272.152891  L 134.828142 204.513387  L 101.244833 204.513387  z " clip-path="url(#p10b559fb55)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 238.13332 272.152891  L 271.716629 272.152891  L 271.716629 206.360199  L 238.13332 206.360199  z " clip-path="url(#p10b559fb55)" style="fill:url(#h1f3d5fc192);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 375.021808 272.152891  L 408.605117 272.152891  L 408.605117 198.214437  L 375.021808 198.214437  z " clip-path="url(#p10b559fb55)" style="fill:url(#h1f3d5fc192);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 511.910296 272.152891  L 545.493605 272.152891  L 545.493605 190.530379  L 511.910296 190.530379  z " clip-path="url(#p10b559fb55)" style="fill:url(#h1f3d5fc192);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 137.748429 272.152891  L 171.331738 272.152891  L 171.331738 237.492179  L 137.748429 237.492179  z " clip-path="url(#p10b559fb55)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 274.636917 272.152891  L 308.220226 272.152891  L 308.220226 236.469837  L 274.636917 236.469837  z " clip-path="url(#p10b559fb55)" style="fill:url(#hd4daa4d4ec);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 411.525405 272.152891  L 445.108714 272.152891  L 445.108714 233.699618  L 411.525405 233.699618  z " clip-path="url(#p10b559fb55)" style="fill:url(#hd4daa4d4ec);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 548.413893 272.152891  L 581.997202 272.152891  L 581.997202 231.358124  L 548.413893 231.358124  z " clip-path="url(#p10b559fb55)" style="fill:url(#hd4daa4d4ec);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="line2d_19"> <path d="M 38.878438 272.152891  L 607.86 272.152891  " clip-path="url(#p10b559fb55)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_15"> <path d="M 38.878438 272.152891  L 38.878438 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_16"> <path d="M 38.878438 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="38.878438" y="53.677125" transform="rotate(-0 38.878438 53.677125)">만대</text> </g> </g> <g id="text_13"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">ICE·EV·HEV (만대, Base)</text> </g> <g id="text_14"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_17"> <path d="M 11.646 34.938703  L 24.946 34.938703  L 24.946 28.288703  L 11.646 28.288703  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="34.938703" transform="rotate(-0 32.546 34.938703)">ICE</text> </g> <g id="patch_18"> <path d="M 58.947094 34.938703  L 72.247094 34.938703  L 72.247094 28.288703  L 58.947094 28.288703  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="79.847094" y="34.938703" transform="rotate(-0 79.847094 34.938703)">EV</text> </g> <g id="patch_19"> <path d="M 104.072094 34.938703  L 117.372094 34.938703  L 117.372094 28.288703  L 104.072094 28.288703  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="124.972094" y="34.938703" transform="rotate(-0 124.972094 34.938703)">HEV</text> </g> </g> </g> <defs> <clipPath id="p10b559fb55"> <rect x="38.878438" y="59.677125" width="568.981562" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="h395a5e3a92" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h1f3d5fc192" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hd4daa4d4ec" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>선 위부터 ICE · EV · HEV. 침투율은 하나(SNE Research 기준) 비율을 GlobalData 대수에 곱함(기준 혼합 ⚠). 2025A 침투율은 하나 2026E 값 ÷ 증가율 역산(내 계산)</small></p>
+<h3 id="침투율-가정">침투율 가정<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#침투율-가정" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>EV <span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span></td><td style="text-align:right;">22.2%</td><td style="text-align:right;">22.6%</td><td style="text-align:right;">22%</td><td style="text-align:right;">25%</td><td style="text-align:right;">30%</td></tr><tr><td><span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span> 침투율</td><td style="text-align:right;">11.4%</td><td style="text-align:right;">12.3%</td><td style="text-align:right;">12%</td><td style="text-align:right;">13%</td><td style="text-align:right;">14%</td></tr><tr><td>EV 대수(만대)</td><td style="text-align:right;">2,051</td><td style="text-align:right;">1,995</td><td style="text-align:right;">1,963</td><td style="text-align:right;">2,242</td><td style="text-align:right;">2,704</td></tr></tbody></table></div>
+<p><small>Base «전기차는 66% 비중인 2,450만대, 하이브리드차는 34% 비중인 1,250만대»(하나증권, 2026-11-13, p.10). Bull = 현대차증권 «2,694만대로31.5% 침투율»(현대차증권, 2026-11-11, p.35)을 GlobalData 8,967만대로 나눈 30.0%(내 계산). 하우스 간 EV 대수 차이 244만대</small></p>
+<ul>
+<li>같은 «<span class="gl" tabindex="0" data-gl="배터리만 쓰는 순수 전기차 (Battery Electric Vehicle)">BEV</span>+<span class="gl" tabindex="0" data-gl="충전도 되는 하이브리드 (Plug-in Hybrid Electric Vehicle)">PHEV</span>»인데 하나 2,450만 vs 현대차증권 2,694만 → 분모(9,800 vs 8,967만)와 집계 기관(SNE vs GBIC) 차이</li>
+<li>지역 방향은 갈림: 미국 EV는 하나 +10% vs 대신 87만대(−10%) → 미국은 <span class="gl" tabindex="0" data-gl="엔진+모터, 외부 충전 없음 (Hybrid Electric Vehicle · Full Hybrid Electric Vehicle)">HEV</span>가 대체</li>
+<li>HEV는 두 하우스 모두 «성장 지속, 속도 둔화» — 하나 +6%(2027E) vs +9%(2026E)</li>
+</ul>
+<hr/>
+<h2 id="-한국-완성차-입력--물량단가환율관세">④ 한국 완성차 입력 — 물량·단가·환율·관세<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-한국-완성차-입력--물량단가환율관세" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2사 판매 Base +3.6%(하나) → 760만대. 대당 매출 2.56만 → 2.61만 달러(+2%)</li>
+<li>환율이 1,435 → 1,320원으로 8% 내려가면 원화 매출은 물량·단가가 늘어도 −1.5%</li>
+<li>관세 대상 = 미국 판매의 58%(한국·멕시코 생산분) → 2027E 113만대 × 신고가 2.7만 달러 × 15%</li>
+</ul>
+</div></blockquote>
+<h3 id="물량--단가--환율-base">물량 × 단가 × 환율 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#물량--단가--환율-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="현대차·기아 합산 매출 Base (조원)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 31.003438 272.152891  L 607.86 272.152891  L 607.86 59.585719  L 31.003438 59.585719  L 31.003438 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="111.257076" y="282.853594" transform="rotate(-0 111.257076 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="250.040171" y="282.853594" transform="rotate(-0 250.040171 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="388.823266" y="282.853594" transform="rotate(-0 388.823266 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="527.606362" y="282.853594" transform="rotate(-0 527.606362 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="275.56375" transform="rotate(-0 27.503438 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 31.003438 241.083995  L 607.86 241.083995  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="244.494854" transform="rotate(-0 27.503438 244.494854)">50</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 31.003438 210.015099  L 607.86 210.015099  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="213.425958" transform="rotate(-0 27.503438 213.425958)">100</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 31.003438 178.946203  L 607.86 178.946203  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="182.357062" transform="rotate(-0 27.503438 182.357062)">150</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 31.003438 147.877307  L 607.86 147.877307  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="151.288166" transform="rotate(-0 27.503438 151.288166)">200</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 31.003438 116.808411  L 607.86 116.808411  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="120.219271" transform="rotate(-0 27.503438 120.219271)">250</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 31.003438 85.739515  L 607.86 85.739515  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="89.150375" transform="rotate(-0 27.503438 89.150375)">300</text> </g> </g> </g> <g id="patch_3"> <path d="M 57.22419 272.152891  L 91.27231 272.152891  L 91.27231 85.490964  L 57.22419 85.490964  z " clip-path="url(#pbd94d3f09e)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 196.007286 272.152891  L 230.055405 272.152891  L 230.055405 75.611055  L 196.007286 75.611055  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h19c4c81c52);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 334.790381 272.152891  L 368.838501 272.152891  L 368.838501 78.655807  L 334.790381 78.655807  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h19c4c81c52);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 473.573477 272.152891  L 507.621596 272.152891  L 507.621596 69.707965  L 473.573477 69.707965  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h19c4c81c52);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 94.233016 272.152891  L 128.281135 272.152891  L 128.281135 110.532494  L 94.233016 110.532494  z " clip-path="url(#pbd94d3f09e)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 233.016111 272.152891  L 267.064231 272.152891  L 267.064231 104.940093  L 233.016111 104.940093  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h35c70a8c79);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 371.799207 272.152891  L 405.847326 272.152891  L 405.847326 109.600427  L 371.799207 109.600427  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h35c70a8c79);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 510.582302 272.152891  L 544.630422 272.152891  L 544.630422 102.20603  L 510.582302 102.20603  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h35c70a8c79);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 131.241841 272.152891  L 165.289961 272.152891  L 165.289961 247.111361  L 131.241841 247.111361  z " clip-path="url(#pbd94d3f09e)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 270.024937 272.152891  L 304.073056 272.152891  L 304.073056 242.823853  L 270.024937 242.823853  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h2e4c2cb1ad);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 408.808032 272.152891  L 442.856152 272.152891  L 442.856152 241.20827  L 408.808032 241.20827  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h2e4c2cb1ad);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 547.591128 272.152891  L 581.639247 272.152891  L 581.639247 239.654826  L 547.591128 239.654826  z " clip-path="url(#pbd94d3f09e)" style="fill:url(#h2e4c2cb1ad);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="line2d_19"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " clip-path="url(#pbd94d3f09e)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_15"> <path d="M 31.003438 272.152891  L 31.003438 59.585719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_16"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="31.003438" y="53.585719" transform="rotate(-0 31.003438 53.585719)">조원</text> </g> </g> <g id="text_13"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.6455" transform="rotate(-0 6.192 13.6455)">현대차·기아 합산 매출 Base (조원)</text> </g> <g id="text_14"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_17"> <path d="M 11.646 35.035188  L 24.946 35.035188  L 24.946 28.385188  L 11.646 28.385188  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.035188" transform="rotate(-0 32.546 35.035188)">합산 매출</text> </g> <g id="patch_18"> <path d="M 81.214203 35.035188  L 94.514203 35.035188  L 94.514203 28.385188  L 81.214203 28.385188  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="102.114203" y="35.035188" transform="rotate(-0 102.114203 35.035188)">완성차 매출</text> </g> <g id="patch_19"> <path d="M 158.999906 35.035188  L 172.299906 35.035188  L 172.299906 28.385188  L 158.999906 28.385188  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="179.899906" y="35.035188" transform="rotate(-0 179.899906 35.035188)">금융·기타</text> </g> </g> </g> <defs> <clipPath id="pbd94d3f09e"> <rect x="31.003438" y="59.585719" width="576.856562" height="212.567172"></rect> </clipPath> </defs> <defs> <pattern id="h19c4c81c52" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h35c70a8c79" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h2e4c2cb1ad" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 도매(천대)·대당 매출(달러)·환율은 단위가 달라 표로 봄</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>2사 도매(천대)</td><td style="text-align:right;">7,195</td><td style="text-align:right;">7,335</td><td style="text-align:right;">7,599</td><td style="text-align:right;">7,827</td></tr><tr><td>대당 매출(달러)</td><td style="text-align:right;">25,400</td><td style="text-align:right;">25,567</td><td style="text-align:right;">26,078</td><td style="text-align:right;">26,469</td></tr><tr><td>원/달러</td><td style="text-align:right;">1,423</td><td style="text-align:right;">1,435</td><td style="text-align:right;">1,320</td><td style="text-align:right;">1,320</td></tr><tr><td>완성차 매출(조원)</td><td style="text-align:right;">260.1</td><td style="text-align:right;">269.1</td><td style="text-align:right;">261.6</td><td style="text-align:right;">273.5</td></tr><tr><td>금융·기타(조원)</td><td style="text-align:right;">40.3</td><td style="text-align:right;">47.2</td><td style="text-align:right;">49.8</td><td style="text-align:right;">52.3</td></tr><tr><td><strong>합산 매출(조원)</strong></td><td style="text-align:right;"><strong>300.4</strong></td><td style="text-align:right;"><strong>316.3</strong></td><td style="text-align:right;"><strong>311.4</strong></td><td style="text-align:right;"><strong>325.8</strong></td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>대당 매출 = (현대차 자동차 부문 + 기아 매출) ÷ 판매 ÷ 환율(내 계산). 2025A·2026E 판매·매출(현대차증권, 2026-11-11, p.149·153). 2027E 단가 +2% = 하나 기아 «원화 기준 판매단가가 4% 낮아지기 때문»(하나증권, 2026-11-13, p.26)을 환율 −5.9%로 환산(내 계산)</small></p>
+<h3 id="물량단가-가정-2027e">물량·단가 가정 (2027E)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#물량단가-가정-2027e" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>2사 도매 증감</td><td style="text-align:right;">+2.0%</td><td style="text-align:right;">+3.6%</td><td style="text-align:right;">+7.4%</td></tr><tr><td>대당 달러 매출 증감</td><td style="text-align:right;">0%</td><td style="text-align:right;">+2%</td><td style="text-align:right;">+3%</td></tr><tr><td>핵심 이익률 가감</td><td style="text-align:right;">−0.5%p</td><td style="text-align:right;">0</td><td style="text-align:right;">+0.3%p</td></tr><tr><td><span class="gl" tabindex="0" data-gl="환율 10원당 이익 변화">환율 민감도</span>(억원/10원)</td><td style="text-align:right;">5,000</td><td style="text-align:right;">4,000</td><td style="text-align:right;">3,300</td></tr><tr><td>미국 점유율</td><td style="text-align:right;">11.5%</td><td style="text-align:right;">12.0%</td><td style="text-align:right;">12.5%</td></tr><tr><td>관세 대상 비중</td><td style="text-align:right;">61.6%</td><td style="text-align:right;">58.1%</td><td style="text-align:right;">55%</td></tr></tbody></table></div>
+<p><small>Base 판매 «757.0만대(+3.6% YoY)»(하나증권, 2026-11-13, p.24). Bull 판매 = 현대차증권 2027F 787.5만 ÷ 2026F 733.5만(내 계산). 민감도 Bear = «현대차2,500억원, 기아2,500억원»(현대차증권, 2026-11-11, p.18), Base·Bull = «현대차 2,000~2,500억원, 기아 1,300~1,500억원»의 상단·하단(하나증권, 2026-11-13, p.22). 미국 점유율 10월 «12.0%»(하나증권, 2026-11-04, p.1). 대상 비중 58.1%(한화투자증권, 2026-07-06, p.7). 나머지 ⚠ 가정</small></p>
+<h3 id="관세-블록-base">관세 블록 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#관세-블록-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="2사 관세 부담 Base (조원)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 20.51 272.152891  L 607.86 272.152891  L 607.86 44.825719  L 20.51 44.825719  L 20.51 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="99.802822" y="282.853594" transform="rotate(-0 99.802822 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="242.724274" y="282.853594" transform="rotate(-0 242.724274 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="385.645726" y="282.853594" transform="rotate(-0 385.645726 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.567178" y="282.853594" transform="rotate(-0 528.567178 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 20.51 272.152891  L 607.86 272.152891  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="275.56375" transform="rotate(-0 17.01 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 20.51 241.872881  L 607.86 241.872881  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="245.28374" transform="rotate(-0 17.01 245.28374)">1</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 20.51 211.592871  L 607.86 211.592871  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="215.003731" transform="rotate(-0 17.01 215.003731)">2</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 20.51 181.312862  L 607.86 181.312862  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="184.723721" transform="rotate(-0 17.01 184.723721)">3</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 20.51 151.032852  L 607.86 151.032852  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="154.443712" transform="rotate(-0 17.01 154.443712)">4</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 20.51 120.752843  L 607.86 120.752843  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="124.163702" transform="rotate(-0 17.01 124.163702)">5</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 20.51 90.472833  L 607.86 90.472833  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="93.883693" transform="rotate(-0 17.01 93.883693)">6</text> </g> </g> <g id="ytick_8"> <g id="line2d_19"> <path d="M 20.51 60.192824  L 607.86 60.192824  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="63.603683" transform="rotate(-0 17.01 63.603683)">7</text> </g> </g> </g> <g id="patch_3"> <path d="M 47.207727 272.152891  L 152.397916 272.152891  L 152.397916 55.650822  L 47.207727 55.650822  z " clip-path="url(#pdf358b8a53)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 190.129179 272.152891  L 295.319368 272.152891  L 295.319368 65.643225  L 190.129179 65.643225  z " clip-path="url(#pdf358b8a53)" style="fill:url(#h95fafad653);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 333.050632 272.152891  L 438.240821 272.152891  L 438.240821 87.444832  L 333.050632 87.444832  z " clip-path="url(#pdf358b8a53)" style="fill:url(#h95fafad653);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 475.972084 272.152891  L 581.162273 272.152891  L 581.162273 90.775633  L 475.972084 90.775633  z " clip-path="url(#pdf358b8a53)" style="fill:url(#h95fafad653);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_21"> <path d="M 20.51 272.152891  L 607.86 272.152891  " clip-path="url(#pdf358b8a53)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_7"> <path d="M 20.51 272.152891  L 20.51 44.825719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_8"> <path d="M 20.51 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="99.802822" y="52.650822" transform="rotate(-0 99.802822 52.650822)">7.15</text> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="242.724274" y="62.643225" transform="rotate(-0 242.724274 62.643225)">6.82</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="385.645726" y="84.444832" transform="rotate(-0 385.645726 84.444832)">6.1</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="528.567178" y="87.775633" transform="rotate(-0 528.567178 87.775633)">5.99</text> </g> <g id="text_17"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="20.51" y="38.825719" transform="rotate(-0 20.51 38.825719)">조원</text> </g> </g> <g id="text_18"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.65675" transform="rotate(-0 6.192 13.65675)">2사 관세 부담 Base (조원)</text> </g> <g id="text_19"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="pdf358b8a53"> <rect x="20.51" y="44.825719" width="587.35" height="227.327172"></rect> </clipPath> </defs> <defs> <pattern id="h95fafad653" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 2025A는 25% 구간 포함. 판매·신고가는 2025A 빈칸이라 표 참고</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>2사 미국 판매(천대)</td><td style="text-align:right;">—</td><td style="text-align:right;">1,924</td><td style="text-align:right;">1,945</td><td style="text-align:right;">1,988</td></tr><tr><td>관세 대상(천대)</td><td style="text-align:right;">762</td><td style="text-align:right;">1,185</td><td style="text-align:right;">1,130</td><td style="text-align:right;">1,093</td></tr><tr><td>대당 신고가(달러)</td><td style="text-align:right;">—</td><td style="text-align:right;">26,728</td><td style="text-align:right;">27,262</td><td style="text-align:right;">27,671</td></tr><tr><td>관세(조원)</td><td style="text-align:right;">7.15</td><td style="text-align:right;">6.82</td><td style="text-align:right;">6.10</td><td style="text-align:right;">5.99</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>신고가 = 한화 2026E 부담 6,950십억원 ÷ (117.9만대 × 15% × 1,470원)(내 계산), 이후 대당 매출과 같은 비율로 증감. 2025A는 25% 구간 포함 원문(한화투자증권, 2026-07-06, p.7). 2026E 모델 6.82조 vs 한화 6.95조 vs 삼성 «현대차 4.1조원/기아 3.3조원»(삼성증권, 2026-04-07, p.1)</small></p>
+<ul>
+<li>2026E 모델 미국 판매 192만대 × 61.6% = 118.5만대 → 한화 대상 물량 117.9만대와 0.5% 차이 → 미국 수요 × 점유율 경로가 한화 표와 맞음</li>
+<li>관세가 이익+관세에서 차지하는 비중 26%(2025A~2027E) → 관세율 10%p 차이가 이익의 1/5을 좌우</li>
+<li>2028E 관세 감소는 대상 비중 하락(현지 생산 확대) 가정 ⚠ — 신공장 램프업 속도가 근거 약함</li>
+</ul>
+<hr/>
+<h2 id="-결과--시나리오스위치별-이익-풀">⑤ 결과 — 시나리오·스위치별 이익 풀<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-결과--시나리오스위치별-이익-풀" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E 2사 영업이익 Bear 13.2 / Base 16.8 / Bull 19.9조원(환율 1,320원·관세 15%)</li>
+<li>같은 Base에서 환율만 바꾸면 16.8 ~ 20.9조원, 관세 25%면 12.8조원 → 시나리오 폭보다 스위치 폭이 큼</li>
+</ul>
+</div></blockquote>
+<h3 id="2사-영업이익-조원">2사 영업이익 (조원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2사-영업이익-조원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="현대차·기아 합산 영업이익 (조원)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 25.306719 272.152891  L 607.86 272.152891  L 607.86 59.585719  L 25.306719 59.585719  L 25.306719 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="106.352898" y="282.853594" transform="rotate(-0 106.352898 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="246.506539" y="282.853594" transform="rotate(-0 246.506539 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="386.66018" y="282.853594" transform="rotate(-0 386.66018 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="526.813821" y="282.853594" transform="rotate(-0 526.813821 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 25.306719 272.152891  L 607.86 272.152891  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="21.806719" y="275.56375" transform="rotate(-0 21.806719 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 25.306719 229.079502  L 607.86 229.079502  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="21.806719" y="232.490362" transform="rotate(-0 21.806719 232.490362)">5</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 25.306719 186.006114  L 607.86 186.006114  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="21.806719" y="189.416973" transform="rotate(-0 21.806719 189.416973)">10</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 25.306719 142.932725  L 607.86 142.932725  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="21.806719" y="146.343585" transform="rotate(-0 21.806719 146.343585)">15</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 25.306719 99.859337  L 607.86 99.859337  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="21.806719" y="103.270196" transform="rotate(-0 21.806719 103.270196)">20</text> </g> </g> </g> <g id="patch_3"> <path d="M 51.786413 272.152891  L 86.170773 272.152891  L 86.170773 95.551998  L 51.786413 95.551998  z " clip-path="url(#pcdeb44e82d)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 191.940055 272.152891  L 226.324414 272.152891  L 226.324414 106.751079  L 191.940055 106.751079  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h7cba8ace8e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 332.093696 272.152891  L 366.478056 272.152891  L 366.478056 158.439145  L 332.093696 158.439145  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h7cba8ace8e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 472.247337 272.152891  L 506.631697 272.152891  L 506.631697 160.162081  L 472.247337 160.162081  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h7cba8ace8e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 89.160718 272.152891  L 123.545078 272.152891  L 123.545078 95.551998  L 89.160718 95.551998  z " clip-path="url(#pcdeb44e82d)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 229.314359 272.152891  L 263.698719 272.152891  L 263.698719 106.751079  L 229.314359 106.751079  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h3ed2b0f615);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 369.468 272.152891  L 403.85236 272.152891  L 403.85236 127.426306  L 369.468 127.426306  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h3ed2b0f615);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 509.621641 272.152891  L 544.006001 272.152891  L 544.006001 109.335482  L 509.621641 109.335482  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h3ed2b0f615);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 126.535022 272.152891  L 160.919382 272.152891  L 160.919382 95.551998  L 126.535022 95.551998  z " clip-path="url(#pcdeb44e82d)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 266.688663 272.152891  L 301.073023 272.152891  L 301.073023 106.751079  L 266.688663 106.751079  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h76353f884c);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 406.842304 272.152891  L 441.226664 272.152891  L 441.226664 100.720805  L 406.842304 100.720805  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h76353f884c);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 546.995945 272.152891  L 581.380305 272.152891  L 581.380305 69.707965  L 546.995945 69.707965  z " clip-path="url(#pcdeb44e82d)" style="fill:url(#h76353f884c);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="line2d_15"> <path d="M 25.306719 272.152891  L 607.86 272.152891  " clip-path="url(#pcdeb44e82d)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_15"> <path d="M 25.306719 272.152891  L 25.306719 59.585719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_16"> <path d="M 25.306719 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_10"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="25.306719" y="53.585719" transform="rotate(-0 25.306719 53.585719)">조원</text> </g> </g> <g id="text_11"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.669875" transform="rotate(-0 6.192 13.669875)">현대차·기아 합산 영업이익 (조원)</text> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_17"> <path d="M 11.646 34.938703  L 24.946 34.938703  L 24.946 28.288703  L 11.646 28.288703  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_13"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="34.938703" transform="rotate(-0 32.546 34.938703)">Bear</text> </g> <g id="patch_18"> <path d="M 63.933109 34.938703  L 77.233109 34.938703  L 77.233109 28.288703  L 63.933109 28.288703  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="84.833109" y="34.938703" transform="rotate(-0 84.833109 34.938703)">Base</text> </g> <g id="patch_19"> <path d="M 116.876312 34.938703  L 130.176312 34.938703  L 130.176312 28.288703  L 116.876312 28.288703  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="137.776312" y="34.938703" transform="rotate(-0 137.776312 34.938703)">Bull</text> </g> </g> </g> <defs> <clipPath id="pcdeb44e82d"> <rect x="25.306719" y="59.585719" width="582.553281" height="212.567172"></rect> </clipPath> </defs> <defs> <pattern id="h7cba8ace8e" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h3ed2b0f615" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h76353f884c" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>선 아래부터 Bear · Base · Bull. 환율 컨센서스 1,320원 · 관세 15% · 지역 경로 현대차증권. 2025A·2026E(현대차증권, 2026-11-11, p.149·153), 2027E~ 자체 모델</small></p>
+<h3 id="2027e-이익-분해-base">2027E 이익 분해 (Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-이익-분해-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구성</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">증감</th></tr></thead><tbody><tr><td>고정환율 매출(조원)</td><td style="text-align:right;">316.3</td><td style="text-align:right;">334.2</td><td style="text-align:right;">+17.9</td></tr><tr><td>핵심 이익률</td><td style="text-align:right;">8.24%</td><td style="text-align:right;">8.24%</td><td style="text-align:right;">0</td></tr><tr><td>핵심 이익(조원)</td><td style="text-align:right;">26.1</td><td style="text-align:right;">27.5</td><td style="text-align:right;">+1.5</td></tr><tr><td>환율 효과(조원)</td><td style="text-align:right;">0</td><td style="text-align:right;">−4.6</td><td style="text-align:right;">−4.6</td></tr><tr><td>관세(조원)</td><td style="text-align:right;">6.8</td><td style="text-align:right;">6.1</td><td style="text-align:right;">+0.7</td></tr><tr><td><strong>영업이익(조원)</strong></td><td style="text-align:right;"><strong>19.2</strong></td><td style="text-align:right;"><strong>16.8</strong></td><td style="text-align:right;"><strong>−2.4</strong></td></tr></tbody></table></div>
+<h3 id="시나리오--환율-2027e-영업이익-조원">시나리오 × 환율 (2027E 영업이익, 조원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시나리오--환율-2027e-영업이익-조원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시나리오</th><th style="text-align:right;">1,320원</th><th style="text-align:right;">1,350원</th><th style="text-align:right;">1,435원</th></tr></thead><tbody><tr><td>Bear</td><td style="text-align:right;">13.2</td><td style="text-align:right;">14.6</td><td style="text-align:right;">18.4</td></tr><tr><td>Base</td><td style="text-align:right;">16.8</td><td style="text-align:right;">17.9</td><td style="text-align:right;">20.9</td></tr><tr><td>Bull</td><td style="text-align:right;">19.9</td><td style="text-align:right;">20.7</td><td style="text-align:right;">23.1</td></tr></tbody></table></div>
+<p><small>관세 15%. 1,435원 = 2026년 평균 유지(환율 효과 0). 2028E Base는 18.9 / 20.0 / 23.0조원</small></p>
+<h3 id="관세율-스위치-2027e">관세율 스위치 (2027E)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#관세율-스위치-2027e" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시나리오</th><th style="text-align:right;">관세 15%</th><th style="text-align:right;">관세 25%</th><th style="text-align:right;">이익 15%</th><th style="text-align:right;">이익 25%</th></tr></thead><tbody><tr><td>Bear</td><td style="text-align:right;">6.05</td><td style="text-align:right;">10.08</td><td style="text-align:right;">13.2</td><td style="text-align:right;">9.2</td></tr><tr><td>Base</td><td style="text-align:right;">6.10</td><td style="text-align:right;">10.17</td><td style="text-align:right;">16.8</td><td style="text-align:right;">12.8</td></tr><tr><td>Bull</td><td style="text-align:right;">6.10</td><td style="text-align:right;">10.18</td><td style="text-align:right;">19.9</td><td style="text-align:right;">15.8</td></tr></tbody></table></div>
+<p><small>단위 조원. 25%는 232조 원 세율 복귀 가정(원천에 근거 없음 ⚠), 2027년 1월 적용</small></p>
+<h3 id="2027e-민감도-base-내-계산선형">2027E 민감도 (Base, 내 계산·선형)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-민감도-base-내-계산선형" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>변수</th><th style="text-align:right;">변화</th><th style="text-align:right;">영업이익</th></tr></thead><tbody><tr><td>원/달러</td><td style="text-align:right;">±10원</td><td style="text-align:right;">±0.35조</td></tr><tr><td>관세율</td><td style="text-align:right;">±10%p</td><td style="text-align:right;">∓4.1조</td></tr><tr><td>핵심 이익률</td><td style="text-align:right;">±0.1%p</td><td style="text-align:right;">±0.33조</td></tr><tr><td>2사 판매</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">±0.23조</td></tr><tr><td>대당 달러 매출</td><td style="text-align:right;">±1%</td><td style="text-align:right;">±0.17조</td></tr><tr><td>미국 점유율</td><td style="text-align:right;">±0.5%p</td><td style="text-align:right;">∓0.25조</td></tr></tbody></table></div>
+<p><small>환율 10원 = 민감도 0.40조 − 관세 원화 환산 0.05조. 미국 점유율은 관세만 움직이고 매출과는 연결 안 함(모델 한계 ⚠)</small></p>
+<ul>
+<li>지역 성장률 경로는 이익을 거의 못 바꿈(16.80~16.85조원): 2사 판매를 시장과 따로 가정하기 때문 → 경로는 «수요 총량·관세 물량» 변수</li>
+<li>2028E 반등(+12%)은 환율 추가 하락 없음 + 관세 대상 비중 하락 + 핵심 이익률 +0.2%p의 합 → 셋 다 ⚠ 가정</li>
+<li>Bear는 2028E 이익이 2027E보다 낮음 → 판매 +1%·핵심 이익률 −0.3%p가 겹친 경우</li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-검증" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>수요 대수는 하우스·기관마다 최대 1,000만대 차이 → 성장률(+1.3~2.0%)만 비교 가능</li>
+<li>이익은 같은 환율에서 현대차증권 20.4조 vs 모델 16.8조원 → 현대차증권은 환율 손실(약 5.9조, 내 계산)을 다른 항목으로 거의 다 메운다고 봄</li>
+</ul>
+</div></blockquote>
+<h3 id="하우스-수치-대조">하우스 수치 대조<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-수치-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>하우스</th><th style="text-align:right;">하우스 값</th><th style="text-align:right;">모델 Base</th><th style="text-align:right;">차이</th></tr></thead><tbody><tr><td>수요 2027E(만대)</td><td>현대차증권</td><td style="text-align:right;">8,967</td><td style="text-align:right;">8,969</td><td style="text-align:right;">+2</td></tr><tr><td>수요 2027E 증가율</td><td>하나</td><td style="text-align:right;">+2.0%</td><td style="text-align:right;">+1.8%</td><td style="text-align:right;">−0.2%p</td></tr><tr><td>수요 2027E 증가율</td><td>대신</td><td style="text-align:right;">+1.3%</td><td style="text-align:right;">+1.8%</td><td style="text-align:right;">+0.5%p</td></tr><tr><td>EV 2027E(만대)</td><td>하나</td><td style="text-align:right;">2,450</td><td style="text-align:right;">2,242</td><td style="text-align:right;">−208</td></tr><tr><td>EV 2027E(만대)</td><td>현대차증권</td><td style="text-align:right;">2,694</td><td style="text-align:right;">2,242</td><td style="text-align:right;">−452</td></tr><tr><td>2사 판매 2027E(만대)</td><td>현대차증권</td><td style="text-align:right;">787.5</td><td style="text-align:right;">759.9</td><td style="text-align:right;">−27.6</td></tr><tr><td>2사 매출 2027E(조원)</td><td>현대차증권</td><td style="text-align:right;">325.7</td><td style="text-align:right;">311.4</td><td style="text-align:right;">−14.3</td></tr><tr><td>2사 매출 2027E(조원)</td><td>하나(1,350원)</td><td style="text-align:right;">323</td><td style="text-align:right;">317.4</td><td style="text-align:right;">−5.6</td></tr><tr><td>관세 2027E(조원)</td><td>한화(1,470원)</td><td style="text-align:right;">6.65</td><td style="text-align:right;">6.10</td><td style="text-align:right;">−0.55</td></tr><tr><td>이익 2027E(조원)</td><td>현대차증권</td><td style="text-align:right;">20.4</td><td style="text-align:right;">16.8</td><td style="text-align:right;">−3.6</td></tr><tr><td>이익 2027E(조원)</td><td>하나(1,350원)</td><td style="text-align:right;">18.4</td><td style="text-align:right;">17.9</td><td style="text-align:right;">−0.5</td></tr></tbody></table></div>
+<p><small>하나 대조의 모델 값은 환율 «하나»(1,350원) 스위치 결과. 하나 판매 757만대는 기준이 달라 수준 비교 안 함(하나 2026E 731만 vs 현대차증권 733.5만). 현대차증권 판매·매출·이익(현대차증권, 2026-11-11, p.149·153), 하나 «2027년 합산 영업이익은 18조원으로 3% 감소»·«합산 매출액은 3% 증가한 323조원»(하나증권, 2026-11-13, p.26), 관세(한화투자증권, 2026-07-06, p.7)</small></p>
+<h3 id="하우스-간-엇갈림">하우스 간 엇갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-간-엇갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>쪽 A</th><th>쪽 B</th><th>모델 처리</th></tr></thead><tbody><tr><td>2027 중국 수요</td><td>현대차증권 +2.0%</td><td>하나 −1%</td><td>지역 경로 스위치</td></tr><tr><td>2027 EV 대수</td><td>현대차증권 2,694만</td><td>하나 2,450만</td><td>Base 하나, Bull 현대차증권</td></tr><tr><td>미국 EV 2027</td><td>하나 +10%</td><td>대신 −10%(87만)</td><td>글로벌 <span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span>만 사용</td></tr><tr><td>환율 10원 민감도</td><td>현대차증권 5,000억</td><td>하나 3,300~4,000억</td><td>Bear·Base·Bull 배정</td></tr><tr><td>2027 2사 이익 방향</td><td>현대차증권 +6%</td><td>하나 −3%</td><td>Base −12%(1,320원)</td></tr></tbody></table></div>
+<p><small>현대차증권 스스로도 «1,360원/달러기준현대차-4%, 기아-8%»로 환율 민감도를 적용하면 감익이라고 밝힘(현대차증권, 2026-11-11, p.18) — 자체 전망(+6%, 1,317.5원)과 방향이 다름 ⚠. 하나 «민감도 기준으로 영업이익 감소폭은 2.8~3.4조원»(하나증권, 2026-11-13, p.22). 변경 이력은 <a href="../자동차/07_자동차_하우스시각_변경이력" class="internal internal-link alias" data-slug="자동차/07_자동차_하우스시각_변경이력">07_자동차_하우스시각_변경이력</a></small></p>
+<ul>
+<li>공통 시각(3곳): 2027 수요는 +1~2%대 저성장(현대차증권·하나·대신), 미국은 +1% 안팎 정체</li>
+<li>공통 시각(2곳): 2027 원화 강세가 2사 이익의 최대 역풍, 상반기 집중(하나·현대차증권)</li>
+<li><mark class="text-highlight">모델이 하우스와 가장 다른 곳 = 환율 손실을 얼마나 상쇄하느냐</mark>: 모델 Base는 핵심 이익률 유지(가감 0) → 하나와는 0.5조, 현대차증권과는 3.6조원 차이</li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E Base의 세 기둥 = 원/달러 1,320원 · 관세 15% 유지 · 2사 판매 +3.6%</li>
+<li>이익 쪽은 핵심 이익률 8.2% 유지(가격·<span class="gl" tabindex="0" data-gl="비싼 차 비중 변화의 이익 효과">믹스</span>가 원자재·<span class="gl" tabindex="0" data-gl="딜러·소비자 할인 지원금">인센티브</span>를 상쇄) 여부</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>매일</td><td>원/달러</td><td>1,350원 이상</td><td>1,320원 미만</td></tr><tr><td>매월 초</td><td>2사 글로벌 도매</td><td>누적 +3.6% 이상</td><td>+2% 이하</td></tr><tr><td>매월 초</td><td>미국 2사 점유율</td><td>12% 이상</td><td>11.5% 미만</td></tr><tr><td>매월</td><td>중국 내수</td><td>전년비 플러스</td><td>추가 감소</td></tr><tr><td>매월</td><td>EV 글로벌 <span class="gl" tabindex="0" data-gl="전체 판매 중 특정 차종 비중">침투율</span></td><td>25% 이상</td><td>22% 이하</td></tr><tr><td>분기</td><td>2사 관세 비용</td><td>분기 1.5조 이하</td><td>분기 1.7조 이상</td></tr><tr><td>분기</td><td>2사 영업이익률</td><td>5.5% 이상</td><td>4.5% 이하</td></tr><tr><td>수시</td><td>한미 관세 합의</td><td>15% 유지</td><td>25% 복귀 논의</td></tr></tbody></table></div>
+<p><small>기준값은 엑셀 Base·Bear 2027E. 분기 관세 1.5조 = 2027E Base 6.1조 ÷ 4(내 계산). 일정 전체는 <a href="../자동차/08_자동차_트래킹캘린더" class="internal internal-link alias" data-slug="자동차/08_자동차_트래킹캘린더">08_자동차_트래킹캘린더</a></small></p>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<small>
+- 현대차증권 「2027 Outlook 자동차/모빌리티: When is the ‘HYUNDAI Moment’?」 2026-11-11, p.2·18·34·35·37·39·46·148·149·152·153 (GlobalData 지역 수요표, 2사 판매·매출·이익·환율)
+- 하나증권 「자동차: 환율이 가져간 이익, 로봇과 자율주행이 돌려줄 가치」 2026-11-13, p.6·10·12·18·22·24·26
+- 하나증권 「미국 자동차 판매 동향(2026년 10월)」 2026-11-04, p.1
+- 대신증권 「자동차부품: 방어 먼저, 그리고 공격」 2026-10-26, p.6·15
+- 한화투자증권 「자동차: 2Q26 본업 성장과 로보틱스 가치의 교차」 2026-07-06, p.7 (관세 영향 추정 표9)
+- 삼성증권 「자동차: 1Q26 Preview」 2026-04-07, p.1 (2026 관세 부담)
+- LS증권 「현대차: 4분기 물량 정상화에 주목」 2026-10-30, p.1 (참고 대조)
+- 신한투자증권 「생산적 금융 II」 2026-04-06, p.13 (2025 자동차 수출 720억 달러, 맥락)
+- 엑셀: `모델/자동차_모델.xlsx` Sources 시트(하우스 원문 31개 × 모델 대응)
+</small>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>GlobalData 4Q26 수요 전망 → 2026E 지역 실적·2027E 경로 교체(현재 3Q26)</li>
+<li>2026년 연간 2사 판매·이익 실적(2027-01 발표) → 2026E 출발점과 핵심 이익률 8.2% 재역산</li>
+<li>2027년 연평균 환율 컨센서스 갱신 → 환율 스위치 값 교체</li>
+<li>2사 2027 관세 비용 실적(분기) → 관세 대상 비중 58.1%·신고가 역산 검증</li>
+<li>글로벌 평균 판매가격 원천 확보 → 글로벌 «금액» 시장 블록 추가 ⚠</li>
+<li>부품(현대차그룹 부품사 매출 풀)·타이어(OE·RE 수요 × 단가) 블록 추가 검토 ⚠</li>
+<li>하나(SNE)·현대차증권(GBIC) EV 집계 기준 차이 정리 → 침투율 단일 기준화</li>
+</ul>
+<h2 id="갱신-기록">갱신 기록<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#갱신-기록" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026-11-24: 밸류체인 단계별 규모·매출·영업이익 절 추가</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-278" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#자동차-시장규모-모델--지역-수요--침투율--한국-완성차-물량--단가--환율--관세이익-풀" data-for="자동차-시장규모-모델--지역-수요--침투율--한국-완성차-물량--단가--환율--관세이익-풀">자동차 시장규모 모델 — 지역 수요 × 침투율 → 한국 완성차 물량 × 단가 × 환율 → 관세·이익 풀</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-밸류체인-단계별-규모매출영업이익--신규-1124" data-for="-밸류체인-단계별-규모매출영업이익--신규-1124">⓪ 밸류체인 단계별 규모·매출·영업이익 &lt;mark>🆕 신규 11/24&lt;/mark></a></li><li class="depth-1"><a href="#-모델-구조기초" data-for="-모델-구조기초">① 모델 구조·기초</a></li><li class="depth-1"><a href="#-출발점--지역별-신차-수요" data-for="-출발점--지역별-신차-수요">② 출발점 — 지역별 신차 수요</a></li><li class="depth-1"><a href="#-파워트레인--evhevice" data-for="-파워트레인--evhevice">③ 파워트레인 — EV·HEV·ICE</a></li><li class="depth-1"><a href="#-한국-완성차-입력--물량단가환율관세" data-for="-한국-완성차-입력--물량단가환율관세">④ 한국 완성차 입력 — 물량·단가·환율·관세</a></li><li class="depth-1"><a href="#-결과--시나리오스위치별-이익-풀" data-for="-결과--시나리오스위치별-이익-풀">⑤ 결과 — 시나리오·스위치별 이익 풀</a></li><li class="depth-1"><a href="#-하우스별-시각과-검증" data-for="-하우스별-시각과-검증">⑥ 하우스별 시각과 검증</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="depth-1"><a href="#갱신-기록" data-for="갱신-기록">갱신 기록</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../자동차/00_자동차_index" class="internal">00_자동차_index</a></li><li><a href="../자동차/01_자동차_용어집" class="internal">01_자동차_용어집</a></li><li><a href="../자동차/02_자동차_수요와판매" class="internal">02_자동차_수요와판매</a></li><li><a href="../자동차/03_자동차_완성차와전동화" class="internal">03_자동차_완성차와전동화</a></li><li><a href="../자동차/04_자동차_부품" class="internal">04_자동차_부품</a></li><li><a href="../자동차/05_자동차_타이어와유통" class="internal">05_자동차_타이어와유통</a></li><li><a href="../자동차/07_자동차_하우스시각_변경이력" class="internal">07_자동차_하우스시각_변경이력</a></li><li><a href="../자동차/08_자동차_트래킹캘린더" class="internal">08_자동차_트래킹캘린더</a></li><li><a href="../자동차/설명서/자동차_설명서" class="internal">자동차_설명서</a></li><li><a href="../최근-갱신" class="internal">최근 갱신</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div><script id="gl-tip-js">(function(){if(window.__glTip)return;window.__glTip=1;var tip,timer,cur;
+function box(){if(!tip||!document.body.contains(tip)){tip=document.createElement('div');tip.className='gl-tip';document.body.appendChild(tip);}return tip;}
+function show(el){var t=box();t.textContent=el.getAttribute('data-gl');t.style.display='block';var r=el.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;
+var x=Math.min(Math.max(8,r.left),window.innerWidth-w-8);var y=r.bottom+6;if(y+h>window.innerHeight-8)y=r.top-h-6;t.style.left=x+'px';t.style.top=y+'px';cur=el;}
+function hide(){clearTimeout(timer);if(tip)tip.style.display='none';cur=null;}
+document.addEventListener('mouseover',function(e){var el=e.target.closest&&e.target.closest('.gl');if(!el)return;clearTimeout(timer);timer=setTimeout(function(){show(el);},700);});
+document.addEventListener('mouseout',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el)hide();});
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el){if(cur===el)hide();else{clearTimeout(timer);show(el);}}else hide();});
+window.addEventListener('scroll',hide,true);document.addEventListener('nav',hide);})();</script></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

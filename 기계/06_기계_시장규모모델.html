@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>06_기계_시장규모모델</title><meta charset="utf-8"/><link rel="preload" href="../index-d311a580.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="06_기계_시장규모모델"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="06_기계_시장규모모델"/><meta name="twitter:description" content="기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀 한 줄: 건설장비는 «지역 수요 대수 × 지역 성장률»을 한국 1위사 지역별 매출에 곱해 금액으로 잇고, 소형장비는 북미 1위 표본을 «리테일 물량 × 판가»로, 로봇은 «출하 × 대당 가격»과 «출하 × 액추에이터 개수 × 단가»로 세움."/><meta property="og:description" content="기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀 한 줄: 건설장비는 «지역 수요 대수 × 지역 성장률»을 한국 1위사 지역별 매출에 곱해 금액으로 잇고, 소형장비는 북미 1위 표본을 «리테일 물량 × 판가»로, 로봇은 «출하 × 대당 가격»과 «출하 × 액추에이터 개수 × 단가»로 세움."/><meta property="og:image:alt" content="기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀 한 줄: 건설장비는 «지역 수요 대수 × 지역 성장률»을 한국 1위사 지역별 매출에 곱해 금액으로 잇고, 소형장비는 북미 1위 표본을 «리테일 물량 × 판가»로, 로봇은 «출하 × 대당 가격»과 «출하 × 액추에이터 개수 × 단가»로 세움."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/기계/06_기계_시장규모모델"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/기계/06_기계_시장규모모델"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀 한 줄: 건설장비는 «지역 수요 대수 × 지역 성장률»을 한국 1위사 지역별 매출에 곱해 금액으로 잇고, 소형장비는 북미 1위 표본을 «리테일 물량 × 판가»로, 로봇은 «출하 × 대당 가격»과 «출하 × 액추에이터 개수 × 단가»로 세움."/><meta name="generator" content="Quartz"/><link href="../index-d311a580.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="기계/06_기계_시장규모모델" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-83" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-83" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../기계/">11. 기계</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>06_기계_시장규모모델</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">06_기계_시장규모모델</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>39 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="기계-시장규모-모델--건설장비-수요-대수--한국-몫--소형장비-표본--휴머노이드액추에이터-풀">기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#기계-시장규모-모델--건설장비-수요-대수--한국-몫--소형장비-표본--휴머노이드액추에이터-풀" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>한 줄: 건설장비는 «지역 수요 대수 × 지역 성장률»을 한국 1위사 지역별 매출에 곱해 금액으로 잇고, 소형장비는 북미 1위 표본을 «리테일 물량 × 판가»로, 로봇은 «출하 × 대당 가격»과 «출하 × <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 개수 × 단가»로 세움. Base 2026E 글로벌 수요 611천대(+9.9%) → 한국 1위사 제품 매출 7.05조원(+23%). 2027E는 시장 +3%로 둔화 → 제품 매출 +5%. <span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>는 2026E 41억 달러지만 3안 폭이 4.6배</p>
+</blockquote>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<ul>
+<li>텍스트 캐시 80건(산업 30 · 기업 사례 50) 중 2026년 54건, 2025년 26건 → 실제 원천 기간 2025-02-07~2026-11-16. 모델 수치는 업황 숫자가 있는 23건에서 뽑음</li>
+<li>건설장비 «시장 금액» 원천이 없음 → 대수만 세우고, 금액은 한국 1위사 지역 매출로만 연결 ⚠</li>
+<li>소형장비 업종 총액 원천 없음 → 북미 소형장비 1위사 지역 매출을 표본으로 씀 ⚠</li>
+<li><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 2027E 이후 출하 배수·가격 하락률은 원천 숫자 없음 → 노란 칸 정성 가정 ⚠</li>
+<li><span class="gl" tabindex="0" data-gl="사람 옆에서 일하는 로봇팔">협동로봇</span>·계장 피팅·밸브·스마트팩토리는 시장 총액 원천 없음 → 이 모델 밖. 정성 내용은 <a href="../기계/04_기계_로봇과자동화" class="internal internal-link alias" data-slug="기계/04_기계_로봇과자동화">04_기계_로봇과자동화</a> · <a href="../기계/05_기계_산업용기계와부품" class="internal internal-link alias" data-slug="기계/05_기계_산업용기계와부품">05_기계_산업용기계와부품</a> ⚠</li>
+</ul>
+</div></blockquote>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li><mark class="text-highlight">2026년 건설장비는 연초 «역성장» 계획이 반년 만에 «+10%»로 뒤집힘</mark> → 자원국(중남미·아프리카·CIS) 광산 수요가 견인, 북미는 0%</li>
+<li>한국 1위사 매출은 시장보다 빠름(2026E +23% vs 시장 +10%) → <span class="gl" tabindex="0" data-gl="공급 가격 올림">판가 인상</span> + 대형·<span class="gl" tabindex="0" data-gl="광산·토목용 큰 장비">초대형</span> 믹스. 2027E는 시장 3% 가정에 묶여 +5%뿐 → 하우스(신한 +18%)와 가장 크게 갈리는 지점</li>
+<li><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>는 출하 경로(4.25만 ~ 16.5만대)가 시장 크기를 4배 흔듦 → 금액보다 «출하 대수»를 먼저 추적</li>
+</ul>
+</div></blockquote>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="건설장비 수요 7지역 (Base, 천대)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 31.175 272.152891  L 607.86 272.152891  L 607.86 44.917125  L 31.175 44.917125  L 31.175 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="109.028036" y="282.853594" transform="rotate(-0 109.028036 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="249.354345" y="282.853594" transform="rotate(-0 249.354345 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="389.680655" y="282.853594" transform="rotate(-0 389.680655 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="530.006964" y="282.853594" transform="rotate(-0 530.006964 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 31.175 272.152891  L 607.86 272.152891  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="275.56375" transform="rotate(-0 27.675 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 31.175 238.755512  L 607.86 238.755512  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="242.166371" transform="rotate(-0 27.675 242.166371)">100</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 31.175 205.358133  L 607.86 205.358133  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="208.768992" transform="rotate(-0 27.675 208.768992)">200</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 31.175 171.960754  L 607.86 171.960754  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="175.371613" transform="rotate(-0 27.675 175.371613)">300</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 31.175 138.563375  L 607.86 138.563375  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="141.974235" transform="rotate(-0 27.675 141.974235)">400</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 31.175 105.165996  L 607.86 105.165996  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="108.576856" transform="rotate(-0 27.675 108.576856)">500</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 31.175 71.768618  L 607.86 71.768618  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.675" y="75.179477" transform="rotate(-0 27.675 75.179477)">600</text> </g> </g> </g> <g id="patch_3"> <path d="M 57.387955 272.152891  L 160.668118 272.152891  L 160.668118 86.463464  L 57.387955 86.463464  z " clip-path="url(#pc8d64506fe)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 197.714264 272.152891  L 300.994427 272.152891  L 300.994427 68.094906  L 197.714264 68.094906  z " clip-path="url(#pc8d64506fe)" style="fill:url(#hf97d5f134d);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 338.040573 272.152891  L 441.320736 272.152891  L 441.320736 61.749404  L 338.040573 61.749404  z " clip-path="url(#pc8d64506fe)" style="fill:url(#hf97d5f134d);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 478.366882 272.152891  L 581.647045 272.152891  L 581.647045 55.737876  L 478.366882 55.737876  z " clip-path="url(#pc8d64506fe)" style="fill:url(#hf97d5f134d);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_19"> <path d="M 31.175 272.152891  L 607.86 272.152891  " clip-path="url(#pc8d64506fe)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_7"> <path d="M 31.175 272.152891  L 31.175 44.917125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_8"> <path d="M 31.175 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="109.028036" y="83.463464" transform="rotate(-0 109.028036 83.463464)">556</text> </g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="249.354345" y="65.094906" transform="rotate(-0 249.354345 65.094906)">611</text> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="389.680655" y="58.749404" transform="rotate(-0 389.680655 58.749404)">630</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="530.006964" y="52.737876" transform="rotate(-0 530.006964 52.737876)">648</text> </g> <g id="text_16"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="31.175" y="38.917125" transform="rotate(-0 31.175 38.917125)">천대</text> </g> </g> <g id="text_17"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">건설장비 수요 7지역 (Base, 천대)</text> </g> <g id="text_18"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="pc8d64506fe"> <rect x="31.175" y="44.917125" width="576.685" height="227.235766"></rect> </clipPath> </defs> <defs> <pattern id="hf97d5f134d" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="1위사 제품 매출 (Base, 조원)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 20.51 272.152891  L 607.86 272.152891  L 607.86 44.825719  L 20.51 44.825719  L 20.51 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="99.802822" y="282.853594" transform="rotate(-0 99.802822 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="242.724274" y="282.853594" transform="rotate(-0 242.724274 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="385.645726" y="282.853594" transform="rotate(-0 385.645726 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.567178" y="282.853594" transform="rotate(-0 528.567178 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 20.51 272.152891  L 607.86 272.152891  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="275.56375" transform="rotate(-0 17.01 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 20.51 244.360584  L 607.86 244.360584  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="247.771443" transform="rotate(-0 17.01 247.771443)">1</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 20.51 216.568277  L 607.86 216.568277  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="219.979137" transform="rotate(-0 17.01 219.979137)">2</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 20.51 188.775971  L 607.86 188.775971  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="192.18683" transform="rotate(-0 17.01 192.18683)">3</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 20.51 160.983664  L 607.86 160.983664  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="164.394524" transform="rotate(-0 17.01 164.394524)">4</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 20.51 133.191358  L 607.86 133.191358  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="136.602217" transform="rotate(-0 17.01 136.602217)">5</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 20.51 105.399051  L 607.86 105.399051  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="108.80991" transform="rotate(-0 17.01 108.80991)">6</text> </g> </g> <g id="ytick_8"> <g id="line2d_19"> <path d="M 20.51 77.606744  L 607.86 77.606744  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="81.017604" transform="rotate(-0 17.01 81.017604)">7</text> </g> </g> <g id="ytick_9"> <g id="line2d_21"> <path d="M 20.51 49.814438  L 607.86 49.814438  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_22"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="17.01" y="53.225297" transform="rotate(-0 17.01 53.225297)">8</text> </g> </g> </g> <g id="patch_3"> <path d="M 47.207727 272.152891  L 152.397916 272.152891  L 152.397916 112.902974  L 47.207727 112.902974  z " clip-path="url(#p875630af2e)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 190.129179 272.152891  L 295.319368 272.152891  L 295.319368 76.217129  L 190.129179 76.217129  z " clip-path="url(#p875630af2e)" style="fill:url(#h6d113a7b17);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 333.050632 272.152891  L 438.240821 272.152891  L 438.240821 66.211899  L 333.050632 66.211899  z " clip-path="url(#p875630af2e)" style="fill:url(#h6d113a7b17);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 475.972084 272.152891  L 581.162273 272.152891  L 581.162273 55.650822  L 475.972084 55.650822  z " clip-path="url(#p875630af2e)" style="fill:url(#h6d113a7b17);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_23"> <path d="M 20.51 272.152891  L 607.86 272.152891  " clip-path="url(#p875630af2e)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_7"> <path d="M 20.51 272.152891  L 20.51 44.825719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_8"> <path d="M 20.51 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="99.802822" y="109.902974" transform="rotate(-0 99.802822 109.902974)">5.73</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="242.724274" y="73.217129" transform="rotate(-0 242.724274 73.217129)">7.05</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="385.645726" y="63.211899" transform="rotate(-0 385.645726 63.211899)">7.41</text> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="528.567178" y="52.650822" transform="rotate(-0 528.567178 52.650822)">7.79</text> </g> <g id="text_18"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="20.51" y="38.825719" transform="rotate(-0 20.51 38.825719)">조원</text> </g> </g> <g id="text_19"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">1위사 제품 매출 (Base, 조원)</text> </g> <g id="text_20"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="p875630af2e"> <rect x="20.51" y="44.825719" width="587.35" height="227.327172"></rect> </clipPath> </defs> <defs> <pattern id="h6d113a7b17" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="소형 표본·휴머노이드 시장 (Base, 억 달러)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 29.393281 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 29.393281 59.677125  L 29.393281 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="109.279971" y="282.853594" transform="rotate(-0 109.279971 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="248.844417" y="282.853594" transform="rotate(-0 248.844417 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="388.408864" y="282.853594" transform="rotate(-0 388.408864 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="527.973311" y="282.853594" transform="rotate(-0 527.973311 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 29.393281 272.152891  L 607.86 272.152891  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="275.56375" transform="rotate(-0 25.893281 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 29.393281 240.996944  L 607.86 240.996944  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="244.407804" transform="rotate(-0 25.893281 244.407804)">20</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 29.393281 209.840998  L 607.86 209.840998  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="213.251857" transform="rotate(-0 25.893281 213.251857)">40</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 29.393281 178.685051  L 607.86 178.685051  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="182.095911" transform="rotate(-0 25.893281 182.095911)">60</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 29.393281 147.529105  L 607.86 147.529105  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="150.939964" transform="rotate(-0 25.893281 150.939964)">80</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 29.393281 116.373159  L 607.86 116.373159  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="119.784018" transform="rotate(-0 25.893281 119.784018)">100</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 29.393281 85.217212  L 607.86 85.217212  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="88.628071" transform="rotate(-0 25.893281 88.628071)">120</text> </g> </g> </g> <g id="patch_3"> <path d="M 55.687223 272.152891  L 107.046939 272.152891  L 107.046939 192.393668  L 55.687223 192.393668  z " clip-path="url(#p72b35c0f04)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 195.25167 272.152891  L 246.611386 272.152891  L 246.611386 187.097157  L 195.25167 187.097157  z " clip-path="url(#p72b35c0f04)" style="fill:url(#h5af682502a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 334.816116 272.152891  L 386.175833 272.152891  L 386.175833 183.358443  L 334.816116 183.358443  z " clip-path="url(#p72b35c0f04)" style="fill:url(#h5af682502a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 474.380563 272.152891  L 525.74028 272.152891  L 525.74028 179.46395  L 474.380563 179.46395  z " clip-path="url(#p72b35c0f04)" style="fill:url(#h5af682502a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 111.513002 272.152891  L 162.872718 272.152891  L 162.872718 261.715649  L 111.513002 261.715649  z " clip-path="url(#p72b35c0f04)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 251.077448 272.152891  L 302.437165 272.152891  L 302.437165 207.815861  L 251.077448 207.815861  z " clip-path="url(#p72b35c0f04)" style="fill:url(#heb1e1a6fa1);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 390.641895 272.152891  L 442.001612 272.152891  L 442.001612 157.966347  L 390.641895 157.966347  z " clip-path="url(#p72b35c0f04)" style="fill:url(#heb1e1a6fa1);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 530.206342 272.152891  L 581.566058 272.152891  L 581.566058 69.795019  L 530.206342 69.795019  z " clip-path="url(#p72b35c0f04)" style="fill:url(#heb1e1a6fa1);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="line2d_19"> <path d="M 29.393281 272.152891  L 607.86 272.152891  " clip-path="url(#p72b35c0f04)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_11"> <path d="M 29.393281 272.152891  L 29.393281 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_12"> <path d="M 29.393281 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="81.367081" y="189.393668" transform="rotate(-0 81.367081 189.393668)">51.2</text> </g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="220.931528" y="184.097157" transform="rotate(-0 220.931528 184.097157)">54.6</text> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="360.495975" y="180.358443" transform="rotate(-0 360.495975 180.358443)">57</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="500.060421" y="176.46395" transform="rotate(-0 500.060421 176.46395)">59.5</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="137.19286" y="258.715649" transform="rotate(-0 137.19286 258.715649)">6.7</text> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="276.757307" y="204.815861" transform="rotate(-0 276.757307 204.815861)">41.3</text> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="416.321753" y="154.966347" transform="rotate(-0 416.321753 154.966347)">73.3</text> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="555.8862" y="66.795019" transform="rotate(-0 555.8862 66.795019)">130</text> </g> <g id="text_20"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="29.393281" y="53.677125" transform="rotate(-0 29.393281 53.677125)">억 달러</text> </g> </g> <g id="text_21"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">소형 표본·휴머노이드 시장 (Base, 억 달러)</text> </g> <g id="text_22"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_13"> <path d="M 11.646 35.044094  L 24.946 35.044094  L 24.946 28.394094  L 11.646 28.394094  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_23"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.044094" transform="rotate(-0 32.546 35.044094)">소형 표본 3지역</text> </g> <g id="patch_14"> <path d="M 105.238812 35.044094  L 118.538812 35.044094  L 118.538812 28.394094  L 105.238812 28.394094  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_24"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="126.138813" y="35.044094" transform="rotate(-0 126.138813 35.044094)">휴머노이드 시장</text> </g> </g> </g> <defs> <clipPath id="p72b35c0f04"> <rect x="29.393281" y="59.677125" width="578.466719" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="h5af682502a" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="heb1e1a6fa1" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 단위가 달라 그래프를 나눔. 1위사 영업이익은 2025A 값이 없어 뺌.</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>건설장비 수요 7지역(천대)</td><td style="text-align:right;">556</td><td style="text-align:right;">611</td><td style="text-align:right;">630</td><td style="text-align:right;">648</td></tr><tr><td>1위사 제품 매출(조원)</td><td style="text-align:right;">5.73</td><td style="text-align:right;">7.05</td><td style="text-align:right;">7.41</td><td style="text-align:right;">7.79</td></tr><tr><td>1위사 영업이익(조원)</td><td style="text-align:right;">⚠</td><td style="text-align:right;">0.93</td><td style="text-align:right;">0.99</td><td style="text-align:right;">1.06</td></tr><tr><td>소형 표본 3지역(억 달러)</td><td style="text-align:right;">51.2</td><td style="text-align:right;">54.6</td><td style="text-align:right;">57.0</td><td style="text-align:right;">59.5</td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 시장(억 달러)</td><td style="text-align:right;">6.7</td><td style="text-align:right;">41.3</td><td style="text-align:right;">73.3</td><td style="text-align:right;">129.9</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>Base. 2025A 수요(iM, 2026-04-13, p.3~4 회사 사업계획), 1위사 지역 매출(신한, 2026-07-30, p.4), 소형 표본(신한, 2026-10-30, p.3), 휴머노이드 13,318대(LS, 2026-03-17, p.53) × 5만 달러(LS 가정). 나머지는 자체 모델(엑셀 Model 시트). 2027E Bear~Bull 수요 536~685천대 · 제품 매출 6.11~8.57조원 · 휴머노이드 20~186억 달러</small></p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;지역 수요 7개&lt;br/>2026E 611천대\&quot;] -->|\&quot;지역 성장률\&quot;| B[\&quot;1위사 제품 매출&lt;br/>7.05조원\&quot;]\n    B --> C[\&quot;+ 부품·엔진&lt;br/>매출 9.29조원\&quot;]\n    C --> D[\&quot;영업이익 0.93조원\&quot;]\n    E[\&quot;소형 리테일 물량 × 판가\&quot;] --> F[\&quot;소형 표본 54.6억 달러\&quot;]\n    G[\&quot;휴머노이드 9.3만대\&quot;] -->|\&quot;× 4.4만 달러\&quot;| H[\&quot;완제품 41.3억 달러\&quot;]\n    G -->|\&quot;× 30개 × 665달러\&quot;| I[\&quot;액추에이터 18.6억 달러\&quot;]&quot;">flowchart LR
+    A[&quot;지역 수요 7개&lt;br/>2026E 611천대&quot;] -->|&quot;지역 성장률&quot;| B[&quot;1위사 제품 매출&lt;br/>7.05조원&quot;]
+    B --> C[&quot;+ 부품·엔진&lt;br/>매출 9.29조원&quot;]
+    C --> D[&quot;영업이익 0.93조원&quot;]
+    E[&quot;소형 리테일 물량 × 판가&quot;] --> F[&quot;소형 표본 54.6억 달러&quot;]
+    G[&quot;휴머노이드 9.3만대&quot;] -->|&quot;× 4.4만 달러&quot;| H[&quot;완제품 41.3억 달러&quot;]
+    G -->|&quot;× 30개 × 665달러&quot;| I[&quot;액추에이터 18.6억 달러&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>2026E Base. 자체 모델</small></p>
+<ul>
+<li>기업분석 아님: 1위사 매출은 «한국 몫»을 금액으로 보는 표본으로만 씀</li>
+<li>지역별 수요 동인은 <a href="../기계/02_기계_수요와전방" class="internal internal-link alias" data-slug="기계/02_기계_수요와전방">02_기계_수요와전방</a>, 장비 종류·톤급·엔진은 <a href="../기계/03_기계_건설기계" class="internal internal-link alias" data-slug="기계/03_기계_건설기계">03_기계_건설기계</a>, <span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>·<span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 구조는 <a href="../기계/04_기계_로봇과자동화" class="internal internal-link alias" data-slug="기계/04_기계_로봇과자동화">04_기계_로봇과자동화</a></li>
+</ul>
+<hr/>
+<h2 id="-밸류체인-단계별-규모매출영업이익--신규-1124">⓪ 밸류체인 단계별 규모·매출·영업이익 <mark>🆕 신규 11/24</mark><a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-밸류체인-단계별-규모매출영업이익--신규-1124" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>금액이 가장 큰 단계는 건설기계(1위사 제품·부품 매출 6.41조원, 2025)와 소형 건설장비(북미 1위사 표본 51.2억달러, 2025). 다만 둘 다 업계 합계가 아니라 1위사 1곳 값임</li>
+<li>이익률은 계장 피팅·밸브(대표 2사 합산 17.3%, 2024 · 대표사 27~29%)와 엔진(16.5%, 2025)이 높고, 건설기계 9.9%(2Q26) · 소형 7.8%(2025) 순. <span class="gl" tabindex="0" data-gl="사람 옆에서 일하는 로봇팔">협동로봇</span>과 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>는 아직 적자</li>
+<li>시장 금액이 있는 단계는 피팅·밸브·<span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>·액추에이터 3개뿐. 건설기계는 대수만 있고, 소형·엔진·<span class="gl" tabindex="0" data-gl="물류용 지게차">산업차량</span>·협동로봇은 시장 총액이, 스마트팩토리는 세 숫자가 전부 비어 있음</li>
+</ul>
+</div></blockquote>
+<h3 id="단계별-한눈에">단계별 한눈에<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#단계별-한눈에" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>단계</th><th style="text-align:right;">시장 규모</th><th style="text-align:right;">매출</th><th style="text-align:right;">영업이익(률)</th><th>기준</th><th>출처</th></tr></thead><tbody><tr><td>건설기계(<span class="gl" tabindex="0" data-gl="광산·토목용 큰 장비">중대형</span>)</td><td style="text-align:right;">7지역 수요 556천대(2025)</td><td style="text-align:right;">제품·부품 6.41조원(2025)</td><td style="text-align:right;">부문 2,006억원(9.9%, 2Q26 분기)</td><td>시장 물량만 · 실적 1위사 1곳</td><td><small>(iM, 2026-04-13; 신한, 2026-07-30)</small></td></tr><tr><td>소형 건설장비</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">3지역 51.2억달러(2025)</td><td style="text-align:right;">전사 4.82억달러(7.8%, 2025)</td><td>북미 1위사 1곳</td><td><small>(신한, 2026-10-30)</small></td></tr><tr><td>엔진(발전·산업용)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">1.33조원(2025)</td><td style="text-align:right;">이익률 16.5%(2025)</td><td>1위사 1곳</td><td><small>(한화, 2026-02-19)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="물류용 지게차">산업차량</span>(<span class="gl" tabindex="0" data-gl="물류용 지게차">지게차</span>)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">9.29억달러(2025)</td><td style="text-align:right;">⚠ 원문 없음</td><td>1사 사례</td><td><small>(대신, 2026-11-02)</small></td></tr><tr><td>계장 피팅·밸브</td><td style="text-align:right;">글로벌 48.8억달러(2026)</td><td style="text-align:right;">2,889억원(2024)</td><td style="text-align:right;">499억원(17.3%, 2024)</td><td>시장 업계 전체 · 실적 대표 2사 합산</td><td><small>(서울평가정보, 2026-10-23; 대신, 2026-05-26)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 옆에서 일하는 로봇팔">협동로봇</span>·<span class="gl" tabindex="0" data-gl="공장 고정형 대형 로봇">산업용 로봇</span></td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">330억원(2025)</td><td style="text-align:right;">−595억원(2025)</td><td>국내 1위사 1곳</td><td><small>(삼성, 2026-03-12)</small></td></tr><tr><td>로봇 완제품(<span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>)</td><td style="text-align:right;">글로벌 6.7억달러(2025)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td>업계 전체(자체 모델)</td><td><small>(LS, 2026-03-17)</small></td></tr><tr><td>로봇 부품(<span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>)</td><td style="text-align:right;">액추에이터 풀 3.0억달러(2025)</td><td style="text-align:right;">약 300억원(2025)</td><td style="text-align:right;">약 −30억원(2025)</td><td>시장 자체 모델 · 실적 1사 사례</td><td><small>(LS, 2026-03-17; 한화, 2026-08-24)</small></td></tr><tr><td>스마트팩토리·자동화</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">⚠ 원문 없음</td><td>해당 없음</td><td>—</td></tr></tbody></table></div>
+<p><small>건설기계 매출 = 1위사 제품 5.73조원 + 부품 0.68조원(내 계산), 엔진은 아래 줄로 따로 뺌. 건설기계 이익은 2Q26 한 분기의 건설기계(제품·부품) 부문 값. 소형 매출 = 북미 1위사 3지역 매출(소형+포터블파워), 영업이익은 산업차량까지 든 전사 값이라 범위가 다름. 피팅·밸브 2사 합산 = 대표 2사 연간 실적 합(내 계산, 두 번째 회사 출처는 한국IR협의회 2025-12-17). 휴머노이드 = 출하 13,318대 × 대당 5만달러, 액추에이터 풀 = 출하 × 30개 × 750달러(자체 모델 Base, 2025 실측 아님 ⚠). 액추에이터 1사 실적은 십억원 단위 표를 옮긴 근삿값</small></p>
+<h3 id="건설기계중대형">건설기계(중대형)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#건설기계중대형" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>7지역 수요(천대)</td><td style="text-align:right;">556</td><td style="text-align:right;">611</td><td style="text-align:right;">630</td><td style="text-align:right;">648</td><td><small>(iM, 2026-04-13; 자체 모델)</small></td></tr><tr><td>1위사 제품·부품 매출(조원)</td><td style="text-align:right;">6.41</td><td style="text-align:right;">7.79</td><td style="text-align:right;">8.21</td><td style="text-align:right;">8.65</td><td><small>(신한, 2026-07-30; 자체 모델)</small></td></tr><tr><td>1위사 전사 영업이익(조원)</td><td style="text-align:right;">⚠ 원문 없음</td><td style="text-align:right;">0.93</td><td style="text-align:right;">0.99</td><td style="text-align:right;">1.06</td><td><small>(자체 모델)</small></td></tr></tbody></table></div>
+<p><small>2026E 이후는 자체 모델(Base), 아래 ②·③과 같은 값. 매출은 제품 + 부품 합(내 계산). 전사 영업이익은 엔진까지 포함, 하우스 전망은 2026F 0.89조원 · 2027F 1.13조원(신한, 2026-07-30)</small></p>
+<ul>
+<li>회사 <span class="gl" tabindex="0" data-gl="회사가 낸 연간 목표치">가이던스</span>(통합 법인 전사, 2026): 매출 8.72조~8.91조원 · 영업이익 4,396억~5,764억원(이익률 5~7%) <small>(한화, 2026-02-19)</small> → 모델·하우스 전망보다 낮음</li>
+<li>참고: <span class="gl" tabindex="0" data-gl="매출 1원당 고정비 전 이익">공헌이익률</span> 20~30% <small>(신한, 2026-07-30)</small>, 부품·서비스(AM) 기회시장 약 6조원 <small>(신한, 2026-07-10)</small></li>
+</ul>
+<h3 id="소형-건설장비">소형 건설장비<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#소형-건설장비" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>1위사 3지역 매출(백만달러)</td><td style="text-align:right;">5,123</td><td style="text-align:right;">5,461</td><td style="text-align:right;">5,700</td><td style="text-align:right;">5,949</td><td><small>(신한, 2026-10-30; 자체 모델)</small></td></tr><tr><td>1위사 전사 영업이익(백만달러)</td><td style="text-align:right;">482</td><td style="text-align:right;">586</td><td style="text-align:right;">640</td><td style="text-align:right;">697</td><td><small>(신한, 2026-10-30)</small></td></tr><tr><td>1위사 전사 영업이익률(%)</td><td style="text-align:right;">7.8</td><td style="text-align:right;">8.8</td><td style="text-align:right;">9.2</td><td style="text-align:right;">9.8</td><td><small>(신한, 2026-10-30)</small></td></tr></tbody></table></div>
+<p><small>매출 2026E 이후는 자체 모델(Base), 아래 ④와 같은 값. 영업이익·이익률은 하우스 전망(전사 기준, 산업차량 포함). 2024년 전사 영업이익 639백만달러(10.2%)</small></p>
+<ul>
+<li>이익 변수: 관세로 소형 이익률 −4~5%p(2025 하반기) <small>(한화, 2025-12-15)</small>, 4Q26 영업이익률 4.6% 전망도 있음 <small>(대신, 2026-11-03)</small></li>
+</ul>
+<h3 id="엔진발전산업용">엔진(발전·산업용)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엔진발전산업용" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>1위사 엔진 매출(십억원)</td><td style="text-align:right;">1,326</td><td style="text-align:right;">1,501</td><td style="text-align:right;">1,640</td><td style="text-align:right;">1,886</td><td><small>(신한, 2026-07-30; 자체 모델)</small></td></tr></tbody></table></div>
+<p><small>2026E 이후는 자체 모델(Base, 신한 증가율 적용), 아래 ③과 같은 값</small></p>
+<ul>
+<li>이익률: 16.5%(2025) <small>(한화, 2026-02-19)</small> → 14.1%(1Q26) <small>(KB, 2026-04-27)</small> → 2Q26 영업이익 591억원 ÷ 매출 3,861억원 = 15.3%(내 계산) <small>(신한, 2026-07-30)</small></li>
+<li>회사 2026 <span class="gl" tabindex="0" data-gl="회사가 낸 연간 목표치">가이던스</span> 이익률 10.9%는 신공장 램프업·관세 비용을 넣은 값 <small>(한화, 2026-02-19)</small></li>
+</ul>
+<h3 id="산업차량지게차">산업차량(지게차)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#산업차량지게차" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>1사 사례 매출(백만달러)</td><td style="text-align:right;">1,026</td><td style="text-align:right;">929</td><td style="text-align:right;">979</td><td style="text-align:right;">1,078</td><td><small>(대신, 2026-11-02)</small></td></tr></tbody></table></div>
+<p><small>북미 소형장비 1위사의 산업차량 부문. 2026E 이후는 하우스 추정, 2028E 1,128백만달러</small></p>
+<h3 id="계장-피팅밸브">계장 피팅·밸브<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#계장-피팅밸브" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2023</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th>출처</th></tr></thead><tbody><tr><td>대표 2사 합산 매출(억원)</td><td style="text-align:right;">3,002</td><td style="text-align:right;">2,889</td><td style="text-align:right;">3,382</td><td><small>(대신, 2026-05-26; 한국IR협의회, 2025-12-17)</small></td></tr><tr><td>대표 2사 합산 영업이익(억원)</td><td style="text-align:right;">637</td><td style="text-align:right;">499</td><td style="text-align:right;">721</td><td><small>(대신, 2026-05-26; 한국IR협의회, 2025-12-17)</small></td></tr><tr><td>합산 영업이익률(%)</td><td style="text-align:right;">21.2</td><td style="text-align:right;">17.3</td><td style="text-align:right;">21.3</td><td><small>(내 계산)</small></td></tr></tbody></table></div>
+<p><small>두 회사 연간 실적의 합(내 계산). 2025년은 한 곳이 실적, 다른 한 곳이 하우스 전망(매출 1,236억원 · 영업이익 132억원)이라 근삿값 ⚠</small></p>
+<ul>
+<li>시장: <span class="gl" tabindex="0" data-gl="유체 흐름 제어 밸브">계장용 밸브</span>·피팅 48.8억달러(2026) → 81.6억달러(2032), 연 8.9% <small>(서울평가정보, 2026-10-23)</small>. 상위 2사 점유율 80%+ <small>(대신, 2025-09-22)</small></li>
+<li>대표사 영업이익률 27%(2023) → 28%(2024) → 29.0%(1Q26) <small>(대신, 2025-09-22; 한투, 2026-05-19)</small></li>
+</ul>
+<h3 id="협동로봇산업용-로봇">협동로봇·산업용 로봇<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#협동로봇산업용-로봇" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th>출처</th></tr></thead><tbody><tr><td>국내 1위사 매출(억원)</td><td style="text-align:right;">470</td><td style="text-align:right;">330</td><td style="text-align:right;">900</td><td style="text-align:right;">1,210</td><td><small>(DS, 2026-05-29)</small></td></tr><tr><td>국내 1위사 영업이익(억원)</td><td style="text-align:right;">−410</td><td style="text-align:right;">−590</td><td style="text-align:right;">−270</td><td style="text-align:right;">10</td><td><small>(DS, 2026-05-29)</small></td></tr></tbody></table></div>
+<p><small>십억원 단위 표를 억원으로 옮김. 2026E 이후는 하우스 전망, 2025년 인수한 미국 자동화 솔루션 회사 포함</small></p>
+<h3 id="로봇-완제품휴머노이드">로봇 완제품(휴머노이드)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#로봇-완제품휴머노이드" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td>출하(천대)</td><td style="text-align:right;">13.3</td><td style="text-align:right;">93.2</td><td style="text-align:right;">186.5</td><td style="text-align:right;">372.9</td><td><small>(LS, 2026-03-17; 자체 모델)</small></td></tr><tr><td>완제품 시장(백만달러)</td><td style="text-align:right;">666</td><td style="text-align:right;">4,133</td><td style="text-align:right;">7,328</td><td style="text-align:right;">12,993</td><td><small>(자체 모델)</small></td></tr></tbody></table></div>
+<p><small>자체 모델(Base), 아래 ⑤와 같은 값. 2027E 범위 Bear 2,040 ~ Bull 18,614백만달러. 하우스 값은 2024년 9억달러 · 2035년 2,837억달러(LS, 2026-03-17)</small></p>
+<h3 id="로봇-부품액추에이터">로봇 부품(액추에이터)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#로봇-부품액추에이터" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th><th>출처</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 풀(백만달러)</td><td style="text-align:right;">300</td><td style="text-align:right;">1,860</td><td style="text-align:right;">3,297</td><td style="text-align:right;">5,847</td><td><small>(자체 모델)</small></td></tr><tr><td>국내 표본 출하 × 단가(억원)</td><td style="text-align:right;">396</td><td style="text-align:right;">900</td><td style="text-align:right;">1,800</td><td style="text-align:right;">2,700</td><td><small>(한화, 2026-08-24; 하나, 2026-04-22)</small></td></tr></tbody></table></div>
+<p><small>자체 모델(Base), 아래 ⑤와 같은 값. 국내 표본 = 출하(22만 → 50만 → 100만개) × 개당 18만원(내 계산)</small></p>
+<ul>
+<li>1사 사례: 국내 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 업체 매출 약 300억원(2025) → 390억원(2026E), 영업이익 약 −30억원(2025) <small>(한화, 2026-08-24)</small></li>
+<li>이웃 부품: <span class="gl" tabindex="0" data-gl="케이스 없는 내장형 모터">프레임리스 모터</span> 시장 6.6억달러(2023) → 33억달러(2030) <small>(삼성, 2026-03-11)</small>. <span class="gl" tabindex="0" data-gl="모터 회전을 줄여 힘을 키움">감속기</span>는 하모닉 1위 점유율 82%(2023)만 있음 <small>(삼성, 2026-03-11)</small></li>
+</ul>
+<h3 id="비어-있는-곳">비어 있는 곳<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#비어-있는-곳" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>건설기계(<span class="gl" tabindex="0" data-gl="광산·토목용 큰 장비">중대형</span>): 금액 기준 시장 규모, 업계 합산 매출·영업이익, 2025년 부문 영업이익 없음 → 대수 정의도 55만~130만대로 갈림. 금액 시장 통계(<span class="gl" tabindex="0" data-gl="글로벌 건설장비 판매 집계 기관">Off-Highway Research</span> 등)나 대당 평균 판가가 있으면 대수 × 판가로 채움</li>
+<li>소형 건설장비: 업종 시장 총액, 소형만 분리한 영업이익 없음 → 소형은 대수 60% · 금액 30%라는 비중만 있음 <small>(신한, 2026-04-28)</small></li>
+<li>엔진(발전·산업용): 발전·<span class="gl" tabindex="0" data-gl="건설장비에 들어가는 엔진">산업용 엔진</span> 시장 규모, 2026E 이후 부문 영업이익 없음 → <span class="gl" tabindex="0" data-gl="정전 대비 예비 발전기">비상발전기</span> 시장 통계가 필요함</li>
+<li><span class="gl" tabindex="0" data-gl="물류용 지게차">산업차량</span>(<span class="gl" tabindex="0" data-gl="물류용 지게차">지게차</span>): 시장 규모, 부문 영업이익 없음(1사 매출뿐)</li>
+<li>계장 피팅·밸브: 국내 시장 규모, 반도체용(<span class="gl" tabindex="0" data-gl="반도체용 초고순도 제품 (Ultra High Purity)">UHP</span>)만 분리한 시장·이익 없음 → 1H26 피팅 매출은 상장 4사 합 1,251억원(내 계산) <small>(한투, 2026-08-31)</small></li>
+<li><span class="gl" tabindex="0" data-gl="사람 옆에서 일하는 로봇팔">협동로봇</span>·<span class="gl" tabindex="0" data-gl="공장 고정형 대형 로봇">산업용 로봇</span>: 글로벌·국내 시장 총액, 산업 합산 출하·매출 없음 → 1위 업체 점유율 40%+ <small>(SK, 2025-05-30)</small>만 있음</li>
+<li>로봇 완제품(<span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>): 업계 매출·영업이익 없음(양산 초기) → 출하 실적이 쌓이면 대수 × 판가로 대체</li>
+<li>로봇 부품(<span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>): <span class="gl" tabindex="0" data-gl="모터 회전을 줄여 힘을 키움">감속기</span> 시장 규모, 부품 업계 합산 영업이익 없음</li>
+<li>스마트팩토리·자동화: 시장 규모·매출·영업이익 전부 없음 → 정책 예산만 있음: 산업부 AI팩토리 1,582억원(2025) → 2,200억원(2026) <small>(삼성, 2026-03-11)</small></li>
+</ul>
+<hr/>
+<h2 id="-모델-구조기초">① 모델 구조·기초<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-모델-구조기초" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>네 블록은 단위가 달라 더하지 않음(천대 · 십억원 · 백만 달러 · 억원)</li>
+<li>건설장비는 «대수 시장»과 «한국 몫 금액»을 성장률로만 연결 → 수요 정의가 달라도 성장률은 비교 가능</li>
+</ul>
+</div></blockquote>
+<h3 id="계산-흐름">계산 흐름<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#계산-흐름" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    A[\&quot;2025A 지역 수요&lt;br/>사업계획 7지역 556천대\&quot;] --> B[\&quot;2026E = × (1 + 지역 성장률)&lt;br/>Bear 계획 · Base 2Q 업데이트\&quot;]\n    B --> C[\&quot;2027E~ = × (1 + 글로벌 성장률)\&quot;]\n    B --> D[\&quot;1위사 지역 매출 2026E&lt;br/>= 1H26 + 2H25 × 시장 × 판가 × 믹스\&quot;]\n    D --> E[\&quot;+ 부품 + 엔진 → × 이익률\&quot;]\n    F[\&quot;소형 1~3Q26 실적 + 4Q 가정\&quot;] --> G[\&quot;2027E~ × 리테일 물량 × 판가\&quot;]\n    H[\&quot;휴머노이드 출하 경로 3개\&quot;] --> I[\&quot;× 대당 가격 → 완제품 시장\&quot;]\n    H --> J[\&quot;× 액추에이터 개수 × 단가 → 부품 풀\&quot;]&quot;">flowchart TD
+    A[&quot;2025A 지역 수요&lt;br/>사업계획 7지역 556천대&quot;] --> B[&quot;2026E = × (1 + 지역 성장률)&lt;br/>Bear 계획 · Base 2Q 업데이트&quot;]
+    B --> C[&quot;2027E~ = × (1 + 글로벌 성장률)&quot;]
+    B --> D[&quot;1위사 지역 매출 2026E&lt;br/>= 1H26 + 2H25 × 시장 × 판가 × 믹스&quot;]
+    D --> E[&quot;+ 부품 + 엔진 → × 이익률&quot;]
+    F[&quot;소형 1~3Q26 실적 + 4Q 가정&quot;] --> G[&quot;2027E~ × 리테일 물량 × 판가&quot;]
+    H[&quot;휴머노이드 출하 경로 3개&quot;] --> I[&quot;× 대당 가격 → 완제품 시장&quot;]
+    H --> J[&quot;× 액추에이터 개수 × 단가 → 부품 풀&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="블록-정의">블록 정의<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#블록-정의" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>블록</th><th>단위</th><th>방식</th><th>출발점</th></tr></thead><tbody><tr><td>A 건설장비 수요</td><td>천대</td><td>7지역 × 성장률</td><td>556(2025A)</td></tr><tr><td>A 1위사 매출·이익</td><td>십억원</td><td>지역 매출 × 시장·판가·믹스</td><td>5,730(제품)</td></tr><tr><td>B 소형장비 표본</td><td>백만 달러</td><td>실적 + 물량 × 판가</td><td>5,123(3지역)</td></tr><tr><td>C <span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span></td><td>백만 달러</td><td>출하 × 대당 가격</td><td>13,318대</td></tr><tr><td>C <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 풀</td><td>백만 달러</td><td>출하 × 개수 × 단가</td><td>30개 × 750달러</td></tr><tr><td>C 국내 액추에이터 표본</td><td>억원</td><td>출하 × 개당 18만원</td><td>22만개(2025)</td></tr></tbody></table></div>
+<h3 id="엑셀-파일-구성">엑셀 파일 구성<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엑셀-파일-구성" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시트</th><th>내용</th></tr></thead><tbody><tr><td>README</td><td>목적·사용법·계산 구조·주의</td></tr><tr><td>Summary</td><td>연도별 결과 · 2027E 3안 · 검산 · 하우스 대조</td></tr><tr><td>Inputs</td><td>시나리오 B3 · 가정 43줄(노란 칸)</td></tr><tr><td>Model</td><td>같은 식 블록 4개(선택·Bear·Base·Bull)</td></tr><tr><td>Data</td><td>원문 수치 122줄(파란 글씨)</td></tr><tr><td>Sources</td><td>하우스 원문 51개 × 모델 대응</td></tr></tbody></table></div>
+<ul>
+<li>검산: pycel로 시나리오 3개 전부, 수식 845개 오류 0 · 선택 − 같은 안 고정 차이 0</li>
+<li><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>·<span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 2025 값은 시나리오별 단가 가정을 그대로 씀(2025A 실측 아님 ⚠)</li>
+</ul>
+<hr/>
+<h2 id="-건설장비-수요--대수">② 건설장비 수요 — 대수<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-건설장비-수요--대수" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>회사 사업계획(1월) 2026E 564천대(+1.4%) → 2Q 업데이트 +10%(다올 표) → 7지역에 적용하면 611천대</li>
+<li>성장 기여는 중국+한국(+15천대)·SEA/CIS(+15천대)·유럽(+12천대) 순. 북미만 0%</li>
+</ul>
+</div></blockquote>
+<h3 id="지역별-수요-천대-굴착기중대형-휠로더">지역별 수요 (천대, 굴착기+중대형 휠로더)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지역별-수요-천대-굴착기중대형-휠로더" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">2024</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026 계획</th><th style="text-align:right;">2Q 업데이트</th><th style="text-align:right;">2026E Base</th></tr></thead><tbody><tr><td>유럽</td><td style="text-align:right;">121</td><td style="text-align:right;">121</td><td style="text-align:right;">124</td><td style="text-align:right;">+10%</td><td style="text-align:right;">133.1</td></tr><tr><td>북미</td><td style="text-align:right;">119</td><td style="text-align:right;">119</td><td style="text-align:right;">116</td><td style="text-align:right;">0%</td><td style="text-align:right;">119.0</td></tr><tr><td>인도</td><td style="text-align:right;">33</td><td style="text-align:right;">32</td><td style="text-align:right;">34</td><td style="text-align:right;">+12%</td><td style="text-align:right;">35.8</td></tr><tr><td>SEA/CIS/OC</td><td style="text-align:right;">73</td><td style="text-align:right;">77</td><td style="text-align:right;">79</td><td style="text-align:right;">+20%</td><td style="text-align:right;">92.4</td></tr><tr><td>중남미</td><td style="text-align:right;">28</td><td style="text-align:right;">28</td><td style="text-align:right;">26</td><td style="text-align:right;">+17%</td><td style="text-align:right;">32.8</td></tr><tr><td>중동·아프리카</td><td style="text-align:right;">41</td><td style="text-align:right;">48</td><td style="text-align:right;">48</td><td style="text-align:right;">+8%</td><td style="text-align:right;">51.8</td></tr><tr><td>중국+한국</td><td style="text-align:right;">111</td><td style="text-align:right;">131</td><td style="text-align:right;">137</td><td style="text-align:right;">+11.7%</td><td style="text-align:right;">146.3</td></tr><tr><td>합계</td><td style="text-align:right;">526</td><td style="text-align:right;">556</td><td style="text-align:right;">564</td><td style="text-align:right;">+9.9%</td><td style="text-align:right;">611.3</td></tr></tbody></table></div>
+<p><small>2024~2026 계획 = 회사 자료(iM, 2026-04-13, p.3~4 · 신한, 2026-07-10, p.5 같은 값). 2Q 업데이트 = 다올 표(2026-07-30, p.2). 중국+한국 = 중국 +13% × 90% + 한국 0% × 10%(비중 가정 ⚠, 내 계산)</small></p>
+<h3 id="글로벌-건설장비-수요-추이-만대">글로벌 건설장비 수요 추이 (만대)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#글로벌-건설장비-수요-추이-만대" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="글로벌 건설장비 수요 (만대)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 25.685 267.283964  L 607.86 267.283964  L 607.86 44.917125  L 25.685 44.917125  L 25.685 267.283964  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(35.285414 280.573344) rotate(-35)">11</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(112.852432 281.347269) rotate(-35)">15</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(191.096722 281.646963) rotate(-35)">19</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(268.564034 282.490703) rotate(-35)">22</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(347.064885 282.61075) rotate(-35)">24</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(425.744478 282.605642) rotate(-35)">26</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(504.253841 282.71973) rotate(-35)">28</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(582.475029 283.0356) rotate(-35)">30</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_9"> <path d="M 25.685 267.283964  L 607.86 267.283964  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="270.694823" transform="rotate(-0 22.185 270.694823)">40</text> </g> </g> <g id="ytick_2"> <g id="line2d_11"> <path d="M 25.685 239.488109  L 607.86 239.488109  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="242.898968" transform="rotate(-0 22.185 242.898968)">45</text> </g> </g> <g id="ytick_3"> <g id="line2d_13"> <path d="M 25.685 211.692254  L 607.86 211.692254  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="215.103114" transform="rotate(-0 22.185 215.103114)">50</text> </g> </g> <g id="ytick_4"> <g id="line2d_15"> <path d="M 25.685 183.896399  L 607.86 183.896399  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="187.307259" transform="rotate(-0 22.185 187.307259)">55</text> </g> </g> <g id="ytick_5"> <g id="line2d_17"> <path d="M 25.685 156.100544  L 607.86 156.100544  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="159.511404" transform="rotate(-0 22.185 159.511404)">60</text> </g> </g> <g id="ytick_6"> <g id="line2d_19"> <path d="M 25.685 128.30469  L 607.86 128.30469  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="131.715549" transform="rotate(-0 22.185 131.715549)">65</text> </g> </g> <g id="ytick_7"> <g id="line2d_21"> <path d="M 25.685 100.508835  L 607.86 100.508835  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_22"></g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="103.919694" transform="rotate(-0 22.185 103.919694)">70</text> </g> </g> <g id="ytick_8"> <g id="line2d_23"> <path d="M 25.685 72.71298  L 607.86 72.71298  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_24"></g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="76.123839" transform="rotate(-0 22.185 76.123839)">75</text> </g> </g> <g id="ytick_9"> <g id="line2d_25"> <path d="M 25.685 44.917125  L 607.86 44.917125  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_26"></g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.185" y="48.327984" transform="rotate(-0 22.185 48.327984)">80</text> </g> </g> </g> <g id="patch_3"> <path d="M 25.685 267.283964  L 25.685 44.917125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_4"> <path d="M 25.685 267.283964  L 607.86 267.283964  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="line2d_27"> <path d="M 41.419459 186.120068  L 80.755608 228.925684  L 120.091757 233.928938  L 159.427905 172.778057  L 198.764054 124.41327  L 238.100203 94.393747  L 277.436351 107.17984  L 316.7725 149.429539  L 356.108649 133.863861  L 395.444797 167.218886  L 434.780946 157.768296  L 474.117095 133.863861  L 513.453243 121.633684  L 552.789392 107.17984  L 592.125541 72.71298  " clip-path="url(#pf0cb016e42)" style="fill:none;stroke:#2f74c0;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="text_18"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="25.685" y="38.917125" transform="rotate(-0 25.685 38.917125)">만대</text> </g> </g> <g id="text_19"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.65675" transform="rotate(-0 6.192 13.65675)">글로벌 건설장비 수요 (만대)</text> </g> </g> <defs> <clipPath id="pf0cb016e42"> <rect x="25.685" y="44.917125" width="582.175" height="222.366839"></rect> </clipPath> </defs> </svg> </figure>
+<p><small>신한 차트(2026-07-10, p.4, 굴착기·휠로더·CTL/SSL/CWL 기준, 그래프 판독, 근사). 2026년 이후는 신한 전망 · 2Q 업데이트(+10%) 이전 차트</small></p>
+<h3 id="시장-정의별-2025-수요">시장 정의별 2025 수요<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시장-정의별-2025-수요" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>정의</th><th style="text-align:right;">2025</th><th>출처</th></tr></thead><tbody><tr><td>사업계획 7지역</td><td style="text-align:right;">556천대</td><td>iM·신한(회사 자료)</td></tr><tr><td>다올 표 «글로벌»</td><td style="text-align:right;">573천대</td><td>다올 07-30</td></tr><tr><td>신한 차트(소형 포함)</td><td style="text-align:right;">58만대</td><td>신한 07-10(판독)</td></tr><tr><td>2025 바닥 경로</td><td style="text-align:right;">65만대</td><td>신한 25-07-02</td></tr><tr><td><span class="gl" tabindex="0" data-gl="글로벌 건설장비 판매 집계 기관">Off-Highway Research</span></td><td style="text-align:right;">120~130만대</td><td>신한 07-10</td></tr></tbody></table></div>
+<ul>
+<li>정의가 2배 넘게 갈림 → 모델은 수준을 고정하지 않고 «성장률»로 하우스와 대조</li>
+<li>소형(10톤 미만)은 대수 60%·금액 30% <small>(신한, 2026-04-28, p.2)</small> → 대수 성장과 금액 성장이 따로 움직일 수 있음</li>
+<li>2027E~ 성장률: Bear −5%(2023년 −11% 조정의 절반 ⚠) · Base +3%(65 → 75만대 장기 경로) · Bull +7.2%(신한 차트 2027 YoY)</li>
+</ul>
+<hr/>
+<h2 id="-한국-몫--1위사-지역-매출엔진이익">③ 한국 몫 — 1위사 지역 매출·엔진·이익<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-한국-몫--1위사-지역-매출엔진이익" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>1위사 제품 매출 2025A 5.73조원 중 ME/AF 18.5%·유럽 17.3%·북미 12.4% → 시장이 강한 지역 비중이 큼</li>
+<li>1H26 매출 YoY는 ME/AF +58%·유럽 +40%·중남미 +37% → 시장 성장(8~17%)의 3~5배. 판가·믹스·점유율이 같이 붙음</li>
+</ul>
+</div></blockquote>
+<h3 id="지역별-제품-매출-십억원">지역별 제품 매출 (십억원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지역별-제품-매출-십억원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">2025A</th><th style="text-align:right;">비중</th><th style="text-align:right;">1H26 YoY</th><th style="text-align:right;">시장 성장</th><th style="text-align:right;">2026E Base</th></tr></thead><tbody><tr><td>ME/AF</td><td style="text-align:right;">1,057.5</td><td style="text-align:right;">18.5%</td><td style="text-align:right;">+58.4%</td><td style="text-align:right;">+8%</td><td style="text-align:right;">1,438.0</td></tr><tr><td>유럽</td><td style="text-align:right;">992.0</td><td style="text-align:right;">17.3%</td><td style="text-align:right;">+39.8%</td><td style="text-align:right;">+10%</td><td style="text-align:right;">1,275.8</td></tr><tr><td>북미</td><td style="text-align:right;">709.5</td><td style="text-align:right;">12.4%</td><td style="text-align:right;">+15.3%</td><td style="text-align:right;">0%</td><td style="text-align:right;">795.3</td></tr><tr><td>한국</td><td style="text-align:right;">675.2</td><td style="text-align:right;">11.8%</td><td style="text-align:right;">+20.1%</td><td style="text-align:right;">0%</td><td style="text-align:right;">783.0</td></tr><tr><td>중남미</td><td style="text-align:right;">629.2</td><td style="text-align:right;">11.0%</td><td style="text-align:right;">+37.3%</td><td style="text-align:right;">+17%</td><td style="text-align:right;">831.6</td></tr><tr><td>중국</td><td style="text-align:right;">610.9</td><td style="text-align:right;">10.7%</td><td style="text-align:right;">+15.5%</td><td style="text-align:right;">+11.7%</td><td style="text-align:right;">725.7</td></tr><tr><td>SEA/CIS/OC</td><td style="text-align:right;">496.0</td><td style="text-align:right;">8.7%</td><td style="text-align:right;">+8.4%</td><td style="text-align:right;">+20%</td><td style="text-align:right;">587.4</td></tr><tr><td>인도</td><td style="text-align:right;">437.9</td><td style="text-align:right;">7.6%</td><td style="text-align:right;">+13.5%</td><td style="text-align:right;">+12%</td><td style="text-align:right;">513.8</td></tr><tr><td>기타</td><td style="text-align:right;">121.9</td><td style="text-align:right;">2.1%</td><td style="text-align:right;">−65.6%</td><td style="text-align:right;">+9.9%</td><td style="text-align:right;">103.8</td></tr><tr><td>합계</td><td style="text-align:right;">5,730.1</td><td style="text-align:right;">100%</td><td style="text-align:right;">+27.0%</td><td style="text-align:right;">—</td><td style="text-align:right;">7,054.3</td></tr></tbody></table></div>
+<p><small>분기 실적(신한, 2026-07-30, p.4). 2026E = 1H26 실적 + 2H25 × (1+시장) × (1+판가 4%) × (1+믹스 5%). YoY·비중·2026E는 내 계산</small></p>
+<h3 id="1위사-연도별-base-십억원">1위사 연도별 (Base, 십억원)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#1위사-연도별-base-십억원" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="1위사 매출 (십억원, Base)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 42.766719 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 42.766719 59.677125  L 42.766719 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="121.671249" y="282.853594" transform="rotate(-0 121.671249 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="257.432656" y="282.853594" transform="rotate(-0 257.432656 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="393.194063" y="282.853594" transform="rotate(-0 393.194063 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.95547" y="282.853594" transform="rotate(-0 528.95547 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 42.766719 272.152891  L 607.86 272.152891  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="275.56375" transform="rotate(-0 39.266719 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 42.766719 233.732942  L 607.86 233.732942  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="237.143801" transform="rotate(-0 39.266719 237.143801)">2,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 42.766719 195.312992  L 607.86 195.312992  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="198.723852" transform="rotate(-0 39.266719 198.723852)">4,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 42.766719 156.893043  L 607.86 156.893043  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="160.303903" transform="rotate(-0 39.266719 160.303903)">6,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 42.766719 118.473094  L 607.86 118.473094  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="121.883954" transform="rotate(-0 39.266719 121.883954)">8,000</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 42.766719 80.053145  L 607.86 80.053145  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="39.266719" y="83.464004" transform="rotate(-0 39.266719 83.464004)">10,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 68.452777 272.152891  L 93.432876 272.152891  L 93.432876 123.467688  L 68.452777 123.467688  z " clip-path="url(#p41b1ef28c5)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 204.214184 272.152891  L 229.194283 272.152891  L 229.194283 93.615387  L 204.214184 93.615387  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h241b0dbff0);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 339.975591 272.152891  L 364.95569 272.152891  L 364.95569 82.953851  L 339.975591 82.953851  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h241b0dbff0);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 475.736999 272.152891  L 500.717097 272.152891  L 500.717097 69.795019  L 475.736999 69.795019  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h241b0dbff0);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 95.605058 272.152891  L 120.585157 272.152891  L 120.585157 162.079736  L 95.605058 162.079736  z " clip-path="url(#p41b1ef28c5)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 231.366466 272.152891  L 256.346565 272.152891  L 256.346565 136.64573  L 231.366466 136.64573  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hcc51c4427d);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 367.127873 272.152891  L 392.107972 272.152891  L 392.107972 129.787769  L 367.127873 129.787769  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hcc51c4427d);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 502.88928 272.152891  L 527.869379 272.152891  L 527.869379 122.584029  L 502.88928 122.584029  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hcc51c4427d);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 122.75734 272.152891  L 147.737439 272.152891  L 147.737439 246.680464  L 122.75734 246.680464  z " clip-path="url(#p41b1ef28c5)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 258.518747 272.152891  L 283.498846 272.152891  L 283.498846 243.318719  L 258.518747 243.318719  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h500af6e134);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 394.280154 272.152891  L 419.260253 272.152891  L 419.260253 240.648532  L 394.280154 240.648532  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h500af6e134);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 530.041561 272.152891  L 555.02166 272.152891  L 555.02166 235.922879  L 530.041561 235.922879  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#h500af6e134);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_15"> <path d="M 149.909621 272.152891  L 174.88972 272.152891  L 174.88972 259.013268  L 149.909621 259.013268  z " clip-path="url(#p41b1ef28c5)" style="fill:#d6336c;"></path> </g> <g id="patch_16"> <path d="M 285.671028 272.152891  L 310.651127 272.152891  L 310.651127 257.956719  L 285.671028 257.956719  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hdfce812363);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_17"> <path d="M 421.432436 272.152891  L 446.412535 272.152891  L 446.412535 256.823331  L 421.432436 256.823331  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hdfce812363);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_18"> <path d="M 557.193843 272.152891  L 582.173942 272.152891  L 582.173942 255.593893  L 557.193843 255.593893  z " clip-path="url(#p41b1ef28c5)" style="fill:url(#hdfce812363);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="line2d_17"> <path d="M 42.766719 272.152891  L 607.86 272.152891  " clip-path="url(#p41b1ef28c5)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_19"> <path d="M 42.766719 272.152891  L 42.766719 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_20"> <path d="M 42.766719 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_11"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="42.766719" y="53.677125" transform="rotate(-0 42.766719 53.677125)">십억원</text> </g> </g> <g id="text_12"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.861125" transform="rotate(-0 6.192 13.861125)">1위사 매출 (십억원, Base)</text> </g> <g id="text_13"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_21"> <path d="M 11.646 35.035188  L 24.946 35.035188  L 24.946 28.385188  L 11.646 28.385188  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.035188" transform="rotate(-0 32.546 35.035188)">매출 합</text> </g> <g id="patch_22"> <path d="M 72.996703 35.035188  L 86.296703 35.035188  L 86.296703 28.385188  L 72.996703 28.385188  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="93.896703" y="35.035188" transform="rotate(-0 93.896703 35.035188)">제품</text> </g> <g id="patch_23"> <path d="M 123.631703 35.035188  L 136.931703 35.035188  L 136.931703 28.385188  L 123.631703 28.385188  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="144.531703" y="35.035188" transform="rotate(-0 144.531703 35.035188)">엔진</text> </g> <g id="patch_24"> <path d="M 174.266703 35.035188  L 187.566703 35.035188  L 187.566703 28.385188  L 174.266703 28.385188  z " style="fill:#d6336c;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="195.166703" y="35.035188" transform="rotate(-0 195.166703 35.035188)">부품</text> </g> </g> </g> <defs> <clipPath id="p41b1ef28c5"> <rect x="42.766719" y="59.677125" width="565.093281" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="h241b0dbff0" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hcc51c4427d" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h500af6e134" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hdfce812363" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#d6336c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#d6336c;stroke:#d6336c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 영업이익·이익률은 2025A 원천 없음(⚠)이라 뺌</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>제품</td><td style="text-align:right;">5,730</td><td style="text-align:right;">7,054</td><td style="text-align:right;">7,411</td><td style="text-align:right;">7,786</td></tr><tr><td>부품</td><td style="text-align:right;">684</td><td style="text-align:right;">739</td><td style="text-align:right;">798</td><td style="text-align:right;">862</td></tr><tr><td>엔진</td><td style="text-align:right;">1,326</td><td style="text-align:right;">1,501</td><td style="text-align:right;">1,640</td><td style="text-align:right;">1,886</td></tr><tr><td>매출 합</td><td style="text-align:right;">7,740</td><td style="text-align:right;">9,294</td><td style="text-align:right;">9,849</td><td style="text-align:right;">10,534</td></tr><tr><td>영업이익</td><td style="text-align:right;">⚠</td><td style="text-align:right;">927</td><td style="text-align:right;">986</td><td style="text-align:right;">1,063</td></tr><tr><td>이익률</td><td style="text-align:right;">⚠</td><td style="text-align:right;">10.0%</td><td style="text-align:right;">10.0%</td><td style="text-align:right;">10.1%</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>부품 2025A·엔진 2025A(신한, 2026-07-30, p.3). 부품 +8%(Base, Bull은 AM 0.7 → 1.4조원 2030 목표 CAGR 14.9%, 신한 2026-07-10 p.9). 엔진 Base = 신한 2H26F·2027F·2028F 증가율. 이익률 = 건설기계 9.0%(2Q26 실적, 다올 2026-07-30 p.1) · 엔진 15.3%. 2025A 부문 이익 원천 없음 ⚠</small></p>
+<ul>
+<li>2H26 YoY는 Base +19.4%(내 계산) → 신한 2026F 제품 7,221(+26%)보다 2.3% 낮음</li>
+<li>판가: 북미 +5% 인상 실시 <small>(신한, 2026-07-10, p.3)</small> · 2025년 8% 인상 완료, 2Q 추가 준비 <small>(신한, 2026-04-28, p.2)</small></li>
+<li><span class="gl" tabindex="0" data-gl="매출 1원당 고정비 전 이익">공헌이익률</span> 20~30% <small>(신한, 2026-07-30, p.2)</small> → 매출 1조원 늘면 이익 0.2~0.3조원. 모델은 평균 이익률로 단순화 ⚠</li>
+<li>엔진은 DC 비상 발전기 수요 → 2H 비중 확대. 37리터급 DC 엔진 2027년 1월 양산 <small>(다올, 2026-07-30, p.1)</small></li>
+<li><span class="gl" tabindex="0" data-gl="관세청 굴착기 수출액">한국 굴착기 수출</span> 2026 1~5월 10.5억 달러(+32.4%) <small>(KB, 2026-06-29, p.1)</small> → 1H 매출 +27%와 같은 방향</li>
+</ul>
+<hr/>
+<h2 id="-소형-건설장비--북미유럽-표본">④ 소형 건설장비 — 북미·유럽 표본<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-소형-건설장비--북미유럽-표본" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>북미 소형장비 1위사의 3지역 매출(소형+포터블파워)을 표본으로 씀 → 2026E 54.6억 달러(+6.6%)</li>
+<li>3Q26 리테일 수요 북미 +4%·유럽 +7%, <span class="gl" tabindex="0" data-gl="딜러 창고에 쌓인 장비">딜러 재고</span> 북미 3개월 초반 → <span class="gl" tabindex="0" data-gl="출하를 줄여 재고를 뺌">재고 조정</span>은 끝. 2027E는 주택 회복 여부가 Bear·Bull을 가름</li>
+</ul>
+</div></blockquote>
+<h3 id="지역별-표본-매출-백만-달러">지역별 표본 매출 (백만 달러)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#지역별-표본-매출-백만-달러" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="지역별 표본 매출 (백만 달러)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 38.878438 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 38.878438 59.677125  L 38.878438 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="118.325892" y="282.853594" transform="rotate(-0 118.325892 282.853594)">2025A</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="255.021443" y="282.853594" transform="rotate(-0 255.021443 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="391.716994" y="282.853594" transform="rotate(-0 391.716994 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="528.412546" y="282.853594" transform="rotate(-0 528.412546 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 38.878438 272.152891  L 607.86 272.152891  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="275.56375" transform="rotate(-0 35.378438 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 38.878438 238.137447  L 607.86 238.137447  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="241.548307" transform="rotate(-0 35.378438 241.548307)">1,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 38.878438 204.122004  L 607.86 204.122004  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="207.532863" transform="rotate(-0 35.378438 207.532863)">2,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 38.878438 170.106561  L 607.86 170.106561  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="173.51742" transform="rotate(-0 35.378438 173.51742)">3,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 38.878438 136.091118  L 607.86 136.091118  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="139.501977" transform="rotate(-0 35.378438 139.501977)">4,000</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 38.878438 102.075674  L 607.86 102.075674  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="105.486534" transform="rotate(-0 35.378438 105.486534)">5,000</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 38.878438 68.060231  L 607.86 68.060231  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="35.378438" y="71.47109" transform="rotate(-0 35.378438 71.47109)">6,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 64.741236 272.152891  L 89.893217 272.152891  L 89.893217 97.891775  L 64.741236 97.891775  z " clip-path="url(#p79a4878b9a)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 201.436787 272.152891  L 226.588768 272.152891  L 226.588768 86.394555  L 201.436787 86.394555  z " clip-path="url(#p79a4878b9a)" style="fill:url(#heca48f7b2a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 338.132338 272.152891  L 363.28432 272.152891  L 363.28432 78.264864  L 338.132338 78.264864  z " clip-path="url(#p79a4878b9a)" style="fill:url(#heca48f7b2a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 474.82789 272.152891  L 499.979871 272.152891  L 499.979871 69.795019  L 474.82789 69.795019  z " clip-path="url(#p79a4878b9a)" style="fill:url(#heca48f7b2a);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 92.080346 272.152891  L 117.232327 272.152891  L 117.232327 135.274747  L 92.080346 135.274747  z " clip-path="url(#p79a4878b9a)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 228.775897 272.152891  L 253.927879 272.152891  L 253.927879 128.369612  L 228.775897 128.369612  z " clip-path="url(#p79a4878b9a)" style="fill:url(#hb5e3ce7912);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 365.471449 272.152891  L 390.62343 272.152891  L 390.62343 122.552971  L 365.471449 122.552971  z " clip-path="url(#p79a4878b9a)" style="fill:url(#hb5e3ce7912);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 502.167 272.152891  L 527.318981 272.152891  L 527.318981 116.532238  L 502.167 116.532238  z " clip-path="url(#p79a4878b9a)" style="fill:url(#hb5e3ce7912);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 119.419456 272.152891  L 144.571438 272.152891  L 144.571438 246.335169  L 119.419456 246.335169  z " clip-path="url(#p79a4878b9a)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 256.115008 272.152891  L 281.266989 272.152891  L 281.266989 242.117254  L 256.115008 242.117254  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8f8d31f85f);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 392.810559 272.152891  L 417.96254 272.152891  L 417.96254 240.28042  L 392.810559 240.28042  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8f8d31f85f);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 529.50611 272.152891  L 554.658091 272.152891  L 554.658091 238.34154  L 529.50611 238.34154  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8f8d31f85f);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_15"> <path d="M 146.758567 272.152891  L 171.910548 272.152891  L 171.910548 260.58764  L 146.758567 260.58764  z " clip-path="url(#p79a4878b9a)" style="fill:#d6336c;"></path> </g> <g id="patch_16"> <path d="M 283.454118 272.152891  L 308.606099 272.152891  L 308.606099 260.247485  L 283.454118 260.247485  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8fd0a7fc76);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_17"> <path d="M 420.149669 272.152891  L 445.30165 272.152891  L 445.30165 259.737254  L 420.149669 259.737254  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8fd0a7fc76);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_18"> <path d="M 556.84522 272.152891  L 581.997202 272.152891  L 581.997202 259.261038  L 556.84522 259.261038  z " clip-path="url(#p79a4878b9a)" style="fill:url(#h8fd0a7fc76);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="line2d_19"> <path d="M 38.878438 272.152891  L 607.86 272.152891  " clip-path="url(#p79a4878b9a)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_19"> <path d="M 38.878438 272.152891  L 38.878438 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_20"> <path d="M 38.878437 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_12"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="38.878438" y="53.677125" transform="rotate(-0 38.878438 53.677125)">백만 달러</text> </g> </g> <g id="text_13"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.65675" transform="rotate(-0 6.192 13.65675)">지역별 표본 매출 (백만 달러)</text> </g> <g id="text_14"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_21"> <path d="M 11.646 35.091594  L 24.946 35.091594  L 24.946 28.441594  L 11.646 28.441594  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.091594" transform="rotate(-0 32.546 35.091594)">3지역 합</text> </g> <g id="patch_22"> <path d="M 78.088109 35.091594  L 91.388109 35.091594  L 91.388109 28.441594  L 78.088109 28.441594  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="98.988109" y="35.091594" transform="rotate(-0 98.988109 35.091594)">북미</text> </g> <g id="patch_23"> <path d="M 128.723109 35.091594  L 142.023109 35.091594  L 142.023109 28.441594  L 128.723109 28.441594  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="149.623109" y="35.091594" transform="rotate(-0 149.623109 35.091594)">EMEA</text> </g> <g id="patch_24"> <path d="M 186.682016 35.091594  L 199.982016 35.091594  L 199.982016 28.441594  L 186.682016 28.441594  z " style="fill:#d6336c;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="207.582016" y="35.091594" transform="rotate(-0 207.582016 35.091594)">ALAO</text> </g> </g> </g> <defs> <clipPath id="p79a4878b9a"> <rect x="38.878438" y="59.677125" width="568.981562" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="heca48f7b2a" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="hb5e3ce7912" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h8f8d31f85f" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h8fd0a7fc76" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#d6336c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#d6336c;stroke:#d6336c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 영업이익은 2025A가 ⚠라 뺌</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지역</th><th style="text-align:right;">2025A</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>북미</td><td style="text-align:right;">4,024</td><td style="text-align:right;">4,227</td><td style="text-align:right;">4,398</td><td style="text-align:right;">4,575</td></tr><tr><td>EMEA</td><td style="text-align:right;">759</td><td style="text-align:right;">883</td><td style="text-align:right;">937</td><td style="text-align:right;">994</td></tr><tr><td>ALAO</td><td style="text-align:right;">340</td><td style="text-align:right;">350</td><td style="text-align:right;">365</td><td style="text-align:right;">379</td></tr><tr><td>3지역 합</td><td style="text-align:right;">5,123</td><td style="text-align:right;">5,461</td><td style="text-align:right;">5,700</td><td style="text-align:right;">5,949</td></tr><tr><td>영업이익</td><td style="text-align:right;">⚠</td><td style="text-align:right;">481</td><td style="text-align:right;">502</td><td style="text-align:right;">524</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>2025A·1~3Q26 실적(신한, 2026-10-30, p.3). 2026E = 1~3Q26 + 4Q25 × (1+4.2%, 신한 4Q26F 북미). 2027E~ = × (1+물량) × (1+판가 2%) · 물량 북미 +2% · EMEA +4% · ALAO +2%(Base). 이익률 8.8% = 신한 2026F 전사 값 차용 ⚠</small></p>
+<h3 id="2027e-가정-3안">2027E 가정 3안<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-가정-3안" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>북미 물량</td><td style="text-align:right;">−3%</td><td style="text-align:right;">+2%</td><td style="text-align:right;">+4%</td></tr><tr><td>EMEA 물량</td><td style="text-align:right;">0%</td><td style="text-align:right;">+4%</td><td style="text-align:right;">+7%</td></tr><tr><td>판가</td><td style="text-align:right;">0%</td><td style="text-align:right;">+2%</td><td style="text-align:right;">+3%</td></tr><tr><td>3지역 합(백만 달러)</td><td style="text-align:right;">5,279</td><td style="text-align:right;">5,700</td><td style="text-align:right;">5,933</td></tr></tbody></table></div>
+<p><small>Bull 물량 = 3Q26 리테일 북미 +4%·유럽 +7%(신한, 2026-10-30, p.2 · 다올, 2026-10-29, p.1). Bear = 소형 수요의 30%가 주택(키움, 2026-10-15, p.1) + 주택 회복 섣부름(다올, 2026-07-24, p.1)</small></p>
+<ul>
+<li><span class="gl" tabindex="0" data-gl="공급 가격 올림">판가 인상</span>은 연 1회, 2026년은 상반기에 끝. 2027년은 «일부 인상» <small>(신한, 2026-10-30, p.2)</small></li>
+<li><span class="gl" tabindex="0" data-gl="북미 판매용 멕시코 공장">멕시코 생산</span>분 실질 관세 약 20% → 매출보다 이익률 변수. 모델은 이익률 칸에서만 반영 ⚠</li>
+<li>1위사 2026 <span class="gl" tabindex="0" data-gl="회사가 낸 연간 목표치">가이던스</span>는 북미 수요 «역성장» 가정 <small>(하나, 2026-03-12, p.1)</small> → 실제 리테일은 +4%로 가이던스보다 강함</li>
+</ul>
+<hr/>
+<h2 id="-휴머노이드액추에이터-풀">⑤ 휴머노이드·액추에이터 풀<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-휴머노이드액추에이터-풀" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2025년 출하 13,318대(중국 87%) → 2026E Bear 4.25만 · Base 9.3만(7배) · Bull 16.5만대</li>
+<li><span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>는 대당 23~40개 × 개당 500~750달러 → 완제품 가격의 23~60%. Base 2026E 액추에이터 풀 18.6억 달러</li>
+</ul>
+</div></blockquote>
+<h3 id="출하-경로-천대-base">출하 경로 (천대, Base)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#출하-경로-천대-base" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="휴머노이드 출하 Base (천대)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 31.003438 272.152891  L 607.86 272.152891  L 607.86 44.917125  L 31.003438 44.917125  L 31.003438 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="97.972658" y="282.853594" transform="rotate(-0 97.972658 282.853594)">2024</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="208.702188" y="282.853594" transform="rotate(-0 208.702188 282.853594)">2025</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="319.431719" y="282.853594" transform="rotate(-0 319.431719 282.853594)">2026E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="430.161249" y="282.853594" transform="rotate(-0 430.161249 282.853594)">2027E</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="540.89078" y="282.853594" transform="rotate(-0 540.89078 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_6"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_7"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="275.56375" transform="rotate(-0 27.503438 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_8"> <path d="M 31.003438 243.135055  L 607.86 243.135055  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_9"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="246.545915" transform="rotate(-0 27.503438 246.545915)">50</text> </g> </g> <g id="ytick_3"> <g id="line2d_10"> <path d="M 31.003438 214.11722  L 607.86 214.11722  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_11"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="217.52808" transform="rotate(-0 27.503438 217.52808)">100</text> </g> </g> <g id="ytick_4"> <g id="line2d_12"> <path d="M 31.003438 185.099385  L 607.86 185.099385  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_13"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="188.510244" transform="rotate(-0 27.503438 188.510244)">150</text> </g> </g> <g id="ytick_5"> <g id="line2d_14"> <path d="M 31.003438 156.08155  L 607.86 156.08155  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_15"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="159.492409" transform="rotate(-0 27.503438 159.492409)">200</text> </g> </g> <g id="ytick_6"> <g id="line2d_16"> <path d="M 31.003438 127.063715  L 607.86 127.063715  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_17"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="130.474574" transform="rotate(-0 27.503438 130.474574)">250</text> </g> </g> <g id="ytick_7"> <g id="line2d_18"> <path d="M 31.003438 98.045879  L 607.86 98.045879  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_19"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="101.456739" transform="rotate(-0 27.503438 101.456739)">300</text> </g> </g> <g id="ytick_8"> <g id="line2d_20"> <path d="M 31.003438 69.028044  L 607.86 69.028044  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_21"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="27.503438" y="72.438904" transform="rotate(-0 27.503438 72.438904)">350</text> </g> </g> </g> <g id="patch_3"> <path d="M 57.22419 272.152891  L 138.721125 272.152891  L 138.721125 270.81807  L 57.22419 270.81807  z " clip-path="url(#pbce34ecb66)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 167.953721 272.152891  L 249.450655 272.152891  L 249.450655 264.434146  L 167.953721 264.434146  z " clip-path="url(#pbce34ecb66)" style="fill:#2f74c0;"></path> </g> <g id="patch_5"> <path d="M 278.683251 272.152891  L 360.180186 272.152891  L 360.180186 218.063646  L 278.683251 218.063646  z " clip-path="url(#pbce34ecb66)" style="fill:url(#h805b020123);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 389.412782 272.152891  L 470.909717 272.152891  L 470.909717 163.916365  L 389.412782 163.916365  z " clip-path="url(#pbce34ecb66)" style="fill:url(#h805b020123);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 500.142313 272.152891  L 581.639247 272.152891  L 581.639247 55.737876  L 500.142313 55.737876  z " clip-path="url(#pbce34ecb66)" style="fill:url(#h805b020123);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="line2d_22"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " clip-path="url(#pbce34ecb66)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_8"> <path d="M 31.003438 272.152891  L 31.003438 44.917125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_9"> <path d="M 31.003438 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="97.972658" y="267.81807" transform="rotate(-0 97.972658 267.81807)">2.3</text> </g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="208.702188" y="261.434146" transform="rotate(-0 208.702188 261.434146)">13.3</text> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="319.431719" y="215.063646" transform="rotate(-0 319.431719 215.063646)">93.2</text> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="430.161249" y="160.916365" transform="rotate(-0 430.161249 160.916365)">186</text> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:middle;" x="540.89078" y="52.737876" transform="rotate(-0 540.89078 52.737876)">373</text> </g> <g id="text_19"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="31.003438" y="38.917125" transform="rotate(-0 31.003438 38.917125)">천대</text> </g> </g> <g id="text_20"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.6455" transform="rotate(-0 6.192 13.6455)">휴머노이드 출하 Base (천대)</text> </g> <g id="text_21"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> </g> <defs> <clipPath id="pbce34ecb66"> <rect x="31.003438" y="44.917125" width="576.856562" height="227.235766"></rect> </clipPath> </defs> <defs> <pattern id="h805b020123" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>2024 2,300대(삼성, 2026-03-11, p.36) · 2025 13,318대(LS, 2026-03-17, p.53, OMDIA) · 2026E = 2025 × 7배(하나, 2026-04-22, p.1) · 2027E~ ×2(정성 가정 ⚠)</small></p>
+<h3 id="가정-3안">가정 3안<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#가정-3안" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>2026E 출하(대)</td><td style="text-align:right;">42,500</td><td style="text-align:right;">93,226</td><td style="text-align:right;">165,000</td></tr><tr><td>2027·28 배수</td><td style="text-align:right;">1.5·1.5</td><td style="text-align:right;">2.0·2.0</td><td style="text-align:right;">2.5·2.0</td></tr><tr><td>대당 가격 하락(연)</td><td style="text-align:right;">−20%</td><td style="text-align:right;">−11.4%</td><td style="text-align:right;">−5%</td></tr><tr><td>대당 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>(개)</td><td style="text-align:right;">23</td><td style="text-align:right;">30</td><td style="text-align:right;">40</td></tr><tr><td>액추에이터 단가(달러)</td><td style="text-align:right;">500</td><td style="text-align:right;">750</td><td style="text-align:right;">750</td></tr></tbody></table></div>
+<p><small>2026E: Bear 6사 생산 추정 합 · Bull 6사 목표 CAPA 합(하나, 2026-04-22, p.3). 가격 5만 → 2035년 1.5만 달러(LS, 2026-03-17, p.16) → 연 −11.4%(내 계산). Bear −20% = LS «원가 연 20% 하락» 가정. 개수: Bear 230만개 ÷ 10만대(하나) · Base 30개(LS 표30) · Bull «40개 넘음»(LS p.29). 단가: Base 750달러(LS p.76) · Bear 연 100만대 규모 500달러(LS 그림36, 판독)</small></p>
+<h3 id="결과-백만-달러">결과 (백만 달러)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#결과-백만-달러" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="휴머노이드 시장 모델 (백만 달러)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 44.376875 272.152891  L 607.86 272.152891  L 607.86 59.677125  L 44.376875 59.677125  L 44.376875 272.152891  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="123.056577" y="282.853594" transform="rotate(-0 123.056577 282.853594)">2025</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="258.431151" y="282.853594" transform="rotate(-0 258.431151 282.853594)">2026E</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="393.805724" y="282.853594" transform="rotate(-0 393.805724 282.853594)">2027E</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:middle;" x="529.180298" y="282.853594" transform="rotate(-0 529.180298 282.853594)">2028E</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_5"> <path d="M 44.376875 272.152891  L 607.86 272.152891  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_6"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="275.56375" transform="rotate(-0 40.876875 275.56375)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_7"> <path d="M 44.376875 243.544602  L 607.86 243.544602  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_8"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="246.955461" transform="rotate(-0 40.876875 246.955461)">5,000</text> </g> </g> <g id="ytick_3"> <g id="line2d_9"> <path d="M 44.376875 214.936312  L 607.86 214.936312  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_10"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="218.347172" transform="rotate(-0 40.876875 218.347172)">10,000</text> </g> </g> <g id="ytick_4"> <g id="line2d_11"> <path d="M 44.376875 186.328023  L 607.86 186.328023  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="189.738883" transform="rotate(-0 40.876875 189.738883)">15,000</text> </g> </g> <g id="ytick_5"> <g id="line2d_13"> <path d="M 44.376875 157.719734  L 607.86 157.719734  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="161.130594" transform="rotate(-0 40.876875 161.130594)">20,000</text> </g> </g> <g id="ytick_6"> <g id="line2d_15"> <path d="M 44.376875 129.111445  L 607.86 129.111445  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="132.522305" transform="rotate(-0 40.876875 132.522305)">25,000</text> </g> </g> <g id="ytick_7"> <g id="line2d_17"> <path d="M 44.376875 100.503156  L 607.86 100.503156  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="103.914015" transform="rotate(-0 40.876875 103.914015)">30,000</text> </g> </g> <g id="ytick_8"> <g id="line2d_19"> <path d="M 44.376875 71.894867  L 607.86 71.894867  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="40.876875" y="75.305726" transform="rotate(-0 40.876875 75.305726)">35,000</text> </g> </g> </g> <g id="patch_3"> <path d="M 69.989744 272.152891  L 94.898666 272.152891  L 94.898666 268.342267  L 69.989744 268.342267  z " clip-path="url(#pcb9a09326e)" style="fill:#2f74c0;"></path> </g> <g id="patch_4"> <path d="M 205.364318 272.152891  L 230.273239 272.152891  L 230.273239 248.505279  L 205.364318 248.505279  z " clip-path="url(#pcb9a09326e)" style="fill:url(#hf540999f9e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_5"> <path d="M 340.738891 272.152891  L 365.647813 272.152891  L 365.647813 230.224582  L 340.738891 230.224582  z " clip-path="url(#pcb9a09326e)" style="fill:url(#hf540999f9e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_6"> <path d="M 476.113465 272.152891  L 501.022387 272.152891  L 501.022387 197.811391  L 476.113465 197.811391  z " clip-path="url(#pcb9a09326e)" style="fill:url(#hf540999f9e);opacity:0.5;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="patch_7"> <path d="M 97.064659 272.152891  L 121.973581 272.152891  L 121.973581 268.342267  L 97.064659 268.342267  z " clip-path="url(#pcb9a09326e)" style="fill:#e8590c;"></path> </g> <g id="patch_8"> <path d="M 232.439233 272.152891  L 257.348154 272.152891  L 257.348154 262.426072  L 232.439233 262.426072  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h470ccf3778);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_9"> <path d="M 367.813806 272.152891  L 392.722728 272.152891  L 392.722728 260.480709  L 367.813806 260.480709  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h470ccf3778);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_10"> <path d="M 503.18838 272.152891  L 528.097301 272.152891  L 528.097301 258.146272  L 503.18838 258.146272  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h470ccf3778);opacity:0.5;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="patch_11"> <path d="M 124.139574 272.152891  L 149.048495 272.152891  L 149.048495 268.342267  L 124.139574 268.342267  z " clip-path="url(#pcb9a09326e)" style="fill:#2b9348;"></path> </g> <g id="patch_12"> <path d="M 259.514147 272.152891  L 284.423069 272.152891  L 284.423069 227.306537  L 259.514147 227.306537  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h0374e4f633);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_13"> <path d="M 394.888721 272.152891  L 419.797642 272.152891  L 419.797642 165.649952  L 394.888721 165.649952  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h0374e4f633);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_14"> <path d="M 530.263294 272.152891  L 555.172216 272.152891  L 555.172216 69.795019  L 530.263294 69.795019  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h0374e4f633);opacity:0.5;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="patch_15"> <path d="M 151.214488 272.152891  L 176.12341 272.152891  L 176.12341 270.436393  L 151.214488 270.436393  z " clip-path="url(#pcb9a09326e)" style="fill:#d6336c;"></path> </g> <g id="patch_16"> <path d="M 286.589062 272.152891  L 311.497984 272.152891  L 311.497984 261.510607  L 286.589062 261.510607  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h8e4dc36f46);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_17"> <path d="M 421.963636 272.152891  L 446.872557 272.152891  L 446.872557 253.288585  L 421.963636 253.288585  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h8e4dc36f46);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="patch_18"> <path d="M 557.338209 272.152891  L 582.247131 272.152891  L 582.247131 238.698357  L 557.338209 238.698357  z " clip-path="url(#pcb9a09326e)" style="fill:url(#h8e4dc36f46);opacity:0.5;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="line2d_21"> <path d="M 44.376875 272.152891  L 607.86 272.152891  " clip-path="url(#pcb9a09326e)" style="fill:none;stroke:currentColor;stroke-opacity:0.6;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="patch_19"> <path d="M 44.376875 272.152891  L 44.376875 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_20"> <path d="M 44.376875 272.152891  L 607.86 272.152891  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="text_13"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="44.376875" y="53.677125" transform="rotate(-0 44.376875 53.677125)">백만 달러</text> </g> </g> <g id="text_14"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.6455" transform="rotate(-0 6.192 13.6455)">휴머노이드 시장 모델 (백만 달러)</text> </g> <g id="text_15"> <text style="fill:currentColor;opacity:0.75;font-size:8.5px;font-family:inherit;text-anchor:end;" x="613.008" y="10.957063" transform="rotate(-0 613.008 10.957063)">옅은 색 = 전망</text> </g> <g id="legend_1"> <g id="patch_21"> <path d="M 11.646 35.044094  L 24.946 35.044094  L 24.946 28.394094  L 11.646 28.394094  z " style="fill:#2f74c0;stroke:#2f74c0;stroke-linejoin:miter;"></path> </g> <g id="text_16"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.044094" transform="rotate(-0 32.546 35.044094)">완제품 Base</text> </g> <g id="patch_22"> <path d="M 91.739906 35.044094  L 105.039906 35.044094  L 105.039906 28.394094  L 91.739906 28.394094  z " style="fill:#e8590c;stroke:#e8590c;stroke-linejoin:miter;"></path> </g> <g id="text_17"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="112.639906" y="35.044094" transform="rotate(-0 112.639906 35.044094)">완제품 Bear</text> </g> <g id="patch_23"> <path d="M 171.177719 35.044094  L 184.477719 35.044094  L 184.477719 28.394094  L 171.177719 28.394094  z " style="fill:#2b9348;stroke:#2b9348;stroke-linejoin:miter;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="192.077719" y="35.044094" transform="rotate(-0 192.077719 35.044094)">완제품 Bull</text> </g> <g id="patch_24"> <path d="M 247.443422 35.044094  L 260.743422 35.044094  L 260.743422 28.394094  L 247.443422 28.394094  z " style="fill:#d6336c;stroke:#d6336c;stroke-linejoin:miter;"></path> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="268.343422" y="35.044094" transform="rotate(-0 268.343422 35.044094)">액추에이터 Base</text> </g> </g> </g> <defs> <clipPath id="pcb9a09326e"> <rect x="44.376875" y="59.677125" width="563.483125" height="212.475766"></rect> </clipPath> </defs> <defs> <pattern id="hf540999f9e" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2f74c0"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2f74c0;stroke:#2f74c0;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h470ccf3778" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#e8590c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#e8590c;stroke:#e8590c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h0374e4f633" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#2b9348"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#2b9348;stroke:#2b9348;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> <pattern id="h8e4dc36f46" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72"> <rect x="0" y="0" width="73" height="73" fill="#d6336c"></rect> <path d="M -36 36  L 36 -36  M -32 40  L 40 -32  M -28 44  L 44 -28  M -24 48  L 48 -24  M -20 52  L 52 -20  M -16 56  L 56 -16  M -12 60  L 60 -12  M -8 64  L 64 -8  M -4 68  L 68 -4  M 0 72  L 72 0  M 4 76  L 76 4  M 8 80  L 80 8  M 12 84  L 84 12  M 16 88  L 88 16  M 20 92  L 92 20  M 24 96  L 96 24  M 28 100  L 100 28  M 32 104  L 104 32  M 36 108  L 108 36  " style="fill:#d6336c;stroke:#d6336c;stroke-width:1.0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.5;"></path> </pattern> </defs> </svg> </figure>
+<p><small>자료: 표 아래 출처와 같음. 국내 표본(억원)은 단위가 달라 뺌</small></p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>표로 보기</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">2025</th><th style="text-align:right;">2026E</th><th style="text-align:right;">2027E</th><th style="text-align:right;">2028E</th></tr></thead><tbody><tr><td>완제품 Base</td><td style="text-align:right;">666</td><td style="text-align:right;">4,133</td><td style="text-align:right;">7,328</td><td style="text-align:right;">12,993</td></tr><tr><td>완제품 Bear</td><td style="text-align:right;">666</td><td style="text-align:right;">1,700</td><td style="text-align:right;">2,040</td><td style="text-align:right;">2,448</td></tr><tr><td>완제품 Bull</td><td style="text-align:right;">666</td><td style="text-align:right;">7,838</td><td style="text-align:right;">18,614</td><td style="text-align:right;">35,367</td></tr><tr><td><span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> Base</td><td style="text-align:right;">300</td><td style="text-align:right;">1,860</td><td style="text-align:right;">3,297</td><td style="text-align:right;">5,847</td></tr><tr><td>국내 표본 Base(억원)</td><td style="text-align:right;">396</td><td style="text-align:right;">900</td><td style="text-align:right;">1,800</td><td style="text-align:right;">2,700</td></tr></tbody></table></div>
+</div></blockquote>
+<p><small>자체 모델. 국내 표본 = 액추에이터 출하(22 → 50 → 100만개, 한화 2026-08-24 · 하나 2026-04-22) × 개당 18만원(«100만개 기준 1,800억원», 하나, 내 계산)</small></p>
+<ul>
+<li>LS의 2024년 시장 9억 달러 대비 모델 2025년 6.7억 달러 → 출하는 5배 늘었는데 금액이 작음 → 2025 출하 대부분이 저가 중국산(1.6만 달러급)이라 5만 달러 가정도 높을 수 있음 ⚠</li>
+<li><span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> ÷ 완제품 = Base 45% · Bull 60% → LS «옵티머스 Gen2 액추에이터 원가 비중 60% 이상»(p.29)과 Bull이 맞음(원가 대비라 가격 대비보다 높게 나옴)</li>
+<li>국내 표본은 저가 소형 액추에이터(개당 18만원)라 글로벌 풀 단가(750달러)와 다른 시장 → 합산하지 않음</li>
+<li>장기 전망 2035년 2,837억 달러(LS p.4) 경로까지는 Base 2028E 130억 달러에서 연 55% 성장이 필요(내 계산)</li>
+</ul>
+<hr/>
+<h2 id="-결과--민감도--하우스-시각">⑥ 결과 · 민감도 · 하우스 시각<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-결과--민감도--하우스-시각" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2027E 1위사 제품 매출 Bear 6.11 ~ Base 7.41 ~ Bull 8.57조원 → 폭 2.46조원. 2026E 출발점 차이 0.90조원 + 2027 시장 성장률(−5 ~ +7.2%)·판가 가정</li>
+<li><mark class="text-highlight"><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 2027E 완제품 Bear 20억 ~ Bull 186억 달러(9배)</mark> → 건설장비(1.4배)와 달리 «출하 대수» 하나가 전부를 결정</li>
+</ul>
+</div></blockquote>
+<h3 id="2027e-3안-비교">2027E 3안 비교<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-3안-비교" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">Bear</th><th style="text-align:right;">Base</th><th style="text-align:right;">Bull</th></tr></thead><tbody><tr><td>건설장비 수요(천대)</td><td style="text-align:right;">535.8</td><td style="text-align:right;">629.6</td><td style="text-align:right;">685.1</td></tr><tr><td>1위사 제품 매출(십억원)</td><td style="text-align:right;">6,108.7</td><td style="text-align:right;">7,411.3</td><td style="text-align:right;">8,567.2</td></tr><tr><td>1위사 엔진(십억원)</td><td style="text-align:right;">1,407.7</td><td style="text-align:right;">1,640.0</td><td style="text-align:right;">1,885.1</td></tr><tr><td>1위사 영업이익(십억원)</td><td style="text-align:right;">647.3</td><td style="text-align:right;">985.8</td><td style="text-align:right;">1,314.8</td></tr><tr><td>소형 표본(백만 달러)</td><td style="text-align:right;">5,278.5</td><td style="text-align:right;">5,699.6</td><td style="text-align:right;">5,933.0</td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span>(백만 달러)</td><td style="text-align:right;">2,040.0</td><td style="text-align:right;">7,327.6</td><td style="text-align:right;">18,614.1</td></tr></tbody></table></div>
+<p><small>자체 모델(Summary 시트). 액추에이터 풀 2027E Bear 469 · Base 3,297 · Bull 11,168백만 달러</small></p>
+<h3 id="2027e-민감도-base-내-계산선형">2027E 민감도 (Base, 내 계산·선형)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2027e-민감도-base-내-계산선형" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>가정</th><th style="text-align:right;">변화</th><th style="text-align:right;">결과 변화</th></tr></thead><tbody><tr><td>글로벌 수요 성장</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">제품 매출 ±73십억원</td></tr><tr><td>판가 2027</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">제품 매출 ±73십억원</td></tr><tr><td>2H26 믹스·점유율</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">제품 매출 ±35십억원</td></tr><tr><td>건설기계 이익률</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">영업이익 ±82십억원</td></tr><tr><td>소형 북미 물량</td><td style="text-align:right;">±1%p</td><td style="text-align:right;">소형 표본 ±43백만 달러</td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 배수</td><td style="text-align:right;">±0.5</td><td style="text-align:right;">완제품 ±1,832백만 달러</td></tr><tr><td>대당 가격 하락률</td><td style="text-align:right;">±5%p</td><td style="text-align:right;">완제품 +848/−804백만 달러</td></tr></tbody></table></div>
+<h3 id="하우스-수치-대조">하우스 수치 대조<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-수치-대조" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">모델 Base</th><th style="text-align:right;">하우스</th><th style="text-align:right;">차이</th></tr></thead><tbody><tr><td>수요 성장 2026E</td><td style="text-align:right;">+9.9%</td><td style="text-align:right;">+10.1%(다올)</td><td style="text-align:right;">−0.2%p</td></tr><tr><td>수요 성장 2027E</td><td style="text-align:right;">+3.0%</td><td style="text-align:right;">+7.2%(신한 차트)</td><td style="text-align:right;">−4.2%p</td></tr><tr><td>1위사 제품 2026E</td><td style="text-align:right;">7,054</td><td style="text-align:right;">7,221(신한)</td><td style="text-align:right;">−2.3%</td></tr><tr><td>1위사 제품 2027E</td><td style="text-align:right;">7,411</td><td style="text-align:right;">8,524(신한)</td><td style="text-align:right;">−13.1%</td></tr><tr><td>소형 표본 2027E</td><td style="text-align:right;">5,700</td><td style="text-align:right;">5,615(신한)</td><td style="text-align:right;">+1.5%</td></tr><tr><td>국내 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 2026E</td><td style="text-align:right;">50만개</td><td style="text-align:right;">50만개(한화)</td><td style="text-align:right;">0%</td></tr></tbody></table></div>
+<p><small>신한 1위사(2026-07-30, p.3) · 신한 소형(2026-10-30, p.3, 3지역 합) · 다올(2026-07-30, p.2) · 한화(2026-08-24, p.1). 신한 1위사 영업이익 2027F 1,129십억원 vs 모델 986(−13%)</small></p>
+<h3 id="하우스-간-엇갈림">하우스 간 엇갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#하우스-간-엇갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>낙관 쪽</th><th>신중 쪽</th></tr></thead><tbody><tr><td>2026 건설장비 시장</td><td>다올 +10%(07-30)</td><td>회사 계획 −1.4% · 하나 «역성장 가정»(03-12)</td></tr><tr><td>2027 건설장비 시장</td><td>신한 차트 +7%(07-10)</td><td>장기 경로 연 3%(신한 25-07)</td></tr><tr><td>2027 북미 소형장비</td><td>신한 «27년 금리 인하»(07-21)</td><td>다올 «주택 회복 섣부름»(07-24)</td></tr><tr><td>2027 소형 1위사 원화 매출</td><td>키움 9.86조(10-15)</td><td>신한 9.29조(10-30)</td></tr><tr><td>2026 <span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 출하</td><td>하나 «7배»(04-22)</td><td>하나 6사 생산 추정 4.25만대</td></tr><tr><td>2026 국내 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span></td><td>하나 주문 100만개+(04-22)</td><td>한화 출하 50만개(08-24)</td></tr></tbody></table></div>
+<ul>
+<li>건설장비 2026 시장은 연초 «역성장»(회사·하나) → 5월 «상향 조정»(하나 05-15) → 7월 «+10%»(다올)로 한 방향 상향. 변경 내역은 <a href="../기계/07_기계_하우스시각_변경이력" class="internal internal-link alias" data-slug="기계/07_기계_하우스시각_변경이력">07_기계_하우스시각_변경이력</a></li>
+<li>소형 1위사 2027 원화 매출은 같은 10월에 키움 +5% vs 신한 −2% → 환율 가정 차이(다올 «환율 하락 반영») 영향 ⚠</li>
+<li>국내 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span>는 «주문 100만개»(하나)와 «출하 50만개»(한화)가 같은 해 → 한화는 고사양 모터 수급 차질(저가형 중심 성장)을 반영해 출하를 낮게 봄</li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>모델을 가장 크게 흔드는 숫자 = 1위사 분기 지역 매출(성장률 역산) · 북미 소형 리테일 · <span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 분기 출하</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th>주기</th><th>모델 칸</th><th>기준값</th></tr></thead><tbody><tr><td>1위사 지역별 제품 매출</td><td>분기</td><td>Data 1H26 지역</td><td>1H26 3,572십억원</td></tr><tr><td>회사 시장 전망 업데이트</td><td>반기</td><td>Inputs 지역 성장률</td><td>2Q 631천대</td></tr><tr><td><span class="gl" tabindex="0" data-gl="땅 파는 대표 건설장비">굴착기</span> 수출(관세청)</td><td>월</td><td>Summary 대조</td><td>1~5월 10.5억 달러</td></tr><tr><td>중국 내수 굴착기 판매</td><td>월</td><td>참고(중국+한국)</td><td>12~14만대(KB)</td></tr><tr><td>북미 소형 리테일·<span class="gl" tabindex="0" data-gl="딜러 창고에 쌓인 장비">딜러 재고</span></td><td>분기</td><td>Inputs 소형 물량</td><td>+4% · 3개월 초반</td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 모양 범용 로봇">휴머노이드</span> 출하(OMDIA 등)</td><td>분기</td><td>Inputs 2026E 출하</td><td>2025 13,318대</td></tr><tr><td>국내 <span class="gl" tabindex="0" data-gl="관절을 움직이는 구동 모듈">액추에이터</span> 출하</td><td>분기</td><td>Inputs 국내 표본</td><td>1H26 약 22만개</td></tr></tbody></table></div>
+<ul>
+<li>일정은 <a href="../기계/08_기계_트래킹캘린더" class="internal internal-link alias" data-slug="기계/08_기계_트래킹캘린더">08_기계_트래킹캘린더</a></li>
+</ul>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<small>
+- 신한투자증권 HD현대건설기계 합병 코멘트 2025-07-02, p.1 (2025 65만대 → 2030 75만대)
+- 신한투자증권 HD건설기계 「높아진 체급과 업황의 턴어라운드」 2026-07-10, p.3·4·5·9 (시장 정의 · 지역 수요 · 판가 +5% · AM 목표)
+- 신한투자증권 HD건설기계 1Q26 컨퍼런스콜 2026-04-28, p.2 (1Q 시장 15.2만대 · 소형 대수 60% · 판가 8%)
+- 신한투자증권 HD건설기계 「전지역 성장 확대 확인」 2026-07-30, p.2·3·4 (지역별 분기 매출 · 부문 실적·전망 · 공헌이익률)
+- 신한투자증권 두산밥캣 「소형 장비 회복, 관세만 남았다」 2026-10-30, p.1·2·3 (지역 매출 · 리테일 · 판가 · 관세) · 「업사이클에 힘입어 성장 시작」 2026-07-21, p.9
+- 다올투자증권 HD건설기계 「자원국 폭증도 엔진도 모두 AI 사이클」 2026-07-30, p.1·2 (시장 +10% · 지역 성장률 표) · 두산밥캣 2026-07-24, p.1 · 2026-10-29, p.1
+- iM증권 HD건설기계 2026-04-13, p.1·3·4 (지역 수요 '24~'26E · 글로벌 점유율)
+- 하나증권 HD건설기계 2026-05-15, p.1 · 두산밥캣 탐방노트 2026-03-12, p.1 · 로보티즈 「액추에이터 100만개 이상의 추진력」 2026-04-22, p.1·3
+- KB증권 HD건설기계 2026-04-27, p.2 · 2026-06-29, p.1 (중국 굴착기 · 굴착기 수출)
+- 삼성증권 HD건설기계 「확실히 다져진 바닥」 2026-04-16, p.2 · 「로봇, 방향성에 집중할 때」 2026-03-11, p.36
+- 키움증권 두산밥캣 2025-11-13, p.1 · 2026-02-19, p.1 · 2026-10-15, p.1 (북미 수요 · 가이던스 · 주택 비중)
+- LS증권 「인간은 거들뿐, 휴머노이드 이제 시작이다」 2026-03-17, p.4·6·16·27·29·53·76 (출하 · 가격 경로 · 액추에이터 개수·단가)
+- 한화투자증권 로보티즈 2026-08-24, p.1 (액추에이터 출하) · BNK투자증권 두산밥캣 2026-11-03, p.1 (원화 매출 전망)
+- 엑셀: `모델/기계_모델.xlsx` Sources 시트(하우스 원문 51개 × 모델 대응)
+</small>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>1위사 3Q26 지역별 제품 매출 → 2H 성장률 가정(Base +19.4%) 교체, 2026E를 «1~3Q 실적 + 4Q»로 고정</li>
+<li>회사 2027 시장 전망(통상 1월 사업계획) → 2027E 글로벌 성장률 노란 칸 교체</li>
+<li>건설장비 금액 시장 원천(Off-Highway Research·Yengst 등) 확보 → 대수 × 평균 판가로 금액 시장 추가</li>
+<li>2025A 1위사 부문별 영업이익 → 2025A 이익 ⚠ 채우고 공헌이익률 방식으로 바꿀지 판단</li>
+<li>북미 소형장비 4Q 리테일·멕시코 관세 협상 결과 → 소형 물량·이익률 갱신</li>
+<li>휴머노이드 2026 실제 출하(OMDIA·각사) → 2026E 경로 3개 중 선택, 2027 배수 근거 확보</li>
+<li>협동로봇·계장 피팅·밸브 시장 총액 원천 → 블록 추가 여부 판단</li>
+</ul>
+<h2 id="갱신-기록">갱신 기록<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#갱신-기록" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026-11-24: 밸류체인 단계별 규모·매출·영업이익 절 추가</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-65" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#기계-시장규모-모델--건설장비-수요-대수--한국-몫--소형장비-표본--휴머노이드액추에이터-풀" data-for="기계-시장규모-모델--건설장비-수요-대수--한국-몫--소형장비-표본--휴머노이드액추에이터-풀">기계 시장규모 모델 — 건설장비 수요 대수 → 한국 몫 + 소형장비 표본 + 휴머노이드·액추에이터 풀</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-밸류체인-단계별-규모매출영업이익--신규-1124" data-for="-밸류체인-단계별-규모매출영업이익--신규-1124">⓪ 밸류체인 단계별 규모·매출·영업이익 &lt;mark>🆕 신규 11/24&lt;/mark></a></li><li class="depth-1"><a href="#-모델-구조기초" data-for="-모델-구조기초">① 모델 구조·기초</a></li><li class="depth-1"><a href="#-건설장비-수요--대수" data-for="-건설장비-수요--대수">② 건설장비 수요 — 대수</a></li><li class="depth-1"><a href="#-한국-몫--1위사-지역-매출엔진이익" data-for="-한국-몫--1위사-지역-매출엔진이익">③ 한국 몫 — 1위사 지역 매출·엔진·이익</a></li><li class="depth-1"><a href="#-소형-건설장비--북미유럽-표본" data-for="-소형-건설장비--북미유럽-표본">④ 소형 건설장비 — 북미·유럽 표본</a></li><li class="depth-1"><a href="#-휴머노이드액추에이터-풀" data-for="-휴머노이드액추에이터-풀">⑤ 휴머노이드·액추에이터 풀</a></li><li class="depth-1"><a href="#-결과--민감도--하우스-시각" data-for="-결과--민감도--하우스-시각">⑥ 결과 · 민감도 · 하우스 시각</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="depth-1"><a href="#갱신-기록" data-for="갱신-기록">갱신 기록</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../기계/00_기계_index" class="internal">00_기계_index</a></li><li><a href="../기계/01_기계_용어집" class="internal">01_기계_용어집</a></li><li><a href="../기계/02_기계_수요와전방" class="internal">02_기계_수요와전방</a></li><li><a href="../기계/03_기계_건설기계" class="internal">03_기계_건설기계</a></li><li><a href="../기계/04_기계_로봇과자동화" class="internal">04_기계_로봇과자동화</a></li><li><a href="../기계/05_기계_산업용기계와부품" class="internal">05_기계_산업용기계와부품</a></li><li><a href="../기계/07_기계_하우스시각_변경이력" class="internal">07_기계_하우스시각_변경이력</a></li><li><a href="../기계/08_기계_트래킹캘린더" class="internal">08_기계_트래킹캘린더</a></li><li><a href="../기계/설명서/기계_설명서" class="internal">기계_설명서</a></li><li><a href="../최근-갱신" class="internal">최근 갱신</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div><script id="gl-tip-js">(function(){if(window.__glTip)return;window.__glTip=1;var tip,timer,cur;
+function box(){if(!tip||!document.body.contains(tip)){tip=document.createElement('div');tip.className='gl-tip';document.body.appendChild(tip);}return tip;}
+function show(el){var t=box();t.textContent=el.getAttribute('data-gl');t.style.display='block';var r=el.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;
+var x=Math.min(Math.max(8,r.left),window.innerWidth-w-8);var y=r.bottom+6;if(y+h>window.innerHeight-8)y=r.top-h-6;t.style.left=x+'px';t.style.top=y+'px';cur=el;}
+function hide(){clearTimeout(timer);if(tip)tip.style.display='none';cur=null;}
+document.addEventListener('mouseover',function(e){var el=e.target.closest&&e.target.closest('.gl');if(!el)return;clearTimeout(timer);timer=setTimeout(function(){show(el);},700);});
+document.addEventListener('mouseout',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el)hide();});
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el){if(cur===el)hide();else{clearTimeout(timer);show(el);}}else hide();});
+window.addEventListener('scroll',hide,true);document.addEventListener('nav',hide);})();</script></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>

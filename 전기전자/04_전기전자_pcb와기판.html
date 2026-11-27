@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>04_전기전자_PCB와기판</title><meta charset="utf-8"/><link rel="preload" href="../index-d311a580.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="산업의 이해 — 섹터 백과"/><meta property="og:title" content="04_전기전자_PCB와기판"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="04_전기전자_PCB와기판"/><meta name="twitter:description" content="전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중 한눈에 보기 결론 AI 가속기·서버 CPU 기판이 커지고(대면적) 두꺼워지면서(고다층) 같은 라인의 산출량이 줄어듦 → 증설해도 «유효 캐파»는 덜 늘어남 → ABF 리드타임 최장 56주(정상 12주) (iM, 2026-11-13) 부족은 FC-BGA → BT(메모리 기판) → 모듈 PCB(SOCAMM) → CCL·유리섬유포로 내려가는 중."/><meta property="og:description" content="전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중 한눈에 보기 결론 AI 가속기·서버 CPU 기판이 커지고(대면적) 두꺼워지면서(고다층) 같은 라인의 산출량이 줄어듦 → 증설해도 «유효 캐파»는 덜 늘어남 → ABF 리드타임 최장 56주(정상 12주) (iM, 2026-11-13) 부족은 FC-BGA → BT(메모리 기판) → 모듈 PCB(SOCAMM) → CCL·유리섬유포로 내려가는 중."/><meta property="og:image:alt" content="전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중 한눈에 보기 결론 AI 가속기·서버 CPU 기판이 커지고(대면적) 두꺼워지면서(고다층) 같은 라인의 산출량이 줄어듦 → 증설해도 «유효 캐파»는 덜 늘어남 → ABF 리드타임 최장 56주(정상 12주) (iM, 2026-11-13) 부족은 FC-BGA → BT(메모리 기판) → 모듈 PCB(SOCAMM) → CCL·유리섬유포로 내려가는 중."/><meta property="og:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:url" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta name="twitter:image" content="https://chanveler.github.io/industry-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="chanveler.github.io/industry-notes"/><meta property="og:url" content="https://chanveler.github.io/industry-notes/전기전자/04_전기전자_pcb와기판"/><meta property="twitter:url" content="https://chanveler.github.io/industry-notes/전기전자/04_전기전자_pcb와기판"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중 한눈에 보기 결론 AI 가속기·서버 CPU 기판이 커지고(대면적) 두꺼워지면서(고다층) 같은 라인의 산출량이 줄어듦 → 증설해도 «유효 캐파»는 덜 늘어남 → ABF 리드타임 최장 56주(정상 12주) (iM, 2026-11-13) 부족은 FC-BGA → BT(메모리 기판) → 모듈 PCB(SOCAMM) → CCL·유리섬유포로 내려가는 중."/><meta name="generator" content="Quartz"/><link href="../index-d311a580.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-b43df3ac.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-9406c2cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-02d2a92c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-0be4fa7f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d2eefd3a.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-89d3cd78.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-c59b0295.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-68151ba9.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json() }).catch(e => { console.warn("[Quartz] Could not load ../static/contentIndex.json (" + e.message + "); is configuration.contentIndex disabled?"); return {} });window.quartzStaticUrl = new URL("../static/", location.href).href</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20KR%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C600%3B1%2C700&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/></head><body data-slug="전기전자/04_전기전자_pcb와기판" data-basepath="/industry-notes"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar" data-sidebar-mode="fit"><h2 class="page-title" data-quartz-plugin="page-title" data-quartz-component="PageTitle"><a href="..">산업의 이해 — 섹터 백과</a></h2><div class="mobile-only"><div class="spacer" data-quartz-plugin="spacer" data-quartz-component="Spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search" data-quartz-plugin="search" data-quartz-component="Search"><button class="search-button" aria-label="검색" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="다크 모드" data-quartz-plugin="darkmode" data-quartz-component="Darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="리더 모드" data-quartz-plugin="reader-mode" data-quartz-component="ReaderMode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="리더 모드"><title>리더 모드</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n    if (!a.isFolder &amp;&amp; !b.isFolder || a.isFolder &amp;&amp; b.isFolder) {\n      return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a.isFolder &amp;&amp; b.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}" data-quartz-plugin="explorer" data-quartz-component="Explorer"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-368" aria-label="탐색기"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-368" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs" data-quartz-plugin="breadcrumbs" data-quartz-component="Breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../전기전자/">9. 전기전자</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>04_전기전자_PCB와기판</a></div></nav><h1 class="article-title" data-quartz-plugin="article-title" data-quartz-component="ArticleTitle">04_전기전자_PCB와기판</h1><p show-comma="true" class="content-meta" data-quartz-plugin="content-meta" data-quartz-component="ContentMeta"><time datetime="2025-12-31T15:00:00.000Z">2026년 1월 01일</time><span>28 min read</span></p></div></div><article class="popover-hint" data-quartz-plugin="content-page" data-quartz-component="ContentPage"><div class="markdown-preview-view markdown-rendered"><h1 id="전기전자-pcb와-기판--수량이-아니라-면적층수가-캐파를-잡아먹는-사이클-가격-인상은-fc-bga에서-btccl로-번지는-중">전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#전기전자-pcb와-기판--수량이-아니라-면적층수가-캐파를-잡아먹는-사이클-가격-인상은-fc-bga에서-btccl로-번지는-중" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="한눈에-보기">한눈에 보기<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#한눈에-보기" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>결론</p></div></div><div class="callout-content">
+<ul>
+<li>AI 가속기·<span class="gl" tabindex="0" data-gl="서버의 범용 연산 칩 (Central Processing Unit)">서버 CPU</span> 기판이 커지고(대면적) 두꺼워지면서(<span class="gl" tabindex="0" data-gl="층수를 크게 늘린 기판">고다층</span>) 같은 라인의 산출량이 줄어듦 → 증설해도 «유효 캐파»는 덜 늘어남 → <mark class="text-highlight"><span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> <span class="gl" tabindex="0" data-gl="주문부터 받기까지 걸리는 시간">리드타임</span> 최장 56주(정상 12주)</mark> <small>(iM, 2026-11-13)</small></li>
+<li>부족은 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> → BT(메모리 기판) → <span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span>(<span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span>) → <span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span>·<span class="gl" tabindex="0" data-gl="CCL 속 보강용 유리 천">유리섬유포</span>로 내려가는 중. 가격 인상 근거가 «원가 전가»에서 «수급»으로 바뀜 <small>(iM, 2026-10-27)</small></li>
+<li>쟁점은 2028년 신규 캐파 유입 이후. «<span class="gl" tabindex="0" data-gl="사양↑로 같은 설비 산출이 주는 것">캐파 잠식</span>으로 과잉 없음(DB·대신)» vs «과거 2H22 공급과잉 재현 경계(신한)»</li>
+</ul>
+</div></blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">값</th><th>비고</th><th>출처</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> 기판 <span class="gl" tabindex="0" data-gl="주문부터 받기까지 걸리는 시간">리드타임</span></td><td style="text-align:right;">48~56주</td><td>균형기 12주</td><td><small>(iM, 11-13)</small></td></tr><tr><td>Nvidia 기판 캐파 목표</td><td style="text-align:right;">2.5배</td><td>향후 3년</td><td><small>(하나, 10-23)</small></td></tr><tr><td>대만 <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span> 업종 월매출</td><td style="text-align:right;">NT$501억</td><td>26-10, +57% YoY</td><td><small>(DB, 11-10)</small></td></tr><tr><td>북미 PCB <span class="gl" tabindex="0" data-gl="신규 수주 ÷ 출하(1↑ = 주문 우위) (Book-to-Bill Ratio)">BB Ratio</span></td><td style="text-align:right;">1.8</td><td>26-09, 20년래 최대</td><td><small>(iM, 11-17)</small></td></tr><tr><td>글로벌 PCB 시장</td><td style="text-align:right;">830억$</td><td>2025, +13%</td><td><small>(키움, 2025-11-25)</small></td></tr></tbody></table></div>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    D[\&quot;AI 가속기·서버 CPU&lt;br/>스위치·메모리\&quot;] --> P1[\&quot;패키지 기판&lt;br/>FC-BGA(ABF)\&quot;]\n    D --> P2[\&quot;패키지 기판&lt;br/>BT(FC-CSP·BGA)\&quot;]\n    D --> P3[\&quot;모듈 PCB&lt;br/>SOCAMM·RDIMM·eSSD\&quot;]\n    D --> P4[\&quot;메인보드&lt;br/>MLB·HDI(UBB·OAM)\&quot;]\n    M[\&quot;소재&lt;br/>CCL·유리섬유포·동박·ABF필름\&quot;] --> P1\n    M --> P2\n    M --> P3\n    M --> P4\n    P1 --> X[\&quot;대면적·고다층&lt;br/>→ 유효 캐파 잠식\&quot;]\n    P4 --> X\n    X --> Y[\&quot;리드타임↑·LTA·선수금&lt;br/>→ 판가 인상\&quot;]&quot;">flowchart LR
+    D[&quot;AI 가속기·서버 CPU&lt;br/>스위치·메모리&quot;] --> P1[&quot;패키지 기판&lt;br/>FC-BGA(ABF)&quot;]
+    D --> P2[&quot;패키지 기판&lt;br/>BT(FC-CSP·BGA)&quot;]
+    D --> P3[&quot;모듈 PCB&lt;br/>SOCAMM·RDIMM·eSSD&quot;]
+    D --> P4[&quot;메인보드&lt;br/>MLB·HDI(UBB·OAM)&quot;]
+    M[&quot;소재&lt;br/>CCL·유리섬유포·동박·ABF필름&quot;] --> P1
+    M --> P2
+    M --> P3
+    M --> P4
+    P1 --> X[&quot;대면적·고다층&lt;br/>→ 유효 캐파 잠식&quot;]
+    P4 --> X
+    X --> Y[&quot;리드타임↑·LTA·선수금&lt;br/>→ 판가 인상&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<p><small>구성: 하나(2026-10-23) FC-BGA→BT 낙수, iM(2026-10-27) 부족의 소재 확산, 교보(2026-08-24) Capa 잠식 3대 원인, 키움(2025-11-25) MLB 공정</small></p>
+<blockquote class="callout warning" data-callout="warning"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>원천 한계</p></div></div><div class="callout-content">
+<p>전기전자 캐시 166건 중 2025년 발간 6건·2026년 160건 → 실질 기간은 2025-10-27~2026-11-19. 2025년 이전 구간 시계열은 iM 표(2025-01~)와 Prismark 연간 값으로만 확인</p>
+</div></blockquote>
+<ul>
+<li>관련 노트: <a href="../전기전자/00_전기전자_index" class="internal internal-link alias" data-slug="전기전자/00_전기전자_index">00_전기전자_index</a> · <a href="../전기전자/01_전기전자_용어집" class="internal internal-link alias" data-slug="전기전자/01_전기전자_용어집">01_전기전자_용어집</a> · <a href="../전기전자/02_전기전자_수요와전방" class="internal internal-link alias" data-slug="전기전자/02_전기전자_수요와전방">02_전기전자_수요와전방</a> · <a href="../전기전자/03_전기전자_mlcc와수동부품" class="internal internal-link alias" data-slug="전기전자/03_전기전자_mlcc와수동부품">03_전기전자_MLCC와수동부품</a> · <a href="../전기전자/05_전기전자_가전과공조" class="internal internal-link alias" data-slug="전기전자/05_전기전자_가전과공조">05_전기전자_가전과공조</a> · <a href="../전기전자/06_전기전자_시장규모모델" class="internal internal-link alias" data-slug="전기전자/06_전기전자_시장규모모델">06_전기전자_시장규모모델</a> · <a href="../전기전자/07_전기전자_하우스시각_변경이력" class="internal internal-link alias" data-slug="전기전자/07_전기전자_하우스시각_변경이력">07_전기전자_하우스시각_변경이력</a> · <a href="../전기전자/08_전기전자_트래킹캘린더" class="internal internal-link alias" data-slug="전기전자/08_전기전자_트래킹캘린더">08_전기전자_트래킹캘린더</a></li>
+</ul>
+<hr/>
+<h2 id="-기초-기판-종류와-쓰임새">① 기초: 기판 종류와 쓰임새<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기초-기판-종류와-쓰임새" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>칩을 받치는 «<span class="gl" tabindex="0" data-gl="칩과 메인보드를 잇는 중간 기판">패키지 기판</span>»(<span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span>·BT)과 부품을 꽂는 «보드»(<span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span>·<span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span>·<span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span>)는 공정·고객·가격 결정 방식이 다름</li>
+<li>AI 사이클의 병목은 패키지 기판(FC-BGA)에서 시작해 메모리 기판·모듈 PCB·<span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span>로 확산</li>
+</ul>
+</div></blockquote>
+<h3 id="품목별-정리">품목별 정리<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#품목별-정리" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>품목</th><th>무엇</th><th>주 전방</th><th>핵심 공법</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span></td><td><span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> 절연재 <span class="gl" tabindex="0" data-gl="칩과 메인보드를 잇는 중간 기판">패키지 기판</span></td><td>GPU·<span class="gl" tabindex="0" data-gl="빅테크가 직접 설계한 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span>·<span class="gl" tabindex="0" data-gl="서버의 범용 연산 칩 (Central Processing Unit)">서버 CPU</span>·스위치</td><td><span class="gl" tabindex="0" data-gl="절연층·회로를 한 층씩 쌓는 공법">빌드업</span>·미세배선</td></tr><tr><td><span class="gl" tabindex="0" data-gl="BT 수지를 쓴 메모리·모바일용 기판 (Bismaleimide Triazine)">BT 기판</span></td><td>BT 수지 패키지 기판</td><td>메모리·모바일 AP·RF</td><td><span class="gl" tabindex="0" data-gl="칩 크기에 가까운 소형 패키지 기판 (Flip Chip Chip Scale Package)">FC-CSP</span>·BoC·<span class="gl" tabindex="0" data-gl="여러 메모리 칩을 한 패키지에 담은 것 (Multi-Chip Package)">MCP</span></td></tr><tr><td><span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span></td><td>메모리 모듈용 보드</td><td><span class="gl" tabindex="0" data-gl="서버용 표준 D램 모듈 (Registered Dual In-line Memory Module)">RDIMM</span>·<span class="gl" tabindex="0" data-gl="데이터센터용 SSD (Enterprise Solid-State Drive)">eSSD</span>·<span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span></td><td><span class="gl" tabindex="0" data-gl="한쪽만 뚫린 구멍(블라인드 비아) (Blind Via Hole)">BVH</span>·<span class="gl" tabindex="0" data-gl="미세회로를 만드는 반첨가 공법 (modified Semi-Additive Process)">mSAP</span></td></tr><tr><td><span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span></td><td>다층 인쇄회로기판</td><td><span class="gl" tabindex="0" data-gl="GPU·가속기를 단 서버">AI 서버</span> <span class="gl" tabindex="0" data-gl="GPU 여러 개를 얹는 서버 메인보드 (Universal Baseboard)">UBB</span>·스위치</td><td><span class="gl" tabindex="0" data-gl="층수를 크게 늘린 기판">고다층</span>·<span class="gl" tabindex="0" data-gl="따로 쌓은 층을 다시 합쳐 붙이는 공법">다중적층</span></td></tr><tr><td><span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span></td><td>고밀도 미세회로 보드</td><td>스마트폰·AI 통합보드</td><td>레이저 비아 반복 적층</td></tr><tr><td><span class="gl" tabindex="0" data-gl="유기 코어 대신 유리를 쓴 기판">유리기판</span></td><td>유리 코어·<span class="gl" tabindex="0" data-gl="칩과 기판 사이 중간 배선층">인터포저</span></td><td>초대면적 AI 패키지</td><td><span class="gl" tabindex="0" data-gl="유리를 뚫어 만든 전기 통로 (Through Glass Via)">TGV</span>(유리 관통 비아)</td></tr></tbody></table></div>
+<p><small>자료: 하나(2026-10-23) 패키지 기판 분류표, 한투(2025-11-27) 용어해설, 키움(2025-11-25) MLB 기술, 대신(2026-10-26) 유리기판</small></p>
+<ul>
+<li><strong><span class="gl" tabindex="0" data-gl="칩과 메인보드를 잇는 중간 기판">패키지 기판</span> vs 보드</strong>
+<ul>
+<li>패키지 기판은 칩과 메인보드를 잇는 «중간층» → 고객(칩 회사)별 맞춤, 전용 라인 생산</li>
+<li>보드(<span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span>·<span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span>)는 세트·모듈 업체 사양 승인 → 수주 기반이지만 납기가 짧은 편 <small>(iM, 2026-11-17)</small></li>
+</ul>
+</li>
+<li><strong><span class="gl" tabindex="0" data-gl="제품 1대의 부품 원가 합계 (Bill of Materials)">BOM</span> 비중이 작음 → 가격 저항이 약함</strong>
+<ul>
+<li>AI 하드웨어에서 기판 원가 비중은 한 자릿수 초반(LSD%) → 고객은 가격보다 «공급 안정성»을 우선 <small>(교보, 2026-08-24)</small></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="-전방-수요-무엇이-기판을-끌고-가나">② 전방 수요: 무엇이 기판을 끌고 가나<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-전방-수요-무엇이-기판을-끌고-가나" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>학습 → 추론 전환이 GPU·<span class="gl" tabindex="0" data-gl="빅테크가 직접 설계한 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span>에 더해 <span class="gl" tabindex="0" data-gl="서버의 범용 연산 칩 (Central Processing Unit)">서버 CPU</span>·스위치·메모리 기판까지 수요를 넓힘</li>
+<li>레거시 세트(PC·스마트폰·가전)는 역성장, 성장은 AI·HPC에 집중 → «<span class="gl" tabindex="0" data-gl="AI 부품만 크고 세트는 정체">양극화</span>» <small>(DB, 2026-04-08; 대신, 2026-10-26)</small></li>
+</ul>
+</div></blockquote>
+<h3 id="시장-규모">시장 규모<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#시장-규모" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th style="text-align:right;">값</th><th>기준</th><th>출처</th></tr></thead><tbody><tr><td>글로벌 <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span></td><td style="text-align:right;">736억$ → 1,025억$</td><td>2024→2029, CAGR 7%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td>글로벌 PCB</td><td style="text-align:right;">830억$</td><td>2025, +13%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td>글로벌 PCB 생산액</td><td style="text-align:right;">1,052억$</td><td>2026, +13.9%</td><td><small>(DB, 2026-04-08)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span></td><td style="text-align:right;">319억$</td><td>2025, PCB의 38%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td>하이엔드 <span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span></td><td style="text-align:right;">CAGR 45%</td><td>2025~2028F</td><td><small>(신한, 2026-05-28)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="스위치 칩 옆에 광엔진을 넣은 패키지 (Co-Packaged Optics)">CPO</span> 시장</td><td style="text-align:right;">CAGR 33.7%</td><td>2025~2031</td><td><small>(교보, 2026-08-24)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="사람 모양 로봇">휴머노이드</span> PCB</td><td style="text-align:right;">44억$ → 150억$</td><td>2024→2030</td><td><small>(iM, 2026-05-26)</small></td></tr></tbody></table></div>
+<p><small>PCB 시장: Prismark(키움 인용)과 TPCA·ITRI(DB 인용)는 집계 기준이 달라 한 선으로 잇지 말 것 ⚠ · 휴머노이드 PCB는 Sierra Circuits 추정</small></p>
+<h3 id="2025년-품목용도별-성장률-prismark">2025년 품목·용도별 성장률 (Prismark)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#2025년-품목용도별-성장률-prismark" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th style="text-align:right;">성장률</th><th>출처</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span></td><td style="text-align:right;">+26%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span></td><td style="text-align:right;">+14%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td>MLB 중 18층 이상</td><td style="text-align:right;">+43%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="칩과 메인보드를 잇는 중간 기판">패키지 기판</span></td><td style="text-align:right;">+13%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="GPU·가속기를 단 서버">AI 서버</span>·스토리지향</td><td style="text-align:right;">+37%</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td>유선 네트워크향</td><td style="text-align:right;">+29%</td><td><small>(키움, 2025-11-25)</small></td></tr></tbody></table></div>
+<h3 id="수요-동인">수요 동인<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#수요-동인" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>동인</th><th>기판 변화</th><th>출처</th></tr></thead><tbody><tr><td>추론·<span class="gl" tabindex="0" data-gl="스스로 작업을 이어 가는 AI">에이전틱 AI</span></td><td><span class="gl" tabindex="0" data-gl="서버의 범용 연산 칩 (Central Processing Unit)">서버 CPU</span> ‘27 출하 +40%↑</td><td><small>(iM, 11-13)</small></td></tr><tr><td>서버 CPU 사양</td><td>80바디·20층 → 100바디·25층+</td><td><small>(iM, 11-13)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span>(<span class="gl" tabindex="0" data-gl="Rubin 랙에 묶이는 엔비디아 CPU (Central Processing Unit)">Vera CPU</span>)</td><td>랙당 모듈 288개</td><td><small>(교보, 08-24)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="그래픽·추론용 고속 D램 (Graphics Double Data Rate 7)">GDDR7</span>(Rubin CPX)</td><td>GDDR7 기판 신규 수요</td><td><small>(한투, 2025-11-27)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="스위치 칩 옆에 광엔진을 넣은 패키지 (Co-Packaged Optics)">CPO</span>(광 스위치)</td><td>광엔진 8→16개 → 면적 2.5배+</td><td><small>(교보, 08-24)</small></td></tr><tr><td>TPU·MI 랙스케일</td><td><span class="gl" tabindex="0" data-gl="GPU 여러 개를 얹는 서버 메인보드 (Universal Baseboard)">UBB</span> → <span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span> 통합보드</td><td><small>(한투, 2025-11-27)</small></td></tr></tbody></table></div>
+<ul>
+<li><strong><span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span> 시장 크기 추정은 하우스마다 단위가 다름</strong>
+<ul>
+<li>한투: 2026년 SOCAMM2 <span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span> TAM 약 790억원, <span class="gl" tabindex="0" data-gl="그래픽·추론용 고속 D램 (Graphics Double Data Rate 7)">GDDR7</span> 기판 TAM 약 1,443억원 <small>(한투, 2025-11-27)</small></li>
+<li>교보: <span class="gl" tabindex="0" data-gl="엔비디아 차세대 AI 플랫폼">Vera Rubin</span> 전망 기준 모듈 140만~200만개 <small>(교보, 2026-08-24)</small></li>
+<li>iM: <span class="gl" tabindex="0" data-gl="Rubin 랙에 묶이는 엔비디아 CPU (Central Processing Unit)">Vera CPU</span> 랙 수요까지 넣으면 기존 TAM 추정 상회 가능 <small>(iM, 2026-04-22)</small></li>
+</ul>
+</li>
+<li><strong>SOCAMM2 채택 확대</strong>
+<ul>
+<li>2027년 AMD·퀄컴 채택 가능성 → 메모리 3사 고객을 둔 국내 모듈 PCB 3사 수혜 <small>(대신, 2026-11-18)</small></li>
+</ul>
+</li>
+<li><strong>스마트폰은 약함</strong>
+<ul>
+<li>2027년 스마트폰 11.8억대(+2.4%), <span class="gl" tabindex="0" data-gl="화면이 접히는 스마트폰">폴더블</span>만 3,537만대(+35.5%) <small>(대신, 2026-10-26)</small> → <span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span>·RF-<span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span>는 폴더블·로봇 쪽 기회에 기대</li>
+</ul>
+</li>
+</ul>
+<h3 id="업황-지표--한국대만-월간-yoy">업황 지표 — 한국·대만 (월간, YoY)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업황-지표--한국대만-월간-yoy" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="PCB 업황 YoY(%) — 한국 수출·대만 IC기판·대만 CCL" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 29.393281 260.129629  L 607.86 260.129629  L 607.86 59.585719  L 29.393281 59.585719  L 29.393281 260.129629  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(23.031761 281.761051) rotate(-35)">25.01</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(80.070505 282.735907) rotate(-35)">25.03</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(138.788446 282.534976) rotate(-35)">25.05</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(197.289951 282.485594) rotate(-35)">25.07</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(255.222402 282.834669) rotate(-35)">25.09</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(317.310898 280.27365) rotate(-35)">25.11</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(373.189645 282.060744) rotate(-35)">26.01</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(430.228388 283.0356) rotate(-35)">26.03</text> </g> </g> <g id="xtick_9"> <g id="line2d_9"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(488.946329 282.834669) rotate(-35)">26.05</text> </g> </g> <g id="xtick_10"> <g id="line2d_10"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(547.447834 282.785288) rotate(-35)">26.07</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_11"> <path d="M 29.393281 260.129629  L 607.86 260.129629  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_12"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="263.540488" transform="rotate(-0 25.893281 263.540488)">-20</text> </g> </g> <g id="ytick_2"> <g id="line2d_13"> <path d="M 29.393281 226.705644  L 607.86 226.705644  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_14"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="230.116503" transform="rotate(-0 25.893281 230.116503)">0</text> </g> </g> <g id="ytick_3"> <g id="line2d_15"> <path d="M 29.393281 193.281659  L 607.86 193.281659  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_16"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="196.692518" transform="rotate(-0 25.893281 196.692518)">20</text> </g> </g> <g id="ytick_4"> <g id="line2d_17"> <path d="M 29.393281 159.857674  L 607.86 159.857674  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_18"></g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="163.268533" transform="rotate(-0 25.893281 163.268533)">40</text> </g> </g> <g id="ytick_5"> <g id="line2d_19"> <path d="M 29.393281 126.433689  L 607.86 126.433689  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_20"></g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="129.844548" transform="rotate(-0 25.893281 129.844548)">60</text> </g> </g> <g id="ytick_6"> <g id="line2d_21"> <path d="M 29.393281 93.009704  L 607.86 93.009704  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_22"></g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="96.420563" transform="rotate(-0 25.893281 96.420563)">80</text> </g> </g> <g id="ytick_7"> <g id="line2d_23"> <path d="M 29.393281 59.585719  L 607.86 59.585719  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_24"></g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="25.893281" y="62.996578" transform="rotate(-0 25.893281 62.996578)">100</text> </g> </g> </g> <g id="patch_3"> <path d="M 29.393281 260.129629  L 29.393281 59.585719  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_4"> <path d="M 29.393281 260.129629  L 607.86 260.129629  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="line2d_25"> <path d="M 41.079478 256.78723  L 70.294968 231.719241  L 99.510459 220.020847  L 128.72595 215.007249  L 157.941441 241.746437  L 187.156932 223.363245  L 216.372423 225.034444  L 245.587914 211.66485  L 274.803404 191.610459  L 304.018895 201.637655  L 333.234386 196.624057  L 362.449877 166.542471  L 391.665368 171.556068  L 420.880859 209.993651  L 450.096349 204.980053  L 479.31184 216.678448  L 508.527331 208.322452  L 537.742822 199.966456  L 566.958313 206.651253  L 596.173804 201.637655  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:#2f74c0;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="line2d_26"> <path d="M 41.079478 221.692046  L 70.294968 171.556068  L 99.510459 193.281659  L 128.72595 181.583264  L 157.941441 193.281659  L 187.156932 171.556068  L 216.372423 194.952858  L 245.587914 204.980053  L 274.803404 199.966456  L 304.018895 186.596862  L 333.234386 173.227268  L 362.449877 176.569666  L 391.665368 154.844076  L 420.880859 213.33605  L 450.096349 179.912065  L 479.31184 183.254463  L 508.527331 164.871271  L 537.742822 153.172877  L 566.958313 136.460884  L 596.173804 121.420091  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:#e8590c;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="line2d_27"> <path d="M 41.079478 208.322452  L 70.294968 136.460884  L 99.510459 184.925662  L 128.72595 203.308854  L 157.941441 228.376843  L 187.156932 223.363245  L 216.372423 225.034444  L 245.587914 228.376843  L 274.803404 209.993651  L 304.018895 193.281659  L 333.234386 204.980053  L 362.449877 178.240865  L 391.665368 183.254463  L 420.880859 216.678448  L 450.096349 184.925662  L 479.31184 154.844076  L 508.527331 149.830478  L 537.742822 116.406493  L 566.958313 94.680903  L 596.173804 71.284113  " clip-path="url(#p279860ee4f)" style="fill:none;stroke:#2b9348;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="text_18"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="29.393281" y="53.585719" transform="rotate(-0 29.393281 53.585719)">YoY %</text> </g> </g> <g id="text_19"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.71675" transform="rotate(-0 6.192 13.71675)">PCB 업황 YoY(%) — 한국 수출·대만 IC기판·대만 CCL</text> </g> <g id="legend_1"> <g id="line2d_28"> <path d="M 11.646 31.766594  L 18.296 31.766594  L 24.946 31.766594  " style="fill:none;stroke:#2f74c0;stroke-width:2.4;stroke-linecap:square;"></path> </g> <g id="text_20"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.091594" transform="rotate(-0 32.546 35.091594)">한국 PCB 수출</text> </g> <g id="line2d_29"> <path d="M 99.947016 31.766594  L 106.597016 31.766594  L 113.247016 31.766594  " style="fill:none;stroke:#e8590c;stroke-width:2.4;stroke-linecap:square;"></path> </g> <g id="text_21"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="120.847016" y="35.091594" transform="rotate(-0 120.847016 35.091594)">대만 IC기판</text> </g> <g id="line2d_30"> <path d="M 177.391313 31.766594  L 184.041313 31.766594  L 190.691313 31.766594  " style="fill:none;stroke:#2b9348;stroke-width:2.4;stroke-linecap:square;"></path> </g> <g id="text_22"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="198.291313" y="35.091594" transform="rotate(-0 198.291313 35.091594)">대만 CCL</text> </g> </g> </g> <defs> <clipPath id="p279860ee4f"> <rect x="29.393281" y="59.585719" width="578.466719" height="200.54391"></rect> </clipPath> </defs> </svg> </figure>
+<p><small>자료: iM PCB Tracker #2 표1(KITA·MOEA, 2026-10-27). 9월 한국 수출 +20%</small></p>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="북미 PCB BB Ratio" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 27.718438 260.030866  L 607.86 260.030866  L 607.86 44.917125  L 27.718438 44.917125  L 27.718438 260.030866  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(20.82729 281.662288) rotate(-35)">25.01</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(75.217894 282.637144) rotate(-35)">25.03</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(131.287696 282.436213) rotate(-35)">25.05</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(187.141062 282.386832) rotate(-35)">25.07</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(242.425374 282.735907) rotate(-35)">25.09</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(301.86573 280.174888) rotate(-35)">25.11</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(355.096338 281.961982) rotate(-35)">26.01</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(409.486942 282.936838) rotate(-35)">26.03</text> </g> </g> <g id="xtick_9"> <g id="line2d_9"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(465.556744 282.735907) rotate(-35)">26.05</text> </g> </g> <g id="xtick_10"> <g id="line2d_10"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(521.41011 282.686525) rotate(-35)">26.07</text> </g> </g> <g id="xtick_11"> <g id="line2d_11"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(576.694422 283.0356) rotate(-35)">26.09</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_12"> <path d="M 27.718438 260.030866  L 607.86 260.030866  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_13"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="263.441725" transform="rotate(-0 24.218438 263.441725)">0.8</text> </g> </g> <g id="ytick_2"> <g id="line2d_14"> <path d="M 27.718438 224.178576  L 607.86 224.178576  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_15"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="227.589435" transform="rotate(-0 24.218438 227.589435)">1</text> </g> </g> <g id="ytick_3"> <g id="line2d_16"> <path d="M 27.718438 188.326286  L 607.86 188.326286  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_17"></g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="191.737145" transform="rotate(-0 24.218438 191.737145)">1.2</text> </g> </g> <g id="ytick_4"> <g id="line2d_18"> <path d="M 27.718438 152.473995  L 607.86 152.473995  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_19"></g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="155.884855" transform="rotate(-0 24.218438 155.884855)">1.4</text> </g> </g> <g id="ytick_5"> <g id="line2d_20"> <path d="M 27.718438 116.621705  L 607.86 116.621705  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_21"></g> <g id="text_16"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="120.032565" transform="rotate(-0 24.218438 120.032565)">1.6</text> </g> </g> <g id="ytick_6"> <g id="line2d_22"> <path d="M 27.718438 80.769415  L 607.86 80.769415  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_23"></g> <g id="text_17"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="84.180275" transform="rotate(-0 24.218438 84.180275)">1.8</text> </g> </g> <g id="ytick_7"> <g id="line2d_24"> <path d="M 27.718438 44.917125  L 607.86 44.917125  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_25"></g> <g id="text_18"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="24.218438" y="48.327984" transform="rotate(-0 24.218438 48.327984)">2</text> </g> </g> </g> <g id="patch_3"> <path d="M 27.718438 260.030866  L 27.718438 44.917125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_4"> <path d="M 27.718438 260.030866  L 607.86 260.030866  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="line2d_26"> <path d="M 38.875006 188.326286  L 66.766427 170.400141  L 94.657849 188.326286  L 122.54927 188.326286  L 150.440691 224.178576  L 178.332112 206.252431  L 206.223534 224.178576  L 234.114955 224.178576  L 262.006376 242.104721  L 289.897797 224.178576  L 317.789219 206.252431  L 345.68064 188.326286  L 373.572061 206.252431  L 401.463483 206.252431  L 429.354904 206.252431  L 457.246325 188.326286  L 485.137746 116.621705  L 513.029168 134.54785  L 540.920589 152.473995  L 568.81201 170.400141  L 596.703431 80.769415  " clip-path="url(#p31b52596c1)" style="fill:none;stroke:#2f74c0;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="text_19"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="27.718438" y="38.917125" transform="rotate(-0 27.718438 38.917125)">배</text> </g> </g> <g id="text_20"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.71675" transform="rotate(-0 6.192 13.71675)">북미 PCB BB Ratio</text> </g> </g> <defs> <clipPath id="p31b52596c1"> <rect x="27.718438" y="44.917125" width="580.141562" height="215.113741"></rect> </clipPath> </defs> </svg> </figure>
+<p><small>자료: iM 표1(GEA, 2026-10-27) 25.01~26.08, 26.09 값 1.8은 iM(2026-11-17) 본문</small></p>
+<ul>
+<li>대만 <span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span> 판매 증가율이 IC기판보다 가팔라짐(8월 +93%) → 병목이 소재 단으로 이동한 신호</li>
+<li>한국 수출은 물량 −4%, <span class="gl" tabindex="0" data-gl="평균 판매 단가 (Average Selling Price)">ASP</span> +25%(9월) → 단가가 성장을 끔 <small>(iM, 2026-10-27)</small></li>
+<li>일본 패키지기판 생산 8월 +52%(ASP +48%, 물량 +2%) <small>(iM, 2026-10-27)</small> — 표1의 일본 IC기판 생산(+30%)과 기준이 다름 ⚠</li>
+</ul>
+<h3 id="업황-지표--대만-pcb-업종-월매출">업황 지표 — 대만 PCB 업종 월매출<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#업황-지표--대만-pcb-업종-월매출" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure class="nchart-wrap"><svg class="nchart" role="img" aria-label="대만 PCB 업종·Unimicron 월매출 (NT$ 십억)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 619.2 295.2" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style> </defs> <g id="figure_1"> <g id="patch_1"> <path d="M 0 295.2  L 619.2 295.2  L 619.2 0  L 0 0  L 0 295.2  z " style="fill:none;opacity:0;"></path> </g> <g id="axes_1"> <g id="patch_2"> <path d="M 25.505 260.030866  L 607.86 260.030866  L 607.86 59.677125  L 25.505 59.677125  L 25.505 260.030866  z " style="fill:none;"></path> </g> <g id="matplotlib.axis_1"> <g id="xtick_1"> <g id="line2d_1"></g> <g id="text_1"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(19.438634 282.436213) rotate(-35)">25.05</text> </g> </g> <g id="xtick_2"> <g id="line2d_2"></g> <g id="text_2"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(84.942304 282.386832) rotate(-35)">25.07</text> </g> </g> <g id="xtick_3"> <g id="line2d_3"></g> <g id="text_3"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(149.876919 282.735907) rotate(-35)">25.09</text> </g> </g> <g id="xtick_4"> <g id="line2d_4"></g> <g id="text_4"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(218.967579 280.174888) rotate(-35)">25.11</text> </g> </g> <g id="xtick_5"> <g id="line2d_5"></g> <g id="text_5"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(281.84849 281.961982) rotate(-35)">26.01</text> </g> </g> <g id="xtick_6"> <g id="line2d_6"></g> <g id="text_6"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(345.889398 282.936838) rotate(-35)">26.03</text> </g> </g> <g id="xtick_7"> <g id="line2d_7"></g> <g id="text_7"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(411.609503 282.735907) rotate(-35)">26.05</text> </g> </g> <g id="xtick_8"> <g id="line2d_8"></g> <g id="text_8"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(477.113173 282.686525) rotate(-35)">26.07</text> </g> </g> <g id="xtick_9"> <g id="line2d_9"></g> <g id="text_9"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;" transform="translate(542.047788 283.0356) rotate(-35)">26.09</text> </g> </g> </g> <g id="matplotlib.axis_2"> <g id="ytick_1"> <g id="line2d_10"> <path d="M 25.505 260.030866  L 607.86 260.030866  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_11"></g> <g id="text_10"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="263.441725" transform="rotate(-0 22.005 263.441725)">0</text> </g> </g> <g id="ytick_2"> <g id="line2d_12"> <path d="M 25.505 223.602913  L 607.86 223.602913  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_13"></g> <g id="text_11"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="227.013772" transform="rotate(-0 22.005 227.013772)">10</text> </g> </g> <g id="ytick_3"> <g id="line2d_14"> <path d="M 25.505 187.17496  L 607.86 187.17496  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_15"></g> <g id="text_12"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="190.585819" transform="rotate(-0 22.005 190.585819)">20</text> </g> </g> <g id="ytick_4"> <g id="line2d_16"> <path d="M 25.505 150.747007  L 607.86 150.747007  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_17"></g> <g id="text_13"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="154.157867" transform="rotate(-0 22.005 154.157867)">30</text> </g> </g> <g id="ytick_5"> <g id="line2d_18"> <path d="M 25.505 114.319054  L 607.86 114.319054  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_19"></g> <g id="text_14"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="117.729914" transform="rotate(-0 22.005 117.729914)">40</text> </g> </g> <g id="ytick_6"> <g id="line2d_20"> <path d="M 25.505 77.891101  L 607.86 77.891101  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:currentColor;stroke-opacity:0.12;stroke-width:0.8;stroke-linecap:square;"></path> </g> <g id="line2d_21"></g> <g id="text_15"> <text style="fill:currentColor;font-size:9px;font-family:inherit;text-anchor:end;" x="22.005" y="81.301961" transform="rotate(-0 22.005 81.301961)">50</text> </g> </g> </g> <g id="patch_3"> <path d="M 25.505 260.030866  L 25.505 59.677125  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="patch_4"> <path d="M 25.505 260.030866  L 607.86 260.030866  " style="fill:none;opacity:0.5;stroke:currentColor;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square;"></path> </g> <g id="line2d_22"> <path d="M 38.591629 154.754082  L 71.308202 155.846921  L 104.024775 148.56133  L 136.741348 146.011373  L 169.457921 140.182901  L 202.174494 143.825696  L 234.891067 144.554255  L 267.60764 139.818621  L 300.324213 130.347354  L 333.040787 154.025523  L 365.75736 130.347354  L 398.473933 125.24744  L 431.190506 121.240365  L 463.907079 119.054688  L 496.623652 103.390668  L 529.340225 95.740798  L 562.056798 82.626735  L 594.773371 77.526822  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:#2f74c0;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="line2d_23"> <path d="M 38.591629 221.417236  L 71.308202 220.324397  L 104.024775 218.867279  L 136.741348 218.503  L 169.457921 218.867279  L 202.174494 218.867279  L 234.891067 218.13872  L 267.60764 217.045881  L 300.324213 213.403086  L 333.040787 217.774441  L 365.75736 212.310248  L 398.473933 209.396011  L 431.190506 208.667452  L 463.907079 205.753216  L 496.623652 200.653303  L 529.340225 195.553389  L 562.056798 191.910594  L 594.773371 190.817755  " clip-path="url(#pf6c22b0865)" style="fill:none;stroke:#e8590c;stroke-width:2.2;stroke-linecap:square;"></path> </g> <g id="text_16"> <text style="fill:currentColor;opacity:0.8;font-size:9px;font-family:inherit;text-anchor:start;" x="25.505" y="53.677125" transform="rotate(-0 25.505 53.677125)">NT$ 십억</text> </g> </g> <g id="text_17"> <text style="fill:currentColor;font:700 12px 'Apple SD Gothic Neo', 'AppleGothic', 'DejaVu Sans';text-anchor:start;" x="6.192" y="13.6455" transform="rotate(-0 6.192 13.6455)">대만 PCB 업종·Unimicron 월매출 (NT$ 십억)</text> </g> <g id="legend_1"> <g id="line2d_24"> <path d="M 11.646 31.690891  L 18.296 31.690891  L 24.946 31.690891  " style="fill:none;stroke:#2f74c0;stroke-width:2.4;stroke-linecap:square;"></path> </g> <g id="text_18"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="32.546" y="35.015891" transform="rotate(-0 32.546 35.015891)">PCB 업종 합산</text> </g> <g id="line2d_25"> <path d="M 99.947016 31.690891  L 106.597016 31.690891  L 113.247016 31.690891  " style="fill:none;stroke:#e8590c;stroke-width:2.4;stroke-linecap:square;"></path> </g> <g id="text_19"> <text style="fill:currentColor;font-size:9.5px;font-family:inherit;text-anchor:start;" x="120.847016" y="35.015891" transform="rotate(-0 120.847016 35.015891)">Unimicron</text> </g> </g> </g> <defs> <clipPath id="pf6c22b0865"> <rect x="25.505" y="59.677125" width="582.355" height="200.353741"></rect> </clipPath> </defs> </svg> </figure>
+<p><small>자료: DB 대만 Tech 매출(2026-06-11: 25.05~26.05, 2026-11-10: 26.06~26.10). 11월 호 표는 2025년 열이 한 칸 밀려 있어 6월 호 값 사용 ⚠</small></p>
+<ul>
+<li>10월 YoY: 업종 +57%, Unimicron +68%, Nanya <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span> +70%, Tripod +70% <small>(DB, 2026-11-10)</small></li>
+<li>2월 저점(춘절) 이후 8개월 연속 상승 → 연말 성수기 진입 <small>(DB, 2026-11-10)</small></li>
+</ul>
+<hr/>
+<h2 id="-기술-심화">③ 기술 심화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-기술-심화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>핵심 원리 하나: «기판 한 장이 커지고 층이 늘면 → 패널당 취수↓·공정 반복↑·수율↓» → 명목 캐파가 늘어도 산출은 덜 늚</li>
+<li>신기술(<span class="gl" tabindex="0" data-gl="유기 코어 대신 유리를 쓴 기판">유리기판</span>·<span class="gl" tabindex="0" data-gl="스위치 칩 옆에 광엔진을 넣은 패키지 (Co-Packaged Optics)">CPO</span>·<span class="gl" tabindex="0" data-gl="따로 쌓은 층을 다시 합쳐 붙이는 공법">다중적층</span> <span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span>·<span class="gl" tabindex="0" data-gl="한쪽만 뚫린 구멍(블라인드 비아) (Blind Via Hole)">BVH</span> 모듈)은 모두 이 잠식을 키우는 쪽</li>
+</ul>
+</div></blockquote>
+<h3 id="fc-bga-대면적고다층화">FC-BGA 대면적·고다층화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#fc-bga-대면적고다층화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>변화</th><th>출처</th></tr></thead><tbody><tr><td>서버용 vs 일반 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span></td><td>면적 4배+, 층수 2배+</td><td><small>(교보, 08-24)</small></td></tr><tr><td>하이엔드 <span class="gl" tabindex="0" data-gl="서버의 범용 연산 칩 (Central Processing Unit)">서버 CPU</span> 기판</td><td>면적 +56%, 층 +25%</td><td><small>(iM, 11-13)</small></td></tr><tr><td>생산 부담</td><td>산술적으로 약 2배</td><td><small>(iM, 11-13)</small></td></tr><tr><td>GPU 패키지</td><td>4,000W+ 예상(Rubin Ultra)</td><td><small>(하나, 10-23)</small></td></tr><tr><td>최대 바디 크기</td><td>150×150mm 초과 로드맵</td><td><small>(하나, 10-23)</small></td></tr><tr><td>2028 동일 라인 아웃풋</td><td>2025 대비 약 40%</td><td><small>(DB, 06-02)</small></td></tr></tbody></table></div>
+<p><small>DB 40%는 Ibiden 공정 부하 자료로 재계산한 값. 하나 표는 Unimicron 기술 로드맵 인용</small></p>
+<ul>
+<li><strong>패키지가 커지는 3대 원인</strong> <small>(교보, 2026-08-24)</small>
+<ul>
+<li>다이 수 증가(노광 한계 → <span class="gl" tabindex="0" data-gl="큰 칩을 여러 다이로 나눠 붙인 구조">칩렛</span>) → 다이 간 배선 급증</li>
+<li><span class="gl" tabindex="0" data-gl="D램을 쌓아 GPU 옆에 둔 고대역 메모리 (High Bandwidth Memory)">HBM</span> 스택 증가 → 가장자리 팬아웃 영역 확대 → 층수 동반 증가</li>
+<li>전력 부품 내장·<span class="gl" tabindex="0" data-gl="스위치 칩 옆에 광엔진을 넣은 패키지 (Co-Packaged Optics)">CPO</span> → 실장 면적·전원층·저손실 소재 요구</li>
+</ul>
+</li>
+<li><strong>휨(<span class="gl" tabindex="0" data-gl="열·층수 때문에 기판이 휘는 현상">Warpage</span>)</strong>
+<ul>
+<li>층수↑·배선 미세화 → 휨 → 수율 확보 부담 <small>(대신, 2026-10-26)</small></li>
+</ul>
+</li>
+<li><strong>미세화 정체 → 층·면적으로 해결</strong>
+<ul>
+<li>칩 배선 피치는 계속 줄지만 기판 배선 미세화는 물리적 한계 → 층수·면적 확대로 I/O 대응 <small>(교보, 2026-08-24)</small></li>
+</ul>
+</li>
+</ul>
+<h3 id="mlb-다중적층hdi">MLB: 다중적층·HDI<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#mlb-다중적층hdi" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../전기전자/그림/04_전기전자_pcb와기판_다중적층mlb공정.png" alt="다중적층 MLB 공정 비교(일반·Sequential·HDI)"/><br/>
+<small>출처: 키움증권(이수페타시스 자료), 2025-11-25, p.17</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>공법</th><th>구조</th><th>층수·두께</th><th>출처</th></tr></thead><tbody><tr><td><span class="gl" tabindex="0" data-gl="구멍을 도금으로 메워 평평히 하는 공법 (Via-In-Pad Plated Over)">VIPPO</span></td><td>비아를 도금으로 메워 평탄화</td><td>22~30층, 3.2T</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="따로 쌓은 층을 다시 합쳐 붙이는 공법">다중적층</span>(Sequential)</td><td>신호층·전력층 분리 후 재적층</td><td>40층+, 5T+</td><td><small>(키움, 2025-11-25)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span> on <span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span></td><td><span class="gl" tabindex="0" data-gl="층수를 크게 늘린 기판">고다층</span> 위 미세회로</td><td>⚠ 원문 없음</td><td><small>(키움, 2025-11-25)</small></td></tr></tbody></table></div>
+<ul>
+<li>적층–드릴–도금–메꿈을 반복 → 같은 설비에서 Capa 손실 → <span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span> 구조적 부족 <small>(키움, 2025-11-25)</small></li>
+<li>TPU 7세대 <span class="gl" tabindex="0" data-gl="GPU 여러 개를 얹는 서버 메인보드 (Universal Baseboard)">UBB</span>는 20층 중후반, 8세대부터 랙스케일 통합보드 → <span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span> 기술 필요 <small>(한투, 2025-11-27)</small></li>
+<li>MLB 내 <span class="gl" tabindex="0" data-gl="따로 쌓은 층을 다시 합쳐 붙이는 공법">다중적층</span> 매출 비중 2025년 9% → 2026년 31% 전망(국내 대표 MLB 업체 사례) <small>(신한, 2026-05-28)</small></li>
+</ul>
+<h3 id="메모리-모듈-pcb-bvhsocamm">메모리 모듈 PCB: BVH·SOCAMM<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#메모리-모듈-pcb-bvhsocamm" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><span class="gl" tabindex="0" data-gl="한쪽만 뚫린 구멍(블라인드 비아) (Blind Via Hole)">BVH</span>(Blind Via Hole)</strong>
+<ul>
+<li>고속 <span class="gl" tabindex="0" data-gl="서버용 표준 D램 모듈 (Registered Dual In-line Memory Module)">RDIMM</span>·<span class="gl" tabindex="0" data-gl="데이터센터용 SSD (Enterprise Solid-State Drive)">eSSD</span>에 쓰는 고부가 공법, 공정 수가 많음 → 공시 <span class="gl" tabindex="0" data-gl="설비 중 실제 돌리는 비율">가동률</span> 71%여도 실질 90%+ <small>(한투, 2025-10-27)</small></li>
+<li>BVH 적용 매출 비중 7.7%(1Q24) → 31.8%(2Q25), 국내 <span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span> 1사 사례 <small>(한투, 2025-10-27)</small></li>
+</ul>
+</li>
+<li><strong><span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span></strong>
+<ul>
+<li>LPDDR5X 패키지 4개를 탈착식 모듈로 묶은 서버 메모리 폼팩터, <span class="gl" tabindex="0" data-gl="Rubin 랙에 묶이는 엔비디아 CPU (Central Processing Unit)">Vera CPU</span>부터 적용 <small>(한투, 2025-11-27)</small></li>
+<li>기존 서버용 DDR5 모듈 PCB 대비 <span class="gl" tabindex="0" data-gl="평균 판매 단가 (Average Selling Price)">ASP</span> 50% 이상↑ <small>(키움, 2025-11-25)</small> / 1.5~2배+ <small>(신한, 2026-05-28)</small></li>
+</ul>
+</li>
+<li><strong>eSSD 모듈</strong>
+<ul>
+<li>Client SSD 10층 vs eSSD 12층·Low CTE, E3.S 14층+ <small>(S.T.A.R 리서치, 2026-09-15)</small></li>
+</ul>
+</li>
+</ul>
+<h3 id="유리기판">유리기판<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#유리기판" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../전기전자/그림/04_전기전자_pcb와기판_유리기판구조.png" alt="유리기판 두 가지 쓰임 — 인터포저 대체·플라스틱 코어 대체"/><br/>
+<small>출처: 대신증권(LPKF 자료), 2026-10-26, p.9</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>인터포저 대체</th><th>코어 대체</th></tr></thead><tbody><tr><td>위치</td><td>칩↔기판 중간층</td><td>패키지 하단 기판</td></tr><tr><td>대체 대상</td><td>실리콘·유기 <span class="gl" tabindex="0" data-gl="칩과 기판 사이 중간 배선층">인터포저</span></td><td><span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> 유기 코어</td></tr><tr><td>핵심 기술</td><td><span class="gl" tabindex="0" data-gl="유리를 뚫어 만든 전기 통로 (Through Glass Via)">TGV</span>·고밀도 팬아웃</td><td>대형 유리 가공·패터닝</td></tr></tbody></table></div>
+<p><small>자료: 대신(2026-10-26)</small></p>
+<ul>
+<li><strong>왜 필요한가</strong>
+<ul>
+<li>유기 코어는 대면적에서 휨·신호손실 한계 → 유리는 유전율·유전손실이 낮아 고속 신호 감쇄·발열이 적음 <small>(대신, 2026-10-26)</small></li>
+<li>100×100mm 넘는 패키지에서 휨 없이 다수 칩 집적 가능 <small>(대신, 2026-10-26)</small></li>
+</ul>
+</li>
+<li><strong>누가·언제</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>업체</th><th>단계</th><th>목표 시점</th><th>출처</th></tr></thead><tbody><tr><td>삼성전기</td><td>세종 파일럿·소재사 제휴</td><td>4Q27~1H28 양산</td><td><small>(대신, 10-26)</small></td></tr><tr><td>SKC(앱솔릭스)</td><td>미국 조지아 전용 공장 완공</td><td>신뢰성 검증 중</td><td><small>(대신, 10-26)</small></td></tr><tr><td>LG이노텍</td><td>R&amp;D</td><td>⚠ 원문 없음</td><td><small>(대신, 10-26)</small></td></tr></tbody></table></div>
+<ul>
+<li><strong>모르는 것</strong>: 고객 확정·단가·수율 ⚠ — 하우스 간 상용화 시점도 갈림(⑥)</li>
+</ul>
+<h3 id="cpo와-기판">CPO와 기판<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#cpo와-기판" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><span class="gl" tabindex="0" data-gl="스위치 칩 옆에 광엔진을 넣은 패키지 (Co-Packaged Optics)">CPO</span> = 스위치 칩 옆 같은 패키지에 광엔진을 통합 → 광엔진 실장 면적·신규 층·발열 관리가 기판에 필요 → 대면적 <span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> 기판 순증 <small>(교보, 2026-08-24)</small></li>
+<li>일부 플러거블 트랜시버용 <span class="gl" tabindex="0" data-gl="레이저 구멍을 반복한 고밀도 보드 (High Density Interconnect)">HDI</span>·RF <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span>는 대체됨 <small>(교보, 2026-08-24)</small></li>
+</ul>
+<hr/>
+<h2 id="-캐파증설">④ 캐파·증설<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-캐파증설" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2026년 상반기부터 «고객 <span class="gl" tabindex="0" data-gl="고객이 미리 낸 대금(증설 재원)">선수금</span> + 장기공급계약(<span class="gl" tabindex="0" data-gl="물량·가격을 미리 정한 장기공급계약 (Long-Term Agreement)">LTA</span>)» 기반 증설이 해외 → 국내로 확산</li>
+<li>신규 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> 캐파 대부분은 2028년 유입 → 2027년 부족이 오히려 심해짐 <small>(iM, 2026-10-27)</small></li>
+</ul>
+</div></blockquote>
+<h3 id="증설-로드맵">증설 로드맵<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#증설-로드맵" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<div class="table-container"><table style="border-collapse:collapse;width:100%;font-size:0.85em;"><tbody><tr><th rowspan="2">품목</th><th rowspan="2">라인</th><th colspan="4" style="border-left:3px solid #94a3b8;text-align:center;">2026</th><th colspan="4" style="border-left:3px solid #94a3b8;text-align:center;">2027</th><th colspan="4" style="border-left:3px solid #94a3b8;text-align:center;">2028</th><th colspan="4" style="border-left:3px solid #94a3b8;text-align:center;">2029</th></tr><tr><th style="border-left:3px solid #94a3b8;font-size:0.75em;">Q1</th><th style="font-size:0.75em;">Q2</th><th style="font-size:0.75em;">Q3</th><th style="font-size:0.75em;">Q4</th><th style="border-left:3px solid #94a3b8;font-size:0.75em;">Q1</th><th style="font-size:0.75em;">Q2</th><th style="font-size:0.75em;">Q3</th><th style="font-size:0.75em;">Q4</th><th style="border-left:3px solid #94a3b8;font-size:0.75em;">Q1</th><th style="font-size:0.75em;">Q2</th><th style="font-size:0.75em;">Q3</th><th style="font-size:0.75em;">Q4</th><th style="border-left:3px solid #94a3b8;font-size:0.75em;">Q1</th><th style="font-size:0.75em;">Q2</th><th style="font-size:0.75em;">Q3</th><th style="font-size:0.75em;">Q4</th></tr><tr><td style="white-space:nowrap;"><span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span></td><td style="white-space:nowrap;">삼성전기 기존(부산·세종·베트남)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="5" style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">'27 보완투자 캐파 +20~30%</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">삼성전기 국내 신규(Nvidia)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="7" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">건설·설비 반입(~'28.05)</td><td colspan="2" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">양산 개시</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">삼성전기 베트남 신규(<span class="gl" tabindex="0" data-gl="빅테크가 직접 설계한 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span>)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="7" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">건설·반입(취득 '28.04)</td><td colspan="2" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">양산 개시</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">Unimicron 광푸 2공장(Nvidia)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="1" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">반입</td><td colspan="1" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">1단계</td><td colspan="2" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">2단계</td><td colspan="5" style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">풀캐파</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">Unimicron 양메이 2·3공장</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="5" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">2공장 건설(2H27 완공)</td><td colspan="4" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">2공장 양산</td><td colspan="4" style="border-left:3px solid #94a3b8;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">3공장 완공('29)</td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">Ibiden 가마 Cell6·오노 2단계</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="5" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">설비 반입</td><td colspan="4" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">양산(오노=기존 3배)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">Ibiden CPU향 추가(1,510억엔)</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="10" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">투자 결정('26.10)·집행</td><td colspan="3" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">FY2029 양산</td></tr><tr><td style="white-space:nowrap;">FC-BGA</td><td style="white-space:nowrap;">Kinsus 양메이 6공장</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td><td colspan="4" style="border-left:3px solid #94a3b8;background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">'27 월 캐파 +25%</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;"><span class="gl" tabindex="0" data-gl="층을 많이 쌓은 다층 보드 (Multi-Layer Board)">MLB</span></td><td style="white-space:nowrap;">이수페타시스</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td colspan="2" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">6K→8K</td><td colspan="2" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">10.5K</td><td></td><td></td><td colspan="2" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">12.5K+α</td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;"><span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span></td><td style="white-space:nowrap;">코리아써키트</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td><td colspan="1" style="border-left:3px solid #94a3b8;background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">모듈 캐파 +45%</td><td></td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;"><span class="gl" tabindex="0" data-gl="유기 코어 대신 유리를 쓴 기판">유리기판</span></td><td style="white-space:nowrap;">삼성전기 세종 파일럿</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="4" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">파일럿·검증</td><td colspan="3" style="background:#a78bfa;color:#1e1b4b;font-weight:700;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">양산 목표</td><td></td><td></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr><tr><td style="white-space:nowrap;">소재</td><td style="white-space:nowrap;">박형 <span class="gl" tabindex="0" data-gl="CCL 속 보강용 유리 천">유리섬유포</span></td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td colspan="3" style="background:#5b21b6;color:#fff;font-weight:600;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">품귀·추가 인상</td><td colspan="6" style="background:rgba(139,92,246,0.14);color:inherit;border:1px dashed #8b5cf6;padding:2px 4px;font-size:0.78em;text-align:center;white-space:nowrap;">점진 완화</td><td style="border-left:3px solid #94a3b8;"></td><td></td><td></td><td></td></tr></tbody></table></div>
+<p><small>범례: 진한 보라 = 건설·반입·집행, 연보라 = 양산·이정표, 점선 = 계획. 자료: iM(2026-10-27) 표2, iM(2026-10-30) Ibiden, iM(2026-04-22) Kinsus, 신한(2026-05-28) MLB(단위 원문 «㎢/월» 표기 ⚠), 대신(2026-11-18) 모듈, 대신(2026-10-26) 유리기판, iM(2026-10-27) 유리섬유포</small></p>
+<h3 id="투자-규모">투자 규모<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#투자-규모" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>주체</th><th style="text-align:right;">규모</th><th>내용</th><th>출처</th></tr></thead><tbody><tr><td>패키지기판 업체 합산</td><td style="text-align:right;">37억$ → 66억$</td><td>2026 <span class="gl" tabindex="0" data-gl="설비 투자 지출">CapEx</span> 컨센서스</td><td><small>(iM, 07-03)</small></td></tr><tr><td>Ibiden</td><td style="text-align:right;">5,000억엔</td><td>FY26~28, <span class="gl" tabindex="0" data-gl="빅테크가 직접 설계한 전용 칩 (Application-Specific Integrated Circuit)">ASIC</span> 2,200·GPU 2,800</td><td><small>(신한, 05-28)</small></td></tr><tr><td>Ibiden(추가)</td><td style="text-align:right;">1,510억엔</td><td>CPU용, FY2029 양산</td><td><small>(iM, 10-30)</small></td></tr><tr><td>Unimicron</td><td style="text-align:right;">NT$340억</td><td>2026 CapEx(254억에서 상향)</td><td><small>(신한, 05-28)</small></td></tr><tr><td>삼성전기</td><td style="text-align:right;">8조원</td><td>세종 패키지기판(기간 미정)</td><td><small>(iM, 07-03)</small></td></tr><tr><td>대덕전자</td><td style="text-align:right;">1.4조원</td><td>1·2차 합계, BT 포함</td><td><small>(SK, 11-02)</small></td></tr></tbody></table></div>
+<h3 id="가동률-3q26">가동률 (3Q26)<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#가동률-3q26" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>라인</th><th style="text-align:right;">가동률</th><th>출처</th></tr></thead><tbody><tr><td>국내 BT·<span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> 1사(면적)</td><td style="text-align:right;">95%</td><td><small>(iM, 11-17)</small></td></tr><tr><td>국내 대형 패키지기판(면적)</td><td style="text-align:right;">91%</td><td><small>(iM, 11-17)</small></td></tr><tr><td>국내 메모리 기판 1사</td><td style="text-align:right;">80%대</td><td><small>(iM, 11-17)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="메모리 모듈을 얹는 보드 (Printed Circuit Board)">모듈 PCB</span> 2사(공시)</td><td style="text-align:right;">61~73%</td><td><small>(iM, 11-17)</small></td></tr><tr><td>국내 FC-BGA 1사</td><td style="text-align:right;">80% 중반</td><td><small>(SK, 11-02)</small></td></tr></tbody></table></div>
+<p><small>사례: 대덕전자 95%, 삼성전기 패키지 91%, 심텍 80%대, 티엘비 73%·코리아써키트 61%. 모듈 PCB는 적층 부하가 큰 제품 비중 확대 → 실질 가동률은 공시보다 높음</small></p>
+<ul>
+<li><strong><span class="gl" tabindex="0" data-gl="고객이 미리 낸 대금(증설 재원)">선수금</span>이 증설 재원</strong>
+<ul>
+<li>Ibiden 선수금 1,997억엔(연초 대비 약 2.5배) <small>(iM, 2026-10-30)</small></li>
+<li>국내 대형사 유동 선수금 2,246억 → 5,041억원, <span class="gl" tabindex="0" data-gl="물량·가격을 미리 정한 장기공급계약 (Long-Term Agreement)">LTA</span> 관련 선수금 $5.4억 → $7.8억 <small>(iM, 2026-11-17)</small></li>
+<li>선두 업체는 2028~2032년 <span class="gl" tabindex="0" data-gl="미래 생산능력을 고객별로 나눠 둠">캐파 할당</span>을 마침 <small>(iM, 2026-11-13)</small></li>
+</ul>
+</li>
+<li><strong>BT 캐파는 오히려 줄어듦</strong>
+<ul>
+<li>선두 <span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> 업체가 BT 투자 중단·공용 설비를 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span>로 재배치 → BT 공급 여력 제한 <small>(iM, 2026-07-03; 하나, 2026-10-23)</small></li>
+<li>Goldman: BT 수급 갭 2026년 1% → 2027년 11% → 2028년 14%, 메모리 기판 수요 연평균 +41% vs 캐파 +6% <small>(iM, 2026-10-27 인용)</small></li>
+</ul>
+</li>
+<li><strong>신공장 <span class="gl" tabindex="0" data-gl="주문부터 받기까지 걸리는 시간">리드타임</span></strong>: 착공~출하 2.5~3년 → 차세대 증설분은 2029년 가동 <small>(iM, 2026-10-27 인용)</small></li>
+</ul>
+<hr/>
+<h2 id="-가격수급">⑤ 가격·수급<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-가격수급" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>2026년 3월 메모리 기판 +10% 인상이 출발점 → <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span>·BT·<span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span>·<span class="gl" tabindex="0" data-gl="CCL 속 보강용 유리 천">유리섬유포</span>로 인상이 연쇄</li>
+<li>2027년 4분기까지 고급 <span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span>·BT 분기 10~15% 인상 전망(대만 언론 인용) — 국내 하우스 추정 아님 ⚠</li>
+</ul>
+</div></blockquote>
+<h3 id="가격-인상-연대표">가격 인상 연대표<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#가격-인상-연대표" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>품목</th><th style="text-align:right;">인상 폭</th><th>출처</th></tr></thead><tbody><tr><td>2026-03</td><td>메모리 기판(IDM 용인)</td><td style="text-align:right;">평균 +10%</td><td><small>(iM, 04-22)</small></td></tr><tr><td>2026-03~04</td><td><span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> 일부 고객</td><td style="text-align:right;">+10%</td><td><small>(iM, 04-22)</small></td></tr><tr><td>~2026-05</td><td>하이엔드 FC-BGA용 <span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span></td><td style="text-align:right;">+30%</td><td><small>(신한, 05-28)</small></td></tr><tr><td>3Q26</td><td>BT / <span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span>(대만 1사)</td><td style="text-align:right;">+10~20% / +20~30%</td><td><small>(iM, 10-27)</small></td></tr><tr><td>4Q26</td><td>BT / ABF</td><td style="text-align:right;">한 자릿수 / +10~20%</td><td><small>(iM, 10-27)</small></td></tr><tr><td>1Q27</td><td>BT</td><td style="text-align:right;">+20% 이상</td><td><small>(iM, 10-27)</small></td></tr><tr><td>3Q26~4Q27</td><td>ABF</td><td style="text-align:right;">분기 +10~15%</td><td><small>(iM, 10-27)</small></td></tr><tr><td>2027-01</td><td>일반 다층판용 CCL(일본 1사)</td><td style="text-align:right;">+200%</td><td><small>(iM, 10-27)</small></td></tr></tbody></table></div>
+<p><small>3Q26 이후 행은 iM이 대만 언론에 실린 Daiwa·미국계·일본계 증권사·TrendForce 전망을 정리한 표3·표4 인용</small></p>
+<h3 id="단가-실적">단가 실적<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#단가-실적" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>지표</th><th style="text-align:right;">값</th><th>출처</th></tr></thead><tbody><tr><td>한국 <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span> <span class="gl" tabindex="0" data-gl="수출 금액 ÷ 수출 물량 (Average Selling Price)">수출 ASP</span>(9월)</td><td style="text-align:right;">+25% YoY</td><td><small>(iM, 10-27)</small></td></tr><tr><td>메모리 모듈 기판 <span class="gl" tabindex="0" data-gl="평균 판매 단가 (Average Selling Price)">ASP</span></td><td style="text-align:right;">105만 → 146만원/㎡</td><td><small>(신한, 05-28)</small></td></tr><tr><td>국내 기판 4사 3Q26 납품단가</td><td style="text-align:right;">+26~61% YoY</td><td><small>(iM, 11-17)</small></td></tr><tr><td>박형 <span class="gl" tabindex="0" data-gl="CCL 속 보강용 유리 천">유리섬유포</span>(1080)</td><td style="text-align:right;">저점 대비 약 +300%</td><td><small>(iM, 10-27)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span> 가격 전망</td><td style="text-align:right;">3Q +30%, 4Q +20%</td><td><small>(iM, 10-27)</small></td></tr></tbody></table></div>
+<p><small>메모리 모듈 기판 ASP: 4Q23 → 1Q26. 4사 납품단가: 대덕전자 +61%, 심텍·티엘비 +41%, 코리아써키트 +26%</small></p>
+<ul>
+<li><strong>이익 민감도</strong>: <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span> 원가율 80~90% → 판가 +10%면 수익성 약 +8%p <small>(iM, 2026-04-22)</small></li>
+<li><strong>3Q26까지는 믹스, 4Q26~1Q27부터 판가</strong> <small>(iM, 2026-11-17)</small>
+<ul>
+<li>3Q까지 단가 상승은 <span class="gl" tabindex="0" data-gl="저전력 D램 4개를 묶은 탈착형 모듈 (Small Outline Compression Attached Memory Module)">SOCAMM</span>·플립칩 등 고부가 <span class="gl" tabindex="0" data-gl="비싼 제품 비중↑로 평균가 상승">믹스 효과</span></li>
+<li>메모리 기판의 같은 제품 판가 인상(app-to-app)은 4Q26~1Q27 본격 반영</li>
+</ul>
+</li>
+<li><strong>수요 둔화와 공급 부족이 공존</strong>
+<ul>
+<li>대만 <span class="gl" tabindex="0" data-gl="대만 전자업 경기 설문 지수 (Purchasing Managers' Index)">전자광학 PMI</span> 10월 60(3월 이후 최저), 신규주문 둔화 vs 납기·가격 지수 70·80 고점권 <small>(iM, 2026-11-13)</small></li>
+<li>대만 IC기판 재고액 +208%(3MMA) vs 판매 +54% → 고사양 제품 선제 <span class="gl" tabindex="0" data-gl="절연층·회로를 한 층씩 쌓는 공법">빌드업</span>, 재고단가가 판매단가를 12% 웃돎 <small>(iM, 2026-10-27)</small></li>
+</ul>
+</li>
+<li><strong>소재가 최대 변수</strong>
+<ul>
+<li>일부 업체는 2027년 1분기 말부터 필요한 원자재 100% 조달을 확신 못 함(<span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span>·유리섬유·동박) <small>(SK, 2026-11-02)</small></li>
+<li><span class="gl" tabindex="0" data-gl="열에 덜 늘어나는 고급 유리섬유 (Coefficient of Thermal Expansion)">Low CTE 유리섬유</span> 2026~2028년 수요 > 공급(Prismark) <small>(메리츠, 2026-10-29)</small></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-하우스별-시각과-변화" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout abstract" data-callout="abstract"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>요약</p></div></div><div class="callout-content">
+<ul>
+<li>공통 시각(iM·하나·DB·교보·대신·신한): 2027년까지 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span>·BT 부족 심화, 판가 인상 지속</li>
+<li>갈리는 곳: 신규 캐파 램프 시점, 2028년 이후 과잉 여부, <span class="gl" tabindex="0" data-gl="유기 코어 대신 유리를 쓴 기판">유리기판</span> 상용화 시점, 소재 부족 해소 시점</li>
+</ul>
+</div></blockquote>
+<h3 id="엇갈림">엇갈림<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#엇갈림" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>질문</th><th>하우스(발간)</th><th>입장</th></tr></thead><tbody><tr><td>국내 신규 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> 램프</td><td>하나(10-23)</td><td>2027 하반기 램프업</td></tr><tr><td>〃</td><td>iM(10-27)</td><td>‘28.05 반입 완료 → 3Q28 양산</td></tr><tr><td>증설 후 과잉 재현?</td><td>신한(2025-11-20)</td><td>2019~21 부족 → 2H22 과잉 전례</td></tr><tr><td>〃</td><td>대신(04-08)</td><td>2027년까지 과잉 가능성 낮음</td></tr><tr><td>〃</td><td>DB(06-02)</td><td>2028 공급 2배+여도 잠식 → 과잉 아님</td></tr><tr><td><span class="gl" tabindex="0" data-gl="유기 코어 대신 유리를 쓴 기판">유리기판</span> 상용화</td><td>한투(2025-11-27)</td><td>2026년 가시화</td></tr><tr><td>〃</td><td>대신(10-26)</td><td>4Q27~1H28 양산 목표</td></tr><tr><td>소재(<span class="gl" tabindex="0" data-gl="기판 원판(동박+절연층) (Copper Clad Laminate)">CCL</span>) 부족 해소</td><td>키움(2025-11-25)</td><td>기판사 실적발표 «‘26 하반기 균형» 인용</td></tr><tr><td>〃</td><td>iM(10-27)</td><td>‘27 소재 약 20% 부족, ‘27 하반기~‘28 완화</td></tr></tbody></table></div>
+<h3 id="바뀐-것">바뀐 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#바뀐-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>이전</th><th>이후</th></tr></thead><tbody><tr><td>AI 기판 판가</td><td>경쟁사 증설 → 하락 리스크 <small>(키움, 2025-11-25)</small></td><td>예상보다 상승 <small>(iM, 10-30)</small></td></tr><tr><td>메모리 기판 판가</td><td>인하설 → «요구 없음» <small>(iM, 07-03)</small></td><td>1Q27 +20% 추가 인상 논의 <small>(iM, 10-27)</small></td></tr><tr><td><span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> <span class="gl" tabindex="0" data-gl="설비 중 실제 돌리는 비율">가동률</span></td><td>70% 내외, 2H26 풀캐파 <small>(한투, 2025-11-27)</small></td><td>3Q26 풀가동, 예상보다 이름 <small>(대신, 10-26)</small></td></tr><tr><td>신규 증설 시점</td><td>대만·일본 먼저 <small>(iM, 04-22)</small></td><td>국내 <span class="gl" tabindex="0" data-gl="고객이 미리 낸 대금(증설 재원)">선수금</span> 증설 확산 <small>(iM, 10-27)</small></td></tr><tr><td>국내 기판주 PER</td><td>국내 16배 vs 해외 33배 <small>(iM, 10-27)</small></td><td>‘28 국내 9.1배 vs 11.0배 <small>(iM, 11-17)</small></td></tr></tbody></table></div>
+<p><small>키움 행은 Ibiden 실적 발표 요약 인용(키움 자체 전망 아님). iM 11-17은 하이투자증권 파일명으로 수집된 iM 리포트(고의영)</small></p>
+<ul>
+<li>판정: 2027년 부족 심화 = iM·하나·DB·교보·대신·신한(6곳, «공통 시각») / 2028년 이후 과잉 경계 = 신한의 과거 사이클 언급이 유일 → 아직 소수 의견</li>
+<li>주가 측면 경계: «역금융장세·데이터센터 지연 우려로 멀티플 축소» <small>(iM, 2026-11-17)</small>, «AI 투자 지속 비용 우려가 지배» <small>(교보, 2026-11-04)</small> — 펀더멘털 아닌 할인율 변수</li>
+</ul>
+<hr/>
+<h2 id="-트래킹-포인트">⑦ 트래킹 포인트<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#-트래킹-포인트" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>시점</th><th>확인할 것</th><th>좋은 신호</th><th>나쁜 신호</th></tr></thead><tbody><tr><td>매월 10일</td><td>대만 <span class="gl" tabindex="0" data-gl="부품을 꽂고 회로를 잇는 기판 (Printed Circuit Board)">PCB</span> 업종 월매출</td><td>YoY +50% 유지</td><td>+30% 하회</td></tr><tr><td>매월</td><td>한국 PCB <span class="gl" tabindex="0" data-gl="수출 금액 ÷ 수출 물량 (Average Selling Price)">수출 ASP</span></td><td>+20% 이상</td><td>마이너스 전환</td></tr><tr><td>매월</td><td>북미 PCB <span class="gl" tabindex="0" data-gl="신규 수주 ÷ 출하(1↑ = 주문 우위) (Book-to-Bill Ratio)">BB Ratio</span></td><td>1.2 이상</td><td>1.0 하회</td></tr><tr><td>매월</td><td>대만 <span class="gl" tabindex="0" data-gl="대만 전자업 경기 설문 지수 (Purchasing Managers' Index)">전자광학 PMI</span> 납기</td><td>70 부근 유지</td><td>50대 급락</td></tr><tr><td>분기</td><td><span class="gl" tabindex="0" data-gl="FC-BGA 층 사이 절연 필름 (Ajinomoto Build-up Film)">ABF</span> <span class="gl" tabindex="0" data-gl="주문부터 받기까지 걸리는 시간">리드타임</span></td><td>50주+ 유지</td><td>20주대 축소</td></tr><tr><td>1Q27</td><td>BT 판가 협상</td><td>+20% 반영</td><td>동결·인하</td></tr><tr><td>2H27</td><td>Unimicron 신규 풀캐파</td><td>판가 유지</td><td>판가 정체</td></tr><tr><td>3Q28</td><td>국내 신규 <span class="gl" tabindex="0" data-gl="고성능 칩용 대형 패키지 기판 (Flip Chip Ball Grid Array)">FC-BGA</span> 양산</td><td>순조 램프</td><td>지연·수율</td></tr></tbody></table></div>
+<p><small>기준선: DB(2026-11-10) +57%, iM(2026-10-27) ASP +25%·납기 지수, iM(2026-11-13) 리드타임·PMI, iM(2026-11-17) BB 1.8</small></p>
+<hr/>
+<blockquote class="callout quote is-collapsible is-collapsed" data-callout="quote" data-callout-fold><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"><p>출처 (펼쳐 보기)</p></div><div class="fold-callout-icon callout-fold"></div></div><div class="callout-content">
+<small>
+- 업황 데이터: iM증권 PCB Tracker #2(2026-10-27) 표1~4 · iM «MLCC와 PCB, 센티먼트와 펀더멘털»(2026-11-13) · iM(하이투자증권 파일명) «PCB 산업, 견조한 BB Ratio»(2026-11-17) · DB증권 대만 Tech 매출(2026-06-11·2026-11-10)
+- 산업 전망: 키움증권 기판·MLCC·폴더블(2025-11-25) · 한국투자증권 2026년 연간전망(2025-11-27), AI PCB 체리피킹(2025-10-27) · 신한투자증권 2026년 산업 전망(2025-11-20), 2026년 하반기 전망(2026-05-28) · DB증권 전례 없는 단가 인상(2026-04-08), 없어서 못 판다(2026-06-02) · iM증권 패키지기판과 MLCC 2027/2030(2026-04-22), 2026 하반기 전망(2026-05-26), 메모리기판 판가 이슈코멘트(2026-07-03), Ibiden 실적 시사점(2026-10-30) · 교보증권 기판 브랜드 뉴 데이(2026-08-24), 전기전자 Weekly(2026-11-04) · 하나증권 높아지는 패키지 기판의 위상(2026-10-23) · 대신증권 2027년 산업전망(2026-10-26), 폴더블폰 AI 수혜(2026-04-08), PCB 소캠2(2026-11-18)
+- 사례(기업 리포트에서 산업 사실만): SK증권 대덕전자(2026-11-02) · 메리츠증권 삼성전기(2026-10-29) · S.T.A.R Research 심텍(2026-09-15, 외부 리서치팀 리포트)
+</small>
+</div></blockquote>
+<h2 id="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#다음-갱신-때-확인할-것" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>삼성전기 국내 신규 FC-BGA 라인 양산 시점(2H27 vs 3Q28) 확정 ⚠</li>
+<li>iM PCB Tracker #1·#3 확보 → 표1 시계열 2026-09 이후 연장, 일본 IC기판 생산 +30% vs +52% 기준 차이 확인 ⚠</li>
+<li>이수페타시스 MLB 캐파 단위(원문 ㎢/월 표기) 확인 ⚠</li>
+<li>유리기판 고객·단가·양산 시점 하우스 추가 확보 ⚠</li>
+<li>Prismark 2026년 PCB·패키지기판 시장 갱신치(현재 2025년 값까지)</li>
+<li>2027년 1분기 BT 판가 협상 결과, CCL·유리섬유포 2027년 계약 가격</li>
+</ul>
+<blockquote>
+<p>한 줄: 이번 기판 사이클의 본체는 «물량»이 아니라 «면적·층수가 먹어 치우는 캐파» — 2028년 신규 라인이 들어오기 전까지는 공급자가 가격을 정하는 구간</p>
+</blockquote></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar" data-sidebar-mode="fit"><div class="graph" data-quartz-plugin="graph" data-quartz-component="Graph"><h3>그래프 뷰</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc" data-quartz-plugin="table-of-contents" data-quartz-component="TableOfContents"><button type="button" class="toc-header" aria-controls="toc-285" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#전기전자-pcb와-기판--수량이-아니라-면적층수가-캐파를-잡아먹는-사이클-가격-인상은-fc-bga에서-btccl로-번지는-중" data-for="전기전자-pcb와-기판--수량이-아니라-면적층수가-캐파를-잡아먹는-사이클-가격-인상은-fc-bga에서-btccl로-번지는-중">전기전자 PCB와 기판 — 수량이 아니라 «면적·층수»가 캐파를 잡아먹는 사이클, 가격 인상은 FC-BGA에서 BT·CCL로 번지는 중</a></li><li class="depth-1"><a href="#한눈에-보기" data-for="한눈에-보기">한눈에 보기</a></li><li class="depth-1"><a href="#-기초-기판-종류와-쓰임새" data-for="-기초-기판-종류와-쓰임새">① 기초: 기판 종류와 쓰임새</a></li><li class="depth-1"><a href="#-전방-수요-무엇이-기판을-끌고-가나" data-for="-전방-수요-무엇이-기판을-끌고-가나">② 전방 수요: 무엇이 기판을 끌고 가나</a></li><li class="depth-1"><a href="#-기술-심화" data-for="-기술-심화">③ 기술 심화</a></li><li class="depth-1"><a href="#-캐파증설" data-for="-캐파증설">④ 캐파·증설</a></li><li class="depth-1"><a href="#-가격수급" data-for="-가격수급">⑤ 가격·수급</a></li><li class="depth-1"><a href="#-하우스별-시각과-변화" data-for="-하우스별-시각과-변화">⑥ 하우스별 시각과 변화</a></li><li class="depth-1"><a href="#-트래킹-포인트" data-for="-트래킹-포인트">⑦ 트래킹 포인트</a></li><li class="depth-1"><a href="#다음-갱신-때-확인할-것" data-for="다음-갱신-때-확인할-것">다음 갱신 때 확인할 것</a></li><li class="overflow-end"></li></ul></div><div class="backlinks" data-quartz-plugin="backlinks" data-quartz-component="Backlinks"><h3>백링크</h3><ul id="list-0" class="overflow"><li><a href="../전기전자/00_전기전자_index" class="internal">00_전기전자_index</a></li><li><a href="../전기전자/01_전기전자_용어집" class="internal">01_전기전자_용어집</a></li><li><a href="../전기전자/02_전기전자_수요와전방" class="internal">02_전기전자_수요와전방</a></li><li><a href="../전기전자/03_전기전자_mlcc와수동부품" class="internal">03_전기전자_MLCC와수동부품</a></li><li><a href="../전기전자/05_전기전자_가전과공조" class="internal">05_전기전자_가전과공조</a></li><li><a href="../전기전자/06_전기전자_시장규모모델" class="internal">06_전기전자_시장규모모델</a></li><li><a href="../전기전자/07_전기전자_하우스시각_변경이력" class="internal">07_전기전자_하우스시각_변경이력</a></li><li><a href="../전기전자/08_전기전자_트래킹캘린더" class="internal">08_전기전자_트래킹캘린더</a></li><li><a href="../전기전자/설명서/전기전자_설명서" class="internal">전기전자_설명서</a></li><li class="overflow-end"></li></ul></div></div><footer class data-quartz-plugin="footer" data-quartz-component="Footer"><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.1.0</a> © 2026</p><ul></ul></footer></div></div><script id="gl-tip-js">(function(){if(window.__glTip)return;window.__glTip=1;var tip,timer,cur;
+function box(){if(!tip||!document.body.contains(tip)){tip=document.createElement('div');tip.className='gl-tip';document.body.appendChild(tip);}return tip;}
+function show(el){var t=box();t.textContent=el.getAttribute('data-gl');t.style.display='block';var r=el.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;
+var x=Math.min(Math.max(8,r.left),window.innerWidth-w-8);var y=r.bottom+6;if(y+h>window.innerHeight-8)y=r.top-h-6;t.style.left=x+'px';t.style.top=y+'px';cur=el;}
+function hide(){clearTimeout(timer);if(tip)tip.style.display='none';cur=null;}
+document.addEventListener('mouseover',function(e){var el=e.target.closest&&e.target.closest('.gl');if(!el)return;clearTimeout(timer);timer=setTimeout(function(){show(el);},700);});
+document.addEventListener('mouseout',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el)hide();});
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('.gl');if(el){if(cur===el)hide();else{clearTimeout(timer);show(el);}}else hide();});
+window.addEventListener('scroll',hide,true);document.addEventListener('nav',hide);})();</script></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-b151bd49.js" type="module" data-persist="true"></script><script src="../postscript-e0150670.js" type="module" data-persist="true"></script></html>
